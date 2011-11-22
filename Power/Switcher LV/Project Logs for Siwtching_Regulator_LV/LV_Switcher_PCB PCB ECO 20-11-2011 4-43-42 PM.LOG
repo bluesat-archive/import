@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=VIN Pin=J1-1
+Removed Pin From Net: NetName=GND Pin=J1-2
+Removed Pin From Net: NetName=GND Pin=J2-1
+Removed Pin From Net: NetName=NetC9_2 Pin=J2-2
+Removed Member From Class: ClassName=Switching_Regulator_LV_Board Member=J1
+Removed Member From Class: ClassName=Switching_Regulator_LV_Board Member=J2
+Added Room: Name=Switching_Regulator_LV_Board

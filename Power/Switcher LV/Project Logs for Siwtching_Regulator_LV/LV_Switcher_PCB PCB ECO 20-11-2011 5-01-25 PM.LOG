@@ -1,0 +1,8 @@
+Added Component: Designator=F1(FUd)
+Added Component: Designator=F2(FUd)
+Added Component: Designator=F3(FUd)
+Added Component: Designator=F4(FUd)
+Added Member To Class: ClassName=Switching_Regulator_LV_Board Member=Component F1 Fud
+Added Member To Class: ClassName=Switching_Regulator_LV_Board Member=Component F2 Fud
+Added Member To Class: ClassName=Switching_Regulator_LV_Board Member=Component F3 Fud
+Added Member To Class: ClassName=Switching_Regulator_LV_Board Member=Component F4 Fud
