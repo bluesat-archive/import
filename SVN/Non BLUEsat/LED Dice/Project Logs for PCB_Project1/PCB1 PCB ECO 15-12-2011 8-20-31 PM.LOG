@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=GND Pin=C1-2
+Removed Pin From Net: NetName=GND Pin=R2-1
+Added Component: Designator=T1(PCBComponent_1)
+Added Pin To Net: NetName=NetC1_2 Pin=C1-2
+Added Pin To Net: NetName=NetC1_2 Pin=R2-1
+Added Pin To Net: NetName=GND Pin=T1-1
+Added Pin To Net: NetName=GND Pin=T1-1
+Added Pin To Net: NetName=NetC1_2 Pin=T1-2
+Added Member To Class: ClassName=Sheet1 Member=Component T1 TOUCH
