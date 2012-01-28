@@ -1,7 +1,0 @@
-Added Component: Designator=Q1(PNP)
-Added Pin To Net: NetName=VCC Pin=Q1-1
-Added Pin To Net: NetName=NetQ1_2 Pin=Q1-2
-Added Pin To Net: NetName=NetQ1_3 Pin=Q1-3
-Added Member To Class: ClassName=Sheet1 Member=Component Q1 BC557
-Added Member To Class: ClassName=Sheet1 Member=Component T1 TOUCH
-Added Room: Name=Sheet1
