@@ -1,0 +1,51 @@
+Drawing No.,Title,Description,Author,Product Point
+COMS0001,Beacon,Morse code continuous wave beacon based on EPROM,D. Jedrychowski,B3 Groundstaton Link (Comms)
+COMS0002,AFSK Modem,AFSK modem based on CML MX614 IC,"M. Wenke, C. Webb",B3.1 Demodulation
+COMS0003,DTMF Reciever,DTMF Reciever based on Zarlink MT88L70 IC,T. Fisk,B3.1 Demodulation
+COMS0004,Switching Circuit,Overview of switching circuit,D. Jedrychowski,B3.3 Communications Switching
+COMS0005,Comms Test Board,Test board for communications subsystem.,T. Fisk,B3 Groundstaton Link (Comms)
+COMS0006,Switching Circuit Signal Flow,Descriptive drawing of switching circuit signal routing.,D. Jedrychowski,B3.3 Communications Switching
+CRSC0001,Crtical System Computer-Top level,The top level overview of the entire critical system computer,Sam Shan Jiang,B4 Command Control and Data
+CRSC0002,Critical system computer - Microcontroller,LPC2468 microcontroller,Sam Shan Jiang,B4.1 Processing
+CRSC0003,Critical System Computer - Memory,Memory banks for the critical system computer,Sam Shan Jiang,B4.2 Data Storage
+CRSC0004,Critical System Computer - Serial,Serial USB interface chip,Sam Shan Jiang,B4.3 Data Bus
+CRSC0005,Critical System Computer - Power,Voltage regulator and power source select switch,Sam Shan Jiang,B4 Command Control and Data
+GENN0001,Tray Interconnects,Details all the connections required in the wire harness,M. Wenke,B4.3 Data Bus
+GENN0002,Tray 2 PCB Dimensions,PCBDOC file with the required dimensions for the final Tray 2 PCB,"V. Thiru, M. Wenke",B5.2.1 Trays
+GENN0003,Tray Inteconnect Diagram,Details BlueSat's subsystems and the required interconnects,"M. Wenke, Cam Brown",B4.3 Data Bus
+MECH0008,Tray 0: Baseplate,,C. Hales,B5.2.1 Trays
+MECH0009,Tray 1: Transmitters,,C. Hales,B5.2.1 Trays
+MECH0010,Tray 2: Flight Computer,Renamed to CSC Tray,C. Hales,B5.2.1 Trays
+MECH0011,Tray 3: Batteries,,C. Hales,B5.2.1 Trays
+MECH0012,Tray 4: Power Control,Renamed to Payload Tray,C. Hales,B5.2.1 Trays
+MECH0013,Tray 5: Receivers,,C. Hales,B5.2.1 Trays
+MECH0014,Transmitter Housing,,C. Hales,B5.2.1 Trays
+MECH0015,Receiver Housing,,C. Hales,B5.2.1 Trays
+MECH0016,Solar Backing +X Face,,C. Hales,B5.2.2 Solar Panel Mount
+MECH0017,"Solar Backing +Y, -Y and -X Faces",,C. Hales,B5.2.2 Solar Panel Mount
+MECH0018,Solar Backing +Z Face,,C. Hales,B5.2.2 Solar Panel Mount
+PAYL0002,Payload Computer - JTAG Interface,,M.Brindley,3.2.1 uC and Memory
+PAYL0003,Payload Computer - Memor Interface and Ics,,M. Brindley,3.2.1 uC and Memory
+PAYL0004,Payload Computer - Micontroller I/O interface,I/O interfaces for the payload Computer,M. Brindley,3.1 Bus Interface
+PAYL0005,Payload Computer - Microcontroller Power,Power Supply for Microcontroller,M. Brindley,3.2.1 uC and Memory
+PAYL0006,Payload Computer - Overview,Payload Computer Overview,M. Brindley,3 Extensible Payload Support
+PAYL0001,GMSK Modem,GMSK Modem based on CML CMX589 IC,"M. Wenke, T. Fisk",3.1.3 Earth Data Link
+POWR0001,BLUEsat Peak Power Tracker,Battery Charge Regulator,William Du,B1.1.2 Battery Charging
+POWR0002,Tray 2 High Level Power Layout,Architectural illustration for power Distribution devices,C. Brown,B1.2.1 Regulation
+POWR0003,Tray 3 High level Power Layout,Architectural illustration for power Distribution devices,C. Brown,B1.2.1 Regulation
+POWR0004,BLUEsat Power Switch Structure,Structure for Multiple LDO devices from a common bus,E. Islam,B1.2.1 Regulation
+POWR0005,BLUEsat Power Switch,Generic LDO-based power switch,E. Islam,B1.2.1 Regulation
+TELM0001,Telemetry - Top Level,Telemetry Top Level Schematic,A. Shaw,B2 Telemetry
+TELM0002,MAX127 Telemetry Circuit,MAX127 Telemetry Circuit,A. Shaw,B2.2 Data Conversion and Handling
+TELM0003,Temperature Sensor Circuit,Converts Temperature to 10mV/K,A. Shaw,B2.1.1 Temperature Sensors
+TELM0004,Telemetry Current Sense,Converts Current to Voltage 500mV/A,A.Shaw,B2.1.2 Current Sensors
+GENN0004,BLUEsat Product Tree,System level breakdown for BLUEsat,T.Nguyen,\General
+SOLA0001,Gallium Arsenide Solar Array,,,B1.1.1 Solar Cells
+POWR0007,BCR Overview,,,B1.1.2 Battery Charging
+MECH0019,Vibration Plate Base,,,B5.2.3 Launch Interface
+MECH0020,Pad Support LHS,,,B5.2.3 Launch Interface
+MECH0021,Clamp,,,B5.2.3 Launch Interface
+MECH0021,Pad Supporrt RHS,,,B5.2.3 Launch Interface
+MECH0022,Vibration Plate Assembly,,,B5.2.3 Launch Interface
+POWR0008,Variable TX supply V1,,,B1.2.1 Regulation
+POWR0009,Variable TX+RX supply V2,,,B1.2.1 Regulation
