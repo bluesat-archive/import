@@ -1,0 +1,7 @@
+Added Component: Designator=J?(KK100-2)
+Added Component: Designator=U1(MXA20A_N)
+Added Pin To Net: NetName=GND Pin=U1-6
+Added Pin To Net: NetName=GND Pin=U1-14
+Added Net: Name=GND
+Added Class: Name=V1
+Added Room: Name=V1

@@ -1,0 +1,14 @@
+Change Net Name : Old Net Name=NetC1_2 New Net Name=T_BO_CI
+Change Net Name : Old Net Name=NetC5_2 New Net Name=T_BU_VCC
+Change Net Name : Old Net Name=NetC6_2 New Net Name=T_BU_SS
+Change Net Name : Old Net Name=NetC9_1 New Net Name=T_BU_SW
+Change Net Name : Old Net Name=NetC9_2 New Net Name=T_BU_BOOT
+Change Net Name : Old Net Name=NetC11_2 New Net Name=R_BU_VCC
+Change Net Name : Old Net Name=NetC12_2 New Net Name=R_BU_SS
+Change Net Name : Old Net Name=NetC14_1 New Net Name=R_BU_BOOT
+Change Net Name : Old Net Name=NetC14_2 New Net Name=R_BU_SW
+Change Net Name : Old Net Name=NetD1_1 New Net Name=T_BO_SW
+Change Net Name : Old Net Name=NetR1_2 New Net Name=T_BO_COMP
+Change Net Name : Old Net Name=NetR4_1 New Net Name=T_BU_COM
+Change Net Name : Old Net Name=NetR5_1 New Net Name=T_BU_OS
+Change Net Name : Old Net Name=NetR9_1 New Net Name=R_BU_COM

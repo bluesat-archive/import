@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=GND Pin=D8-2
+Removed Pin From Net: NetName=TX_V_OUT Pin=R28-2
+Added Pin To Net: NetName=TX_V_OUT Pin=D8-1
+Added Pin To Net: NetName=GND Pin=R28-1
+Added Pin To Net: NetName=NetD8_2 Pin=D8-2
+Added Pin To Net: NetName=NetD8_2 Pin=R28-2
+Added Net: Name=NetD8_2

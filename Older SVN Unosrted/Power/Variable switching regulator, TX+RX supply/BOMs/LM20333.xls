@@ -1,0 +1,13 @@
+Part	Manufacturer	Part Number	Quantity	Price	Attribute 1 Name	Attribute 1 Value	Attribute 2 Name	Attribute 2 Value	Attribute 3 Name	Attribute 3 Value	Footprint
+"Cboot"	"Yageo America"	"CC0805KRX7R9BB104"	"1"	"0.01"	"Cap"	"100nF"	"ESR"	"0Ohm"	"VDC"	"50V"	"0805"
+"Ccomp"	"Yageo America"	"CC0805KRX7R9BB472"	"1"	"0.01"	"Cap"	"4.7nF"	"ESR"	"0Ohm"	"VDC"	"50V"	"0805"
+"Cext"	"Taiyo Yuden"	"LMK212B7105KG-T"	"1"	"0.0135"	"Cap"	"1uF"	"ESR"	"0Ohm"	"VDC"	"10V"	"0805"
+"Cin"	"TDK"	"C3225X5R1C226M"	"1"	"0.2"	"Cap"	"22uF"	"ESR"	"2mOhm"	"VDC"	"16V"	"1210"
+"Cout"	"TDK"	"C3216X5R1C106M"	"2"	"0.06"	"Cap"	"10uF"	"ESR"	"4.6mOhm"	"VDC"	"16V"	"1206"
+"Css"	"Yageo America"	"CC0805KRX7R9BB682"	"1"	"0.01"	"Cap"	"6.8nF"	"ESR"	"0Ohm"	"VDC"	"50V"	"0805"
+"L1"	"Bourns"	"SRR1260-150M"	"1"	"0.45"	"L"	"15uH"	"DCR"	"0.027Ohm"	"IDC"	"5A"	"SRR1260"
+"Rcomp"	"Vishay-Dale"	"CRCW08059K53FKEA"	"1"	"0.01"	"Resistance"	"9.53KOhm"	"Tolerance"	"1%"	"Power"	"0.125W"	"0805"
+"Rfb1"	"Susumu Co Ltd"	"RR1220P-123-D"	"1"	"0.01"	"Resistance"	"12KOhm"	"Tolerance"	"0.5%"	"Power"	"0.1W"	"0805"
+"Rfb2"	"Vishay-Dale"	"CRCW0805100KFKEA"	"1"	"0.01"	"Resistance"	"100KOhm"	"Tolerance"	"1%"	"Power"	"0.125W"	"0805"
+"Rpg"	"Vishay-Dale"	"CRCW080549K9FKEA"	"1"	"0.01"	"Resistance"	"49.9KOhm"	"Tolerance"	"1%"	"Power"	"0.125W"	"0805"
+"U1"	"Texas Instruments"	"LM20333MHE"	"1"	"1.5"	""	""	""	""	""	""	"MXA20A"
