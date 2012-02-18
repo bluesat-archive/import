@@ -87,7 +87,15 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 
 [GeneratedDocument1]
+DocumentPath=..\..\..\B Bus\B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR\BCR.PcbLib.htm
+DItemRevisionGUID=
+
+[GeneratedDocument2]
 DocumentPath=FlatBoards.PcbLib.htm
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=..\..\..\B Bus\B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR\FLATSAT BCR.PcbDoc.htm
 DItemRevisionGUID=
 
 [OutputGroup1]
