@@ -388,7 +388,7 @@ OutputDefault3=0
 [OutputGroup3]
 Name=New Output
 Description=
-TargetPrinter=Brother HL-5250DN series
+TargetPrinter=Send To OneNote 2010
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 
 [OutputGroup4]
