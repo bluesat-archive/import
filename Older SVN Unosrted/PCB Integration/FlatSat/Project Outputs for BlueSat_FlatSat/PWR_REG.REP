@@ -1,0 +1,19 @@
+------------------------------------------------------------
+Single Pin Net Report for PWR_REG.SchDoc
+-- 2/25/2012
+-- 12:34:59 PM
+------------------------------------------------------------
+
+Net 3V3_AUX has only one pin (Pin P394-2)
+Net 3V3_COMMS has only one pin (Pin P386-2)
+Net 3V3_CSC has only one pin (Pin P391-2)
+Net 5V0_AUX has only one pin (Pin P420-2)
+Net 5V0_AUX_E\N\ has only one pin (Pin P421-2)
+Net 5V0_BBONE has only one pin (Pin P413-2)
+Net 5V0_BCR has only one pin (Pin P405-2)
+Net 5V0_SPARE_E\N\ has only one pin (Pin J12-2)
+Net 5V0_TELEM has only one pin (Pin P408-2)
+Net 8V0_RX1 has only one pin (Pin P369-2)
+Net 8V0_RX2 has only one pin (Pin P376-2)
+Net VVAR_TX1 has only one pin (Pin P370-2)
+Net VVAR_TX2 has only one pin (Pin P379-2)

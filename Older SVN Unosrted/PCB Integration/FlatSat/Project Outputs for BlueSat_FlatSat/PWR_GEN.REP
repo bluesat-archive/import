@@ -1,0 +1,31 @@
+------------------------------------------------------------
+Single Pin Net Report for PWR_GEN.SchDoc
+-- 2/25/2012
+-- 12:58:08 PM
+------------------------------------------------------------
+
+Net 3V3_PWR has only one pin (Pin P346-1)
+Net 5V0_BCR has only one pin (Pin P347-1)
+Net BCR_MISO has only one pin (Pin P351-1)
+Net BCR_MOSI has only one pin (Pin P352-1)
+Net BCR_R\S\T\ has only one pin (Pin P349-1)
+Net BCR_SCK has only one pin (Pin P350-1)
+Net I2C0_SCL has only one pin (Pin P354-2)
+Net I2C0_SDA has only one pin (Pin P353-2)
+Net I2C2_SCL has only one pin (Pin P355-2)
+Net I2C2_SDA has only one pin (Pin P356-2)
+Net SOLA_X+_T has only one pin (Pin P339-1)
+Net SOLA_X+_V has only one pin (Pin P337-1)
+Net SOLA_X-_T has only one pin (Pin P363-2)
+Net SOLA_X-_V has only one pin (Pin P361-2)
+Net SOLA_Y+_T has only one pin (Pin P342-1)
+Net SOLA_Y+_V has only one pin (Pin P340-1)
+Net SOLA_Y-_T has only one pin (Pin P366-2)
+Net SOLA_Y-_V has only one pin (Pin P364-2)
+Net SOLA_Z+_T has only one pin (Pin P345-1)
+Net SOLA_Z+_V has only one pin (Pin P343-1)
+Net SOLA_Z-_T has only one pin (Pin P369-2)
+Net SOLA_Z-_V has only one pin (Pin P367-2)
+Net TBATT has only one pin (Pin P336-1)
+Net V_LOAD has only one pin (Pin D1-2)
+Net VBATT has only one pin (Pin P335-1)

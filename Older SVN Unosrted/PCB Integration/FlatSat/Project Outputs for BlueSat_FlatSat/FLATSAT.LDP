@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\Mitch\Desktop\Bluesat SVN\Older SVN Unosrted\PCB Integration\FlatSat\FLATSAT.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=flatsat-roundholes.txt|LayerPairs=gtl,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=flatsat-slotholes.txt|LayerPairs=gtl,gbl
