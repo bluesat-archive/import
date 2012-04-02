@@ -282,9 +282,9 @@ LOAD /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a
  .stab          0x000006cc      0x5e8 bcr.o
                                 0x5f4 (size before relaxing)
 
-.stabstr        0x00000000      0x834
+.stabstr        0x00000000      0x87e
  *(.stabstr)
- .stabstr       0x00000000      0x834 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+ .stabstr       0x00000000      0x87e /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
 
 .stab.excl
  *(.stab.excl)
