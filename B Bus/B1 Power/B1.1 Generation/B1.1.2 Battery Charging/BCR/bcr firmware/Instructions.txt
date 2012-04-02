@@ -1,0 +1,5 @@
+To compile AVR code type:
+make
+
+To burn hex file to the BCR, attach AVR ISPMKII programmer and type:
+sudo make burn
