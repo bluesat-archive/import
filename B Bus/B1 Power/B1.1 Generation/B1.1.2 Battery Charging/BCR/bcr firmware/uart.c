@@ -10,8 +10,7 @@
  *
  * $Id: uart.c 1008 2005-12-28 21:38:59Z joerg_wunsch $
  */
-
-#include "defines.h"
+#define UART_BAUD 9600
 
 #include <stdint.h>
 #include <stdio.h>
