@@ -17,6 +17,11 @@
 #define ADC_A    (0)
 #define ADC_B    (1)
 
+// SPI pins
+#define MOSI		 (1 << PB3)
+#define MISO 		 (1 << PB4)
+#define SCK  		 (1 << PB5)
+
 // SPI chip select gpio
 #define DAC_CS   (1 << PB0)
 #define ADC_A_CS (1 << PB1)

@@ -7,10 +7,13 @@
 int main (void)
 {
 	init ();
-
+	
 	while (1)
 	{
 		setDAC (DAC_ALL, 1023);
+		setDAC(DAC_A,0);
+		setDAC(DAC_B,500);
+		setDAC(DAC_C, 1023);
 		_delay_ms (1);
 	}
 
@@ -20,6 +23,10 @@ int main (void)
 // Initialises SPI chip select pins and shutdown pins. Sets initial I/O directions.
 void init (void)
 {
+
+	// Set MSRT and SPE pin high
+	SPCR = 0x50;
+
 	// Set SPI chip selects as outputs, initialise to high
 	DDRB  |= DAC_CS | ADC_A_CS | ADC_B_CS;
 	PORTB |= DAC_CS | ADC_A_CS | ADC_B_CS;
@@ -28,9 +35,15 @@ void init (void)
 	DDRD  |=   SHDN_XP | SHDN_YP | SHDN_ZP | SHDN_XN | SHDN_YN | SHDN_ZN;
 	PORTD &= ~(SHDN_XP | SHDN_YP | SHDN_ZP | SHDN_XN | SHDN_YN | SHDN_ZN);
 
+	// Set MOSI and SCK as outputs
+	DDRB |= MOSI | SCK;
+
+	// Set MISO as input
+	DDRB &= ~MISO;
+
 	// Set reset switch as input
-	DDRC  &= ~RESET;
-	PORTD |=  RESET;
+	// DDRC  &= ~RESET;
+	// PORTC |=  RESET;
 
 	return;
 }
