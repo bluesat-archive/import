@@ -22,7 +22,7 @@
 #define ADC_A_CS (1 << PB1)
 #define ADC_B_CS (1 << PB2)
 
-// BCR shutdown gpios
+// BCR shutdown pins
 #define SHDN_XP  (1 << PD2)
 #define SHDN_YP  (1 << PD3)
 #define SHDN_ZP  (1 << PD4)

@@ -1,12 +1,19 @@
 #include <avr/io.h>
 #include <stdint.h>
 #include <util/delay.h>
+
 #include "bcr.h"
 
 int main (void)
 {
 	init ();
-	setDAC (DAC_ALL, 1023);
+
+	while (1)
+	{
+		setDAC (DAC_ALL, 1023);
+		_delay_ms (1);
+	}
+
 	return 0;
 }
 
@@ -28,7 +35,6 @@ void init (void)
 	return;
 }
 
-
 // Sends 10 bit data value to addressed channel of LTC1660 D/A converter
 void setDAC (uint8_t address, uint16_t value)
 {
@@ -37,7 +43,7 @@ void setDAC (uint8_t address, uint16_t value)
 	// Pull chip select low
 	PORTB &= ~(DAC_CS);
 	
-	_delay_us(1);
+	_delay_us (1);
 
 	// Send word	
 	SPDR = (uint8_t) (dacWord >> 8);
@@ -54,9 +60,8 @@ void setDAC (uint8_t address, uint16_t value)
 	return;
 }
 
-
 // Reads 12 bit data value from adressed channel of LTC1598L A/D converter.
-// Channel addresses are numbered from 0 to 7. ADC A or B must be specified.
+// Channel addresses are numbered from 0 to 7. ADC_A or ADC_B must be specified.
 uint16_t readADC (uint8_t adc, uint8_t channel)
 {
 	uint16_t retVal = 0xFFFF;

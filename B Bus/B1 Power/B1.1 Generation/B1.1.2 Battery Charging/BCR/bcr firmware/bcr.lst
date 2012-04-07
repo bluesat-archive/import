@@ -3,11 +3,11 @@ bcr.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .text         00000136  00000000  00000000  00000054  2**1
+  0 .text         0000013e  00000000  00000000  00000054  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .stab         00000cb4  00000000  00000000  0000018c  2**2
+  1 .stab         00000ccc  00000000  00000000  00000194  2**2
                   CONTENTS, READONLY, DEBUGGING
-  2 .stabstr      0000087e  00000000  00000000  00000e40  2**0
+  2 .stabstr      0000087e  00000000  00000000  00000e60  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -48,7 +48,7 @@ Disassembly of section .text:
   70:	de bf       	out	0x3e, r29	; 62
   72:	cd bf       	out	0x3d, r28	; 61
   74:	0e 94 68 00 	call	0xd0	; 0xd0 <main>
-  78:	0c 94 99 00 	jmp	0x132	; 0x132 <_exit>
+  78:	0c 94 9d 00 	jmp	0x13a	; 0x13a <_exit>
 
 0000007c <__bad_interrupt>:
   7c:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
@@ -90,7 +90,6 @@ void init (void)
 
 0000009e <setDAC>:
 
-
 // Sends 10 bit data value to addressed channel of LTC1660 D/A converter
 void setDAC (uint8_t address, uint16_t value)
 {
@@ -120,7 +119,7 @@ void setDAC (uint8_t address, uint16_t value)
   b8:	f1 f7       	brne	.-4      	; 0xb6 <setDAC+0x18>
   ba:	00 c0       	rjmp	.+0      	; 0xbc <setDAC+0x1e>
 	
-	_delay_us(1);
+	_delay_us (1);
 
 	// Send word	
 	SPDR = (uint8_t) (dacWord >> 8);
@@ -148,102 +147,119 @@ void setDAC (uint8_t address, uint16_t value)
   ce:	08 95       	ret
 
 000000d0 <main>:
-#include <util/delay.h>
+
 #include "bcr.h"
 
 int main (void)
 {
 	init ();
   d0:	0e 94 40 00 	call	0x80	; 0x80 <init>
-	setDAC (DAC_ALL, 1023);
+
+	while (1)
+	{
+		setDAC (DAC_ALL, 1023);
   d4:	8f e0       	ldi	r24, 0x0F	; 15
   d6:	6f ef       	ldi	r22, 0xFF	; 255
   d8:	73 e0       	ldi	r23, 0x03	; 3
   da:	0e 94 4f 00 	call	0x9e	; 0x9e <setDAC>
-	return 0;
-}
-  de:	80 e0       	ldi	r24, 0x00	; 0
-  e0:	90 e0       	ldi	r25, 0x00	; 0
-  e2:	08 95       	ret
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
 
-000000e4 <readADC>:
+	__builtin_avr_delay_cycles(__ticks_dc);
+  de:	8f ec       	ldi	r24, 0xCF	; 207
+  e0:	97 e0       	ldi	r25, 0x07	; 7
+  e2:	01 97       	sbiw	r24, 0x01	; 1
+  e4:	f1 f7       	brne	.-4      	; 0xe2 <main+0x12>
+  e6:	00 c0       	rjmp	.+0      	; 0xe8 <main+0x18>
+  e8:	00 00       	nop
+  ea:	f4 cf       	rjmp	.-24     	; 0xd4 <main+0x4>
+
+000000ec <readADC>:
 uint16_t readADC (uint8_t adc, uint8_t channel)
 {
 	uint16_t retVal = 0xFFFF;
 	
 	// Send channel address
 	SPDR = channel;
-  e4:	6e bd       	out	0x2e, r22	; 46
+  ec:	6e bd       	out	0x2e, r22	; 46
 	while (!(SPSR & (1 << SPIF)))
-  e6:	0d b4       	in	r0, 0x2d	; 45
-  e8:	07 fe       	sbrs	r0, 7
-  ea:	fd cf       	rjmp	.-6      	; 0xe6 <readADC+0x2>
+  ee:	0d b4       	in	r0, 0x2d	; 45
+  f0:	07 fe       	sbrs	r0, 7
+  f2:	fd cf       	rjmp	.-6      	; 0xee <readADC+0x2>
 		;
 
 	// Pull chip select low
 	PORTB &= (adc == ADC_A) ? ~ADC_A_CS : ~ADC_B_CS;
-  ec:	25 b1       	in	r18, 0x05	; 5
-  ee:	88 23       	and	r24, r24
-  f0:	11 f4       	brne	.+4      	; 0xf6 <readADC+0x12>
-  f2:	9d ef       	ldi	r25, 0xFD	; 253
-  f4:	01 c0       	rjmp	.+2      	; 0xf8 <readADC+0x14>
-  f6:	9b ef       	ldi	r25, 0xFB	; 251
-  f8:	92 23       	and	r25, r18
-  fa:	95 b9       	out	0x05, r25	; 5
-  fc:	92 e0       	ldi	r25, 0x02	; 2
-  fe:	9a 95       	dec	r25
- 100:	f1 f7       	brne	.-4      	; 0xfe <readADC+0x1a>
- 102:	00 c0       	rjmp	.+0      	; 0x104 <readADC+0x20>
+  f4:	25 b1       	in	r18, 0x05	; 5
+  f6:	88 23       	and	r24, r24
+  f8:	11 f4       	brne	.+4      	; 0xfe <readADC+0x12>
+  fa:	9d ef       	ldi	r25, 0xFD	; 253
+  fc:	01 c0       	rjmp	.+2      	; 0x100 <readADC+0x14>
+  fe:	9b ef       	ldi	r25, 0xFB	; 251
+ 100:	92 23       	and	r25, r18
+ 102:	95 b9       	out	0x05, r25	; 5
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 104:	92 e0       	ldi	r25, 0x02	; 2
+ 106:	9a 95       	dec	r25
+ 108:	f1 f7       	brne	.-4      	; 0x106 <readADC+0x1a>
+ 10a:	00 c0       	rjmp	.+0      	; 0x10c <readADC+0x20>
 
 	_delay_us(1);
 
 	// Sent dummy byte
 	SPDR = 0xFF;
- 104:	9f ef       	ldi	r25, 0xFF	; 255
- 106:	9e bd       	out	0x2e, r25	; 46
+ 10c:	9f ef       	ldi	r25, 0xFF	; 255
+ 10e:	9e bd       	out	0x2e, r25	; 46
 	while (!(SPSR & (1 << SPIF)))
- 108:	0d b4       	in	r0, 0x2d	; 45
- 10a:	07 fe       	sbrs	r0, 7
- 10c:	fd cf       	rjmp	.-6      	; 0x108 <readADC+0x24>
+ 110:	0d b4       	in	r0, 0x2d	; 45
+ 112:	07 fe       	sbrs	r0, 7
+ 114:	fd cf       	rjmp	.-6      	; 0x110 <readADC+0x24>
 		;
 
 	retVal |= ((uint16_t) (SPDR & 0x1F)) << 8;
- 10e:	9e b5       	in	r25, 0x2e	; 46
+ 116:	9e b5       	in	r25, 0x2e	; 46
 
 	// Send dummy byte	
 	SPDR = 0xFF;
- 110:	9f ef       	ldi	r25, 0xFF	; 255
- 112:	9e bd       	out	0x2e, r25	; 46
+ 118:	9f ef       	ldi	r25, 0xFF	; 255
+ 11a:	9e bd       	out	0x2e, r25	; 46
 	while (!(SPSR & (1 << SPIF)))
- 114:	0d b4       	in	r0, 0x2d	; 45
- 116:	07 fe       	sbrs	r0, 7
- 118:	fd cf       	rjmp	.-6      	; 0x114 <readADC+0x30>
+ 11c:	0d b4       	in	r0, 0x2d	; 45
+ 11e:	07 fe       	sbrs	r0, 7
+ 120:	fd cf       	rjmp	.-6      	; 0x11c <readADC+0x30>
 		;
 
 	retVal |= (uint16_t) SPDR;
- 11a:	9e b5       	in	r25, 0x2e	; 46
+ 122:	9e b5       	in	r25, 0x2e	; 46
 
 	// Pull chip select high
 	PORTB |= (adc == ADC_A) ? ADC_A_CS : ADC_B_CS;
- 11c:	95 b1       	in	r25, 0x05	; 5
- 11e:	88 23       	and	r24, r24
- 120:	11 f4       	brne	.+4      	; 0x126 <readADC+0x42>
- 122:	82 e0       	ldi	r24, 0x02	; 2
- 124:	01 c0       	rjmp	.+2      	; 0x128 <readADC+0x44>
- 126:	84 e0       	ldi	r24, 0x04	; 4
- 128:	89 2b       	or	r24, r25
- 12a:	85 b9       	out	0x05, r24	; 5
+ 124:	95 b1       	in	r25, 0x05	; 5
+ 126:	88 23       	and	r24, r24
+ 128:	11 f4       	brne	.+4      	; 0x12e <readADC+0x42>
+ 12a:	82 e0       	ldi	r24, 0x02	; 2
+ 12c:	01 c0       	rjmp	.+2      	; 0x130 <readADC+0x44>
+ 12e:	84 e0       	ldi	r24, 0x04	; 4
+ 130:	89 2b       	or	r24, r25
+ 132:	85 b9       	out	0x05, r24	; 5
 
 	retVal = retVal >> 1;
 
 	return retVal;
 }
- 12c:	8f ef       	ldi	r24, 0xFF	; 255
- 12e:	9f e7       	ldi	r25, 0x7F	; 127
- 130:	08 95       	ret
+ 134:	8f ef       	ldi	r24, 0xFF	; 255
+ 136:	9f e7       	ldi	r25, 0x7F	; 127
+ 138:	08 95       	ret
 
-00000132 <_exit>:
- 132:	f8 94       	cli
+0000013a <_exit>:
+ 13a:	f8 94       	cli
 
-00000134 <__stop_program>:
- 134:	ff cf       	rjmp	.-2      	; 0x134 <__stop_program>
+0000013c <__stop_program>:
+ 13c:	ff cf       	rjmp	.-2      	; 0x13c <__stop_program>
