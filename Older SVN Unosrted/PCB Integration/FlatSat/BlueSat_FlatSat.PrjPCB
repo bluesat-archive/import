@@ -191,14 +191,27 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document11]
+<<<<<<< .mine
+DocumentPath=CONNECTORS.SchDoc
+=======
 DocumentPath=LED_INDICATORS.SchDoc
+>>>>>>> .r185
 AnnotationEnabled=1
+<<<<<<< .mine
+AnnotateStartValue=6
+=======
 AnnotateStartValue=7
+>>>>>>> .r288
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
+<<<<<<< .mine
+AnnotateOrder=2
+DoLibraryUpdate=1
+=======
 AnnotateOrder=6
 DoLibraryUpdate=0
+>>>>>>> .r288
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=0
 ClassGenCCAutoRoomEnabled=1
@@ -207,6 +220,144 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document12]
+<<<<<<< .mine
+<<<<<<< .mine
+DocumentPath=BBONE_TEMP.PcbDoc
+=======
+DocumentPath=8BIT_LED.SchDoc
+=======
+DocumentPath=FLATSAT.PcbDoc
+>>>>>>> .r288
+>>>>>>> .r185
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
+<<<<<<< .mine
+[Document13]
+<<<<<<< .mine
+DocumentPath=PWR_REG_10.PcbDoc
+=======
+DocumentPath=CSC_TEMP.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+=======
+[GeneratedDocument1]
+DocumentPath=Project Outputs for BlueSat_FlatSat\Design Rule Check - FLATSAT.html
+>>>>>>> .r288
+DItemRevisionGUID=
+
+<<<<<<< .mine
+[Document14]
+DocumentPath=BBONE_TEMP.PcbDoc
+>>>>>>> .r185
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
+[Document15]
+DocumentPath=COMMS_TEMP.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
+<<<<<<< .mine
+[PCBConfiguration1]
+ReleaseItemId=
+CurrentRevision=
+Name=Default Configuration
+Variant=[No Variations]
+GenerateBOM=0
+
+=======
+[Document16]
+DocumentPath=PWR_REG_TEMP.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
+[Document17]
+DocumentPath=PWR_GEN_TEMP.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
+[Document18]
+DocumentPath=LAYOUT_TEMP.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
+[Document19]
 DocumentPath=FLATSAT.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -222,10 +373,8 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for BlueSat_FlatSat\Design Rule Check - FLATSAT.html
-DItemRevisionGUID=
-
+=======
+>>>>>>> .r288
 [PCBConfiguration1]
 ReleaseItemId=
 CurrentRevision=
@@ -233,10 +382,19 @@ Name=Default Configuration
 Variant=[No Variations]
 GenerateBOM=0
 
+>>>>>>> .r185
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
+<<<<<<< .mine
+<<<<<<< .mine
+TargetPrinter=CutePDF Writer
+=======
+TargetPrinter=HP Deskjet 3050 J610 series (Network)
+=======
 TargetPrinter=Send To OneNote 2010
+>>>>>>> .r288
+>>>>>>> .r185
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=CadnetixNetlist
 OutputName1=Cadnetix Netlist
@@ -367,7 +525,15 @@ OutputDefault25=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
+<<<<<<< .mine
+<<<<<<< .mine
+TargetPrinter=CutePDF Writer
+=======
+TargetPrinter=HP Deskjet 3050 J610 series (Network)
+=======
 TargetPrinter=Send To OneNote 2010
+>>>>>>> .r288
+>>>>>>> .r185
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=AdvSimNetlist
 OutputName1=Mixed Sim
@@ -388,13 +554,29 @@ OutputDefault3=0
 [OutputGroup3]
 Name=New Output
 Description=
+<<<<<<< .mine
+<<<<<<< .mine
+TargetPrinter=CutePDF Writer
+=======
+TargetPrinter=HP Deskjet 3050 J610 series (Network)
+=======
 TargetPrinter=Send To OneNote 2010
+>>>>>>> .r288
+>>>>>>> .r185
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
+<<<<<<< .mine
+<<<<<<< .mine
+TargetPrinter=CutePDF Writer
+=======
+TargetPrinter=HP Deskjet 3050 J610 series (Network)
+=======
 TargetPrinter=Send To OneNote 2010
+>>>>>>> .r288
+>>>>>>> .r185
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -416,7 +598,15 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
+<<<<<<< .mine
+<<<<<<< .mine
+TargetPrinter=CutePDF Writer
+=======
+TargetPrinter=HP Deskjet 3050 J610 series (Network)
+=======
 TargetPrinter=Send To OneNote 2010
+>>>>>>> .r288
+>>>>>>> .r185
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=CompositeDrill
 OutputName1=Composite Drill Drawing
@@ -472,7 +662,15 @@ OutputDefault9=0
 [OutputGroup6]
 Name=Report Outputs
 Description=
+<<<<<<< .mine
+<<<<<<< .mine
+TargetPrinter=CutePDF Writer
+=======
+TargetPrinter=HP Deskjet 3050 J610 series (Network)
+=======
 TargetPrinter=Send To OneNote 2010
+>>>>>>> .r288
+>>>>>>> .r185
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -509,7 +707,15 @@ OutputDefault6=0
 [OutputGroup7]
 Name=Other Outputs
 Description=
+<<<<<<< .mine
+<<<<<<< .mine
+TargetPrinter=CutePDF Writer
+=======
+TargetPrinter=HP Deskjet 3050 J610 series (Network)
+=======
 TargetPrinter=Send To OneNote 2010
+>>>>>>> .r288
+>>>>>>> .r185
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -686,10 +892,56 @@ OutputVariantName29=
 OutputDefault29=0
 PageOptions29=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PaperKind=A4|PrintScaleMode=1
 
+<<<<<<< .mine
 [OutputGroup8]
 Name=Validation Outputs
 Description=
+<<<<<<< .mine
+TargetPrinter=CutePDF Writer
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
+OutputType1=Design Rules Check
+OutputName1=Design Rules Check
+OutputDocumentPath1=
+OutputVariantName1=
+OutputDefault1=0
+PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PaperKind=A4|PrintScaleMode=1
+OutputType2=Electrical Rules Check
+OutputName2=Electrical Rules Check
+OutputDocumentPath2=
+OutputVariantName2=
+OutputDefault2=0
+PageOptions2=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PaperKind=A4|PrintScaleMode=1
+OutputType3=Differences Report
+OutputName3=Differences Report
+OutputDocumentPath3=
+OutputVariantName3=
+OutputDefault3=0
+PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PaperKind=A4|PrintScaleMode=1
+OutputType4=Footprint Comparison Report
+OutputName4=Footprint Comparison Report
+OutputDocumentPath4=
+OutputVariantName4=
+OutputDefault4=0
+
+[OutputGroup9]
+Name=Export Outputs
+Description=
+TargetPrinter=CutePDF Writer
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
+OutputType1=ExportSTEP
+OutputName1=Export STEP
+OutputDocumentPath1=
+OutputVariantName1=
+OutputDefault1=0
+
+=======
+[OutputGroup8]
+Name=Validation Outputs
+Description=
+TargetPrinter=HP Deskjet 3050 J610 series (Network)
+=======
 TargetPrinter=Send To OneNote 2010
+>>>>>>> .r288
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=Design Rules Check
 OutputName1=Design Rules Check
@@ -726,6 +978,7 @@ OutputDocumentPath1=
 OutputVariantName1=
 OutputDefault1=0
 
+>>>>>>> .r185
 [Modification Levels]
 Type1=1
 Type2=1
@@ -1174,6 +1427,7 @@ ComponentIsDeviceSheet30=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
+PreserveParameterLocations=1
 DoGraphics=1
 DoParameters=1
 DoModels=1
