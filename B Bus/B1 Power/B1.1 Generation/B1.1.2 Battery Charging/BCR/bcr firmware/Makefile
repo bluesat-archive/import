@@ -1,5 +1,5 @@
 PRG            = bcr
-OBJ            = bcr.o
+OBJ            = bcr.o bcr_test.o uart.o
 PROGRAMMER     = AVRISPMKII
 PORT           = usb
 MCU_TARGET     = atmega328p 

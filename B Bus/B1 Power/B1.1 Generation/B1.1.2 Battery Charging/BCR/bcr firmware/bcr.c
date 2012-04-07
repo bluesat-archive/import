@@ -3,6 +3,7 @@
 #include <util/delay.h>
 
 #include "bcr.h"
+#include "bcr_test.h"
 
 int main (void)
 {
@@ -10,11 +11,7 @@ int main (void)
 	
 	while (1)
 	{
-		setDAC (DAC_ALL, 1023);
-		setDAC(DAC_A,0);
-		setDAC(DAC_B,500);
-		setDAC(DAC_C, 1023);
-		_delay_ms (1);
+		testADC ();
 	}
 
 	return 0;
@@ -23,7 +20,6 @@ int main (void)
 // Initialises SPI chip select pins and shutdown pins. Sets initial I/O directions.
 void init (void)
 {
-
 	// Set MSRT and SPE pin high
 	SPCR = 0x50;
 

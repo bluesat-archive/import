@@ -8,7 +8,4 @@
 //	 bcr_test.h : Allows testing of BCR over UART serial interface
 //
 
-#include <stdio.h>
-#include <uart.h>
-
-#include "bcr.h"
+void testADC (void);
