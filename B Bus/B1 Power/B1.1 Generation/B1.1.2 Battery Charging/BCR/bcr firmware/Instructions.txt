@@ -1,5 +1,5 @@
 To compile AVR code type:
 make
 
-To burn hex file to the BCR, attach AVRISPMKII programmer and type:
+To burn hex file to the microcontroller, attach AVRISPMKII programmer, ensure board is powered and type:
 sudo make burn
