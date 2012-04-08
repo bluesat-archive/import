@@ -20,7 +20,7 @@ int main (void)
 // Initialises SPI chip select pins and shutdown pins. Sets initial I/O directions.
 void init (void)
 {
-	// Set MSRT and SPE pin high
+	// Set MSRT and SPE bits of SPCR register high - enables SPI
 	SPCR = 0x50;
 
 	// Set SPI chip selects as outputs, initialise to high
@@ -36,10 +36,6 @@ void init (void)
 
 	// Set MISO as input
 	DDRB &= ~MISO;
-
-	// Set reset switch as input
-	// DDRC  &= ~RESET;
-	// PORTC |=  RESET;
 
 	return;
 }
@@ -83,7 +79,7 @@ uint16_t readADC (uint8_t adc, uint8_t channel)
 	// Pull chip select low
 	PORTB &= (adc == ADC_A) ? ~ADC_A_CS : ~ADC_B_CS;
 
-	_delay_us(1);
+	_delay_us (1);
 
 	// Sent dummy byte
 	SPDR = 0xFF;
