@@ -12,7 +12,7 @@ void testADC (void)
 	uint8_t i;
 	char outputString[MAXSTRLEN];
 
-	uartInit (UART_BAUD);
+	uartInit (MYUBRR);
 
 	// Get ADC values
 	for (i=0; i < 8; i++)
@@ -27,14 +27,13 @@ void testADC (void)
 		sprintf (outputString, "ADC_B channel %d = %d\n", i, adcVals[i]);
 		uartPuts (outputString);
 	}
-	return;
 }
 
-void uartInit (uint16_t baudRate)
+void uartInit (uint16_t ubrr)
 {
 	// Set baud rate
-	UBRR0H = (uint8_t) (baudRate >> 8);
-	UBRR0H = (uint8_t) baudRate;
+	UBRR0H = (uint8_t) (ubrr >> 8);
+	UBRR0H = (uint8_t) ubrr;
 	// Enable rx and tx
 	UCSR0B = (1 << RXEN0) | (1 << TXEN0);
 	// Set frame format: 8 data, 2 stop bits

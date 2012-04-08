@@ -8,10 +8,12 @@
 int main (void)
 {
 	init ();
+	uartInit (MYUBRR);
 	
 	while (1)
 	{
-		testADC ();
+		uartPuts ("Hello, world\n");
+		_delay_ms (1000);
 	}
 
 	return 0;
