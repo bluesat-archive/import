@@ -3,6 +3,8 @@
 //
 //	 For AVR ATMEGA328P microcontroller
 //
+//	 bcr.h : Contains core functions used by bcr firmware
+//
 
 // Set 8MHz clock frequency
 #ifndef F_CPU
