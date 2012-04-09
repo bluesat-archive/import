@@ -9,7 +9,7 @@
 #include <stdio.h>
 
 #define UART_BAUD 9600
-#define MYUBRR 51  //(((FOSC * 10)/(16L * UART_BAUD) + 5)/10 - 1)
+#define MYUBRR (((F_CPU * 10)/(16L * UART_BAUD) + 5)/10 - 1)
 
 void bcrTest (void);
 

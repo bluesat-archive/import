@@ -451,11 +451,11 @@ void testADC (void)
 void uartInit (uint16_t ubrr)
 {
 	// Set baud rate
-	UBRR0H = (uint8_t) (ubrr >> 8);
+	UBRR0H = ubrr >> 8;
  22a:	e5 ec       	ldi	r30, 0xC5	; 197
  22c:	f0 e0       	ldi	r31, 0x00	; 0
  22e:	90 83       	st	Z, r25
-	UBRR0H = (uint8_t) ubrr;
+	UBRR0H = ubrr;
  230:	80 83       	st	Z, r24
 	// Enable rx and tx
 	UCSR0B = (1 << RXEN0) | (1 << TXEN0);
@@ -463,7 +463,7 @@ void uartInit (uint16_t ubrr)
  234:	80 93 c1 00 	sts	0x00C1, r24
 	
 	// Set frame format: 8 data, 1 stop bit
-  UCSR0C = (0 << USBS0) | (3 << UCSZ00);
+  UCSR0C = (3 << UCSZ00);
  238:	86 e0       	ldi	r24, 0x06	; 6
  23a:	80 93 c2 00 	sts	0x00C2, r24
 

@@ -42,13 +42,13 @@ void testADC (void)
 void uartInit (uint16_t ubrr)
 {
 	// Set baud rate
-	UBRR0H = (uint8_t) (ubrr >> 8);
-	UBRR0H = (uint8_t) ubrr;
+	UBRR0H = ubrr >> 8;
+	UBRR0H = ubrr;
 	// Enable rx and tx
 	UCSR0B = (1 << RXEN0) | (1 << TXEN0);
 	
 	// Set frame format: 8 data, 1 stop bit
-  UCSR0C = (0 << USBS0) | (3 << UCSZ00);
+  UCSR0C = (3 << UCSZ00);
 
 	// stdout required for printf
 	stdout = &mystdout;
