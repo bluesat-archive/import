@@ -6,13 +6,15 @@
 //	 bcr_test.h : Allows testing of BCR over UART serial interface
 //
 
+#include <stdio.h>
+
 #define UART_BAUD 9600
-#define MYUBRR 51			// MYUBRR = F_CPU/(16*UART_BAUD) - 1
+#define MYUBRR 51  //(((FOSC * 10)/(16L * UART_BAUD) + 5)/10 - 1)
+
+void bcrTest (void);
 
 void testADC (void);
 
 void uartInit (uint16_t ubrr);
 
-void uartTransmit (uint8_t data);
-
-void uartPuts (char* string);
+int uartPutChar (char c, FILE *stream);

@@ -1,31 +1,41 @@
 #include <stdio.h>
 #include <avr/io.h>
+#include <util/delay.h>
 
 #include "bcr.h"
 #include "bcr_test.h"
 
 #define MAXSTRLEN 50
 
+// Define mystdout
+static FILE mystdout = FDEV_SETUP_STREAM (uartPutChar, NULL, _FDEV_SETUP_WRITE);
+
+void bcrTest (void)
+{
+
+	uartInit (MYUBRR);
+	//while (1)
+	//{
+		printf ("Hello, world\n");
+	//	_delay_ms (1000);
+	//}
+}
+
 void testADC (void)
 {
 	uint16_t adcVals[8];
 	uint8_t i;
-	char outputString[MAXSTRLEN];
-
-	uartInit (MYUBRR);
 
 	// Get ADC values
 	for (i=0; i < 8; i++)
 	{
 		adcVals[i] = readADC (ADC_A, i);
-		sprintf (outputString, "ADC_A channel %d = %d\n", i, adcVals[i]);
-		uartPuts (outputString);
+		printf ("ADC_A channel %d = %d\n", i, adcVals[i]);
 	}
 	for (i=0; i < 8; i++)
 	{
 		adcVals[i] = readADC (ADC_B, i);
-		sprintf (outputString, "ADC_B channel %d = %d\n", i, adcVals[i]);
-		uartPuts (outputString);
+		printf ("ADC_B channel %d = %d\n", i, adcVals[i]);
 	}
 }
 
@@ -36,22 +46,22 @@ void uartInit (uint16_t ubrr)
 	UBRR0H = (uint8_t) ubrr;
 	// Enable rx and tx
 	UCSR0B = (1 << RXEN0) | (1 << TXEN0);
-	// Set frame format: 8 data, 2 stop bits
-	UCSR0C = (1 << USBS0) | (3 << UCSZ00);
+	
+	// Set frame format: 8 data, 1 stop bit
+  UCSR0C = (0 << USBS0) | (3 << UCSZ00);
+
+	// stdout required for printf
+	stdout = &mystdout;
 }
 
-void uartTransmit (uint8_t data)
+int uartPutChar (char c, FILE *stream)
 {
+	if (c == '\n')
+		uartPutChar ('\r', stream);
+
 	while ( !(UCSR0A & (1 << UDRE0) ))
 			;
 
-	// Put data in buffer
-	UDR0 = data;
-}
-
-void uartPuts (char* string)
-{
-	uint8_t i;
-	for(i=0; i < MAXSTRLEN && string[i]!='\0'; i++)
-		uartTransmit ((uint8_t)string[i]);
+	UDR0 = c;
+	return 0;
 }

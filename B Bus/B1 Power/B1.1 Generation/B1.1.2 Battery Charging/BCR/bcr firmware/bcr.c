@@ -8,13 +8,8 @@
 int main (void)
 {
 	init ();
-	uartInit (MYUBRR);
 	
-	while (1)
-	{
-		uartPuts ("Hello, world\n");
-		_delay_ms (1000);
-	}
+	bcrTest ();	
 
 	return 0;
 }
