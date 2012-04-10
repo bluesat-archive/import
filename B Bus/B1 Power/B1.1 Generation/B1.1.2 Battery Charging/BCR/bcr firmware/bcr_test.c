@@ -14,11 +14,10 @@ void bcrTest (void)
 {
 
 	uartInit (MYUBRR);
-	//while (1)
-	//{
-		printf ("Hello, world\n");
-	//	_delay_ms (1000);
-	//}
+
+	_delay_ms(1);
+
+	testADC ();
 }
 
 void testADC (void)
@@ -43,7 +42,7 @@ void uartInit (uint16_t ubrr)
 {
 	// Set baud rate
 	UBRR0H = ubrr >> 8;
-	UBRR0H = ubrr;
+	UBRR0L = ubrr;
 	// Enable rx and tx
 	UCSR0B = (1 << RXEN0) | (1 << TXEN0);
 	

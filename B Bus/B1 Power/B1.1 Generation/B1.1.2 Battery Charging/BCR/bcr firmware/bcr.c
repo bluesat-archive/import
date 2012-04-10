@@ -17,9 +17,6 @@ int main (void)
 // Initialises SPI chip select pins and shutdown pins. Sets initial I/O directions.
 void init (void)
 {
-	// Set MSRT and SPE bits of SPCR register high - enables SPI
-	SPCR = 0x50;
-
 	// Set SPI chip selects as outputs, initialise to high
 	DDRB  |= DAC_CS | ADC_A_CS | ADC_B_CS;
 	PORTB |= DAC_CS | ADC_A_CS | ADC_B_CS;
@@ -28,11 +25,12 @@ void init (void)
 	DDRD  |=   SHDN_XP | SHDN_YP | SHDN_ZP | SHDN_XN | SHDN_YN | SHDN_ZN;
 	PORTD &= ~(SHDN_XP | SHDN_YP | SHDN_ZP | SHDN_XN | SHDN_YN | SHDN_ZN);
 
-	// Set MOSI and SCK as outputs
-	DDRB |= MOSI | SCK;
-
-	// Set MISO as input
+	// Set MOSI and SCK as outputs, MISO as input
+	DDRB |=  MOSI | SCK;
 	DDRB &= ~MISO;
+
+	// Enable SPI as master, set clock rate fck/16
+	SPCR = (1 << SPE) | (1 << MSTR) | (1 << SPR0);
 
 	return;
 }
@@ -66,7 +64,7 @@ void setDAC (uint8_t address, uint16_t value)
 // Channel addresses are numbered from 0 to 7. ADC_A or ADC_B must be specified.
 uint16_t readADC (uint8_t adc, uint8_t channel)
 {
-	uint16_t retVal = 0xFFFF;
+	uint16_t retVal = 0x0000;
 	
 	// Send channel address
 	SPDR = channel;
@@ -74,7 +72,7 @@ uint16_t readADC (uint8_t adc, uint8_t channel)
 		;
 
 	// Pull chip select low
-	PORTB &= (adc == ADC_A) ? ~ADC_A_CS : ~ADC_B_CS;
+	PORTB &= (adc == ADC_B) ? ~ADC_B_CS : ~ADC_A_CS;
 
 	_delay_us (1);
 
@@ -83,7 +81,7 @@ uint16_t readADC (uint8_t adc, uint8_t channel)
 	while (!(SPSR & (1 << SPIF)))
 		;
 
-	retVal |= ((uint16_t) (SPDR & 0x1F)) << 8;
+	retVal = ((uint16_t) (SPDR & 0x1F)) << 8;
 
 	// Send dummy byte	
 	SPDR = 0xFF;
@@ -93,9 +91,7 @@ uint16_t readADC (uint8_t adc, uint8_t channel)
 	retVal |= (uint16_t) SPDR;
 
 	// Pull chip select high
-	PORTB |= (adc == ADC_A) ? ADC_A_CS : ADC_B_CS;
+	PORTB |= (adc == ADC_B) ? ADC_B_CS : ADC_A_CS;
 
-	retVal = retVal >> 1;
-
-	return retVal;
+	return (retVal >> 1);
 }
