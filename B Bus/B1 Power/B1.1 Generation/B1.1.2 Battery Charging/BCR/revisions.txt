@@ -2,3 +2,7 @@
 2. Pull up resistors on all CS
 3. MUXOUT and ADCIN should be connected
 4. Swap pins 1 and 3 on ICSP header
+5. Change panel voltage divider impedance, R2 = 15K, R3 = 4.99K
+
+Suggested future revisions:
+1. Add ADC RC filter (pins 17/18)
