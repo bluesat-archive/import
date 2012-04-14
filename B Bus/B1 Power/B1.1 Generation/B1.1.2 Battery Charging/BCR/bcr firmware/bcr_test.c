@@ -22,20 +22,25 @@ void bcrTest (void)
 
 void testADC (void)
 {
-	uint16_t adcVals[8];
+	uint16_t adcVal;
 	uint8_t i;
 
-	// Get ADC values
+	// Print ADC values to uart
+	printf("Printing ADC values:\n\n");
+	printf("ADC_A:\n");
 	for (i=0; i < 8; i++)
 	{
-		adcVals[i] = readADC (ADC_A, i);
-		printf ("ADC_A channel %d = %d\n", i, adcVals[i]);
+		adcVal = readADC (ADC_A, i);
+		printf ("  Ch %d = %d mV\n", i, adcVal/2);
 	}
+	uartPutChar ('\n', stdout);
+	printf("ADC_B:\n");
 	for (i=0; i < 8; i++)
 	{
-		adcVals[i] = readADC (ADC_B, i);
-		printf ("ADC_B channel %d = %d\n", i, adcVals[i]);
+		adcVal = readADC (ADC_B, i);
+		printf ("  Ch %d = %d mV\n", i, adcVal/2);
 	}
+	uartPutChar ('\n', stdout);
 }
 
 void uartInit (uint16_t ubrr)

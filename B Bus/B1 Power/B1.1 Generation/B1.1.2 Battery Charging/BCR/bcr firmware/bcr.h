@@ -12,8 +12,8 @@
 #endif
 
 // ADC chip designators
-#define ADC_A    (0)
-#define ADC_B    (1)
+#define ADC_A    (0xFF)
+#define ADC_B    (0x00)
 
 // SPI pins
 #define MOSI     (1 << PB3)

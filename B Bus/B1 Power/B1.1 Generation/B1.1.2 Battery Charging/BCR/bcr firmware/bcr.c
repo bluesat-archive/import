@@ -67,31 +67,34 @@ uint16_t readADC (uint8_t adc, uint8_t channel)
 	uint16_t retVal = 0x0000;
 	
 	// Send channel address
-	SPDR = channel;
+	SPDR = channel | 0x08;
 	while (!(SPSR & (1 << SPIF)))
 		;
 
 	// Pull chip select low
 	PORTB &= (adc == ADC_B) ? ~ADC_B_CS : ~ADC_A_CS;
 
-	_delay_us (1);
+	//_delay_us (1);
 
 	// Sent dummy byte
 	SPDR = 0xFF;
 	while (!(SPSR & (1 << SPIF)))
 		;
 
-	retVal = ((uint16_t) (SPDR & 0x1F)) << 8;
+	retVal = (uint16_t) SPDR << 8;
 
 	// Send dummy byte	
 	SPDR = 0xFF;
 	while (!(SPSR & (1 << SPIF)))
 		;
 
-	retVal |= (uint16_t) SPDR;
+	retVal = retVal + SPDR;
 
 	// Pull chip select high
 	PORTB |= (adc == ADC_B) ? ADC_B_CS : ADC_A_CS;
 
-	return (retVal >> 1);
+	// Shift right by 1 and clear 1st 3 lsbs
+	retVal = (retVal >> 1) & 0x1FFF;
+
+	return retVal;
 }

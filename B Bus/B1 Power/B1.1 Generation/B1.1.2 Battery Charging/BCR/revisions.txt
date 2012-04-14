@@ -1,0 +1,4 @@
+1. U3 CS not routed to ATEMGA
+2. Pull up resistors on all CS
+3. MUXOUT and ADCIN should be connected
+4. Swap pins 1 and 3 on ICSP header
