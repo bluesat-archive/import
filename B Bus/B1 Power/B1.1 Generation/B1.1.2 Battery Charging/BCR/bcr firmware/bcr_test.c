@@ -31,14 +31,15 @@ void testADC (void)
 	for (i=0; i < 8; i++)
 	{
 		adcVal = readADC (ADC_A, i);
-		printf ("  Ch %d = %d mV\n", i, adcVal/2);
+		printf ("   %c%c = %d mV\n", (i%3)+'X', i/3*2+'+', adcVal/2);
 	}
 	uartPutChar ('\n', stdout);
 	printf("ADC_B:\n");
 	for (i=0; i < 8; i++)
 	{
 		adcVal = readADC (ADC_B, i);
-		printf ("  Ch %d = %d mV\n", i, adcVal/2);
+		printf ("   %c%c = %d mV\n", (i%3)+'X', i/3*2+'+', adcVal/2);
+		//printf ("  Ch %d = %d mV\n", i, adcVal/2);
 	}
 	uartPutChar ('\n', stdout);
 }

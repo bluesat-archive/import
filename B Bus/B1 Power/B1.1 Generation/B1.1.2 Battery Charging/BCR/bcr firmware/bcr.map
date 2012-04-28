@@ -407,9 +407,9 @@ LOAD /usr/lib/gcc/avr/4.5.3/avr5/libgcc.a
  .stab          0x0000255c      0x480 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/libc.a(ultoa_invert.o)
                                 0x48c (size before relaxing)
 
-.stabstr        0x00000000     0x1435
+.stabstr        0x00000000     0x1420
  *(.stabstr)
- .stabstr       0x00000000     0x1435 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
+ .stabstr       0x00000000     0x1420 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr5/crtm328p.o
 
 .stab.excl
  *(.stab.excl)

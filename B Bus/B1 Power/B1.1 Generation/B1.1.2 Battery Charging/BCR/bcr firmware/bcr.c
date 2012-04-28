@@ -5,15 +5,6 @@
 #include "bcr.h"
 #include "bcr_test.h"
 
-int main (void)
-{
-	init ();
-	
-	bcrTest ();	
-
-	return 0;
-}
-
 // Initialises SPI chip select pins and shutdown pins. Sets initial I/O directions.
 void init (void)
 {

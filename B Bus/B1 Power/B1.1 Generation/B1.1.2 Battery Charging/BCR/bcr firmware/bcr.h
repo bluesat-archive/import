@@ -48,6 +48,14 @@
 #define DAC_H    (0x8)
 #define DAC_ALL  (0xF)
 
+// ADC channel address
+#define ADC_XP	(0x0)
+#define ADC_YP	(0x1)
+#define ADC_ZP	(0x2)
+#define ADC_XN	(0x3)
+#define ADC_YN	(0x4)
+#define ADC_ZN	(0x5)
+
 // Initialises SPI chip select pins and shutdown pins. Sets I/O directions.
 void init (void);
 
