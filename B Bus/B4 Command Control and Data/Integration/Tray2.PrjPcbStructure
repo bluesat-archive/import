@@ -1,0 +1,13 @@
+Record=SheetSymbol|SourceDocument=POWER.SchDoc|Designator=TRX1|SchDesignator=TRX1|FileName=TRX.SchDoc|SymbolType=Normal|RawFileName=TRX.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=POWER.SchDoc|Designator=TRX2|SchDesignator=TRX2|FileName=TRX.SchDoc|SymbolType=Normal|RawFileName=TRX.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=POWER.SchDoc|Designator=U_3V3_LDO|SchDesignator=U_3V3_LDO|FileName=3V3_LDO.SchDoc|SymbolType=Normal|RawFileName=3V3_LDO.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=POWER.SchDoc|Designator=U_3V3_LDO|SchDesignator=U_3V3_LDO|FileName=3V3_LDO.SchDoc|SymbolType=Normal|RawFileName=3V3_LDO.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=POWER.SchDoc|Designator=U_3V3_LDO|SchDesignator=U_3V3_LDO|FileName=3V3_LDO.SchDoc|SymbolType=Normal|RawFileName=3V3_LDO.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=POWER.SchDoc|Designator=U_3V3_LDO|SchDesignator=U_3V3_LDO|FileName=3V3_LDO.SchDoc|SymbolType=Normal|RawFileName=3V3_LDO.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=POWER.SchDoc|Designator=U_3V3_SWITCHER|SchDesignator=U_3V3_SWITCHER|FileName=3V3_SWITCHER.SchDoc|SymbolType=Normal|RawFileName=3V3_SWITCHER.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=POWER.SchDoc|Designator=U_5V_LDO|SchDesignator=U_5V_LDO|FileName=5V_LDO.SchDoc|SymbolType=Normal|RawFileName=5V_LDO.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=POWER.SchDoc|Designator=U_5V_LDO|SchDesignator=U_5V_LDO|FileName=5V_LDO.SchDoc|SymbolType=Normal|RawFileName=5V_LDO.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=POWER.SchDoc|Designator=U_5V_LDO|SchDesignator=U_5V_LDO|FileName=5V_LDO.SchDoc|SymbolType=Normal|RawFileName=5V_LDO.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=POWER.SchDoc|Designator=U_5V_LDO|SchDesignator=U_5V_LDO|FileName=5V_LDO.SchDoc|SymbolType=Normal|RawFileName=5V_LDO.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=SheetSymbol|SourceDocument=POWER.SchDoc|Designator=U_5V_SWITCHER|SchDesignator=U_5V_SWITCHER|FileName=5V_SWITCHER.SchDoc|SymbolType=Normal|RawFileName=5V_SWITCHER.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol
+Record=TopLevelDocument|FileName=POWER.SchDoc
