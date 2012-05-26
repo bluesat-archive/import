@@ -1,0 +1,16 @@
+Added Component: Designator=U1(SOLARCELLSTRIP)
+Added Component: Designator=U2(SOLARCELLSTRIP)
+Added Component: Designator=U3(SOLARCELLSTRIP)
+Added Component: Designator=U4(SOLARCELLSTRIP)
+Added Pin To Net: NetName=NetD1_1 Pin=U1-1
+Added Pin To Net: NetName=NetD2_4 Pin=U1-2
+Added Pin To Net: NetName=NetD2_4 Pin=U2-1
+Added Pin To Net: NetName=UPPERCELL Pin=U2-2
+Added Pin To Net: NetName=UPPERCELL Pin=U3-1
+Added Pin To Net: NetName=NetD4_4 Pin=U3-2
+Added Pin To Net: NetName=NetD4_4 Pin=U4-1
+Added Pin To Net: NetName=V- Pin=U4-2
+Added Member To Class: ClassName=Solar Panel Member=Component U1 Solar cell strip
+Added Member To Class: ClassName=Solar Panel Member=Component U2 Solar cell strip
+Added Member To Class: ClassName=Solar Panel Member=Component U3 Solar cell strip
+Added Member To Class: ClassName=Solar Panel Member=Component U4 Solar cell strip
