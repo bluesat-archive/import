@@ -1,0 +1,33 @@
+Removed Pin From Net: NetName=F_SYNC Pin=U9-8
+Removed Pin From Net: NetName=SHDNZ- Pin=U9-9
+Removed Pin From Net: NetName=NetU1_Z-_6 Pin=U9-10
+Removed Pin From Net: NetName=GND Pin=U9-11
+Removed Pin From Net: NetName=GND Pin=U9-12
+Removed Pin From Net: NetName=TSENSE_Z- Pin=U13-8
+Removed Pin From Net: NetName=THERMO_Z- Pin=U13-9
+Removed Pin From Net: NetName=TSENSE_BAT Pin=U13-14
+Change Component DesignItemId : Designator=FTDI Old DesignItemId=Header 6H New DesignItemId=Header 6
+Change Component Footprint: Designator=FTDI Old Footprint=HDR1X6H New Footprint=HDR1X6
+Change Component Comment : Designator=FTDI Old Comment=Header 6H New Comment=Header 6
+Change Component Designator: OldDesignator=R? NewDesignator=R39
+Change Component Designator: OldDesignator=R? NewDesignator=R40
+Change Component Designator: OldDesignator=R? NewDesignator=R41
+Change Component Designator: OldDesignator=R? NewDesignator=R42
+Added Pin To Net: NetName=THERMO_X- Pin=R39-2
+Added Pin To Net: NetName=THERMO_Y- Pin=R40-2
+Added Pin To Net: NetName=THERMO_Z- Pin=R41-2
+Added Pin To Net: NetName=GND Pin=U9-8
+Added Pin To Net: NetName=GND Pin=U9-9
+Added Pin To Net: NetName=F_SYNC Pin=U9-11
+Added Pin To Net: NetName=SHDNZ- Pin=U9-12
+Added Pin To Net: NetName=NetU1_Z-_6 Pin=U9-13
+Added Pin To Net: NetName=TSENSE_Z+ Pin=U13-8
+Added Pin To Net: NetName=TSENSE_Z- Pin=U13-8
+Added Pin To Net: NetName=THERMO_Z+ Pin=U13-9
+Added Pin To Net: NetName=THERMO_Z- Pin=U13-9
+Added Pin To Net: NetName=THERMO_BAT Pin=U13-13
+Added Pin To Net: NetName=TSENSE_BAT Pin=U13-14
+Change Net Name : Old Net Name=NetR?_2 New Net Name=NetR42_2
+Added Member To Class: ClassName=U_TELM0011_BCR_Telemetry Member=Component R40 Res1
+Added Member To Class: ClassName=U_TELM0011_BCR_Telemetry Member=Component R41 Res1
+Added Member To Class: ClassName=U_TELM0011_BCR_Telemetry Member=Component R42 Res1

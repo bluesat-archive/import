@@ -1,0 +1,6 @@
+Added Component: Designator=ICSP(HDR2X3)
+Added Pin To Net: NetName=PDI_DATA Pin=ICSP-1
+Added Pin To Net: NetName=3V3 Pin=ICSP-2
+Added Pin To Net: NetName=PDI_CLK Pin=ICSP-5
+Added Pin To Net: NetName=GND Pin=ICSP-6
+Added Member To Class: ClassName=U_POWR0008_BCR_System Member=Component ICSP Header 3X2

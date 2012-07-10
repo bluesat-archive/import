@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=GND Pin=X1-2
+Removed Pin From Net: NetName=NetC23_1 Pin=X1-3
+Removed Pin From Net: NetName=GND Pin=X1-4
+Change Component DesignItemId : Designator=X1 Old DesignItemId=Ceramic Oscillator New DesignItemId=XTAL
+Change Component Footprint: Designator=X1 Old Footprint=Crystal Oscillator 5x7mm New Footprint=HC49 - No border
+Change Component Comment : Designator=X1 Old Comment=Ceramic Oscillator New Comment=8MHz
+Added Pin To Net: NetName=5V0 Pin=U13-4
+Added Pin To Net: NetName=TSENSE_Z+ Pin=U13-8
+Added Pin To Net: NetName=TSENSE_Z- Pin=U13-8
+Added Pin To Net: NetName=THERMO_Z+ Pin=U13-9
+Added Pin To Net: NetName=THERMO_Z- Pin=U13-9
+Added Pin To Net: NetName=5V0 Pin=U13-10
+Added Pin To Net: NetName=GND Pin=U13-11
+Added Pin To Net: NetName=5V0 Pin=U13-12
+Added Pin To Net: NetName=NetR42_2 Pin=U13-13
+Added Pin To Net: NetName=THERMO_BAT Pin=U13-13
+Added Pin To Net: NetName=TSENSE_BAT Pin=U13-14
+Added Pin To Net: NetName=NetC23_1 Pin=X1-2

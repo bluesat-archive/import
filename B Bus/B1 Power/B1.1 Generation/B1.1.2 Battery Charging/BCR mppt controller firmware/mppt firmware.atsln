@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "mppt firmware", "mppt firmware\mppt firmware.cproj", "{E6B7236A-B94A-4E61-924B-B3EBF05393BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6B7236A-B94A-4E61-924B-B3EBF05393BB}.Debug|AVR.ActiveCfg = Debug|AVR
+		{E6B7236A-B94A-4E61-924B-B3EBF05393BB}.Debug|AVR.Build.0 = Debug|AVR
+		{E6B7236A-B94A-4E61-924B-B3EBF05393BB}.Release|AVR.ActiveCfg = Release|AVR
+		{E6B7236A-B94A-4E61-924B-B3EBF05393BB}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

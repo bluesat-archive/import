@@ -1,0 +1,10 @@
+Added Component: Designator=R21(RESC2012M)
+Added Component: Designator=S1(RESET SWITCH)
+Added Pin To Net: NetName=3V3 Pin=R21-1
+Added Pin To Net: NetName=R\E\S\E\T\ Pin=R21-2
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=R\E\S\E\T\ Pin=S1-2
+Added Pin To Net: NetName=R\E\S\E\T\ Pin=S1-2
+Added Member To Class: ClassName=POWR0010_BCR_TESTBOARD Member=Component R21 Res1
+Added Member To Class: ClassName=POWR0010_BCR_TESTBOARD Member=Component S1 SW-PB
