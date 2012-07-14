@@ -58,6 +58,9 @@ uint8_t dacAddress (uint8_t panelNo);
 // Send 10 bit data value to addressed channel of LTC1660 D/A converter
 void setDAC (uint8_t address, uint16_t value);
 
+// Initialize internal ADC
+void initADC (void);
+
 // Reads 12 bit data value from addressed channel of internal ADC
 // Channel addresses are numbered from 0 to 15 (ADCA is 0 to 7 and ADCB is 8 to 15)
 uint16_t readADC (uint8_t adc, uint8_t channel);

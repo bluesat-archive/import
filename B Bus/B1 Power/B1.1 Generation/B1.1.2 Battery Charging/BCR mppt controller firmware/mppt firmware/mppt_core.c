@@ -13,10 +13,10 @@
 void initGPIOdir (void)
 {
 	// Set BCR shutdown pins as outputs
-	PORTF_DIR |= SHDN_XP_bm | SHDN_YP_bm | SHDN_ZP_bm | SHDN_XN_bm | SHDN_YN_bm | SHDN_ZN_bm;
+	PORTF.DIR |= SHDN_XP_bm | SHDN_YP_bm | SHDN_ZP_bm | SHDN_XN_bm | SHDN_YN_bm | SHDN_ZN_bm;
 	
 	// Set frequency synchronization enable pin as output
-	PORTF_DIR |= FSYNC_EN_bm;
+	PORTF.DIR |= FSYNC_EN_bm;
 }
 
 // Initialize SPI bus for LTC1660 D/A converter
@@ -39,7 +39,7 @@ uint8_t dacAddress (uint8_t panelNo)
 			return DAC_XP;
 			break;
 		case PANEL_YP :
-			return DAC_YP;
+				return DAC_YP;
 			break;
 		case PANEL_ZP :
 			return DAC_ZP;
@@ -55,7 +55,7 @@ uint8_t dacAddress (uint8_t panelNo)
 			break;
 		default :
 			return 0;
-			break;
+		break;
 	}
 }
 
@@ -66,29 +66,60 @@ void setDAC (uint8_t address, uint16_t value)
 
 	// Pull chip select low
 	PORTC &= ~(DAC_SS_bm);
-	
 	_delay_us (1);
 
 	// Send word	
 	SPIC_DATA = (uint8_t) (dacWord >> 8);
-	while (!(SPIC_STATUS & SPI_IF_bm))
-		;
-	
+	while (!(SPIC_STATUS & SPI_IF_bm));
 	SPIC_DATA = (uint8_t) dacWord;
-	while (!(SPIC_STATUS & SPI_IF_bm))
-		;
+	while (!(SPIC_STATUS & SPI_IF_bm);
 
 	// Pull chip select high
 	PORTC |= DAC_SS_bm;
 }
+s
+// Initialize internal ADC
+void initADC (void)
+{
+	PORTA.DIR = 0x00;										// Configure PORTA as inputs
+	PORTB.DIR = 0x00;										// Configure PORTB as inputs
+	
+	ADCA.CTRLA = ADC_ENABLE_bm;
+	ADCB.CTRLA = ADC_ENABLE_bm;
+	
+	ADCA.CTRLB = ADC_RESOLUTION_12BIT_gc;
+	ADCB.CTRLB = ADC_RESOLUTION_12BIT_gc;
+	
+	ADCA.PRESCALER = ADC_PRESCALER_DIV512_gc				// Peripheral clk/512
+	ADCB.PRESCALER = ADC_PRESCALER_DIV512_gc				// Peripheral clk/512
+	
+	ADCA.REFCTRL = ADC_REFSEL_AREFA_gc;
+	ADCB.REFCTRL = ADC_REFSEL_AREFA_gc;
+	
+	ADCA.CH0.CTRL = ADC_CH_INPUTMODE_SINGLEENDED_gc;		// Configure ADCA and ADCb in single ended input mode
+	ADCB.CH0.CTRL = ADC_CH_INPUTMODE_SINGLEENDED_gc;		// Only using CH0, no pipelining
+}
 
 // Reads 12 bit data value from addressed channel of internal ADC
 // Channel addresses are numbered from 0 to 15 (ADCA is 0 to 7 and ADCB is 8 to 15)
-uint16_t readADC (uint8_t adc, uint8_t channel)
+uint16_t readADC (uint8_t channel)
 {
+	uint16_t result = 0;
 	
+	if (channel <= 7)
+	{
+		ADCA.CH0.MUXCTRL = (channel << 3);
+		while(!ADCA.CH0.INTFLAGS);
+		Result = ADCA.CH0RES;
+	}
+	else
+	{
+		ADCB.CH0.MUXCTRL = ( (channel - 7) << 3);
+		while(!ADCB.CH0.INTFLAGS);
+		Result = ADCB.CH0RES;
+	}
 	
-	
+	return result;	
 }
 
 // Enable/disable 700 kHz frequency synchronization
@@ -96,7 +127,7 @@ uint16_t readADC (uint8_t adc, uint8_t channel)
 void freqSync (uint8_t syncEnable)
 {
 	if (syncEnable)
-		PORTF_OUT |=  FSYNC_EN_bm;
+		PORTF.OUTSET |=  FSYNC_EN_bm;
 	else
-		PORTF_OUT &= ~FSYNC_EN_bm;
+		PORTF.OUTSET &= ~FSYNC_EN_bm;
 }
