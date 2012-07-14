@@ -63,7 +63,7 @@ void initADC (void);
 
 // Reads 12 bit data value from addressed channel of internal ADC
 // Channel addresses are numbered from 0 to 15 (ADCA is 0 to 7 and ADCB is 8 to 15)
-uint16_t readADC (uint8_t adc, uint8_t channel);
+uint16_t readADC (uint8_t channel);
 
 // Enable/disable 700 kHz frequency synchronization
 // syncEnable = 1 to enable, 0 to disable
