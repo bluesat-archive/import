@@ -4,61 +4,54 @@
 //	 mppt_main.c : Code to control mppt tracking
 //
 
-#include <stdint.h>
-#include <util/delay.h>
-
-#include "mppt_interface.h"
+#include "mppt_main.h"
 
 int main (void)
 {
+	uint8_t panelNo;
+	Panel panels[6];
+	
+	// Initialize panels
+	for (panelNo = 0; panelNo <= 6; panelNo++)
+	{
+		panels[panelNo].panelPower = 0;
+		panels[panelNo].dutySet = 512;
+		panels[panelNo].enabled = ENABLE;
+		enablePanel(panelNo, ENABLE);
+	}	
+	
 	init ();
 	
 	while (1)
 	{
-		
-	}
-}
-
-#define MPPT_start 0
-#define I_SET_start 0
-#define I_INC 1
-
-
-void findAllMppts (void)
-{
-	uint16_t pwr[6] = {MPPT_start};
-	uint16_t i_set[6] = {I_SET_start};
-	uint8_t i;	//ADC channel
-	
-	while(1){
-		for(i=0; i<6; i++){
-			//printf("%d %d ",channel,pwr[i]);
-			mppt(i,&pwr[i],&iset[i]);
-			//printf("%d\t",pwr[i]);
+		for (panelNo = 0; panelNo <= 6; panelNo++)
+		{
+			if (panels[panelNo].enabled)
+			{
+				perturbAndObserve (&panels[panelNo], panelNo);
+			}
 		}
-		//printf("\n");
+		_delay_ms(500);
 	}
-	
-	perturbAndObserve()
 }
 
-// maximum power point tracker
-void perturbAndObserve (uint8_t panelNo, uint16_t *oldPower, uint16_t *dutySet)
+// Adjust maximum power point using perturb and observe algorithm
+void perturbAndObserve (Panel *panel, uint8_t panelNo)
 {
 	uint16_t newPower;
 	uint16_t dutyStep = I_INC;	//assume I_increment is constant for now
 
-	setCharge (panelNo, *dutySet)
+	setCharge (panelNo, panel->dutySet);
 
 	newPower = readPanelPower (panelNo);
 
-	if (newPower > *oldPower)
+	if (newPower > panel->panelPower)
 	{
-		*oldPower = newPower;
-		*dutySet = *dutySet + dutyStep;
+		panel->panelPower = newPower;
+		panel->dutySet += dutyStep;
 	}
-	else if (*dutySet >= MIN_DUTY)
+	else if (panel->dutySet >= MIN_DUTY)
 	{
-		*dutySet = *dutySet - dutyStep;
+		panel->dutySet -= dutyStep;
 	}
 }

@@ -1,13 +1,26 @@
 //
 //	 BLUEsat Battery Charge Regulator firmware
 //
-//	 mppt_interface.h : Contains non harware specific core functions
+//	 mppt_interface.h : Contains non hardware specific core functions
 //
+
+// Set 8MHz clock frequency
+#ifndef F_CPU
+#define F_CPU 8000000UL
+#endif
 
 #include <stdint.h>
 #include <util/delay.h>
 
 #include "mppt_core.h"
+
+// Panel data type
+typedef struct panelStruct
+{
+	uint16_t panelPower;
+	uint16_t dutySet;
+	uint8_t  enabled;
+} Panel;
 
 // Initialize all I/O
 void init (void);
@@ -37,9 +50,12 @@ uint16_t readLoadCurrent (void);
 // returns output power in mW
 uint16_t readBcrPower (void);
 
+// returns load power in mW
+uint16_t readLoadPower (void);
+
 // Returns efficiency of BCR as integer between 0 and 100
 uint8_t efficiency (void);
 
 // Set charge current limit to value between 0 and 1024
 // returns 0 if error, 1 otherwise
-uint8_t setCharge (uint8_t panelNo, uint16_t setVal);
+void setCharge (uint8_t panelNo, uint16_t setVal);
