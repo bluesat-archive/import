@@ -1,9 +1,0 @@
-Removed Pin From Net: NetName=VCC Pin=U5-2
-Removed Pin From Net: NetName=GND Pin=U5-30
-Removed Pin From Net: NetName=GND Pin=U5-31
-Change Component DesignItemId : Designator=U5 Old DesignItemId=M27C256B-10C3 New DesignItemId=M28LV64-300XK1
-Change Component Comment : Designator=U5 Old Comment=M27C256B-10C3 New Comment=M28LV64-300XK1
-Change Component Description : Designator=U5 Old Description=256 Kbit (32Kb X 8) UV EPROM and OTP EPROM New Description=64K (8K x 8) Low-Voltage Parallel EEPROM with Software Data Protection
-Change Component Library : Designator=U5 Old Library=ST Memory EPROM 16-512 Kbit.IntLib New Library=ST Memory EEPROM Parallel.IntLib
-Added Pin To Net: NetName=GND Pin=U5-26
-Added Pin To Net: NetName=VCC Pin=U5-31
