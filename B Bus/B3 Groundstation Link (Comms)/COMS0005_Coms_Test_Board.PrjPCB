@@ -47,22 +47,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document2]
-DocumentPath=B3.3 Communications Switching\COMS0008 SwC_Flow_Diagram.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-
-[Document3]
 DocumentPath=B3.3 Communications Switching\COMS0006 TXDevMux.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -78,7 +62,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document4]
+[Document3]
 DocumentPath=B3.3 Communications Switching\COMS0005 RadioMux.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -94,7 +78,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document5]
+[Document4]
 DocumentPath=B3.3 Communications Switching\COMS0004 SwC_Main.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -110,7 +94,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document6]
+[Document5]
 DocumentPath=B3.1 Demodulation\COMS0002_AFSK.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -126,7 +110,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document7]
+[Document6]
 DocumentPath=B3.1 Demodulation\COMS0003_DTMF.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -142,7 +126,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document8]
+[Document7]
 DocumentPath=COMS0001_Beacon.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -158,7 +142,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document9]
+[Document8]
 DocumentPath=COMS0009_Coms_Test_Board.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -174,7 +158,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document10]
+[Document9]
 DocumentPath=COMS0010_Comms_Test_Board.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
