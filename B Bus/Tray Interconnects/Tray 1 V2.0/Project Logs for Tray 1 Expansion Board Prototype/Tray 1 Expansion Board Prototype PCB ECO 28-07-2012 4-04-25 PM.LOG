@@ -1,0 +1,9 @@
+Change Component Designator: OldDesignator=1 NewDesignator=JP1
+Change Component Designator: OldDesignator=2 NewDesignator=JP2
+Added Pin To Net: NetName=GND_TELEM_TX Pin=J2-4
+Added Pin To Net: NetName=GND_TELEM_TX Pin=TX1-9
+Added Pin To Net: NetName=GND_TELEM_TX Pin=TX2-9
+Change Net Name : Old Net Name=GND_TELEM_TX New Net Name=GND_TX
+Added Room: Name=Designator
+Added Room: Name=Designator
+Added Room: Name=Tray 1 Expansion Board Prototype
