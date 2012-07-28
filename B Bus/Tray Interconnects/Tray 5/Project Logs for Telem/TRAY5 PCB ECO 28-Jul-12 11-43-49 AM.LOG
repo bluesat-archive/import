@@ -1,0 +1,3 @@
+Added Component: Designator=JP2(Solder Jumper C)
+Added Pin To Net: NetName=NetJP2_1 Pin=JP2-1
+Added Pin To Net: NetName=3V3_TELEM_RX Pin=JP2-2

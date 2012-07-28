@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=GND_TELEM_RX Pin=J1-3
+Added Pin To Net: NetName=GND_TELEM_RX Pin=RX1-9
+Added Pin To Net: NetName=GND_TELEM_RX Pin=RX2-9
+Change Net Name : Old Net Name=GND_TELEM_RX New Net Name=GND_RX
