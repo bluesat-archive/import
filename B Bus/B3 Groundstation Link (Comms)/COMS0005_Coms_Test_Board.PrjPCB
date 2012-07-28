@@ -175,7 +175,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document10]
-DocumentPath=COMSXXXX_Comms_Board_Miniaturization.PcbDoc
+DocumentPath=COMS0012_Comms_Board_Miniaturization.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
