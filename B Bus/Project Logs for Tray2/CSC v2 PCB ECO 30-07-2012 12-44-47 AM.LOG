@@ -1,0 +1,27 @@
+Removed Pin From Net: NetName=RESET Pin=U203-7
+Removed Pin From Net: NetName=RESET Pin=U203-15
+Removed Pin From Net: NetName=NetR233_1 Pin=U232-6
+Removed Pin From Net: NetName=GND Pin=U232-7
+Removed Pin From Net: NetName=GND Pin=U232-8
+Removed Pin From Net: NetName=3V3 Pin=U232-16
+Change Component Designator: OldDesignator=U231 NewDesignator=U232
+Added Component: Designator=U233(TSSOP16)
+Added Pin To Net: NetName=GMSK2_RX Pin=U231-1
+Added Pin To Net: NetName=GMSK1_RX Pin=U231-2
+Added Pin To Net: NetName=AFSK2_RX Pin=U231-3
+Added Pin To Net: NetName=NetU231_4 Pin=U231-4
+Added Pin To Net: NetName=AFSK1_RX Pin=U231-5
+Added Pin To Net: NetName=SWC1 Pin=U231-9
+Added Pin To Net: NetName=SWC0 Pin=U231-10
+Added Pin To Net: NetName=SWC5 Pin=U231-11
+Added Pin To Net: NetName=NetU231_4 Pin=U231-12
+Added Pin To Net: NetName=REPEATER Pin=U231-13
+Added Pin To Net: NetName=DTMF_RX Pin=U231-14
+Added Pin To Net: NetName=NetU231_4 Pin=U231-15
+Added Pin To Net: NetName=NetR233_1 Pin=U233-6
+Added Pin To Net: NetName=GND Pin=U233-7
+Added Pin To Net: NetName=GND Pin=U233-8
+Added Pin To Net: NetName=3V3 Pin=U233-16
+Added Pin To Net: NetName=NetU203_7 Pin=U203-7
+Added Pin To Net: NetName=NetU203_7 Pin=U203-15
+Added Net: Name=NetU203_7

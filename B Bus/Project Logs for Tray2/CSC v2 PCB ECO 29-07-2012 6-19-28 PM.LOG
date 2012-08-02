@@ -1,0 +1,116 @@
+Added Component: Designator=C211_A1(CAPC1005X06L)
+Added Component: Designator=C211_A2(CAPC1005X06L)
+Added Component: Designator=C212_A1(CAPC1005X06L)
+Added Component: Designator=C212_A2(CAPC1005X06L)
+Added Component: Designator=C213_A1(CAPC1005X06L)
+Added Component: Designator=C213_A2(CAPC1005X06L)
+Added Component: Designator=C214_A1(CAPC1005X06L)
+Added Component: Designator=C214_A2(CAPC1005X06L)
+Added Component: Designator=C221_D1(CAPC1005X06L)
+Added Component: Designator=C221_D2(CAPC1005X06L)
+Added Component: Designator=C222_D1(CAPC1005X06L)
+Added Component: Designator=C222_D2(CAPC1005X06L)
+Added Component: Designator=C223_D1(CAPC1005X06L)
+Added Component: Designator=C223_D2(CAPC1005X06L)
+Added Component: Designator=C224_D1(CAPC1005X06L)
+Added Component: Designator=C224_D2(CAPC1005X06L)
+Added Component: Designator=R211_A1(RESC1005X06L)
+Added Component: Designator=R211_A2(RESC1005X06L)
+Added Component: Designator=R212_A1(RESC1005X06L)
+Added Component: Designator=R212_A2(RESC1005X06L)
+Added Component: Designator=R221_D1(RESC1005X06L)
+Added Component: Designator=R221_D2(RESC1005X06L)
+Added Component: Designator=R222_D1(RESC1005X06L)
+Added Component: Designator=R222_D2(RESC1005X06L)
+Added Component: Designator=R223_D1(RESC1005X06L)
+Added Component: Designator=R223_D2(RESC1005X06L)
+Added Pin To Net: NetName=3V3 Pin=C201-1
+Added Pin To Net: NetName=GND_D1 Pin=C201-2
+Added Pin To Net: NetName=GND_D1 Pin=C211_A1-1
+Added Pin To Net: NetName=VCC_A1 Pin=C211_A1-2
+Added Pin To Net: NetName=GND_D1 Pin=C211_A2-1
+Added Pin To Net: NetName=VCC_A1 Pin=C211_A2-2
+Added Pin To Net: NetName=GND_D1 Pin=C212_A1-1
+Added Pin To Net: NetName=VCC_A1 Pin=C212_A1-2
+Added Pin To Net: NetName=GND_D1 Pin=C212_A2-1
+Added Pin To Net: NetName=VCC_A1 Pin=C212_A2-2
+Added Pin To Net: NetName=NetC213_A1_1 Pin=C213_A1-1
+Added Pin To Net: NetName=NetC213_A1_2 Pin=C213_A1-2
+Added Pin To Net: NetName=NetC213_A2_1 Pin=C213_A2-1
+Added Pin To Net: NetName=NetC213_A2_2 Pin=C213_A2-2
+Added Pin To Net: NetName=GND_D1 Pin=C214_A1-1
+Added Pin To Net: NetName=NetC214_A1_2 Pin=C214_A1-2
+Added Pin To Net: NetName=GND_D1 Pin=C214_A2-1
+Added Pin To Net: NetName=NetC214_A2_2 Pin=C214_A2-2
+Added Pin To Net: NetName=NetC221_D1_1 Pin=C221_D1-1
+Added Pin To Net: NetName=DTMF_RX Pin=C221_D1-2
+Added Pin To Net: NetName=NetC221_D2_1 Pin=C221_D2-1
+Added Pin To Net: NetName=DTMF_RX Pin=C221_D2-2
+Added Pin To Net: NetName=GND_D1 Pin=C222_D1-1
+Added Pin To Net: NetName=VCC_A1 Pin=C222_D1-2
+Added Pin To Net: NetName=GND_D1 Pin=C222_D2-1
+Added Pin To Net: NetName=VCC_A1 Pin=C222_D2-2
+Added Pin To Net: NetName=VCC_A1 Pin=C223_D1-1
+Added Pin To Net: NetName=VCC_A1 Pin=C223_D2-1
+Added Pin To Net: NetName=VCC_A1 Pin=C224_D1-1
+Added Pin To Net: NetName=GND_D1 Pin=C224_D1-2
+Added Pin To Net: NetName=VCC_A1 Pin=C224_D2-1
+Added Pin To Net: NetName=GND_D1 Pin=C224_D2-2
+Added Pin To Net: NetName=NetC213_A1_2 Pin=R211_A1-1
+Added Pin To Net: NetName=AFSK1_RX Pin=R211_A1-2
+Added Pin To Net: NetName=NetC213_A2_2 Pin=R211_A2-1
+Added Pin To Net: NetName=AFSK2_RX Pin=R211_A2-2
+Added Pin To Net: NetName=NetC213_A1_2 Pin=R212_A1-1
+Added Pin To Net: NetName=NetC213_A1_1 Pin=R212_A1-2
+Added Pin To Net: NetName=NetC213_A2_2 Pin=R212_A2-1
+Added Pin To Net: NetName=NetC213_A2_1 Pin=R212_A2-2
+Added Pin To Net: NetName=NetC221_D1_1 Pin=R221_D1-1
+Added Pin To Net: NetName=NetC221_D2_1 Pin=R221_D2-1
+Added Pin To Net: NetName=NetC223_D1_2 Pin=C223_D1-2
+Added Pin To Net: NetName=NetC223_D1_2 Pin=R222_D1-1
+Added Net: Name=NetC223_D1_2
+Added Pin To Net: NetName=NetC223_D2_2 Pin=C223_D2-2
+Added Pin To Net: NetName=NetC223_D2_2 Pin=R222_D2-1
+Added Net: Name=NetC223_D2_2
+Added Pin To Net: NetName=NetR221_D1_2 Pin=R221_D1-2
+Added Pin To Net: NetName=NetR221_D1_2 Pin=R223_D1-1
+Added Net: Name=NetR221_D1_2
+Added Pin To Net: NetName=NetR221_D2_2 Pin=R221_D2-2
+Added Pin To Net: NetName=NetR221_D2_2 Pin=R223_D2-1
+Added Net: Name=NetR221_D2_2
+Added Pin To Net: NetName=NetR222_D1_2 Pin=R222_D1-2
+Added Net: Name=NetR222_D1_2
+Added Pin To Net: NetName=NetR222_D2_2 Pin=R222_D2-2
+Added Net: Name=NetR222_D2_2
+Added Pin To Net: NetName=NetR223_D1_2 Pin=R223_D1-2
+Added Net: Name=NetR223_D1_2
+Added Pin To Net: NetName=NetR223_D2_2 Pin=R223_D2-2
+Added Net: Name=NetR223_D2_2
+Added Member To Class: ClassName=A1 Member=Component C211_A1 (C211) Cap 0402
+Added Member To Class: ClassName=A2 Member=Component C211_A2 (C211) Cap 0402
+Added Member To Class: ClassName=A1 Member=Component C212_A1 (C212) Cap 0402
+Added Member To Class: ClassName=A2 Member=Component C212_A2 (C212) Cap 0402
+Added Member To Class: ClassName=A1 Member=Component C213_A1 (C213) Cap 0402
+Added Member To Class: ClassName=A2 Member=Component C213_A2 (C213) Cap 0402
+Added Member To Class: ClassName=A1 Member=Component C214_A1 (C214) Cap 0402
+Added Member To Class: ClassName=A2 Member=Component C214_A2 (C214) Cap 0402
+Added Member To Class: ClassName=D1 Member=Component C221_D1 (C221) Cap 0402
+Added Member To Class: ClassName=D2 Member=Component C221_D2 (C221) Cap 0402
+Added Member To Class: ClassName=D1 Member=Component C222_D1 (C222) Cap 0402
+Added Member To Class: ClassName=D2 Member=Component C222_D2 (C222) Cap 0402
+Added Member To Class: ClassName=D1 Member=Component C223_D1 (C223) Cap 0402
+Added Member To Class: ClassName=D2 Member=Component C223_D2 (C223) Cap 0402
+Added Member To Class: ClassName=D1 Member=Component C224_D1 (C224) Cap 0402
+Added Member To Class: ClassName=D2 Member=Component C224_D2 (C224) Cap 0402
+Added Member To Class: ClassName=A1 Member=Component R211_A1 (R211) Res3
+Added Member To Class: ClassName=A2 Member=Component R211_A2 (R211) Res3
+Added Member To Class: ClassName=A1 Member=Component R212_A1 (R212) Res3
+Added Member To Class: ClassName=A2 Member=Component R212_A2 (R212) Res3
+Added Member To Class: ClassName=D1 Member=Component R221_D1 (R221) Res3
+Added Member To Class: ClassName=D2 Member=Component R221_D2 (R221) Res3
+Added Member To Class: ClassName=D1 Member=Component R222_D1 (R222) Res3
+Added Member To Class: ClassName=D2 Member=Component R222_D2 (R222) Res3
+Added Member To Class: ClassName=D1 Member=Component R223_D1 (R223) Res3
+Added Member To Class: ClassName=D2 Member=Component R223_D2 (R223) Res3
+Added Room: Name=A1
+Added Room: Name=A2

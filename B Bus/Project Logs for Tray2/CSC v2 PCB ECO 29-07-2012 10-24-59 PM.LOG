@@ -1,0 +1,12 @@
+Change Physical Footprint: Designator=U1 Old Footprint=SOT230P710X170-4L New Footprint=SOT230P710X170-4L
+Change Physical Footprint: Designator=U101 Old Footprint=TSQFP50P3000X3000X160-208L New Footprint=TSQFP50P3000X3000X160-208L
+Change Physical Footprint: Designator=U102 Old Footprint=TSSOP50P2000X120-48L New Footprint=TSSOP50P2000X120-48L
+Change Physical Footprint: Designator=U103 Old Footprint=TSOP80P1180X120-44L New Footprint=TSOP80P1180X120-44L
+Change Physical Footprint: Designator=U202 Old Footprint=SOT23-5 New Footprint=SOT23-5
+Change Physical Footprint: Designator=U204 Old Footprint=SOT23-5 New Footprint=SOT23-5
+Change Physical Footprint: Designator=U211A Old Footprint=SOIC16 New Footprint=SOIC16
+Change Physical Footprint: Designator=U211B Old Footprint=SOIC16 New Footprint=SOIC16
+Change Physical Footprint: Designator=X211A Old Footprint=ECS-2025 New Footprint=ECS-2025
+Change Physical Footprint: Designator=X211B Old Footprint=ECS-2025 New Footprint=ECS-2025
+Change Physical Footprint: Designator=X221A Old Footprint=ECS-2025 New Footprint=ECS-2025
+Change Physical Footprint: Designator=X221B Old Footprint=ECS-2025 New Footprint=ECS-2025

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=TX_DEVICE Pin=U232-3
+Removed Pin From Net: NetName=REPEATER Pin=U232-5
+Added Pin To Net: NetName=REPEATER Pin=U232-3
+Added Pin To Net: NetName=TX_DEVICE Pin=U232-5

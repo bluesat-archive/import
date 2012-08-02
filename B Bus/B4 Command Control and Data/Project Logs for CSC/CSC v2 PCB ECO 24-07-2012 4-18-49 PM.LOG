@@ -1,0 +1,12 @@
+Change Component Designator: OldDesignator=C16 NewDesignator=C14
+Added Component: Designator=R1(RESC1005X06L)
+Added Component: Designator=R2(RESC1005X06L)
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Pin To Net: NetName=3V3 Pin=R2-1
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Change Net Name : Old Net Name=NetC15_2 New Net Name=NetC14_2
+Added Member To Class: ClassName=CRSC0002 Member=Component C14 Cap 0402
+Added Member To Class: ClassName=CRSC0002 Member=Component R1 Res3
+Added Member To Class: ClassName=CRSC0002 Member=Component R2 Res3
+Added Room: Name=CRSC0002

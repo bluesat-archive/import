@@ -1,0 +1,377 @@
+Added Component: Designator=C201(CAPC1005X06L)
+Added Component: Designator=C202(CAPC1005X06L)
+Added Component: Designator=C203(CAPC1005X06L)
+Added Component: Designator=C204(CAPC1005X06L)
+Added Component: Designator=C205(CAPC1005X06L)
+Added Component: Designator=C206(CAPC1005X06L)
+Added Component: Designator=C211_A1(CAPC1005X06L)
+Added Component: Designator=C211_A2(CAPC1005X06L)
+Added Component: Designator=C212_A1(CAPC1005X06L)
+Added Component: Designator=C212_A2(CAPC1005X06L)
+Added Component: Designator=C213_A1(CAPC1005X06L)
+Added Component: Designator=C213_A2(CAPC1005X06L)
+Added Component: Designator=C214_A1(CAPC1005X06L)
+Added Component: Designator=C214_A2(CAPC1005X06L)
+Added Component: Designator=C221_D1(CAPC1005X06L)
+Added Component: Designator=C221_D2(CAPC1005X06L)
+Added Component: Designator=C222_D1(CAPC1005X06L)
+Added Component: Designator=C222_D2(CAPC1005X06L)
+Added Component: Designator=C223_D1(CAPC1005X06L)
+Added Component: Designator=C223_D2(CAPC1005X06L)
+Added Component: Designator=C224_D1(CAPC1005X06L)
+Added Component: Designator=C224_D2(CAPC1005X06L)
+Added Component: Designator=C231(CAPC1005X06L)
+Added Component: Designator=C232(CAPC1005X06L)
+Added Component: Designator=C233(CAPC1005X06L)
+Added Component: Designator=R201(RESC1005X06L)
+Added Component: Designator=R202(RESC1005X06L)
+Added Component: Designator=R211_A1(RESC1005X06L)
+Added Component: Designator=R211_A2(RESC1005X06L)
+Added Component: Designator=R212_A1(RESC1005X06L)
+Added Component: Designator=R212_A2(RESC1005X06L)
+Added Component: Designator=R221_D1(RESC1005X06L)
+Added Component: Designator=R221_D2(RESC1005X06L)
+Added Component: Designator=R222_D1(RESC1005X06L)
+Added Component: Designator=R222_D2(RESC1005X06L)
+Added Component: Designator=R223_D1(RESC1005X06L)
+Added Component: Designator=R223_D2(RESC1005X06L)
+Added Component: Designator=R231(RESC1005X06L)
+Added Component: Designator=R232(RESC1005X06L)
+Added Component: Designator=R233(RESC1005X06L)
+Added Component: Designator=R234(RESC1005X06L)
+Added Component: Designator=U201(PLCC32)
+Added Component: Designator=U202(SOT23-5)
+Added Component: Designator=U203(TSSOP16)
+Added Component: Designator=U204(SOT23-5)
+Added Component: Designator=U211_A1(TSSOP24)
+Added Component: Designator=U211_A2(TSSOP24)
+Added Component: Designator=U221_D1(TSSOP20)
+Added Component: Designator=U221_D2(TSSOP20)
+Added Component: Designator=U231(TSSOP16)
+Added Component: Designator=U231(TSSOP16)
+Added Component: Designator=U232(TSSOP16)
+Added Component: Designator=U233(TSSOP16)
+Added Component: Designator=X211_A1(ECS-2025)
+Added Component: Designator=X211_A2(ECS-2025)
+Added Component: Designator=X221_D1(ECS-2025)
+Added Component: Designator=X221_D2(ECS-2025)
+Added Pin To Net: NetName=3V3 Pin=C201-1
+Added Pin To Net: NetName=GND_D1 Pin=C201-2
+Added Pin To Net: NetName=3V3 Pin=C202-1
+Added Pin To Net: NetName=GND_D1 Pin=C202-2
+Added Pin To Net: NetName=3V3 Pin=C203-1
+Added Pin To Net: NetName=GND_D1 Pin=C203-2
+Added Pin To Net: NetName=GND_D1 Pin=C204-1
+Added Pin To Net: NetName=3V3 Pin=C204-2
+Added Pin To Net: NetName=GND_D1 Pin=C205-1
+Added Pin To Net: NetName=NetC205_2 Pin=C205-2
+Added Pin To Net: NetName=GND_D1 Pin=C206-1
+Added Pin To Net: NetName=NetC206_2 Pin=C206-2
+Added Pin To Net: NetName=GND_D1 Pin=C211_A1-1
+Added Pin To Net: NetName=VCC_A1 Pin=C211_A1-2
+Added Pin To Net: NetName=GND_D1 Pin=C211_A2-1
+Added Pin To Net: NetName=VCC_A1 Pin=C211_A2-2
+Added Pin To Net: NetName=GND_D1 Pin=C212_A1-1
+Added Pin To Net: NetName=VCC_A1 Pin=C212_A1-2
+Added Pin To Net: NetName=GND_D1 Pin=C212_A2-1
+Added Pin To Net: NetName=VCC_A1 Pin=C212_A2-2
+Added Pin To Net: NetName=NetC213_A1_1 Pin=C213_A1-1
+Added Pin To Net: NetName=NetC213_A1_2 Pin=C213_A1-2
+Added Pin To Net: NetName=NetC213_A2_1 Pin=C213_A2-1
+Added Pin To Net: NetName=NetC213_A2_2 Pin=C213_A2-2
+Added Pin To Net: NetName=GND_D1 Pin=C214_A1-1
+Added Pin To Net: NetName=NetC214_A1_2 Pin=C214_A1-2
+Added Pin To Net: NetName=GND_D1 Pin=C214_A2-1
+Added Pin To Net: NetName=NetC214_A2_2 Pin=C214_A2-2
+Added Pin To Net: NetName=NetC221_D1_1 Pin=C221_D1-1
+Added Pin To Net: NetName=DTMF_RX Pin=C221_D1-2
+Added Pin To Net: NetName=NetC221_D2_1 Pin=C221_D2-1
+Added Pin To Net: NetName=DTMF_RX Pin=C221_D2-2
+Added Pin To Net: NetName=GND_D1 Pin=C222_D1-1
+Added Pin To Net: NetName=VCC_A1 Pin=C222_D1-2
+Added Pin To Net: NetName=GND_D1 Pin=C222_D2-1
+Added Pin To Net: NetName=VCC_A1 Pin=C222_D2-2
+Added Pin To Net: NetName=VCC_A1 Pin=C223_D1-1
+Added Pin To Net: NetName=NetC223_D1_2 Pin=C223_D1-2
+Added Pin To Net: NetName=VCC_A1 Pin=C223_D2-1
+Added Pin To Net: NetName=NetC223_D2_2 Pin=C223_D2-2
+Added Pin To Net: NetName=VCC_A1 Pin=C224_D1-1
+Added Pin To Net: NetName=GND_D1 Pin=C224_D1-2
+Added Pin To Net: NetName=VCC_A1 Pin=C224_D2-1
+Added Pin To Net: NetName=GND_D1 Pin=C224_D2-2
+Added Pin To Net: NetName=GND_D1 Pin=C231-1
+Added Pin To Net: NetName=3V3 Pin=C231-2
+Added Pin To Net: NetName=GND_D1 Pin=C232-1
+Added Pin To Net: NetName=3V3 Pin=C232-2
+Added Pin To Net: NetName=GND_D1 Pin=C233-1
+Added Pin To Net: NetName=3V3 Pin=C233-2
+Added Pin To Net: NetName=BCN Pin=R201-1
+Added Pin To Net: NetName=NetC205_2 Pin=R201-2
+Added Pin To Net: NetName=COUNTER_CLK Pin=R202-1
+Added Pin To Net: NetName=NetC206_2 Pin=R202-2
+Added Pin To Net: NetName=NetC213_A1_2 Pin=R211_A1-1
+Added Pin To Net: NetName=AFSK1_RX Pin=R211_A1-2
+Added Pin To Net: NetName=NetC213_A2_2 Pin=R211_A2-1
+Added Pin To Net: NetName=AFSK2_RX Pin=R211_A2-2
+Added Pin To Net: NetName=NetC213_A1_2 Pin=R212_A1-1
+Added Pin To Net: NetName=NetC213_A1_1 Pin=R212_A1-2
+Added Pin To Net: NetName=NetC213_A2_2 Pin=R212_A2-1
+Added Pin To Net: NetName=NetC213_A2_1 Pin=R212_A2-2
+Added Pin To Net: NetName=NetC221_D1_1 Pin=R221_D1-1
+Added Pin To Net: NetName=NetR221_D1_2 Pin=R221_D1-2
+Added Pin To Net: NetName=NetC221_D2_1 Pin=R221_D2-1
+Added Pin To Net: NetName=NetR221_D2_2 Pin=R221_D2-2
+Added Pin To Net: NetName=NetC223_D1_2 Pin=R222_D1-1
+Added Pin To Net: NetName=NetR222_D1_2 Pin=R222_D1-2
+Added Pin To Net: NetName=NetC223_D2_2 Pin=R222_D2-1
+Added Pin To Net: NetName=NetR222_D2_2 Pin=R222_D2-2
+Added Pin To Net: NetName=NetR221_D1_2 Pin=R223_D1-1
+Added Pin To Net: NetName=NetR223_D1_2 Pin=R223_D1-2
+Added Pin To Net: NetName=NetR221_D2_2 Pin=R223_D2-1
+Added Pin To Net: NetName=NetR223_D2_2 Pin=R223_D2-2
+Added Pin To Net: NetName=NetR231_1 Pin=R231-1
+Added Pin To Net: NetName=GND_D1 Pin=R231-2
+Added Pin To Net: NetName=NetR232_1 Pin=R232-1
+Added Pin To Net: NetName=GND_D1 Pin=R232-2
+Added Pin To Net: NetName=NetR233_1 Pin=R233-1
+Added Pin To Net: NetName=GND_D1 Pin=R233-2
+Added Pin To Net: NetName=GND_D1 Pin=R234-1
+Added Pin To Net: NetName=NetR234_2 Pin=R234-2
+Added Pin To Net: NetName=3V3 Pin=U201-1
+Added Pin To Net: NetName=GND_D1 Pin=U201-2
+Added Pin To Net: NetName=ADDRESS7 Pin=U201-3
+Added Pin To Net: NetName=ADDRESS6 Pin=U201-4
+Added Pin To Net: NetName=ADDRESS5 Pin=U201-5
+Added Pin To Net: NetName=ADDRESS4 Pin=U201-6
+Added Pin To Net: NetName=ADDRESS3 Pin=U201-7
+Added Pin To Net: NetName=ADDRESS2 Pin=U201-8
+Added Pin To Net: NetName=ADDRESS1 Pin=U201-9
+Added Pin To Net: NetName=ADDRESS0 Pin=U201-10
+Added Pin To Net: NetName=TONE_ON Pin=U201-11
+Added Pin To Net: NetName=RESET Pin=U201-12
+Added Pin To Net: NetName=GND_D1 Pin=U201-14
+Added Pin To Net: NetName=GND_D1 Pin=U201-20
+Added Pin To Net: NetName=GND_D1 Pin=U201-21
+Added Pin To Net: NetName=GND_D1 Pin=U201-22
+Added Pin To Net: NetName=GND_D1 Pin=U201-23
+Added Pin To Net: NetName=GND_D1 Pin=U201-24
+Added Pin To Net: NetName=GND_D1 Pin=U201-25
+Added Pin To Net: NetName=GND_D1 Pin=U201-26
+Added Pin To Net: NetName=GND_D1 Pin=U201-27
+Added Pin To Net: NetName=3V3 Pin=U201-28
+Added Pin To Net: NetName=NetC205_2 Pin=U202-1
+Added Pin To Net: NetName=GND_D1 Pin=U202-2
+Added Pin To Net: NetName=TONE_ON Pin=U202-3
+Added Pin To Net: NetName=VCC_A1 Pin=U202-4
+Added Pin To Net: NetName=BCN Pin=U202-5
+Added Pin To Net: NetName=GND_D1 Pin=U203-1
+Added Pin To Net: NetName=COUNTER_CLK Pin=U203-2
+Added Pin To Net: NetName=ADDRESS0 Pin=U203-3
+Added Pin To Net: NetName=ADDRESS1 Pin=U203-4
+Added Pin To Net: NetName=ADDRESS2 Pin=U203-5
+Added Pin To Net: NetName=ADDRESS3 Pin=U203-6
+Added Pin To Net: NetName=RESET Pin=U203-7
+Added Pin To Net: NetName=GND_D1 Pin=U203-8
+Added Pin To Net: NetName=GND_D1 Pin=U203-9
+Added Pin To Net: NetName=ADDRESS3 Pin=U203-10
+Added Pin To Net: NetName=ADDRESS4 Pin=U203-11
+Added Pin To Net: NetName=ADDRESS5 Pin=U203-12
+Added Pin To Net: NetName=ADDRESS6 Pin=U203-13
+Added Pin To Net: NetName=ADDRESS7 Pin=U203-14
+Added Pin To Net: NetName=RESET Pin=U203-15
+Added Pin To Net: NetName=3V3 Pin=U203-16
+Added Pin To Net: NetName=NetC206_2 Pin=U204-1
+Added Pin To Net: NetName=GND_D1 Pin=U204-2
+Added Pin To Net: NetName=3V3 Pin=U204-3
+Added Pin To Net: NetName=3V3 Pin=U204-4
+Added Pin To Net: NetName=COUNTER_CLK Pin=U204-5
+Added Pin To Net: NetName=NetU211_A1_2 Pin=U211_A1-2
+Added Pin To Net: NetName=AFSK1_M0 Pin=U211_A1-3
+Added Pin To Net: NetName=AFSK1_M1 Pin=U211_A1-4
+Added Pin To Net: NetName=NetC213_A1_1 Pin=U211_A1-5
+Added Pin To Net: NetName=NetC213_A1_2 Pin=U211_A1-6
+Added Pin To Net: NetName=AFSK1_TX Pin=U211_A1-7
+Added Pin To Net: NetName=GND_D1 Pin=U211_A1-8
+Added Pin To Net: NetName=NetC214_A1_2 Pin=U211_A1-9
+Added Pin To Net: NetName=VCC_A1 Pin=U211_A1-10
+Added Pin To Net: NetName=AFSK1_TXD Pin=U211_A1-11
+Added Pin To Net: NetName=VCC_A1 Pin=U211_A1-12
+Added Pin To Net: NetName=AFSK1_RXD Pin=U211_A1-13
+Added Pin To Net: NetName=AFSK1_DET Pin=U211_A1-14
+Added Pin To Net: NetName=VCC_A1 Pin=U211_A1-16
+Added Pin To Net: NetName=NetU211_A2_2 Pin=U211_A2-2
+Added Pin To Net: NetName=AFSK2_M0 Pin=U211_A2-3
+Added Pin To Net: NetName=AFSK2_M1 Pin=U211_A2-4
+Added Pin To Net: NetName=NetC213_A2_1 Pin=U211_A2-5
+Added Pin To Net: NetName=NetC213_A2_2 Pin=U211_A2-6
+Added Pin To Net: NetName=AFSK2_TX Pin=U211_A2-7
+Added Pin To Net: NetName=GND_D1 Pin=U211_A2-8
+Added Pin To Net: NetName=NetC214_A2_2 Pin=U211_A2-9
+Added Pin To Net: NetName=VCC_A1 Pin=U211_A2-10
+Added Pin To Net: NetName=AFSK2_TXD Pin=U211_A2-11
+Added Pin To Net: NetName=VCC_A1 Pin=U211_A2-12
+Added Pin To Net: NetName=AFSK2_RXD Pin=U211_A2-13
+Added Pin To Net: NetName=AFSK2_DET Pin=U211_A2-14
+Added Pin To Net: NetName=VCC_A1 Pin=U211_A2-16
+Added Pin To Net: NetName=NetU221_D1_1 Pin=U221_D1-1
+Added Pin To Net: NetName=NetR221_D1_2 Pin=U221_D1-2
+Added Pin To Net: NetName=NetR223_D1_2 Pin=U221_D1-3
+Added Pin To Net: NetName=NetU221_D1_1 Pin=U221_D1-4
+Added Pin To Net: NetName=GND_D1 Pin=U221_D1-5
+Added Pin To Net: NetName=GND_D1 Pin=U221_D1-6
+Added Pin To Net: NetName=NetU221_D1_8 Pin=U221_D1-8
+Added Pin To Net: NetName=GND_D1 Pin=U221_D1-10
+Added Pin To Net: NetName=VCC_A1 Pin=U221_D1-11
+Added Pin To Net: NetName=DTMF1_Q1 Pin=U221_D1-12
+Added Pin To Net: NetName=DTMF1_Q2 Pin=U221_D1-13
+Added Pin To Net: NetName=DTMF1_Q3 Pin=U221_D1-14
+Added Pin To Net: NetName=DTMF1_Q4 Pin=U221_D1-15
+Added Pin To Net: NetName=DTMF1_STD Pin=U221_D1-17
+Added Pin To Net: NetName=NetR222_D1_2 Pin=U221_D1-18
+Added Pin To Net: NetName=NetC223_D1_2 Pin=U221_D1-19
+Added Pin To Net: NetName=VCC_A1 Pin=U221_D1-20
+Added Pin To Net: NetName=NetU221_D2_1 Pin=U221_D2-1
+Added Pin To Net: NetName=NetR221_D2_2 Pin=U221_D2-2
+Added Pin To Net: NetName=NetR223_D2_2 Pin=U221_D2-3
+Added Pin To Net: NetName=NetU221_D2_1 Pin=U221_D2-4
+Added Pin To Net: NetName=GND_D1 Pin=U221_D2-5
+Added Pin To Net: NetName=GND_D1 Pin=U221_D2-6
+Added Pin To Net: NetName=NetU221_D2_8 Pin=U221_D2-8
+Added Pin To Net: NetName=GND_D1 Pin=U221_D2-10
+Added Pin To Net: NetName=VCC_A1 Pin=U221_D2-11
+Added Pin To Net: NetName=DTMF2_Q1 Pin=U221_D2-12
+Added Pin To Net: NetName=DTMF2_Q2 Pin=U221_D2-13
+Added Pin To Net: NetName=DTMF2_Q3 Pin=U221_D2-14
+Added Pin To Net: NetName=DTMF2_Q4 Pin=U221_D2-15
+Added Pin To Net: NetName=DTMF2_STD Pin=U221_D2-17
+Added Pin To Net: NetName=NetR222_D2_2 Pin=U221_D2-18
+Added Pin To Net: NetName=NetC223_D2_2 Pin=U221_D2-19
+Added Pin To Net: NetName=VCC_A1 Pin=U221_D2-20
+Added Pin To Net: NetName=GMSK2_RX Pin=U231-1
+Added Pin To Net: NetName=GMSK1_RX Pin=U231-2
+Added Pin To Net: NetName=AFSK2_RX Pin=U231-3
+Added Pin To Net: NetName=NetU231_4 Pin=U231-4
+Added Pin To Net: NetName=AFSK1_RX Pin=U231-5
+Added Pin To Net: NetName=NetR231_1 Pin=U231-6
+Added Pin To Net: NetName=NetR232_1 Pin=U231-6
+Added Pin To Net: NetName=GND_D1 Pin=U231-7
+Added Pin To Net: NetName=GND_D1 Pin=U231-7
+Added Pin To Net: NetName=GND_D1 Pin=U231-8
+Added Pin To Net: NetName=GND_D1 Pin=U231-8
+Added Pin To Net: NetName=SWC1 Pin=U231-9
+Added Pin To Net: NetName=SWC0 Pin=U231-10
+Added Pin To Net: NetName=SWC5 Pin=U231-11
+Added Pin To Net: NetName=NetU231_4 Pin=U231-12
+Added Pin To Net: NetName=REPEATER Pin=U231-13
+Added Pin To Net: NetName=DTMF_RX Pin=U231-14
+Added Pin To Net: NetName=NetU231_4 Pin=U231-15
+Added Pin To Net: NetName=3V3 Pin=U231-16
+Added Pin To Net: NetName=3V3 Pin=U231-16
+Added Pin To Net: NetName=GMSK2_TX Pin=U232-1
+Added Pin To Net: NetName=NetR234_2 Pin=U232-2
+Added Pin To Net: NetName=TX_DEVICE Pin=U232-3
+Added Pin To Net: NetName=NetR234_2 Pin=U232-4
+Added Pin To Net: NetName=NetR234_2 Pin=U232-5
+Added Pin To Net: NetName=NetR233_1 Pin=U232-6
+Added Pin To Net: NetName=GND_D1 Pin=U232-7
+Added Pin To Net: NetName=GND_D1 Pin=U232-8
+Added Pin To Net: NetName=SWC2 Pin=U232-9
+Added Pin To Net: NetName=SWC3 Pin=U232-10
+Added Pin To Net: NetName=SWC4 Pin=U232-11
+Added Pin To Net: NetName=GMSK1_TX Pin=U232-12
+Added Pin To Net: NetName=BCN Pin=U232-13
+Added Pin To Net: NetName=AFSK1_TX Pin=U232-14
+Added Pin To Net: NetName=AFSK2_TX Pin=U232-15
+Added Pin To Net: NetName=3V3 Pin=U232-16
+Added Pin To Net: NetName=TX_DEVICE Pin=U233-1
+Added Pin To Net: NetName=REPEATER Pin=U233-2
+Added Pin To Net: NetName=TX2 Pin=U233-3
+Added Pin To Net: NetName=NetU233_4 Pin=U233-4
+Added Pin To Net: NetName=TX1 Pin=U233-5
+Added Pin To Net: NetName=SWC7 Pin=U233-9
+Added Pin To Net: NetName=SWC5 Pin=U233-10
+Added Pin To Net: NetName=SWC6 Pin=U233-11
+Added Pin To Net: NetName=RX1 Pin=U233-12
+Added Pin To Net: NetName=RX2 Pin=U233-13
+Added Pin To Net: NetName=DTMF_RX Pin=U233-14
+Added Pin To Net: NetName=NetU233_4 Pin=U233-15
+Added Pin To Net: NetName=VCC_A1 Pin=X211_A1-1
+Added Pin To Net: NetName=GND_D1 Pin=X211_A1-2
+Added Pin To Net: NetName=NetU211_A1_2 Pin=X211_A1-3
+Added Pin To Net: NetName=VCC_A1 Pin=X211_A1-4
+Added Pin To Net: NetName=VCC_A1 Pin=X211_A2-1
+Added Pin To Net: NetName=GND_D1 Pin=X211_A2-2
+Added Pin To Net: NetName=NetU211_A2_2 Pin=X211_A2-3
+Added Pin To Net: NetName=VCC_A1 Pin=X211_A2-4
+Added Pin To Net: NetName=VCC_A1 Pin=X221_D1-1
+Added Pin To Net: NetName=GND_D1 Pin=X221_D1-2
+Added Pin To Net: NetName=NetU221_D1_8 Pin=X221_D1-3
+Added Pin To Net: NetName=VCC_A1 Pin=X221_D1-4
+Added Pin To Net: NetName=VCC_A1 Pin=X221_D2-1
+Added Pin To Net: NetName=GND_D1 Pin=X221_D2-2
+Added Pin To Net: NetName=NetU221_D2_8 Pin=X221_D2-3
+Added Pin To Net: NetName=VCC_A1 Pin=X221_D2-4
+Added Member To Class: ClassName=Beacon Member=Component C201 Cap 0402
+Added Member To Class: ClassName=Beacon Member=Component C202 Cap 0402
+Added Member To Class: ClassName=Beacon Member=Component C203 Cap 0402
+Added Member To Class: ClassName=Beacon Member=Component C204 Cap 0402
+Added Member To Class: ClassName=Beacon Member=Component C205 Cap 0402
+Added Member To Class: ClassName=Beacon Member=Component C206 Cap 0402
+Added Member To Class: ClassName=A1 Member=Component C211_A1 (C211) Cap 0402
+Added Member To Class: ClassName=A2 Member=Component C211_A2 (C211) Cap 0402
+Added Member To Class: ClassName=A1 Member=Component C212_A1 (C212) Cap 0402
+Added Member To Class: ClassName=A2 Member=Component C212_A2 (C212) Cap 0402
+Added Member To Class: ClassName=A1 Member=Component C213_A1 (C213) Cap 0402
+Added Member To Class: ClassName=A2 Member=Component C213_A2 (C213) Cap 0402
+Added Member To Class: ClassName=A1 Member=Component C214_A1 (C214) Cap 0402
+Added Member To Class: ClassName=A2 Member=Component C214_A2 (C214) Cap 0402
+Added Member To Class: ClassName=D1 Member=Component C221_D1 (C221) Cap 0402
+Added Member To Class: ClassName=D2 Member=Component C221_D2 (C221) Cap 0402
+Added Member To Class: ClassName=D1 Member=Component C222_D1 (C222) Cap 0402
+Added Member To Class: ClassName=D2 Member=Component C222_D2 (C222) Cap 0402
+Added Member To Class: ClassName=D1 Member=Component C223_D1 (C223) Cap 0402
+Added Member To Class: ClassName=D2 Member=Component C223_D2 (C223) Cap 0402
+Added Member To Class: ClassName=D1 Member=Component C224_D1 (C224) Cap 0402
+Added Member To Class: ClassName=D2 Member=Component C224_D2 (C224) Cap 0402
+Added Member To Class: ClassName=U_SwC_Main Member=Component C231 Cap 0402
+Added Member To Class: ClassName=U_SwC_Main Member=Component C232 Cap 0402
+Added Member To Class: ClassName=U_SwC_Main Member=Component C233 Cap 0402
+Added Member To Class: ClassName=Beacon Member=Component R201 Res3
+Added Member To Class: ClassName=Beacon Member=Component R202 Res3
+Added Member To Class: ClassName=A1 Member=Component R211_A1 (R211) Res3
+Added Member To Class: ClassName=A2 Member=Component R211_A2 (R211) Res3
+Added Member To Class: ClassName=A1 Member=Component R212_A1 (R212) Res3
+Added Member To Class: ClassName=A2 Member=Component R212_A2 (R212) Res3
+Added Member To Class: ClassName=D1 Member=Component R221_D1 (R221) Res3
+Added Member To Class: ClassName=D2 Member=Component R221_D2 (R221) Res3
+Added Member To Class: ClassName=D1 Member=Component R222_D1 (R222) Res3
+Added Member To Class: ClassName=D2 Member=Component R222_D2 (R222) Res3
+Added Member To Class: ClassName=D1 Member=Component R223_D1 (R223) Res3
+Added Member To Class: ClassName=D2 Member=Component R223_D2 (R223) Res3
+Added Member To Class: ClassName=U_SwC_Main Member=Component R231 Res3
+Added Member To Class: ClassName=U_SwC_Main Member=Component R232 Res3
+Added Member To Class: ClassName=U_SwC_Main Member=Component R233 Res3
+Added Member To Class: ClassName=U_SwC_Main Member=Component R234 Res3
+Added Member To Class: ClassName=Beacon Member=Component U201 AT27LV256
+Added Member To Class: ClassName=Beacon Member=Component U202 IttyBitty Timer
+Added Member To Class: ClassName=Beacon Member=Component U203 CD4520BPW
+Added Member To Class: ClassName=Beacon Member=Component U204 MIC1557YM5
+Added Member To Class: ClassName=A1 Member=Component U211_A1 (U211) MX614DW
+Added Member To Class: ClassName=A2 Member=Component U211_A2 (U211) MX614DW
+Added Member To Class: ClassName=D1 Member=Component U221_D1 (U221) MT88L70AN
+Added Member To Class: ClassName=D2 Member=Component U221_D2 (U221) MT88L70AN
+Added Member To Class: ClassName=U_SwC_Main Member=Component U231 CD4053BCM
+Added Member To Class: ClassName=U_SwC_Main Member=Component U232 CD4051BCM
+Added Member To Class: ClassName=U_SwC_Main Member=Component U233 CD4053BCM
+Added Member To Class: ClassName=A1 Member=Component X211_A1 (X211) ECS-2025-035
+Added Member To Class: ClassName=A2 Member=Component X211_A2 (X211) ECS-2025-035
+Added Member To Class: ClassName=D1 Member=Component X221_D1 (X221) ECS-2025-035
+Added Member To Class: ClassName=D2 Member=Component X221_D2 (X221) ECS-2025-035
+Added Room: Name=A1
+Added Room: Name=A2
+Added Room: Name=Beacon
+Added Room: Name=CRSC0001
+Added Room: Name=CRSC0002
+Added Room: Name=D1
+Added Room: Name=D2
+Added Room: Name=U_SwC_Main

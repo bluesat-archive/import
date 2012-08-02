@@ -1,0 +1,111 @@
+Removed Pin From Net: NetName=NetR1_1 Pin=R1-1
+Removed Pin From Net: NetName=NetP4_7 Pin=R1-2
+Removed Pin From Net: NetName=GND_D1 Pin=R101-1
+Removed Pin From Net: NetName=NetR101_2 Pin=R101-2
+Removed Pin From Net: NetName=3V3 Pin=R102-1
+Removed Pin From Net: NetName=NetP3_2 Pin=R102-2
+Removed Pin From Net: NetName=NetC114_2 Pin=U101-20
+Removed Pin From Net: NetName=3V3 Pin=U101-24
+Removed Pin From Net: NetName=NetU221_D1_8 Pin=U221_D1-8
+Removed Pin From Net: NetName=GND_D1 Pin=U221_D1-10
+Removed Pin From Net: NetName=VCC_A1 Pin=U221_D1-11
+Removed Pin From Net: NetName=DTMF1_STD Pin=U221_D1-17
+Removed Pin From Net: NetName=NetR222_D1_2 Pin=U221_D1-18
+Removed Pin From Net: NetName=NetC223_D1_2 Pin=U221_D1-19
+Removed Pin From Net: NetName=VCC_A1 Pin=U221_D1-20
+Removed Pin From Net: NetName=NetU221_D2_8 Pin=U221_D2-8
+Removed Pin From Net: NetName=GND_D1 Pin=U221_D2-10
+Removed Pin From Net: NetName=VCC_A1 Pin=U221_D2-11
+Removed Pin From Net: NetName=DTMF2_STD Pin=U221_D2-17
+Removed Pin From Net: NetName=NetR222_D2_2 Pin=U221_D2-18
+Removed Pin From Net: NetName=NetC223_D2_2 Pin=U221_D2-19
+Removed Pin From Net: NetName=VCC_A1 Pin=U221_D2-20
+Removed Pin From Net: NetName=NetU221_D1_8 Pin=X221_D1-3
+Removed Pin From Net: NetName=NetU221_D2_8 Pin=X221_D2-3
+Change Component Comment : Designator=U204 Old Comment=MIC1557YM5 New Comment=IttyBitty Timer
+Change Component Library : Designator=U201 Old Library=Comms Board Small Footprints.IntLib New Library=Comms Board Small Footprints.SchLib
+Change Component Library : Designator=U202 Old Library=Comms Board Small Footprints.IntLib New Library=Comms Board Small Footprints.SchLib
+Change Component Library : Designator=U203 Old Library=Comms Board Small Footprints.IntLib New Library=Comms Board Small Footprints.SchLib
+Change Component Library : Designator=U204 Old Library=Comms Board Small Footprints.IntLib New Library=Comms Board Small Footprints.SchLib
+Change Component Library : Designator=U221_D1 Old Library=Comms Board Small Footprints.IntLib New Library=Comms Board Small Footprints.SchLib
+Change Component Library : Designator=U221_D2 Old Library=Comms Board Small Footprints.IntLib New Library=Comms Board Small Footprints.SchLib
+Change Component Library : Designator=X211_A1 Old Library=Comms Board Small Footprints.IntLib New Library=Comms Board Small Footprints.SchLib
+Change Component Library : Designator=X211_A2 Old Library=Comms Board Small Footprints.IntLib New Library=Comms Board Small Footprints.SchLib
+Change Component Library : Designator=X221_D1 Old Library=Comms Board Small Footprints.IntLib New Library=Comms Board Small Footprints.SchLib
+Change Component Library : Designator=X221_D2 Old Library=Comms Board Small Footprints.IntLib New Library=Comms Board Small Footprints.SchLib
+Added Component: Designator=U211_A1(TSSOP24)
+Added Component: Designator=U211_A2(TSSOP24)
+Added Pin To Net: NetName=NetP4_7 Pin=R1-1
+Added Pin To Net: NetName=NetR1_1 Pin=R1-2
+Added Pin To Net: NetName=NetR101_2 Pin=R101-1
+Added Pin To Net: NetName=GND_D1 Pin=R101-2
+Added Pin To Net: NetName=NetP3_2 Pin=R102-1
+Added Pin To Net: NetName=3V3 Pin=R102-2
+Added Pin To Net: NetName=3V3 Pin=U101-20
+Added Pin To Net: NetName=NetC114_2 Pin=U101-38
+Added Pin To Net: NetName=NetU211_A1_2 Pin=U211_A1-2
+Added Pin To Net: NetName=AFSK1_M0 Pin=U211_A1-5
+Added Pin To Net: NetName=AFSK1_M1 Pin=U211_A1-6
+Added Pin To Net: NetName=NetC213_A1_1 Pin=U211_A1-7
+Added Pin To Net: NetName=NetC213_A1_2 Pin=U211_A1-8
+Added Pin To Net: NetName=AFSK1_TX Pin=U211_A1-11
+Added Pin To Net: NetName=GND_D1 Pin=U211_A1-12
+Added Pin To Net: NetName=NetC214_A1_2 Pin=U211_A1-13
+Added Pin To Net: NetName=VCC_A1 Pin=U211_A1-14
+Added Pin To Net: NetName=AFSK1_TXD Pin=U211_A1-17
+Added Pin To Net: NetName=VCC_A1 Pin=U211_A1-18
+Added Pin To Net: NetName=AFSK1_RXD Pin=U211_A1-19
+Added Pin To Net: NetName=AFSK1_DET Pin=U211_A1-20
+Added Pin To Net: NetName=VCC_A1 Pin=U211_A1-24
+Added Pin To Net: NetName=NetU211_A2_2 Pin=U211_A2-2
+Added Pin To Net: NetName=AFSK2_M0 Pin=U211_A2-5
+Added Pin To Net: NetName=AFSK2_M1 Pin=U211_A2-6
+Added Pin To Net: NetName=NetC213_A2_1 Pin=U211_A2-7
+Added Pin To Net: NetName=NetC213_A2_2 Pin=U211_A2-8
+Added Pin To Net: NetName=AFSK2_TX Pin=U211_A2-11
+Added Pin To Net: NetName=GND_D1 Pin=U211_A2-12
+Added Pin To Net: NetName=NetC214_A2_2 Pin=U211_A2-13
+Added Pin To Net: NetName=VCC_A1 Pin=U211_A2-14
+Added Pin To Net: NetName=AFSK2_TXD Pin=U211_A2-17
+Added Pin To Net: NetName=VCC_A1 Pin=U211_A2-18
+Added Pin To Net: NetName=AFSK2_RXD Pin=U211_A2-19
+Added Pin To Net: NetName=AFSK2_DET Pin=U211_A2-20
+Added Pin To Net: NetName=VCC_A1 Pin=U211_A2-24
+Added Pin To Net: NetName=NetU221_D2_8 Pin=U221_D1-7
+Added Pin To Net: NetName=GND_D1 Pin=U221_D1-9
+Added Pin To Net: NetName=VCC_A1 Pin=U221_D1-10
+Added Pin To Net: NetName=DTMF1_STD Pin=U221_D1-11
+Added Pin To Net: NetName=NetR222_D1_2 Pin=U221_D1-16
+Added Pin To Net: NetName=NetC223_D1_2 Pin=U221_D1-17
+Added Pin To Net: NetName=VCC_A1 Pin=U221_D1-18
+Added Pin To Net: NetName=NetU221_D1_8 Pin=U221_D2-7
+Added Pin To Net: NetName=GND_D1 Pin=U221_D2-9
+Added Pin To Net: NetName=VCC_A1 Pin=U221_D2-10
+Added Pin To Net: NetName=DTMF2_STD Pin=U221_D2-11
+Added Pin To Net: NetName=NetR222_D2_2 Pin=U221_D2-16
+Added Pin To Net: NetName=NetC223_D2_2 Pin=U221_D2-17
+Added Pin To Net: NetName=VCC_A1 Pin=U221_D2-18
+Added Pin To Net: NetName=NetR231_1 Pin=U231-6
+Added Pin To Net: NetName=GND_D1 Pin=U231-7
+Added Pin To Net: NetName=GND_D1 Pin=U231-8
+Added Pin To Net: NetName=3V3 Pin=U231-16
+Added Pin To Net: NetName=NetU221_D2_8 Pin=X221_D1-3
+Added Pin To Net: NetName=NetU221_D1_8 Pin=X221_D2-3
+Change Net Name : Old Net Name=DTMF1_Q1 New Net Name=DTMF1_Q2
+Change Net Name : Old Net Name=DTMF1_Q2 New Net Name=DTMF1_Q3
+Change Net Name : Old Net Name=DTMF1_Q3 New Net Name=DTMF1_Q4
+Change Net Name : Old Net Name=DTMF1_Q4 New Net Name=DTMF1_STD
+Change Net Name : Old Net Name=DTMF1_STD New Net Name=DTMF1_Q1
+Change Net Name : Old Net Name=DTMF2_Q1 New Net Name=DTMF2_Q2
+Change Net Name : Old Net Name=DTMF2_Q2 New Net Name=DTMF2_Q3
+Change Net Name : Old Net Name=DTMF2_Q3 New Net Name=DTMF2_Q4
+Change Net Name : Old Net Name=DTMF2_Q4 New Net Name=DTMF2_STD
+Change Net Name : Old Net Name=DTMF2_STD New Net Name=DTMF2_Q1
+Change Net Name : Old Net Name=NetR1_1 New Net Name=NetR1_2
+Change Net Name : Old Net Name=NetR101_2 New Net Name=NetR101_1
+Change Net Name : Old Net Name=NetU221_D1_8 New Net Name=NetU221_D2_7
+Change Net Name : Old Net Name=NetU221_D2_8 New Net Name=NetU221_D1_7
+Added Member To Class: ClassName=A1 Member=Component U211_A1 (U211) MX614TN
+Added Member To Class: ClassName=A2 Member=Component U211_A2 (U211) MX614TN
+Added Room: Name=CRSC0001
+Added Room: Name=CRSC0002

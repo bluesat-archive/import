@@ -1,0 +1,27 @@
+Removed Pin From Net: NetName=AFSK2_RX Pin=U231-3
+Removed Pin From Net: NetName=NetU231_4 Pin=U231-4
+Removed Pin From Net: NetName=AFSK1_RX Pin=U231-5
+Removed Pin From Net: NetName=TX_DEVICE Pin=U232-1
+Removed Pin From Net: NetName=REPEATER Pin=U232-2
+Removed Pin From Net: NetName=TX2 Pin=U232-3
+Removed Pin From Net: NetName=TX1 Pin=U232-5
+Removed Pin From Net: NetName=SWC7 Pin=U232-9
+Removed Pin From Net: NetName=SWC5 Pin=U232-10
+Removed Pin From Net: NetName=RX1 Pin=U232-12
+Removed Pin From Net: NetName=RX2 Pin=U232-13
+Removed Pin From Net: NetName=DTMF_RX Pin=U232-14
+Added Pin To Net: NetName=RX2 Pin=U231-3
+Added Pin To Net: NetName=DTMF_RX Pin=U231-4
+Added Pin To Net: NetName=RX1 Pin=U231-5
+Added Pin To Net: NetName=TX2 Pin=U232-1
+Added Pin To Net: NetName=TX1 Pin=U232-2
+Added Pin To Net: NetName=TX_DEVICE Pin=U232-3
+Added Pin To Net: NetName=REPEATER Pin=U232-5
+Added Pin To Net: NetName=SWC5 Pin=U232-9
+Added Pin To Net: NetName=SWC7 Pin=U232-10
+Added Pin To Net: NetName=AFSK1_RX Pin=U232-12
+Added Pin To Net: NetName=AFSK2_RX Pin=U232-13
+Added Pin To Net: NetName=NetU231_4 Pin=U232-14
+Change Net Name : Old Net Name=NetU231_4 New Net Name=NetU231_12
+Change Net Name : Old Net Name=SWC1 New Net Name=SWC6
+Change Net Name : Old Net Name=SWC6 New Net Name=SWC1

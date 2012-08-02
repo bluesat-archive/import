@@ -1,0 +1,64 @@
+Removed Pin From Net: NetName=DTMF_RX Pin=U231-15
+Removed Pin From Net: NetName=RADIOS.TX2 Pin=U232-3
+Removed Pin From Net: NetName=RADIOS.TX1 Pin=U232-5
+Removed Pin From Net: NetName=AFSK1_TX Pin=U233-7
+Removed Pin From Net: NetName=GMSK1_TX Pin=U233-16
+Added Pin To Net: NetName=GMSK2_RX Pin=U231-1
+Added Pin To Net: NetName=GMSK1_RX Pin=U231-2
+Added Pin To Net: NetName=GND Pin=U231-7
+Added Pin To Net: NetName=GND Pin=U231-8
+Added Pin To Net: NetName=COMS.SWC0 Pin=U231-10
+Added Pin To Net: NetName=COMS.SWC5 Pin=U231-11
+Added Pin To Net: NetName=DTMF_RX Pin=U231-14
+Added Pin To Net: NetName=3V3 Pin=U231-16
+Added Pin To Net: NetName=RADIOS.TX2 Pin=U232-1
+Added Pin To Net: NetName=RADIOS.TX1 Pin=U232-2
+Added Pin To Net: NetName=GND Pin=U232-7
+Added Pin To Net: NetName=GND Pin=U232-8
+Added Pin To Net: NetName=COMS.SWC5 Pin=U232-9
+Added Pin To Net: NetName=COMS.SWC1 Pin=U232-11
+Added Pin To Net: NetName=AFSK2_RX Pin=U232-13
+Added Pin To Net: NetName=3V3 Pin=U232-16
+Added Pin To Net: NetName=GMSK2_TX Pin=U233-1
+Added Pin To Net: NetName=GMSK1_TX Pin=U233-2
+Added Pin To Net: NetName=GND Pin=U233-7
+Added Pin To Net: NetName=GND Pin=U233-8
+Added Pin To Net: NetName=COMS.SWC2 Pin=U233-9
+Added Pin To Net: NetName=COMS.SWC3 Pin=U233-10
+Added Pin To Net: NetName=COMS.SWC4 Pin=U233-11
+Added Pin To Net: NetName=BCN Pin=U233-13
+Added Pin To Net: NetName=AFSK1_TX Pin=U233-14
+Added Pin To Net: NetName=AFSK2_TX Pin=U233-15
+Added Pin To Net: NetName=3V3 Pin=U233-16
+Added Pin To Net: NetName=AFSK1_RX Pin=U232-12
+Added Net: Name=AFSK1_RX
+Added Pin To Net: NetName=COMS.SWC7 Pin=U232-10
+Added Net: Name=COMS.SWC7
+Added Pin To Net: NetName=NetR231_1 Pin=R231-1
+Added Pin To Net: NetName=NetR231_1 Pin=U231-6
+Added Net: Name=NetR231_1
+Added Pin To Net: NetName=NetR232_1 Pin=R232-1
+Added Pin To Net: NetName=NetR232_1 Pin=U232-6
+Added Net: Name=NetR232_1
+Added Pin To Net: NetName=NetR233_1 Pin=R233-1
+Added Pin To Net: NetName=NetR233_1 Pin=U233-6
+Added Net: Name=NetR233_1
+Added Pin To Net: NetName=NetR234_2 Pin=R234-2
+Added Pin To Net: NetName=NetR234_2 Pin=U233-4
+Added Pin To Net: NetName=NetR234_2 Pin=U233-5
+Added Pin To Net: NetName=NetR234_2 Pin=U233-12
+Added Net: Name=NetR234_2
+Added Pin To Net: NetName=NetU231_12 Pin=U231-12
+Added Pin To Net: NetName=NetU231_12 Pin=U231-15
+Added Pin To Net: NetName=NetU231_12 Pin=U232-14
+Added Net: Name=NetU231_12
+Added Pin To Net: NetName=NetU232_4 Pin=U232-4
+Added Pin To Net: NetName=NetU232_4 Pin=U232-15
+Added Net: Name=NetU232_4
+Added Pin To Net: NetName=REPEATER Pin=U231-13
+Added Pin To Net: NetName=REPEATER Pin=U232-3
+Added Net: Name=REPEATER
+Added Pin To Net: NetName=TX_DEVICE Pin=U232-5
+Added Pin To Net: NetName=TX_DEVICE Pin=U233-3
+Added Net: Name=TX_DEVICE
+Added Member To Class: ClassName=COMS.SWC[7..0] Member=Element[7]: COMS.SWC

@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=COMS.SWC0 Pin=U101-80
+Removed Pin From Net: NetName=COMS.SWC1 Pin=U101-81
+Removed Pin From Net: NetName=COMS.SWC2 Pin=U101-82
+Removed Pin From Net: NetName=COMS.SWC3 Pin=U101-95
+Removed Pin From Net: NetName=COMS.SWC4 Pin=U101-99
+Removed Pin From Net: NetName=COMS.SWC5 Pin=U101-102
+Removed Pin From Net: NetName=COMS.SWC6 Pin=U101-106
+Added Pin To Net: NetName=COMS.SWC7 Pin=U101-80
+Added Pin To Net: NetName=COMS.SWC6 Pin=U101-81
+Added Pin To Net: NetName=COMS.SWC5 Pin=U101-82
+Added Pin To Net: NetName=COMS.SWC4 Pin=U101-95
+Added Pin To Net: NetName=COMS.SWC3 Pin=U101-99
+Added Pin To Net: NetName=COMS.SWC2 Pin=U101-102
+Added Pin To Net: NetName=COMS.SWC1 Pin=U101-106
+Change Class Name : Old Net Name=COMS.SWC[7..0] New Net Name=COMS.SWC[0..7]

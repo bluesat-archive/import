@@ -1,0 +1,231 @@
+Removed Member From Class: ClassName=CRSC0002 Member=C1
+Removed Member From Class: ClassName=CRSC0002 Member=C2
+Removed Member From Class: ClassName=CRSC0002 Member=C3
+Removed Member From Class: ClassName=CRSC0002 Member=C4
+Removed Member From Class: ClassName=CRSC0002 Member=R1
+Change Component Designator: OldDesignator=C5 NewDesignator=C101
+Change Component Designator: OldDesignator=C6 NewDesignator=C102
+Change Component Designator: OldDesignator=C7 NewDesignator=C103
+Change Component Designator: OldDesignator=C8 NewDesignator=C104
+Change Component Designator: OldDesignator=C9 NewDesignator=C105
+Change Component Designator: OldDesignator=C10 NewDesignator=C106
+Change Component Designator: OldDesignator=C11 NewDesignator=C107
+Change Component Designator: OldDesignator=C12 NewDesignator=C108
+Change Component Designator: OldDesignator=C13 NewDesignator=C109
+Change Component Designator: OldDesignator=C14 NewDesignator=C110
+Change Component Designator: OldDesignator=C15 NewDesignator=C111
+Change Component Designator: OldDesignator=C16 NewDesignator=C112
+Change Component Designator: OldDesignator=C17 NewDesignator=C113
+Change Component Designator: OldDesignator=C18 NewDesignator=C114
+Change Component Designator: OldDesignator=C19 NewDesignator=C115
+Change Component Designator: OldDesignator=C20 NewDesignator=C116
+Change Component Designator: OldDesignator=C21 NewDesignator=C117
+Change Component Designator: OldDesignator=C22 NewDesignator=C118
+Change Component Designator: OldDesignator=C23 NewDesignator=C119
+Change Component Designator: OldDesignator=C24 NewDesignator=C120
+Change Component Designator: OldDesignator=C25 NewDesignator=C121
+Change Component Designator: OldDesignator=C26 NewDesignator=C122
+Change Component Designator: OldDesignator=C27 NewDesignator=C123
+Change Component Designator: OldDesignator=FB1 NewDesignator=FB101
+Change Component Designator: OldDesignator=Q1 NewDesignator=Q101
+Change Component Designator: OldDesignator=Q2 NewDesignator=Q102
+Change Component Designator: OldDesignator=R2 NewDesignator=R101
+Change Component Designator: OldDesignator=R3 NewDesignator=R102
+Change Component Designator: OldDesignator=U2 NewDesignator=U101
+Change Component Designator: OldDesignator=U3 NewDesignator=U102
+Change Component Designator: OldDesignator=U4 NewDesignator=U103
+Added Component: Designator=C201(CAPC1005X06L)
+Added Component: Designator=C201(CAPC1005X06L)
+Added Component: Designator=C202(CAPC1005X06L)
+Added Component: Designator=C203(CAPC1005X06L)
+Added Component: Designator=C204(CAPC1005X06L)
+Added Component: Designator=C205(CAPC1005X06L)
+Added Component: Designator=R201(RESC1005X06L)
+Added Component: Designator=R202(RESC1005X06L)
+Added Pin To Net: NetName=3V3 Pin=C201-1
+Added Pin To Net: NetName=3V3 Pin=C201-1
+Added Pin To Net: NetName=3V3 Pin=C202-1
+Added Pin To Net: NetName=3V3 Pin=C203-2
+Added Pin To Net: NetName=NetR1_1 Pin=U101-206
+Change Net Name : Old Net Name=NetC18_2 New Net Name=NetC114_2
+Change Net Name : Old Net Name=NetC24_1 New Net Name=NetC120_1
+Change Net Name : Old Net Name=NetC25_2 New Net Name=NetC121_2
+Change Net Name : Old Net Name=NetC26_1 New Net Name=NetC122_1
+Change Net Name : Old Net Name=NetC27_2 New Net Name=NetC123_2
+Change Net Name : Old Net Name=NetR2_2 New Net Name=NetR101_2
+Added Net: Name=ADDRESS0
+Added Net: Name=ADDRESS1
+Added Net: Name=ADDRESS2
+Added Net: Name=ADDRESS3
+Added Net: Name=ADDRESS4
+Added Net: Name=ADDRESS5
+Added Net: Name=ADDRESS6
+Added Net: Name=ADDRESS7
+Added Net: Name=AFSK1_DET
+Added Net: Name=AFSK1_M0
+Added Net: Name=AFSK1_M1
+Added Net: Name=AFSK1_RXD
+Added Net: Name=AFSK1_RX
+Added Net: Name=AFSK1_TXD
+Added Net: Name=AFSK1_TX
+Added Net: Name=AFSK2_DET
+Added Net: Name=AFSK2_M0
+Added Net: Name=AFSK2_M1
+Added Net: Name=AFSK2_RXD
+Added Net: Name=AFSK2_RX
+Added Net: Name=AFSK2_TXD
+Added Net: Name=AFSK2_TX
+Added Pin To Net: NetName=BCN Pin=R201-1
+Added Net: Name=BCN
+Added Pin To Net: NetName=COUNTER_CLK Pin=R202-1
+Added Net: Name=COUNTER_CLK
+Added Net: Name=DTMF1_Q1
+Added Net: Name=DTMF1_Q2
+Added Net: Name=DTMF1_Q3
+Added Net: Name=DTMF1_Q4
+Added Net: Name=DTMF1_STD
+Added Net: Name=DTMF2_Q1
+Added Net: Name=DTMF2_Q2
+Added Net: Name=DTMF2_Q3
+Added Net: Name=DTMF2_Q4
+Added Net: Name=DTMF2_STD
+Added Net: Name=DTMF_RX
+Added Net: Name=GMSK1_RX
+Added Net: Name=GMSK1_TX
+Added Net: Name=GMSK2_RX
+Added Net: Name=GMSK2_TX
+Added Pin To Net: NetName=GND_D1 Pin=C1-1
+Added Pin To Net: NetName=GND_D1 Pin=C2-1
+Added Pin To Net: NetName=GND_D1 Pin=C3-1
+Added Pin To Net: NetName=GND_D1 Pin=C4-1
+Added Pin To Net: NetName=GND_D1 Pin=C101-1
+Added Pin To Net: NetName=GND_D1 Pin=C102-1
+Added Pin To Net: NetName=GND_D1 Pin=C103-1
+Added Pin To Net: NetName=GND_D1 Pin=C104-1
+Added Pin To Net: NetName=GND_D1 Pin=C105-1
+Added Pin To Net: NetName=GND_D1 Pin=C106-1
+Added Pin To Net: NetName=GND_D1 Pin=C107-1
+Added Pin To Net: NetName=GND_D1 Pin=C108-1
+Added Pin To Net: NetName=GND_D1 Pin=C109-1
+Added Pin To Net: NetName=GND_D1 Pin=C110-1
+Added Pin To Net: NetName=GND_D1 Pin=C111-1
+Added Pin To Net: NetName=GND_D1 Pin=C112-1
+Added Pin To Net: NetName=GND_D1 Pin=C113-1
+Added Pin To Net: NetName=GND_D1 Pin=C114-1
+Added Pin To Net: NetName=GND_D1 Pin=C115-1
+Added Pin To Net: NetName=GND_D1 Pin=C116-1
+Added Pin To Net: NetName=GND_D1 Pin=C117-1
+Added Pin To Net: NetName=GND_D1 Pin=C118-1
+Added Pin To Net: NetName=GND_D1 Pin=C119-1
+Added Pin To Net: NetName=GND_D1 Pin=C120-2
+Added Pin To Net: NetName=GND_D1 Pin=C121-1
+Added Pin To Net: NetName=GND_D1 Pin=C122-2
+Added Pin To Net: NetName=GND_D1 Pin=C123-1
+Added Pin To Net: NetName=GND_D1 Pin=C201-2
+Added Pin To Net: NetName=GND_D1 Pin=C201-2
+Added Pin To Net: NetName=GND_D1 Pin=C202-2
+Added Pin To Net: NetName=GND_D1 Pin=C203-1
+Added Pin To Net: NetName=GND_D1 Pin=C204-1
+Added Pin To Net: NetName=GND_D1 Pin=C205-1
+Added Pin To Net: NetName=GND_D1 Pin=P1-6
+Added Pin To Net: NetName=GND_D1 Pin=P2-3
+Added Pin To Net: NetName=GND_D1 Pin=P3-3
+Added Pin To Net: NetName=GND_D1 Pin=P4-3
+Added Pin To Net: NetName=GND_D1 Pin=P4-5
+Added Pin To Net: NetName=GND_D1 Pin=P4-9
+Added Pin To Net: NetName=GND_D1 Pin=Q101-3
+Added Pin To Net: NetName=GND_D1 Pin=Q101-3
+Added Pin To Net: NetName=GND_D1 Pin=R101-1
+Added Pin To Net: NetName=GND_D1 Pin=U1-2
+Added Pin To Net: NetName=GND_D1 Pin=U101-9
+Added Pin To Net: NetName=GND_D1 Pin=U101-22
+Added Pin To Net: NetName=GND_D1 Pin=U101-32
+Added Pin To Net: NetName=GND_D1 Pin=U101-33
+Added Pin To Net: NetName=GND_D1 Pin=U101-63
+Added Pin To Net: NetName=GND_D1 Pin=U101-77
+Added Pin To Net: NetName=GND_D1 Pin=U101-84
+Added Pin To Net: NetName=GND_D1 Pin=U101-93
+Added Pin To Net: NetName=GND_D1 Pin=U101-114
+Added Pin To Net: NetName=GND_D1 Pin=U101-133
+Added Pin To Net: NetName=GND_D1 Pin=U101-148
+Added Pin To Net: NetName=GND_D1 Pin=U101-169
+Added Pin To Net: NetName=GND_D1 Pin=U101-172
+Added Pin To Net: NetName=GND_D1 Pin=U101-189
+Added Pin To Net: NetName=GND_D1 Pin=U101-200
+Added Pin To Net: NetName=GND_D1 Pin=U102-27
+Added Pin To Net: NetName=GND_D1 Pin=U102-46
+Added Pin To Net: NetName=GND_D1 Pin=U103-12
+Added Pin To Net: NetName=GND_D1 Pin=U103-34
+Added Net: Name=GND_D1
+Added Net: Name=Net242_5
+Added Net: Name=Net242_6
+Added Net: Name=Net243_6
+Added Pin To Net: NetName=NetC204_2 Pin=C204-2
+Added Pin To Net: NetName=NetC204_2 Pin=R201-2
+Added Net: Name=NetC204_2
+Added Pin To Net: NetName=NetC205_2 Pin=C205-2
+Added Pin To Net: NetName=NetC205_2 Pin=R202-2
+Added Net: Name=NetC205_2
+Added Net: Name=NetC213_A1_1
+Added Net: Name=NetC213_A1_2
+Added Net: Name=NetC213_A2_1
+Added Net: Name=NetC213_A2_2
+Added Net: Name=NetC214_A1_2
+Added Net: Name=NetC214_A2_2
+Added Net: Name=NetC221_D1_1
+Added Net: Name=NetC221_D2_1
+Added Net: Name=NetC223_D1_1
+Added Net: Name=NetC223_D2_1
+Added Net: Name=NetR221_D1_1
+Added Net: Name=NetR221_D2_1
+Added Net: Name=NetR222_D1_1
+Added Net: Name=NetR222_D2_1
+Added Net: Name=NetR223_D1_1
+Added Net: Name=NetR223_D2_1
+Added Net: Name=NetR251_2
+Added Net: Name=NetR252_2
+Added Net: Name=NetU211_A1_2
+Added Net: Name=NetU211_A2_2
+Added Net: Name=NetU221_D1_1
+Added Net: Name=NetU221_D1_8
+Added Net: Name=NetU221_D2_1
+Added Net: Name=NetU221_D2_8
+Added Net: Name=NetU243_4
+Added Net: Name=REPEATER
+Added Net: Name=RESET
+Added Net: Name=RX1
+Added Net: Name=RX2
+Added Net: Name=SWC0
+Added Net: Name=SWC1
+Added Net: Name=SWC2
+Added Net: Name=SWC3
+Added Net: Name=SWC4
+Added Net: Name=SWC5
+Added Net: Name=SWC6
+Added Net: Name=SWC7
+Added Net: Name=TONE_ON
+Added Net: Name=TX1
+Added Net: Name=TX2
+Added Net: Name=TX_DEVICE
+Added Net: Name=VCC_A1
+Added Class: Name=A1
+Added Class: Name=A2
+Added Class: Name=Beacon
+Added Class: Name=CRSC0001
+Added Class: Name=D1
+Added Class: Name=D2
+Added Class: Name=U_SwC_Main
+Added Class: Name=ADDRESS[0..7]
+Added Class: Name=DTMF1_Q[1..4]
+Added Class: Name=DTMF2_Q[1..4]
+Added Class: Name=SWC[7..0]
+Added Class: Name=COMS0002_AFSK
+Added Class: Name=COMS0003_DTMF
+Added Room: Name=A1
+Added Room: Name=A2
+Added Room: Name=Beacon
+Added Room: Name=CRSC0001
+Added Room: Name=CRSC0002
+Added Room: Name=D1
+Added Room: Name=D2
+Added Room: Name=U_SwC_Main
