@@ -1,5 +1,0 @@
-Removed Pin From Net: NetName=EXT1-28 Pin=U1-110
-Added Pin To Net: NetName=NetU1_110 Pin=U1-110
-Added Net: Name=NetU1_110
-Added Member To Class: ClassName=CRSC0002 Member=Component U2 CY62167DV30LL
-Added Member To Class: ClassName=CRSC0002 Member=Component U3 FM22L16-55-TG
