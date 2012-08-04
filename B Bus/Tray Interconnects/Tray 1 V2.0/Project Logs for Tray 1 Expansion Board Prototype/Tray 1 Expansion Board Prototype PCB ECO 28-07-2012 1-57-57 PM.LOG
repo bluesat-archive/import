@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=GND_TX Pin=TX1-8
-Removed Pin From Net: NetName=VVAR_TX1 Pin=TX1-9
-Removed Pin From Net: NetName=GND_TX Pin=TX2-8
-Removed Pin From Net: NetName=VVAR_TX2 Pin=TX2-9
-Added Pin To Net: NetName=VVAR_TX1 Pin=TX1-8
-Added Pin To Net: NetName=GND_TX Pin=TX1-9
-Added Pin To Net: NetName=VVAR_TX2 Pin=TX2-8
-Added Pin To Net: NetName=GND_TX Pin=TX2-9
