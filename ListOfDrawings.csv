@@ -10,6 +10,7 @@ COMS0008,Switching Circuit High Level,High Level overview of switching circuit,D
 COMS0009,Comms Test Board PCB Layout,"Test board for communications subsystem, PCB Layout",T. Fisk,B3 Groundstation Link (Comms)
 COMS0010,Comms Test Board Schematic,"Test board for communications subsystem, circuit schematic",T. Fisk,B3 Groundstation Link (Comms)
 COMS0011,Flatsat - Comunicaitons footprints,,"A. Shaw, E. Nafis, C. Brown",B\Flatsat
+COMS0012,Comms Test Board Miniaturization,"A smaller, revised version of the Comms Board",D. Jedrychowski,B3 Groundstation Link (Comms)
 CRSC0001,Crtical System Computer-Top level,The top level overview of the entire critical system computer,Sam Shan Jiang,B4 Command Control and Data
 CRSC0002,Critical system computer - Microcontroller,LPC2468 microcontroller,Sam Shan Jiang,B4.1 Processing
 CRSC0003,Critical System Computer - Memory,Memory banks for the critical system computer,Sam Shan Jiang,B4.2 Data Storage
