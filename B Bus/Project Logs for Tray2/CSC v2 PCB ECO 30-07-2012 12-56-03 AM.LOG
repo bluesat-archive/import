@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=NetR234_2 Pin=U233-2
-Removed Pin From Net: NetName=GMSK1_TX Pin=U233-12
-Added Pin To Net: NetName=GMSK1_TX Pin=U233-2
-Added Pin To Net: NetName=NetR234_2 Pin=U233-12

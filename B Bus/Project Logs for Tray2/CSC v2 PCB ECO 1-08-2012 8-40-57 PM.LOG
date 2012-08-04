@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=COMS.SWC7 Pin=U232-10
-Removed Pin From Net: NetName=COMS.SWC4 Pin=U233-11
-Added Pin To Net: NetName=COMS.SWC4 Pin=U232-10
-Added Pin To Net: NetName=COMS.SWC7 Pin=U233-11

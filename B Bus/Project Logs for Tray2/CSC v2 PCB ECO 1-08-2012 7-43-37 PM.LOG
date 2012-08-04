@@ -1,6 +1,0 @@
-Removed Pin From Net: NetName=COMS.SWC6 Pin=U232-11
-Removed Pin From Net: NetName=COMS.SWC3 Pin=U233-10
-Added Pin To Net: NetName=COMS.SWC3 Pin=U232-11
-Added Pin To Net: NetName=COMS.SWC6 Pin=U233-10
-Added Room: Name=Connectors
-Added Room: Name=CRSC0002
