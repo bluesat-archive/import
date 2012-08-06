@@ -1,0 +1,21 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: Tray3.PcbDoc   6/08/2012  1:28:48 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Tray3.TXT
+EIA File   : Tray3.DRL
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        0.7112mm (28mil)         Round          2                19.51 mm (0.77 Inch)
+T2        0.9mm (35.433mil)        Round          2                2.54 mm (0.10 Inch)
+T3        1.09mm (42.913mil)       Round          18               100.53 mm (3.96 Inch)
+T4        1.5mm (59.055mil)        Round          2                6.01 mm (0.24 Inch)
+T5        3mm (118.11mil)          Round          2                11.19 mm (0.44 Inch)
+T6        3.26mm (128.346mil)      Round          4                63.98 mm (2.52 Inch)
+T7        3.5mm (137.795mil)       Round          2                100.00 mm (3.94 Inch)
+---------------------------------------------------------------------------
+Totals                                            32               303.75 mm (11.96 Inch)
+
+Total Processing Time (hh:mm:ss) : 00:00:00
