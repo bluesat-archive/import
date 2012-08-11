@@ -37,8 +37,7 @@ SUBDIRS :=
 C_SRCS +=  \
 ../mppt_core.c \
 ../mppt_interface.c \
-../mppt_main.c \
-../mppt_test.c
+../mppt_main.c
 
 
 PREPROCESSING_SRCS += 
@@ -50,29 +49,25 @@ ASM_SRCS +=
 OBJS +=  \
 mppt_core.o \
 mppt_interface.o \
-mppt_main.o \
-mppt_test.o
+mppt_main.o
 
 
 OBJS_AS_ARGS +=  \
 mppt_core.o \
 mppt_interface.o \
-mppt_main.o \
-mppt_test.o
+mppt_main.o
 
 
 C_DEPS +=  \
 mppt_core.d \
 mppt_interface.d \
-mppt_main.d \
-mppt_test.d
+mppt_main.d
 
 
 C_DEPS_AS_ARGS +=  \
 mppt_core.d \
 mppt_interface.d \
-mppt_main.d \
-mppt_test.d
+mppt_main.d
 
 
 OUTPUT_FILE_PATH +=mppt\ firmware.elf
@@ -97,12 +92,6 @@ OUTPUT_FILE_DEP:= ./makedep.mk
 	@echo Finished building: $<
 
 ./mppt_main.o: .././mppt_main.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
-	@echo Finished building: $<
-
-./mppt_test.o: .././mppt_test.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
 	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O1 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 

@@ -17,6 +17,7 @@
 
 #define I_INC 1
 #define MIN_DUTY 100
+#define NUM_PANELS 6
 
 // Adjust maximum power point using perturb and observe algorithm
 void perturbAndObserve (Panel *panel, uint8_t panelNo);

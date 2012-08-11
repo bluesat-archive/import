@@ -14,7 +14,7 @@ void initGPIOdir (void)
 {
 	// Set BCR shutdown pins as outputs
 	// Initialize to disabled
-	PORTF.DIR |= SHDN_XP_bm | SHDN_YP_bm | SHDN_ZP_bm | SHDN_XN_bm | SHDN_YN_bm | SHDN_ZN_bm;
+	PORTF.DIR    |= SHDN_XP_bm | SHDN_YP_bm | SHDN_ZP_bm | SHDN_XN_bm | SHDN_YN_bm | SHDN_ZN_bm;
 	PORTF.OUTSET |= SHDN_XP_bm | SHDN_YP_bm | SHDN_ZP_bm | SHDN_XN_bm | SHDN_YN_bm | SHDN_ZN_bm;
 	
 	// Set frequency synchronization enable pin as output
@@ -137,15 +137,22 @@ void setDAC (uint8_t address, uint16_t value)
 	PORTC.OUTSET |= DAC_SS_bm;
 }
 
+
 // Initialize internal ADC
 // Must be called before readADC can be used
 void initADC (void)
 {
+	/*
+	ADCA.CALL = ADCACAL0;									// Load calibration registers with stored
+	ADCA.CALH = ADCACAL1;
+	ADCB.CALL = ADCBCAL0;
+	ADCB.CALH = ADCBCAL1;
+	
 	PORTA.DIR = 0x00;										// Configure PORTA as inputs
 	PORTB.DIR = 0x00;										// Configure PORTB as inputs
 	
-	ADCA.CTRLA = ADC_ENABLE_bm;
-	ADCB.CTRLA = ADC_ENABLE_bm;
+	ADCA.CTRLA = ADC_ENABLE_bm;								// Enable ADCA
+	ADCB.CTRLA = ADC_ENABLE_bm;								// Enable ADCB
 	
 	ADCA.CTRLB = ADC_RESOLUTION_12BIT_gc;
 	ADCB.CTRLB = ADC_RESOLUTION_12BIT_gc;
@@ -158,7 +165,9 @@ void initADC (void)
 	
 	ADCA.CH0.CTRL = ADC_CH_INPUTMODE_SINGLEENDED_gc;		// Configure ADCA and ADCb in single ended input mode
 	ADCB.CH0.CTRL = ADC_CH_INPUTMODE_SINGLEENDED_gc;		// Only using CH0, no pipelining
+	*/
 }
+
 
 // Reads 12 bit data value from addressed channel of internal ADC
 // Channel addresses are numbered from 0 to 15 (ADCA is 0 to 7 and ADCB is 8 to 15)

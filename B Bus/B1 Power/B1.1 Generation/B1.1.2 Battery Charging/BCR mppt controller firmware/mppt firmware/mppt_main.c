@@ -5,14 +5,17 @@
 //
 
 #include "mppt_main.h"
+#include <avr/io.h>
 
 int main (void)
 {
+	
+
 	uint8_t panelNo;
-	Panel panels[6];
+	Panel panels[NUM_PANELS];
 	
 	// Initialize panels
-	for (panelNo = 0; panelNo <= 6; panelNo++)
+	for (panelNo = 0; panelNo <= NUM_PANELS; panelNo++)
 	{
 		panels[panelNo].panelPower = 0;
 		panels[panelNo].dutySet = 512;
@@ -24,15 +27,16 @@ int main (void)
 	
 	while (1)
 	{
-		for (panelNo = 0; panelNo <= 6; panelNo++)
+		for (panelNo = 0; panelNo <= NUM_PANELS; panelNo++)
 		{
 			if (panels[panelNo].enabled)
 			{
 				perturbAndObserve (&panels[panelNo], panelNo);
 			}
 		}
-		_delay_ms(500);
+		_delay_ms(100);
 	}
+
 }
 
 // Adjust maximum power point using perturb and observe algorithm

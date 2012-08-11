@@ -8,5 +8,3 @@ mppt_interface.c
 
 mppt_main.c
 
-mppt_test.c
-
