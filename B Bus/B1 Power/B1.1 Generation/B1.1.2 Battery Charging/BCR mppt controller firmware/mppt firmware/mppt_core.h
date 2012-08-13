@@ -13,6 +13,7 @@
 
 #include <util/delay.h>
 #include <stdint.h>
+#include <stdio.h>
 
 // DAC SPI pin bit masks (PORT C)
 #define DAC_SS_bm       (1 << 4)
@@ -73,6 +74,9 @@
 // boolean
 #define ENABLE		 1
 #define DISABLE		 0
+
+// Define mystdout
+FILE mystdout = FDEV_SETUP_STREAM (uartPutChar, NULL, _FDEV_SETUP_WRITE);
 
 // Set GPIO directions (for BCR shutdown pins and frequency synchronization enable pin)
 void initGPIOdir (void);

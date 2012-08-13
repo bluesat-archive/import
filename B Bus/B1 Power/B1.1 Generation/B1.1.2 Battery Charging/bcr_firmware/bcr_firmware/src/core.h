@@ -12,7 +12,10 @@
 
 #include <stdint.h>
 #include <asf.h>
-#define F_CPU 8000000UL	//required for util/delay.h
+#include <stdio.h>
+#ifndef F_CPU
+	#define F_CPU 8000000UL	//required for delay.h
+#endif
 
 // DAC
 #define DAC_SPI_BAUD 100000UL
@@ -41,12 +44,12 @@
 
 // BCR shutdown pin bit masks
 #define BCR_SHDN_PORT PORTF
-#define GPIO_SHDN_XP  IOPORT_CREATE_PIN(BCR_SHDN_PORT, PANEL_XP)
-#define GPIO_SHDN_YP  IOPORT_CREATE_PIN(BCR_SHDN_PORT, PANEL_YP)
-#define GPIO_SHDN_ZP  IOPORT_CREATE_PIN(BCR_SHDN_PORT, PANEL_ZP)
-#define GPIO_SHDN_XN  IOPORT_CREATE_PIN(BCR_SHDN_PORT, PANEL_XN)
-#define GPIO_SHDN_YN  IOPORT_CREATE_PIN(BCR_SHDN_PORT, PANEL_YN)
-#define GPIO_SHDN_ZN  IOPORT_CREATE_PIN(BCR_SHDN_PORT, PANEL_ZN)
+#define GPIO_SHDN_XP  IOPORT_CREATE_PIN(PORTF, PANEL_XP)
+#define GPIO_SHDN_YP  IOPORT_CREATE_PIN(PORTF, PANEL_YP)
+#define GPIO_SHDN_ZP  IOPORT_CREATE_PIN(PORTF, PANEL_ZP)
+#define GPIO_SHDN_XN  IOPORT_CREATE_PIN(PORTF, PANEL_XN)
+#define GPIO_SHDN_YN  IOPORT_CREATE_PIN(PORTF, PANEL_YN)
+#define GPIO_SHDN_ZN  IOPORT_CREATE_PIN(PORTF, PANEL_ZN)
 
 // Frequency synchronization enable pin bit mask (PORTF)
 #define GPIO_FSYNC_EN IOPORT_CREATE_PIN(PORTF, 6)
@@ -79,6 +82,9 @@
 #define FSYNC_DISABLE	 0x0
 #define FSYNC_ENABLE	 0x1
 
+// USART
+#define FTDI_USART USARTC0
+
 // Set GPIO directions (for BCR shutdown pins and frequency synchronization enable pin)
 void initGPIOdir (void);
 
@@ -89,13 +95,13 @@ void dacInit (void);
 uint8_t dacChannel (uint8_t panelNo);
 
 // Send 10 bit data value to addressed channel of LTC1660 D/A converter
-void dacSet (uint8_t address, uint16_t value)
+void dacSet (uint8_t address, uint16_t value);
 
+/*
 // Initialize internal ADC
 // Must be called before readADC can be used
 void adcInit (void);
 
-/*
 // Returns ADC voltage channel for given panel designator
 uint8_t adcVoltageChannel (uint8_t panelNo);
 
@@ -109,7 +115,7 @@ void adcInit (void);
 // Reads 12 bit data value from addressed channel of internal ADC
 // Channel addresses are numbered from 0 to 15 (ADCA is 0 to 7 and ADCB is 8 to 15)
 // initADC must be called before function can be used
-uint16_t adcRead (ADC_t adc, uint8_t channel);
+uint16_t adcRead (ADC_t adc, uint8_t channel_mask);
 */
 
 // Enable/disable 700 kHz frequency synchronization
@@ -119,3 +125,9 @@ void freqSync (uint8_t syncEnable);
 // enable or disable panel
 // 1 to enable, 0 to disable
 void enablePanel (uint8_t panelNo, uint8_t enable);
+
+// Initialize uart
+void uartInit (uint16_t baud);
+
+// Send character via uart
+int uartPutChar (char c, FILE *stream);

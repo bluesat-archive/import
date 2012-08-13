@@ -10,10 +10,17 @@
  * Atmel Software Framework (ASF).
  */
 #include <asf.h>
+#include <stdio.h>
+#include "core.h"
 
 int main (void)
 {
 	sysclk_init();
-
-	// Insert application code here, after the board has been initialized.
+	initGPIOdir();
+	//ioport_set_pin_high(GPIO_SHDN_YN);
+	uartInit(9600); // TODO: usart baudrate selection
+	while (1)
+	{
+		printf("Harrow\n");
+	}
 }

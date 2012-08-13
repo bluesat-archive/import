@@ -42,6 +42,8 @@ SUBDIRS :=  \
 ../src/asf/common/services/gpio/xmega_ioport/ \
 ../src/asf/common/services/ioport/ \
 ../src/asf/common/services/ioport/xmega/ \
+../src/asf/common/services/serial/ \
+../src/asf/common/services/serial/xmega_usart/ \
 ../src/asf/common/services/sleepmgr/ \
 ../src/asf/common/services/sleepmgr/xmega/ \
 ../src/asf/common/services/spi/ \
@@ -59,6 +61,7 @@ SUBDIRS :=  \
 ../src/asf/xmega/drivers/pmic/ \
 ../src/asf/xmega/drivers/sleep/ \
 ../src/asf/xmega/drivers/spi/ \
+../src/asf/xmega/drivers/usart/ \
 ../src/asf/xmega/utils/ \
 ../src/asf/xmega/utils/assembler/ \
 ../src/asf/xmega/utils/bit_handling/ \
@@ -70,12 +73,14 @@ SUBDIRS :=  \
 C_SRCS +=  \
 ../src/asf/common/services/clock/xmega/sysclk.c \
 ../src/asf/common/services/ioport/xmega/ioport_compat.c \
+../src/asf/common/services/serial/usart_serial.c \
 ../src/asf/common/services/sleepmgr/xmega/sleepmgr.c \
 ../src/asf/common/services/spi/xmega_spi/spi_master.c \
 ../src/asf/xmega/drivers/adc/adc.c \
 ../src/asf/xmega/drivers/adc/xmega_aau/adc_aau.c \
 ../src/asf/xmega/drivers/nvm/nvm.c \
 ../src/asf/xmega/drivers/spi/spi.c \
+../src/asf/xmega/drivers/usart/usart.c \
 ../src/core.c \
 ../src/main.c
 
@@ -91,6 +96,7 @@ ASM_SRCS +=
 OBJS +=  \
 src/asf/common/services/clock/xmega/sysclk.o \
 src/asf/common/services/ioport/xmega/ioport_compat.o \
+src/asf/common/services/serial/usart_serial.o \
 src/asf/common/services/sleepmgr/xmega/sleepmgr.o \
 src/asf/common/services/spi/xmega_spi/spi_master.o \
 src/asf/xmega/drivers/adc/adc.o \
@@ -99,6 +105,7 @@ src/asf/xmega/drivers/cpu/ccp.o \
 src/asf/xmega/drivers/nvm/nvm.o \
 src/asf/xmega/drivers/nvm/nvm_asm.o \
 src/asf/xmega/drivers/spi/spi.o \
+src/asf/xmega/drivers/usart/usart.o \
 src/core.o \
 src/main.o
 
@@ -106,6 +113,7 @@ src/main.o
 OBJS_AS_ARGS +=  \
 src/asf/common/services/clock/xmega/sysclk.o \
 src/asf/common/services/ioport/xmega/ioport_compat.o \
+src/asf/common/services/serial/usart_serial.o \
 src/asf/common/services/sleepmgr/xmega/sleepmgr.o \
 src/asf/common/services/spi/xmega_spi/spi_master.o \
 src/asf/xmega/drivers/adc/adc.o \
@@ -114,6 +122,7 @@ src/asf/xmega/drivers/cpu/ccp.o \
 src/asf/xmega/drivers/nvm/nvm.o \
 src/asf/xmega/drivers/nvm/nvm_asm.o \
 src/asf/xmega/drivers/spi/spi.o \
+src/asf/xmega/drivers/usart/usart.o \
 src/core.o \
 src/main.o
 
@@ -121,12 +130,14 @@ src/main.o
 C_DEPS +=  \
 src/asf/common/services/clock/xmega/sysclk.d \
 src/asf/common/services/ioport/xmega/ioport_compat.d \
+src/asf/common/services/serial/usart_serial.d \
 src/asf/common/services/sleepmgr/xmega/sleepmgr.d \
 src/asf/common/services/spi/xmega_spi/spi_master.d \
 src/asf/xmega/drivers/adc/adc.d \
 src/asf/xmega/drivers/adc/xmega_aau/adc_aau.d \
 src/asf/xmega/drivers/nvm/nvm.d \
 src/asf/xmega/drivers/spi/spi.d \
+src/asf/xmega/drivers/usart/usart.d \
 src/core.d \
 src/main.d
 
@@ -134,12 +145,14 @@ src/main.d
 C_DEPS_AS_ARGS +=  \
 src/asf/common/services/clock/xmega/sysclk.d \
 src/asf/common/services/ioport/xmega/ioport_compat.d \
+src/asf/common/services/serial/usart_serial.d \
 src/asf/common/services/sleepmgr/xmega/sleepmgr.d \
 src/asf/common/services/spi/xmega_spi/spi_master.d \
 src/asf/xmega/drivers/adc/adc.d \
 src/asf/xmega/drivers/adc/xmega_aau/adc_aau.d \
 src/asf/xmega/drivers/nvm/nvm.d \
 src/asf/xmega/drivers/spi/spi.d \
+src/asf/xmega/drivers/usart/usart.d \
 src/core.d \
 src/main.d
 
@@ -174,58 +187,74 @@ OUTPUT_FILE_DEP:= ./makedep.mk
 
 
 
+
+
+
+
 src/asf/common/services/clock/xmega/%.o: ../src/asf/common/services/clock/xmega/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc" -I"../src/asf/xmega/drivers/usart" -I"../src/asf/common/services/serial/xmega_usart" -I"../src/asf/common/services/serial"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
 	@echo Finished building: $<
 
 src/asf/common/services/ioport/xmega/%.o: ../src/asf/common/services/ioport/xmega/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc" -I"../src/asf/xmega/drivers/usart" -I"../src/asf/common/services/serial/xmega_usart" -I"../src/asf/common/services/serial"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
+	@echo Finished building: $<
+
+src/asf/common/services/serial/%.o: ../src/asf/common/services/serial/%.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc" -I"../src/asf/xmega/drivers/usart" -I"../src/asf/common/services/serial/xmega_usart" -I"../src/asf/common/services/serial"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
 	@echo Finished building: $<
 
 src/asf/common/services/sleepmgr/xmega/%.o: ../src/asf/common/services/sleepmgr/xmega/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc" -I"../src/asf/xmega/drivers/usart" -I"../src/asf/common/services/serial/xmega_usart" -I"../src/asf/common/services/serial"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
 	@echo Finished building: $<
 
 src/asf/common/services/spi/xmega_spi/%.o: ../src/asf/common/services/spi/xmega_spi/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc" -I"../src/asf/xmega/drivers/usart" -I"../src/asf/common/services/serial/xmega_usart" -I"../src/asf/common/services/serial"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
 	@echo Finished building: $<
 
 src/asf/xmega/drivers/adc/%.o: ../src/asf/xmega/drivers/adc/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc" -I"../src/asf/xmega/drivers/usart" -I"../src/asf/common/services/serial/xmega_usart" -I"../src/asf/common/services/serial"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
 	@echo Finished building: $<
 
 src/asf/xmega/drivers/adc/xmega_aau/%.o: ../src/asf/xmega/drivers/adc/xmega_aau/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc" -I"../src/asf/xmega/drivers/usart" -I"../src/asf/common/services/serial/xmega_usart" -I"../src/asf/common/services/serial"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
 	@echo Finished building: $<
 
 src/asf/xmega/drivers/nvm/%.o: ../src/asf/xmega/drivers/nvm/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc" -I"../src/asf/xmega/drivers/usart" -I"../src/asf/common/services/serial/xmega_usart" -I"../src/asf/common/services/serial"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
 	@echo Finished building: $<
 
 src/asf/xmega/drivers/spi/%.o: ../src/asf/xmega/drivers/spi/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc" -I"../src/asf/xmega/drivers/usart" -I"../src/asf/common/services/serial/xmega_usart" -I"../src/asf/common/services/serial"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
+	@echo Finished building: $<
+
+src/asf/xmega/drivers/usart/%.o: ../src/asf/xmega/drivers/usart/%.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc" -I"../src/asf/xmega/drivers/usart" -I"../src/asf/common/services/serial/xmega_usart" -I"../src/asf/common/services/serial"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
 	@echo Finished building: $<
 
 src/%.o: ../src/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -DBOARD=BLUESAT_BCR -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT  -I"../src" -I"../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I"../src/asf/common/boards" -I"../src/asf/common/services/gpio" -I"../src/asf/common/services/ioport" -I"../src/asf/common/utils" -I"../src/asf/xmega/boards" -I"../src/asf/xmega/boards/stk600/rc064x" -I"../src/asf/xmega/utils" -I"../src/asf/xmega/utils/preprocessor" -I"../src/config" -I"../src/asf/xmega/drivers/cpu" -I"../src/asf/common/services/clock" -I"../src/asf/xmega/drivers/nvm" -I"../src/asf/xmega/drivers/pmic" -I"../src/asf/xmega/drivers/sleep" -I"../src/asf/xmega/drivers/spi" -I"../src/asf/common/services/sleepmgr" -I"../src/asf/common/services/spi/xmega_spi" -I"../src/asf/common/services/spi" -I"../src/asf/xmega/drivers/adc" -I"../src/asf/xmega/drivers/usart" -I"../src/asf/common/services/serial/xmega_usart" -I"../src/asf/common/services/serial"  -O1 -fdata-sections -ffunction-sections -g3 -Wall -c -Werror-implicit-function-declaration -Wmissing-prototypes -Wpointer-arith -Wstrict-prototypes -mrelax -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"  -mmcu=atxmega64a3   -o"$@" "$<" 
 	@echo Finished building: $<
 
 
@@ -238,26 +267,26 @@ src/%.o: ../src/%.c
 src/asf/xmega/drivers/cpu/ccp.o: ../src/asf/xmega/drivers/cpu/ccp.s
 	@echo Building file: $<
 	@echo Invoking: AVR32/GNU Assembler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -DBOARD=STK600_RC064X -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT -mrelax -I "../src" -I "../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I "../src/asf/common/boards" -I "../src/asf/common/services/gpio" -I "../src/asf/common/services/ioport" -I "../src/asf/common/utils" -I "../src/asf/xmega/boards" -I "../src/asf/xmega/boards/stk600/rc064x" -I "../src/asf/xmega/utils" -I "../src/asf/xmega/utils/preprocessor" -I "../src/config" -I "../src/asf/xmega/drivers/cpu" -I "../src/asf/common/services/clock" -I "../src/asf/xmega/drivers/nvm" -I "../src/asf/xmega/drivers/pmic" -I "../src/asf/xmega/drivers/sleep" -I "../src/asf/xmega/drivers/spi" -I "../src/asf/common/services/sleepmgr" -I "../src/asf/common/services/spi/xmega_spi" -I "../src/asf/common/services/spi" -I "../src/asf/xmega/drivers/adc"   -mmcu=atxmega64a3   -o"$@" "$<"
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -DBOARD=STK600_RC064X -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT -mrelax -I "../src" -I "../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I "../src/asf/common/boards" -I "../src/asf/common/services/gpio" -I "../src/asf/common/services/ioport" -I "../src/asf/common/utils" -I "../src/asf/xmega/boards" -I "../src/asf/xmega/boards/stk600/rc064x" -I "../src/asf/xmega/utils" -I "../src/asf/xmega/utils/preprocessor" -I "../src/config" -I "../src/asf/xmega/drivers/cpu" -I "../src/asf/common/services/clock" -I "../src/asf/xmega/drivers/nvm" -I "../src/asf/xmega/drivers/pmic" -I "../src/asf/xmega/drivers/sleep" -I "../src/asf/xmega/drivers/spi" -I "../src/asf/common/services/sleepmgr" -I "../src/asf/common/services/spi/xmega_spi" -I "../src/asf/common/services/spi" -I "../src/asf/xmega/drivers/adc" -I "../src/asf/xmega/drivers/usart" -I "../src/asf/common/services/serial/xmega_usart" -I "../src/asf/common/services/serial"   -mmcu=atxmega64a3   -o"$@" "$<"
 	@echo Finished building: $<
 
 src/asf/xmega/drivers/nvm/nvm_asm.o: ../src/asf/xmega/drivers/nvm/nvm_asm.s
 	@echo Building file: $<
 	@echo Invoking: AVR32/GNU Assembler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -DBOARD=STK600_RC064X -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT -mrelax -I "../src" -I "../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I "../src/asf/common/boards" -I "../src/asf/common/services/gpio" -I "../src/asf/common/services/ioport" -I "../src/asf/common/utils" -I "../src/asf/xmega/boards" -I "../src/asf/xmega/boards/stk600/rc064x" -I "../src/asf/xmega/utils" -I "../src/asf/xmega/utils/preprocessor" -I "../src/config" -I "../src/asf/xmega/drivers/cpu" -I "../src/asf/common/services/clock" -I "../src/asf/xmega/drivers/nvm" -I "../src/asf/xmega/drivers/pmic" -I "../src/asf/xmega/drivers/sleep" -I "../src/asf/xmega/drivers/spi" -I "../src/asf/common/services/sleepmgr" -I "../src/asf/common/services/spi/xmega_spi" -I "../src/asf/common/services/spi" -I "../src/asf/xmega/drivers/adc"   -mmcu=atxmega64a3   -o"$@" "$<"
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -DBOARD=STK600_RC064X -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT -mrelax -I "../src" -I "../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I "../src/asf/common/boards" -I "../src/asf/common/services/gpio" -I "../src/asf/common/services/ioport" -I "../src/asf/common/utils" -I "../src/asf/xmega/boards" -I "../src/asf/xmega/boards/stk600/rc064x" -I "../src/asf/xmega/utils" -I "../src/asf/xmega/utils/preprocessor" -I "../src/config" -I "../src/asf/xmega/drivers/cpu" -I "../src/asf/common/services/clock" -I "../src/asf/xmega/drivers/nvm" -I "../src/asf/xmega/drivers/pmic" -I "../src/asf/xmega/drivers/sleep" -I "../src/asf/xmega/drivers/spi" -I "../src/asf/common/services/sleepmgr" -I "../src/asf/common/services/spi/xmega_spi" -I "../src/asf/common/services/spi" -I "../src/asf/xmega/drivers/adc" -I "../src/asf/xmega/drivers/usart" -I "../src/asf/common/services/serial/xmega_usart" -I "../src/asf/common/services/serial"   -mmcu=atxmega64a3   -o"$@" "$<"
 	@echo Finished building: $<
 
 
 src/asf/xmega/drivers/cpu/%.o: ../src/asf/xmega/drivers/cpu/%.s
 	@echo Building file: $<
 	@echo Invoking: AVR32/GNU Assembler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -DBOARD=STK600_RC064X -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT -mrelax -I "../src" -I "../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I "../src/asf/common/boards" -I "../src/asf/common/services/gpio" -I "../src/asf/common/services/ioport" -I "../src/asf/common/utils" -I "../src/asf/xmega/boards" -I "../src/asf/xmega/boards/stk600/rc064x" -I "../src/asf/xmega/utils" -I "../src/asf/xmega/utils/preprocessor" -I "../src/config" -I "../src/asf/xmega/drivers/cpu" -I "../src/asf/common/services/clock" -I "../src/asf/xmega/drivers/nvm" -I "../src/asf/xmega/drivers/pmic" -I "../src/asf/xmega/drivers/sleep" -I "../src/asf/xmega/drivers/spi" -I "../src/asf/common/services/sleepmgr" -I "../src/asf/common/services/spi/xmega_spi" -I "../src/asf/common/services/spi" -I "../src/asf/xmega/drivers/adc"   -mmcu=atxmega64a3   -o"$@" "$<"
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -DBOARD=STK600_RC064X -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT -mrelax -I "../src" -I "../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I "../src/asf/common/boards" -I "../src/asf/common/services/gpio" -I "../src/asf/common/services/ioport" -I "../src/asf/common/utils" -I "../src/asf/xmega/boards" -I "../src/asf/xmega/boards/stk600/rc064x" -I "../src/asf/xmega/utils" -I "../src/asf/xmega/utils/preprocessor" -I "../src/config" -I "../src/asf/xmega/drivers/cpu" -I "../src/asf/common/services/clock" -I "../src/asf/xmega/drivers/nvm" -I "../src/asf/xmega/drivers/pmic" -I "../src/asf/xmega/drivers/sleep" -I "../src/asf/xmega/drivers/spi" -I "../src/asf/common/services/sleepmgr" -I "../src/asf/common/services/spi/xmega_spi" -I "../src/asf/common/services/spi" -I "../src/asf/xmega/drivers/adc" -I "../src/asf/xmega/drivers/usart" -I "../src/asf/common/services/serial/xmega_usart" -I "../src/asf/common/services/serial"   -mmcu=atxmega64a3   -o"$@" "$<"
 	@echo Finished building: $<
 
 src/asf/xmega/drivers/nvm/%.o: ../src/asf/xmega/drivers/nvm/%.s
 	@echo Building file: $<
 	@echo Invoking: AVR32/GNU Assembler : (AVR_8_bit_GNU_Toolchain_3.4.0_663) 4.6.2
-	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -DBOARD=STK600_RC064X -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT -mrelax -I "../src" -I "../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I "../src/asf/common/boards" -I "../src/asf/common/services/gpio" -I "../src/asf/common/services/ioport" -I "../src/asf/common/utils" -I "../src/asf/xmega/boards" -I "../src/asf/xmega/boards/stk600/rc064x" -I "../src/asf/xmega/utils" -I "../src/asf/xmega/utils/preprocessor" -I "../src/config" -I "../src/asf/xmega/drivers/cpu" -I "../src/asf/common/services/clock" -I "../src/asf/xmega/drivers/nvm" -I "../src/asf/xmega/drivers/pmic" -I "../src/asf/xmega/drivers/sleep" -I "../src/asf/xmega/drivers/spi" -I "../src/asf/common/services/sleepmgr" -I "../src/asf/common/services/spi/xmega_spi" -I "../src/asf/common/services/spi" -I "../src/asf/xmega/drivers/adc"   -mmcu=atxmega64a3   -o"$@" "$<"
+	$(QUOTE)C:\Program Files (x86)\Atmel\Atmel Studio 6.0\extensions\Atmel\AVRGCC\3.4.0.65\AVRToolchain\bin\avr-gcc.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -DBOARD=STK600_RC064X -DCONFIG_NVM_IGNORE_XMEGA_A3_D3_REVB_ERRATA -DIOPORT_XMEGA_COMPAT -mrelax -I "../src" -I "../src/asf/common/applications/user_application/atxmega64a3_stk600-rc064x" -I "../src/asf/common/boards" -I "../src/asf/common/services/gpio" -I "../src/asf/common/services/ioport" -I "../src/asf/common/utils" -I "../src/asf/xmega/boards" -I "../src/asf/xmega/boards/stk600/rc064x" -I "../src/asf/xmega/utils" -I "../src/asf/xmega/utils/preprocessor" -I "../src/config" -I "../src/asf/xmega/drivers/cpu" -I "../src/asf/common/services/clock" -I "../src/asf/xmega/drivers/nvm" -I "../src/asf/xmega/drivers/pmic" -I "../src/asf/xmega/drivers/sleep" -I "../src/asf/xmega/drivers/spi" -I "../src/asf/common/services/sleepmgr" -I "../src/asf/common/services/spi/xmega_spi" -I "../src/asf/common/services/spi" -I "../src/asf/xmega/drivers/adc" -I "../src/asf/xmega/drivers/usart" -I "../src/asf/common/services/serial/xmega_usart" -I "../src/asf/common/services/serial"   -mmcu=atxmega64a3   -o"$@" "$<"
 	@echo Finished building: $<
 
 

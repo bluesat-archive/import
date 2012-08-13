@@ -97,6 +97,12 @@
 // From module: System Clock Control - XMEGA A1/A3/A3B/A4/D implementation
 #include <sysclk.h>
 
+// From module: USART - Serial interface - XMEGA implementation
+#include <serial.h>
+
+// From module: USART - Universal Synchronous/Asynchronous Receiver/Transmitter
+#include <usart.h>
+
 // From module: XMEGA compiler driver
 #include <compiler.h>
 #include <status_codes.h>

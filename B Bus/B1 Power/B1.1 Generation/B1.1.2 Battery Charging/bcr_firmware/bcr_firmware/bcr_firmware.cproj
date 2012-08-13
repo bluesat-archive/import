@@ -14,9 +14,10 @@
     <option id="common.boards" value="Add" config="" content-id="Atmel.ASF" />
     <option id="common.services.basic.clock" value="Add" config="" content-id="Atmel.ASF" />
     <option id="common.services.basic.gpio" value="Add" config="" content-id="Atmel.ASF" />
-    <option id="xmega.drivers.ioport" value="Add" config="" content-id="Atmel.ASF" />
-    <option id="xmega.drivers.adc" value="Add" config="" content-id="Atmel.ASF" />
     <option id="common.services.basic.spi_master" value="Add" config="standard_spi" content-id="Atmel.ASF" />
+    <option id="xmega.drivers.adc" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="xmega.drivers.ioport" value="Add" config="" content-id="Atmel.ASF" />
+    <option id="common.services.basic.serial" value="Add" config="" content-id="Atmel.ASF" />
   </options>
   <configurations />
   <files>
@@ -78,6 +79,12 @@
     <file path="src/asf/xmega/drivers/adc/adc.c" framework="" version="" source="xmega\drivers\adc\adc.c" changed="False" content-id="Atmel.ASF" />
     <file path="src/asf/xmega/drivers/adc/adc.h" framework="" version="" source="xmega\drivers\adc\adc.h" changed="False" content-id="Atmel.ASF" />
     <file path="src/config/conf_adc.h" framework="" version="" source="xmega\drivers\adc\module_config\conf_adc.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/drivers/usart/usart.c" framework="" version="" source="xmega\drivers\usart\usart.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/xmega/drivers/usart/usart.h" framework="" version="" source="xmega\drivers\usart\usart.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/serial/usart_serial.c" framework="" version="" source="common\services\serial\usart_serial.c" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/serial/xmega_usart/usart_serial.h" framework="" version="" source="common\services\serial\xmega_usart\usart_serial.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/asf/common/services/serial/serial.h" framework="" version="" source="common\services\serial\serial.h" changed="False" content-id="Atmel.ASF" />
+    <file path="src/config/conf_usart_serial.h" framework="" version="" source="common\services\serial\xmega_usart\module_config\conf_usart_serial.h" changed="False" content-id="Atmel.ASF" />
   </files>
   <documentation help="http://asf.atmel.com/docs/3.3.0/common.applications.user_application.stk600-rc064x.atxmega64a3/html/index.html" />
 </framework-data>
@@ -163,6 +170,9 @@
       <Value>../src/asf/common/services/spi/xmega_spi</Value>
       <Value>../src/asf/common/services/spi</Value>
       <Value>../src/asf/xmega/drivers/adc</Value>
+      <Value>../src/asf/xmega/drivers/usart</Value>
+      <Value>../src/asf/common/services/serial/xmega_usart</Value>
+      <Value>../src/asf/common/services/serial</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
@@ -200,6 +210,9 @@
       <Value>../src/asf/common/services/spi/xmega_spi</Value>
       <Value>../src/asf/common/services/spi</Value>
       <Value>../src/asf/xmega/drivers/adc</Value>
+      <Value>../src/asf/xmega/drivers/usart</Value>
+      <Value>../src/asf/common/services/serial/xmega_usart</Value>
+      <Value>../src/asf/common/services/serial</Value>
     </ListValues>
   </avrgcc.assembler.general.IncludePaths>
 </AvrGcc>
@@ -246,6 +259,9 @@
       <Value>../src/asf/common/services/spi/xmega_spi</Value>
       <Value>../src/asf/common/services/spi</Value>
       <Value>../src/asf/xmega/drivers/adc</Value>
+      <Value>../src/asf/xmega/drivers/usart</Value>
+      <Value>../src/asf/common/services/serial/xmega_usart</Value>
+      <Value>../src/asf/common/services/serial</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
@@ -281,6 +297,9 @@
       <Value>../src/asf/common/services/spi/xmega_spi</Value>
       <Value>../src/asf/common/services/spi</Value>
       <Value>../src/asf/xmega/drivers/adc</Value>
+      <Value>../src/asf/xmega/drivers/usart</Value>
+      <Value>../src/asf/common/services/serial/xmega_usart</Value>
+      <Value>../src/asf/common/services/serial</Value>
     </ListValues>
   </avrgcc.assembler.general.IncludePaths>
 </AvrGcc>
@@ -323,6 +342,15 @@
       <SubType>compile</SubType>
     </None>
     <None Include="src\asf\common\services\sleepmgr\sleepmgr.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\asf\common\services\serial\serial.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\asf\common\services\serial\usart_serial.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\asf\common\services\serial\xmega_usart\usart_serial.h">
       <SubType>compile</SubType>
     </None>
     <Compile Include="src\asf\common\services\sleepmgr\xmega\sleepmgr.c">
@@ -386,6 +414,15 @@
       <SubType>compile</SubType>
     </None>
     <None Include="src\config\conf_adc.h">
+      <SubType>compile</SubType>
+    </None>
+    <Compile Include="src\asf\xmega\drivers\usart\usart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <None Include="src\asf\xmega\drivers\usart\usart.h">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="src\config\conf_usart_serial.h">
       <SubType>compile</SubType>
     </None>
     <Compile Include="src\core.c">
@@ -476,6 +513,8 @@
     <Folder Include="src\asf\common\services\gpio\xmega_ioport\" />
     <Folder Include="src\asf\common\services\ioport\" />
     <Folder Include="src\asf\common\services\ioport\xmega\" />
+    <Folder Include="src\asf\common\services\serial\" />
+    <Folder Include="src\asf\common\services\serial\xmega_usart\" />
     <Folder Include="src\asf\common\services\sleepmgr\" />
     <Folder Include="src\asf\common\services\sleepmgr\xmega\" />
     <Folder Include="src\asf\common\services\spi\" />
@@ -493,6 +532,7 @@
     <Folder Include="src\asf\xmega\drivers\pmic\" />
     <Folder Include="src\asf\xmega\drivers\sleep\" />
     <Folder Include="src\asf\xmega\drivers\spi\" />
+    <Folder Include="src\asf\xmega\drivers\usart\" />
     <Folder Include="src\asf\xmega\utils\" />
     <Folder Include="src\asf\xmega\utils\assembler\" />
     <Folder Include="src\asf\xmega\utils\bit_handling\" />

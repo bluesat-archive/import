@@ -5,10 +5,16 @@
 //
 //	 For AVR ATxmega64A3
 //
+#ifndef F_CPU
+#define F_CPU 8000000UL	//required for delay.h
+#endif
 
 #include <avr/io.h>
 #include <util/delay.h>
 #include "core.h"
+
+// Define uart_stdout
+static FILE uart_stdout = FDEV_SETUP_STREAM (uartPutChar, NULL, _FDEV_SETUP_WRITE);
 
 // Set GPIO directions (for BCR shutdown pins and frequency synchronization enable pin)
 void initGPIOdir (void)
@@ -23,14 +29,14 @@ void initGPIOdir (void)
 	ioport_configure_pin(GPIO_SHDN_ZN, IOPORT_DIR_OUTPUT | BCR_DISABLE);
 
 	// Set frequency synchronization enable pin as output
-	ioport_configure_pin(FSYNC_EN_bm, IOPORT_DIR_OUTPUT | FSYNC_DISABLE);
+	ioport_configure_pin(GPIO_FSYNC_EN, IOPORT_DIR_OUTPUT | FSYNC_DISABLE);
 }
 
 // Initialize SPI bus for LTC1660 D/A converter
-void initDAC (void)
+void dacInit (void)
 {	
-	spi_enable_master_mode(SPIC);
-	spi_xmega_set_baud_div(SPIC, DAC_SPI_BAUD, 16);
+	spi_enable_master_mode(&SPIC);
+	spi_xmega_set_baud_div(&SPIC, DAC_SPI_BAUD, 16);
 	ioport_configure_pin(GPIO_DAC_SS, IOPORT_DIR_OUTPUT | IOPORT_INIT_HIGH);
 }
 
@@ -73,8 +79,8 @@ void dacSet (uint8_t address, uint16_t value)
 	_delay_us(1);
 
 	// Send word
-	spi_put(DAC_SPI, (uint8_t) (dacWord >> 8));
-	spi_put(DAC_SPI, (uint8_t) dacWord);
+	spi_put(&DAC_SPI, (uint8_t) (dacWord >> 8));
+	spi_put(&DAC_SPI, (uint8_t) dacWord);
 
 	// Pull chip select high
 	ioport_set_pin_high(GPIO_DAC_SS);
@@ -152,30 +158,29 @@ void adcInit (void)
 	memset(&adcch_conf, 0, sizeof(struct adc_channel_config));
 	
 	adc_set_conversion_parameters(&adc_conf, ADC_SIGN_ON, ADC_RES_12, ADC_REF_AREFA);
-	adc_set_clock_rate(&adc_conf, 200000UL);
-	//adc_set_conversion_trigger(&adc_conf, ADC_TRIG_EVENT_SWEEP, 1, 0);
+	adc_set_clock_rate(&adc_conf, F_CPU/512);
 	adc_set_current_limit(&adc_conf, ADC_CURRENT_LIMIT_HIGH);
 	adc_set_gain_impedance_mode(&adc_conf, ADC_GAIN_HIGHIMPEDANCE);
+	adc_get_calibration_data(ADC_CAL_ADCA);
+	adc_get_calibration_data(ADC_CAL_ADCB);
 
 	adc_write_configuration(&ADCA, &adc_conf);
 	adc_set_callback(&ADCA, &adc_handler);
 	
 	
 	
-	
-	
+
 	
 	
 	if (!adc_is_enabled())
 		adc_enable();
 		
-	adc_get_calibration_data(ADC_CAL_ADCA);
-	adc_get_calibration_data(ADC_CAL_ADCB);
+
 	
 	
 	
 	
-	/*
+	
 	ADCA.CALL = ADCACAL0;									// Load calibration registers with stored
 	ADCA.CALH = ADCACAL1;
 	ADCB.CALL = ADCBCAL0;
@@ -204,15 +209,15 @@ void adcInit (void)
 // Reads 12 bit data value from addressed channel of internal ADC
 // Channel addresses are numbered from 0 to 15 (ADCA is 0 to 7 and ADCB is 8 to 15)
 // initADC must be called before function can be used
-uint16_t adcRead (ADC_t adc, uint8_t channel)
+uint16_t adcRead (ADC_t adc, uint8_t channel_mask)
 {
 	uint16_t result;
-	adc_start_conversion(adc, (1 << channel));
-	result = 
-	return result;	
+	adc_start_conversion(adc, channel_mask);
+	result = adc_get_unsigned_result(adc, channel_mask);
+	return result;
 }
-*/
 
+*/
 
 // Enable/disable 700 kHz frequency synchronization
 // syncEnable = 1 to enable, 0 to disable
@@ -229,7 +234,32 @@ void freqSync (uint8_t syncEnable)
 void enablePanel (uint8_t panelNo, uint8_t enable)
 {
 	if (enable)
-		ioport_set_group_high(BCR_SHDN_PORT, (1 << panelNo));
+		ioport_set_group_high(IOPORT_PORTF, (1 << panelNo));
 	else
-		ioport_set_group_low(BCR_SHDN_PORT, (1 << panelNo));
+		ioport_set_group_low(IOPORT_PORTF, (1 << panelNo));
+}
+
+// Initialize uart
+void uartInit (uint16_t baud)
+{
+		// Set baud rate
+		usart_set_baudrate(&FTDI_USART, baud, F_CPU);
+		
+		// Enable rx and tx
+		usart_rx_enable(&FTDI_USART);
+		usart_tx_enable(&FTDI_USART);
+		
+		// Set frame format: 8 data, 1 stop bit
+		usart_format_set(&FTDI_USART, USART_CHSIZE_8BIT_gc, USART_PMODE_EVEN_gc, 0);
+
+		// stdout required for printf
+		stdout = &uart_stdout;
+}
+
+int uartPutChar (char c, FILE *stream)
+{
+	if (c == '\n')
+		uartPutChar ('\r', stream);
+	usart_putchar(&FTDI_USART, c);
+	return 0;
 }
