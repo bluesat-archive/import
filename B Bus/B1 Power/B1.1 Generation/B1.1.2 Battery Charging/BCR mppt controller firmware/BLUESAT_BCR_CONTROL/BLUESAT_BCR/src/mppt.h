@@ -23,7 +23,12 @@ struct bcr_panel_powers {
 };
 typedef struct bcr_panel_powers panel_powers_t;
 
-#define ISET_STEPSIZE 4
+#define ISET_STEPSIZE 2
 #define PERTURBS_PER_CYCLE 100
+
+// ISET bounds and nominal (default) value
+#define ISET_MAX		1023
+#define ISET_MIN		0
+#define ISET_NOMINAL	512
 
 #endif /* MPPT_H_ */

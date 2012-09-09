@@ -23,13 +23,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   9 .debug_frame  000009b8  00000000  00000000  00012208  2**2
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_str    000023e3  00000000  00000000  00012bc0  2**0
+ 10 .debug_str    00002482  00000000  00000000  00012bc0  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    00002920  00000000  00000000  00014fa3  2**0
+ 11 .debug_loc    00002920  00000000  00000000  00015042  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_macinfo 0019a942  00000000  00000000  000178c3  2**0
+ 12 .debug_macinfo 0019a972  00000000  00000000  00017962  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_ranges 00000248  00000000  00000000  001b2208  2**3
+ 13 .debug_ranges 00000248  00000000  00000000  001b22d8  2**3
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -501,31 +501,13 @@ static inline void cpu_irq_restore(irqflags_t flags)
      2a2:	08 95       	ret
 
 000002a4 <ioport_configure_port_pin>:
-#include "ioport_compat.h"
-
-#if defined(IOPORT_XMEGA_COMPAT)
-void ioport_configure_port_pin(void *port, pin_mask_t pin_mask,
-		port_pin_flags_t flags)
-{
      2a4:	cf 93       	push	r28
      2a6:	df 93       	push	r29
      2a8:	ec 01       	movw	r28, r24
- *
- */
-#include "ioport_compat.h"
-
-#if defined(IOPORT_XMEGA_COMPAT)
-void ioport_configure_port_pin(void *port, pin_mask_t pin_mask,
      2aa:	fc 01       	movw	r30, r24
      2ac:	70 96       	adiw	r30, 0x10	; 16
      2ae:	20 e0       	ldi	r18, 0x00	; 0
      2b0:	30 e0       	ldi	r19, 0x00	; 0
-		port_pin_flags_t flags)
-{
-	uint8_t pin;
-
-	for (pin = 0; pin < 8; pin++) {
-		if (pin_mask & (1 << pin)) {
      2b2:	a6 2f       	mov	r26, r22
      2b4:	b0 e0       	ldi	r27, 0x00	; 0
      2b6:	cd 01       	movw	r24, r26
@@ -536,47 +518,23 @@ void ioport_configure_port_pin(void *port, pin_mask_t pin_mask,
      2c0:	0a 94       	dec	r0
      2c2:	e2 f7       	brpl	.-8      	; 0x2bc <ioport_configure_port_pin+0x18>
      2c4:	80 fd       	sbrc	r24, 0
-			*((uint8_t *)port + PORT_PIN0CTRL + pin) = flags >> 8;
      2c6:	50 83       	st	Z, r21
      2c8:	2f 5f       	subi	r18, 0xFF	; 255
      2ca:	3f 4f       	sbci	r19, 0xFF	; 255
      2cc:	31 96       	adiw	r30, 0x01	; 1
-void ioport_configure_port_pin(void *port, pin_mask_t pin_mask,
-		port_pin_flags_t flags)
-{
-	uint8_t pin;
-
-	for (pin = 0; pin < 8; pin++) {
      2ce:	28 30       	cpi	r18, 0x08	; 8
      2d0:	31 05       	cpc	r19, r1
      2d2:	89 f7       	brne	.-30     	; 0x2b6 <ioport_configure_port_pin+0x12>
-		if (pin_mask & (1 << pin)) {
-			*((uint8_t *)port + PORT_PIN0CTRL + pin) = flags >> 8;
-		}
-	}
-	/* Select direction and initial pin state */
-	if (flags & IOPORT_DIR_OUTPUT) {
      2d4:	40 ff       	sbrs	r20, 0
      2d6:	07 c0       	rjmp	.+14     	; 0x2e6 <ioport_configure_port_pin+0x42>
-		if (flags & IOPORT_INIT_HIGH) {
      2d8:	41 ff       	sbrs	r20, 1
      2da:	02 c0       	rjmp	.+4      	; 0x2e0 <ioport_configure_port_pin+0x3c>
-			*((uint8_t *)port + PORT_OUTSET) = pin_mask;
      2dc:	6d 83       	std	Y+5, r22	; 0x05
      2de:	01 c0       	rjmp	.+2      	; 0x2e2 <ioport_configure_port_pin+0x3e>
-		} else {
-			*((uint8_t *)port + PORT_OUTCLR) = pin_mask;
      2e0:	6e 83       	std	Y+6, r22	; 0x06
-		}
-
-		*((uint8_t *)port + PORT_DIRSET) = pin_mask;
      2e2:	69 83       	std	Y+1, r22	; 0x01
      2e4:	01 c0       	rjmp	.+2      	; 0x2e8 <ioport_configure_port_pin+0x44>
-	} else {
-		*((uint8_t *)port + PORT_DIRCLR) = pin_mask;
      2e6:	6a 83       	std	Y+2, r22	; 0x02
-	}
-}
      2e8:	df 91       	pop	r29
      2ea:	cf 91       	pop	r28
      2ec:	08 95       	ret
@@ -2750,57 +2708,23 @@ static inline void cpu_irq_restore(irqflags_t flags)
      d4e:	08 95       	ret
 
 00000d50 <ccp_write_io>:
-
-	PUBLIC_FUNCTION(ccp_write_io)
-
-#if defined(__GNUC__)
-
-	out     RAMPZ, r1               // Reset bits 23:16 of Z
      d50:	1b be       	out	0x3b, r1	; 59
-	movw    r30, r24                // Load addr into Z
      d52:	fc 01       	movw	r30, r24
-	ldi     r18, CCP_IOREG          // Load magic CCP value
      d54:	28 ed       	ldi	r18, 0xD8	; 216
-	out     CCP, r18                // Start CCP handshake
      d56:	24 bf       	out	0x34, r18	; 52
-	st      Z, r22                  // Write value to I/O register
      d58:	60 83       	st	Z, r22
-	ret                             // Return to caller
      d5a:	08 95       	ret
 
 00000d5c <nvm_read_byte>:
-#endif
-
-#ifndef __DOXYGEN__
-	PUBLIC_FUNCTION(nvm_read_byte)
-#if defined(__GNUC__)
-	lds r20, NVM_CMD          ; Store NVM command register
      d5c:	40 91 ca 01 	lds	r20, 0x01CA
-	mov ZL, r22               ; Load byte index into low byte of Z.
      d60:	e6 2f       	mov	r30, r22
-	mov ZH, r23               ; Load high byte into Z.
      d62:	f7 2f       	mov	r31, r23
-	sts NVM_CMD, r24          ; Load prepared command into NVM Command register.
      d64:	80 93 ca 01 	sts	0x01CA, r24
-	lpm r24, Z                ; Perform an LPM to read out byte
      d68:	84 91       	lpm	r24, Z
-	sts NVM_CMD, r20          ; Restore NVM command register
      d6a:	40 93 ca 01 	sts	0x01CA, r20
-	sts NVM_CMD, r16          ; Load prepared command into NVM Command register.
-	lpm r16, Z                ; Perform an LPM to read out byte
-	sts NVM_CMD, r20          ; Restore NVM command register
-#endif
-
-	ret
      d6e:	08 95       	ret
 
 00000d70 <spi_xmega_set_baud_div>:
- * \return Status of operation.
- *   \retval >=0  Success.
- *   \retval  <0  Error.
- */
-int8_t spi_xmega_set_baud_div(SPI_t *spi, uint32_t baudrate, uint32_t clkper_hz)
-{
      d70:	cf 92       	push	r12
      d72:	df 92       	push	r13
      d74:	ef 92       	push	r14
@@ -2812,12 +2736,6 @@ int8_t spi_xmega_set_baud_div(SPI_t *spi, uint32_t baudrate, uint32_t clkper_hz)
      d80:	ec 01       	movw	r28, r24
      d82:	6a 01       	movw	r12, r20
      d84:	7b 01       	movw	r14, r22
-
-	/*
-	 * Get wanted divisor rounded up so we don't get speed higher than
-	 * requested baudrate.
-	 */
-	divisor = (clkper_hz + baudrate - 1) / baudrate;
      d86:	db 01       	movw	r26, r22
      d88:	ca 01       	movw	r24, r20
      d8a:	01 97       	sbiw	r24, 0x01	; 1
@@ -2835,109 +2753,43 @@ int8_t spi_xmega_set_baud_div(SPI_t *spi, uint32_t baudrate, uint32_t clkper_hz)
      da2:	89 01       	movw	r16, r18
      da4:	9a 01       	movw	r18, r20
      da6:	01 38       	cpi	r16, 0x81	; 129
-
-	if (divisor > 128) {
      da8:	11 05       	cpc	r17, r1
      daa:	21 05       	cpc	r18, r1
      dac:	31 05       	cpc	r19, r1
      dae:	f8 f4       	brcc	.+62     	; 0xdee <spi_xmega_set_baud_div+0x7e>
      db0:	01 34       	cpi	r16, 0x41	; 65
-
-	/*
-	 * For divisor values between the possible ones round up to the closest
-	 * higher one to avoid higher baudrate than requested.
-	 */
-	if (divisor_8bit > 64) {
      db2:	60 f4       	brcc	.+24     	; 0xdcc <spi_xmega_set_baud_div+0x5c>
      db4:	01 32       	cpi	r16, 0x21	; 33
-		ctrl = SPI_PRESCALER_DIV128_gc;
-	}
-	else if (divisor_8bit > 32) {
      db6:	60 f4       	brcc	.+24     	; 0xdd0 <spi_xmega_set_baud_div+0x60>
      db8:	01 31       	cpi	r16, 0x11	; 17
-		ctrl = SPI_PRESCALER_DIV64_gc;
-	}
-	else if (divisor_8bit > 16) {
      dba:	60 f4       	brcc	.+24     	; 0xdd4 <spi_xmega_set_baud_div+0x64>
      dbc:	09 30       	cpi	r16, 0x09	; 9
-		ctrl = SPI_CLK2X_bm | SPI_PRESCALER_DIV64_gc;
-	}
-	else if (divisor_8bit > 8) {
      dbe:	60 f4       	brcc	.+24     	; 0xdd8 <spi_xmega_set_baud_div+0x68>
      dc0:	05 30       	cpi	r16, 0x05	; 5
-		ctrl = SPI_PRESCALER_DIV16_gc;
-	}
-	else if (divisor_8bit > 4) {
      dc2:	60 f4       	brcc	.+24     	; 0xddc <spi_xmega_set_baud_div+0x6c>
      dc4:	03 30       	cpi	r16, 0x03	; 3
-		ctrl = SPI_CLK2X_bm | SPI_PRESCALER_DIV16_gc;
-	}
-	else if (divisor_8bit > 2) {
      dc6:	60 f0       	brcs	.+24     	; 0xde0 <spi_xmega_set_baud_div+0x70>
      dc8:	90 e0       	ldi	r25, 0x00	; 0
-		ctrl = SPI_PRESCALER_DIV4_gc;
      dca:	0b c0       	rjmp	.+22     	; 0xde2 <spi_xmega_set_baud_div+0x72>
      dcc:	93 e0       	ldi	r25, 0x03	; 3
-	/*
-	 * For divisor values between the possible ones round up to the closest
-	 * higher one to avoid higher baudrate than requested.
-	 */
-	if (divisor_8bit > 64) {
-		ctrl = SPI_PRESCALER_DIV128_gc;
      dce:	09 c0       	rjmp	.+18     	; 0xde2 <spi_xmega_set_baud_div+0x72>
      dd0:	92 e0       	ldi	r25, 0x02	; 2
-	}
-	else if (divisor_8bit > 32) {
-		ctrl = SPI_PRESCALER_DIV64_gc;
      dd2:	07 c0       	rjmp	.+14     	; 0xde2 <spi_xmega_set_baud_div+0x72>
      dd4:	92 e8       	ldi	r25, 0x82	; 130
-	}
-	else if (divisor_8bit > 16) {
-		ctrl = SPI_CLK2X_bm | SPI_PRESCALER_DIV64_gc;
      dd6:	05 c0       	rjmp	.+10     	; 0xde2 <spi_xmega_set_baud_div+0x72>
      dd8:	91 e0       	ldi	r25, 0x01	; 1
-	}
-	else if (divisor_8bit > 8) {
-		ctrl = SPI_PRESCALER_DIV16_gc;
      dda:	03 c0       	rjmp	.+6      	; 0xde2 <spi_xmega_set_baud_div+0x72>
      ddc:	91 e8       	ldi	r25, 0x81	; 129
-	}
-	else if (divisor_8bit > 4) {
-		ctrl = SPI_CLK2X_bm | SPI_PRESCALER_DIV16_gc;
      dde:	01 c0       	rjmp	.+2      	; 0xde2 <spi_xmega_set_baud_div+0x72>
      de0:	90 e8       	ldi	r25, 0x80	; 128
-	}
-	else if (divisor_8bit > 2) {
-		ctrl = SPI_PRESCALER_DIV4_gc;
-	}
-	else {
-		ctrl = SPI_CLK2X_bm | SPI_PRESCALER_DIV4_gc;
      de2:	88 81       	ld	r24, Y
-	}
-
-	// Update register and make sure to clear out any leftover bits
-	spi->CTRL = (spi->CTRL & ~(SPI_CLK2X_bm | SPI_PRESCALER_gm)) | ctrl;
      de4:	8c 77       	andi	r24, 0x7C	; 124
      de6:	89 2b       	or	r24, r25
      de8:	88 83       	st	Y, r24
      dea:	81 e0       	ldi	r24, 0x01	; 1
-
-	return 1;
      dec:	01 c0       	rjmp	.+2      	; 0xdf0 <spi_xmega_set_baud_div+0x80>
      dee:	8f ef       	ldi	r24, 0xFF	; 255
-	if (divisor > 128) {
-		/*
-		 * Highest possible divisor is 128 so fail since we can't get
-		 * low enough baudrate.
-		 */
-		return -1;
      df0:	df 91       	pop	r29
-
-	// Update register and make sure to clear out any leftover bits
-	spi->CTRL = (spi->CTRL & ~(SPI_CLK2X_bm | SPI_PRESCALER_gm)) | ctrl;
-
-	return 1;
-}
      df2:	cf 91       	pop	r28
      df4:	1f 91       	pop	r17
      df6:	0f 91       	pop	r16
