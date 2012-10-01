@@ -26,19 +26,19 @@ int main (void)
 	ioport_set_pin_high(SHDN_ZP); //Disable BCR ZP
 	ioport_set_pin_high(SHDN_XM); //Disable BCR XM
 	ioport_set_pin_high(SHDN_YM); //Disable BCR YM
-	//ioport_set_pin_high(SHDN_ZM); //Disable BCR ZM
-	ioport_set_pin_high(SYNC_EN);
+	ioport_set_pin_high(SHDN_ZM); //Disable BCR ZM
+	//ioport_set_pin_low(SYNC_EN);
 	
 	bcr_dac.ISET_ZM = 1023;
 	bcr_dac_update();
-	print_adc();
+	//print_adc();
 	
-	/*while (1)
+	while (1)
 	{		
-		mppt_cycle();
+		//mppt_cycle();
 		print_adc();			
-		delay_ms(1);
-	}*/
+		delay_ms(500);
+	}	
 }
 
 // Test DAC and ADC
@@ -48,35 +48,35 @@ void print_adc (void)
 		
 	sprintf(msg, "VREF=%umV\r\n", bcr_adc.VREF>>1);
 	usart_serial_write_string(USART_SERIAL, msg);
-	sprintf(msg, "ISENSE_XP=%umV\r\n", bcr_adc.ISENSE_XP>>1);
+	sprintf(msg, "ISENSE_XP=%umA\r\n", bcr_adc.ISENSE_XP>>1);
 	usart_serial_write_string(USART_SERIAL, msg);
-	sprintf(msg, "VSENSE_XP=%umV\r\n", bcr_adc.VSENSE_XP>>1);
+	sprintf(msg, "VSENSE_XP=%umV\r\n", (bcr_adc.VSENSE_XP>>1)*4);
 	usart_serial_write_string(USART_SERIAL, msg);
-	sprintf(msg, "ISENSE_YP=%umV\r\n", bcr_adc.ISENSE_YP>>1);
+	sprintf(msg, "ISENSE_YP=%umA\r\n", bcr_adc.ISENSE_YP>>1);
 	usart_serial_write_string(USART_SERIAL, msg);
-	sprintf(msg, "VSENSE_YP=%umV\r\n", bcr_adc.VSENSE_YP>>1);
+	sprintf(msg, "VSENSE_YP=%umV\r\n", (bcr_adc.VSENSE_YP>>1)*4);
 	usart_serial_write_string(USART_SERIAL, msg);
-	sprintf(msg, "ISENSE_ZP=%umV\r\n", bcr_adc.ISENSE_ZP>>1);
+	sprintf(msg, "ISENSE_ZP=%umA\r\n", bcr_adc.ISENSE_ZP>>1);
 	usart_serial_write_string(USART_SERIAL, msg);
-	sprintf(msg, "VSENSE_ZP=%umV\r\n", bcr_adc.VSENSE_ZP>>1);
+	sprintf(msg, "VSENSE_ZP=%umV\r\n", (bcr_adc.VSENSE_ZP>>1)*4);
 	usart_serial_write_string(USART_SERIAL, msg);
-	sprintf(msg, "ISENSE_XM=%umV\r\n", bcr_adc.ISENSE_XM>>1);
+	sprintf(msg, "ISENSE_XM=%umA\r\n", bcr_adc.ISENSE_XM>>1);
 	usart_serial_write_string(USART_SERIAL, msg);
-	sprintf(msg, "VSENSE_XM=%umV\r\n", bcr_adc.VSENSE_XM>>1);
+	sprintf(msg, "VSENSE_XM=%umV\r\n", (bcr_adc.VSENSE_XM>>1)*4);
 	usart_serial_write_string(USART_SERIAL, msg);
-	sprintf(msg, "ISENSE_YM=%umV\r\n", bcr_adc.ISENSE_YM>>1);
+	sprintf(msg, "ISENSE_YM=%umA\r\n", bcr_adc.ISENSE_YM>>1);
 	usart_serial_write_string(USART_SERIAL, msg);
-	sprintf(msg, "VSENSE_YM=%umV\r\n", bcr_adc.VSENSE_YM>>1);
+	sprintf(msg, "VSENSE_YM=%umV\r\n", (bcr_adc.VSENSE_YM>>1)*4);
 	usart_serial_write_string(USART_SERIAL, msg);
-	sprintf(msg, "ISENSE_ZM=%umV\r\n", bcr_adc.ISENSE_ZM>>1);
+	sprintf(msg, "ISENSE_ZM=%umA\r\n", bcr_adc.ISENSE_ZM>>1);
 	usart_serial_write_string(USART_SERIAL, msg);
-	sprintf(msg, "VSENSE_ZM=%umV\r\n", bcr_adc.VSENSE_ZM>>1);
+	sprintf(msg, "VGNDREF=%umV\r\n", bcr_adc.VGNDREF>>1);
 	usart_serial_write_string(USART_SERIAL, msg);
-	sprintf(msg, "ISENSE_BCR=%umV\r\n", bcr_adc.ISENSE_BCR>>1);
+	sprintf(msg, "ADCB5=%umA\r\n", bcr_adc.ADCB5>>1);
 	usart_serial_write_string(USART_SERIAL, msg);
-	sprintf(msg, "VSENSE_BAT=%umV\r\n", bcr_adc.VSENSE_BAT>>1);
+	sprintf(msg, "VSENSE_BAT=%umV\r\n", (bcr_adc.VSENSE_BAT>>1)*16);
 	usart_serial_write_string(USART_SERIAL, msg);
-	sprintf(msg, "ISENSE_LOAD=%umV\r\n", bcr_adc.ISENSE_LOAD>>1);
+	sprintf(msg, "ISENSE_LOAD=%umA\r\n", bcr_adc.ISENSE_LOAD>>1);
 	usart_serial_write_string(USART_SERIAL, msg);
 }
 

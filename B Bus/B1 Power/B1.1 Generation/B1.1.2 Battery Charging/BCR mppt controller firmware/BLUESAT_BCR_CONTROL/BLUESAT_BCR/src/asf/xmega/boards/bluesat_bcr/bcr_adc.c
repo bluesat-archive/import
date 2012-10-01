@@ -24,12 +24,14 @@ static void adc_handler(ADC_t *adc, uint8_t ch_mask, adc_result_t result)
 	adcch_read_configuration(adc, ADC_CH0, &adcch_conf);
 	muxpos = (adcch_conf.muxctrl&ADC_CH_MUXPOS_gm) >> ADC_CH_MUXPOS_gp;
 	
-	//Use pointer arithm to store result into bcr_adc
+	//Use pointer arithmetic to store result into bcr_adc
 	if (adc == &ADCA) //ADCA0-ADCA7
 		result_store = ((uint16_t*)&bcr_adc) + muxpos;
 	else //ADCB0-ADCB7
 		result_store = ((uint16_t*)&bcr_adc) + muxpos + 8;
 	*result_store = result;
+	if (muxpos != 0)
+		*result_store -= 188; // Subtract offset
 	
 	//Increment and store muxpos into CH0 config
 	muxpos = (muxpos+1)%8;
@@ -46,7 +48,7 @@ static void adc_setup(ADC_t* adc)
 {
 	struct adc_config adc_conf;
 	struct adc_channel_config adcch_conf;
-	
+
 	adc_read_configuration(adc, &adc_conf);
 	adc_set_conversion_parameters(&adc_conf, ADC_SIGN_OFF, ADC_RES_12, ADC_REF_AREFA);
 	adc_set_conversion_trigger(&adc_conf, ADC_TRIG_MANUAL, 1, 0);
@@ -69,6 +71,24 @@ void bcr_adc_init(void)
 	
 	//Ensure interrupts are enabled
 	cpu_irq_enable();
+	
+	//Disable Internal Pullups
+	PORTA.PIN0CTRL = PORT_OPC_TOTEM_gc;
+	PORTA.PIN1CTRL = PORT_OPC_TOTEM_gc;
+	PORTA.PIN2CTRL = PORT_OPC_TOTEM_gc;
+	PORTA.PIN3CTRL = PORT_OPC_TOTEM_gc;
+	PORTA.PIN4CTRL = PORT_OPC_TOTEM_gc;
+	PORTA.PIN5CTRL = PORT_OPC_TOTEM_gc;
+	PORTA.PIN6CTRL = PORT_OPC_TOTEM_gc;
+	PORTA.PIN7CTRL = PORT_OPC_TOTEM_gc;
+	PORTB.PIN0CTRL = PORT_OPC_TOTEM_gc;
+	PORTB.PIN1CTRL = PORT_OPC_TOTEM_gc;
+	PORTB.PIN2CTRL = PORT_OPC_TOTEM_gc;
+	PORTB.PIN3CTRL = PORT_OPC_TOTEM_gc;
+	PORTB.PIN4CTRL = PORT_OPC_TOTEM_gc;
+	PORTB.PIN5CTRL = PORT_OPC_TOTEM_gc;
+	PORTB.PIN6CTRL = PORT_OPC_TOTEM_gc;
+	PORTB.PIN7CTRL = PORT_OPC_TOTEM_gc;
 	
 	//Enable ADCs
 	adc_enable(&ADCA);

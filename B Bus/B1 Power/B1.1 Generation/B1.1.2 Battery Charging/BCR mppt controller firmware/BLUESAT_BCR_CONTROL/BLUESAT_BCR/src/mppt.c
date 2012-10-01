@@ -8,14 +8,14 @@
 #include "mppt.h"
 
 // Update all powers in mA from ADC data
-static void mppt_get_powers (panel_powers_t *panel_powers)
+static void mppt_get_powers (panel_powers_t* panel_powers)
 {
 	panel_powers->POWER_XP = bcr_adc.ISENSE_XP * (bcr_adc.VSENSE_XP >> 2) / 1000;
 	panel_powers->POWER_YP = bcr_adc.ISENSE_YP * (bcr_adc.VSENSE_YP >> 2) / 1000;
 	panel_powers->POWER_ZP = bcr_adc.ISENSE_ZP * (bcr_adc.VSENSE_ZP >> 2) / 1000;
 	panel_powers->POWER_XM = bcr_adc.ISENSE_XM * (bcr_adc.VSENSE_XM >> 2) / 1000;
 	panel_powers->POWER_YM = bcr_adc.ISENSE_YM * (bcr_adc.VSENSE_YM >> 2) / 1000;
-	panel_powers->POWER_ZM = bcr_adc.ISENSE_ZM * (bcr_adc.VSENSE_ZM >> 2) / 1000;
+	//panel_powers->POWER_ZM = bcr_adc.ISENSE_ZM * (bcr_adc.VSENSE_ZM >> 2) / 1000;
 }
 
 // Perturbs ISET in step direction

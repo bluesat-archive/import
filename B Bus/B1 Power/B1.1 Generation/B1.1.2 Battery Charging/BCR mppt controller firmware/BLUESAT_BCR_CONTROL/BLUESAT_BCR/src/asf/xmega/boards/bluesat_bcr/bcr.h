@@ -32,8 +32,8 @@ struct bcr_adc_pins {
 	uint16_t ISENSE_YM;		//ADCB1
 	uint16_t VSENSE_YM;		//ADCB2
 	uint16_t ISENSE_ZM;		//ADCB3
-	uint16_t VSENSE_ZM;		//ADCB4
-	uint16_t ISENSE_BCR;	//ADCB5
+	uint16_t VGNDREF;		//ADCB4
+	uint16_t ADCB5;     	//ADCB5
 	uint16_t VSENSE_BAT;	//ADCB6
 	uint16_t ISENSE_LOAD;	//ADCB7
 };
@@ -75,5 +75,7 @@ struct bcr_dac_pins bcr_dac;
 #define BOARD_XOSC_HZ          8000000
 #define BOARD_XOSC_TYPE        0x0B
 #define BOARD_XOSC_STARTUP_US  500000
+
+#define ADC_OFFSET 62
 
 #endif /* BCR_H_ */
