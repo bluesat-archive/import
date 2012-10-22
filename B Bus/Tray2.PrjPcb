@@ -50,7 +50,7 @@ GenerateClassCluster=0
 [Document2]
 DocumentPath=B1 Power\B1.2 Management\B1.2.1 Regulation\V2 Power Subsystem\PowerBoard\RedundantReg.SchDoc
 AnnotationEnabled=1
-AnnotateStartValue=411
+AnnotateStartValue=450
 AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
@@ -4787,7 +4787,7 @@ GenerateClassCluster=0
 DocumentPath=B3 Groundstation Link (Comms)\COMS0013_Top_Schematic.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=241
-AnnotationIndexControlEnabled=0
+AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
 AnnotateOrder=9
@@ -4929,6 +4929,38 @@ GenerateClassCluster=0
 
 [Document307]
 DocumentPath=CSC002B.cam
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
+[Document308]
+DocumentPath=CSC Connections Temp.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=1
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=10
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
+[Document309]
+DocumentPath=CSC Connections Temp.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
