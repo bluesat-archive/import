@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <TComponentSet id="0" CurrentRevColumnWidth="151" NameColumnWidth="173" NextRevColumnWidth="151">
-  <LifeCycleDefinitionGUID>36FD2F71-F33E-4628-994A-0C82C0197C5F</LifeCycleDefinitionGUID>
-  <RevisionNamingSchemeGUID>CE4B36C7-F2D7-49B0-AA3A-E3B6D3276818</RevisionNamingSchemeGUID>
-  <VaultGUID>B7D15EC3-160A-466F-A46C-7801FE6295A7</VaultGUID>
-  <VaultName>Altium Vault</VaultName>
+  <LifeCycleDefinitionGUID>1A509B95-5C37-4FB9-BA7E-92CBFAC53423</LifeCycleDefinitionGUID>
+  <RevisionNamingSchemeGUID>F447A5D5-86A3-41CE-A258-CF7ED6AD39E9</RevisionNamingSchemeGUID>
+  <VaultGUID>7CC5C146-1A94-45B2-955B-0164810873E6</VaultGUID>
+  <VaultName>Bluesat Vault</VaultName>
   <RequiredParameters>
     <TRequiredParameter id="1" ColumnWidth="59">
       <HRID>Best Tollerance Available</HRID>
@@ -229,13 +229,20 @@
   </ModelLinks>
   <TopGroup id="34" StateIndex="2" Collapsed="false">
     <HRID>Kemet Ceramic Chip Capacitors</HRID>
+    <GUID>82940A06-108F-483F-A2C2-F33924ED3305</GUID>
     <Parameters/>
-    <ModelChoices/>
+    <ModelChoices>
+      <TModelChoice>
+        <RequiredModel href="#11"/>
+        <ModelLink href="#33"/>
+      </TModelChoice>
+    </ModelChoices>
     <ComponentSet href="#0"/>
     <ItemNamingScheme>KCAP-{00000}</ItemNamingScheme>
     <Groups>
-      <TGroup id="35" StateIndex="2" Collapsed="false">
+      <TGroup id="35" StateIndex="2" Collapsed="true">
         <HRID>C0G Dielectric</HRID>
+        <GUID>DCBBBDB2-F9DD-4128-98F1-9102E43A9C2B</GUID>
         <ParentGroup href="#34"/>
         <Parameters>
           <TParameter>
@@ -260,6 +267,7 @@
         <Groups>
           <TGroup id="36" StateIndex="2" Collapsed="true">
             <HRID>C0G-0201 (0603 Metric)</HRID>
+            <GUID>30740ABA-94C7-45BC-88C9-4CEAE34E2A33</GUID>
             <ParentGroup href="#35"/>
             <Parameters>
               <TParameter>
@@ -281,6 +289,7 @@
             <Groups>
               <TGroup id="37" StateIndex="2" Collapsed="true">
                 <HRID>10V</HRID>
+                <GUID>AE35B497-EE33-440A-8E83-C2E587F0AAC8</GUID>
                 <ParentGroup href="#36"/>
                 <Parameters>
                   <TParameter>
@@ -443,6 +452,7 @@
               </TGroup>
               <TGroup id="38" StateIndex="2" Collapsed="true">
                 <HRID>16V</HRID>
+                <GUID>7906C292-4CB6-4B36-A87D-5C5C6AA46857</GUID>
                 <ParentGroup href="#36"/>
                 <Parameters>
                   <TParameter>
@@ -605,6 +615,7 @@
               </TGroup>
               <TGroup id="39" StateIndex="2" Collapsed="true">
                 <HRID>25V</HRID>
+                <GUID>A9ADBD9C-E8B7-41CC-899F-B6B715F9438C</GUID>
                 <ParentGroup href="#36"/>
                 <Parameters>
                   <TParameter>
@@ -770,6 +781,7 @@
           </TGroup>
           <TGroup id="40" StateIndex="2" Collapsed="true">
             <HRID>C0G-0402 (1005 Metric)</HRID>
+            <GUID>3AD89353-B94A-4D1D-A4D2-42EC27E52201</GUID>
             <ParentGroup href="#35"/>
             <Parameters>
               <TParameter>
@@ -787,6 +799,7 @@
             <Groups>
               <TGroup id="41" StateIndex="2" Collapsed="true">
                 <HRID>10V</HRID>
+                <GUID>0F9585C6-D6FF-4FC8-B34A-38E36CE51C60</GUID>
                 <ParentGroup href="#40"/>
                 <Parameters>
                   <TParameter>
@@ -1752,6 +1765,7 @@
               </TGroup>
               <TGroup id="42" StateIndex="2" Collapsed="true">
                 <HRID>16V</HRID>
+                <GUID>77DCDB3D-2E65-458E-91D5-2F73DAC9B6C6</GUID>
                 <ParentGroup href="#40"/>
                 <Parameters>
                   <TParameter>
@@ -2717,6 +2731,7 @@
               </TGroup>
               <TGroup id="43" StateIndex="2" Collapsed="true">
                 <HRID>25V</HRID>
+                <GUID>E3684AFE-A9A4-486A-9BAB-7E3EDEB169DE</GUID>
                 <ParentGroup href="#40"/>
                 <Parameters>
                   <TParameter>
@@ -3671,6 +3686,7 @@
               </TGroup>
               <TGroup id="44" StateIndex="2" Collapsed="true">
                 <HRID>50V</HRID>
+                <GUID>467A43EB-8597-4FE4-9F13-E57825B6B210</GUID>
                 <ParentGroup href="#40"/>
                 <Parameters>
                   <TParameter>
@@ -4592,6 +4608,7 @@
               </TGroup>
               <TGroup id="45" StateIndex="2" Collapsed="true">
                 <HRID>100V</HRID>
+                <GUID>71B2BE04-ED23-460E-B09F-AF2175C0880B</GUID>
                 <ParentGroup href="#40"/>
                 <Parameters>
                   <TParameter>
@@ -4863,6 +4880,7 @@
           </TGroup>
           <TGroup id="46" StateIndex="2" Collapsed="true">
             <HRID>C0G-0603 (1608 Metric)</HRID>
+            <GUID>E0E4867F-BCF6-46D7-9FD7-E48CF49ED28A</GUID>
             <ParentGroup href="#35"/>
             <Parameters>
               <TParameter>
@@ -4880,6 +4898,7 @@
             <Groups>
               <TGroup id="47" StateIndex="2" Collapsed="true">
                 <HRID>10V</HRID>
+                <GUID>A000C69E-FF4D-454C-9735-8F003A39D785</GUID>
                 <ParentGroup href="#46"/>
                 <Parameters>
                   <TParameter>
@@ -6021,6 +6040,7 @@
               </TGroup>
               <TGroup id="48" StateIndex="2" Collapsed="true">
                 <HRID>16V</HRID>
+                <GUID>0E92890F-C7D0-4FC6-AA3F-809DE7464695</GUID>
                 <ParentGroup href="#46"/>
                 <Parameters>
                   <TParameter>
@@ -7162,6 +7182,7 @@
               </TGroup>
               <TGroup id="49" StateIndex="2" Collapsed="true">
                 <HRID>25V</HRID>
+                <GUID>E78B8598-03D2-4BE5-82DB-67D9F412032C</GUID>
                 <ParentGroup href="#46"/>
                 <Parameters>
                   <TParameter>
@@ -8303,6 +8324,7 @@
               </TGroup>
               <TGroup id="50" StateIndex="2" Collapsed="true">
                 <HRID>50V</HRID>
+                <GUID>BED05C9A-0E8E-427A-A732-0E6FC92FABE9</GUID>
                 <ParentGroup href="#46"/>
                 <Parameters>
                   <TParameter>
@@ -9389,6 +9411,7 @@
               </TGroup>
               <TGroup id="51" StateIndex="2" Collapsed="true">
                 <HRID>100V</HRID>
+                <GUID>E22B79C0-4C09-44DC-8E1D-80EEBC408D3A</GUID>
                 <ParentGroup href="#46"/>
                 <Parameters>
                   <TParameter>
@@ -10431,6 +10454,7 @@
               </TGroup>
               <TGroup id="52" StateIndex="2" Collapsed="true">
                 <HRID>200V</HRID>
+                <GUID>968315D4-401E-40E4-BFE7-AD65F5EF1C38</GUID>
                 <ParentGroup href="#46"/>
                 <Parameters>
                   <TParameter>
@@ -11113,6 +11137,7 @@
           </TGroup>
           <TGroup id="53" StateIndex="2" Collapsed="true">
             <HRID>C0G-0805 (2012 Metric)</HRID>
+            <GUID>0A317FB9-8B68-4AE6-85C7-5CFFD4ECF923</GUID>
             <ParentGroup href="#35"/>
             <Parameters>
               <TParameter>
@@ -11130,6 +11155,7 @@
             <Groups>
               <TGroup id="54" StateIndex="2" Collapsed="true">
                 <HRID>10V</HRID>
+                <GUID>34CB17F6-79A1-418D-A25C-BF5BF3DB381C</GUID>
                 <ParentGroup href="#53"/>
                 <Parameters>
                   <TParameter>
@@ -12393,6 +12419,7 @@
               </TGroup>
               <TGroup id="55" StateIndex="2" Collapsed="true">
                 <HRID>16V</HRID>
+                <GUID>E68CD03D-DF20-490A-A549-C41F2C7AB2B8</GUID>
                 <ParentGroup href="#53"/>
                 <Parameters>
                   <TParameter>
@@ -13656,6 +13683,7 @@
               </TGroup>
               <TGroup id="56" StateIndex="2" Collapsed="true">
                 <HRID>25V</HRID>
+                <GUID>B11170DD-7E9A-46E7-8347-470256F2FB3D</GUID>
                 <ParentGroup href="#53"/>
                 <Parameters>
                   <TParameter>
@@ -14919,6 +14947,7 @@
               </TGroup>
               <TGroup id="57" StateIndex="2" Collapsed="true">
                 <HRID>50V</HRID>
+                <GUID>263D8058-AECD-4879-91BF-0C3F7BECD1D3</GUID>
                 <ParentGroup href="#53"/>
                 <Parameters>
                   <TParameter>
@@ -16120,6 +16149,7 @@
               </TGroup>
               <TGroup id="58" StateIndex="2" Collapsed="true">
                 <HRID>100V</HRID>
+                <GUID>2D2129CC-5629-4203-9A0D-470E1A00EADF</GUID>
                 <ParentGroup href="#53"/>
                 <Parameters>
                   <TParameter>
@@ -17299,6 +17329,7 @@
               </TGroup>
               <TGroup id="59" StateIndex="2" Collapsed="true">
                 <HRID>200V</HRID>
+                <GUID>EF03BB0E-2B72-4565-A65B-552101A5BB41</GUID>
                 <ParentGroup href="#53"/>
                 <Parameters>
                   <TParameter>
@@ -18195,8 +18226,9 @@
             </Groups>
             <ComponentDefinitions/>
           </TGroup>
-          <TGroup id="60" StateIndex="2" Collapsed="false">
+          <TGroup id="60" StateIndex="2" Collapsed="true">
             <HRID>C0G-1206 (3216 Metric)</HRID>
+            <GUID>CDFCF0E0-5B84-48C0-B236-63FEDCF1EBF3</GUID>
             <ParentGroup href="#35"/>
             <Parameters>
               <TParameter>
@@ -18214,6 +18246,7 @@
             <Groups>
               <TGroup id="61" StateIndex="2" Collapsed="true">
                 <HRID>10V</HRID>
+                <GUID>B7DD8E82-BE46-4EA7-AF19-1B18722E8FA0</GUID>
                 <ParentGroup href="#60"/>
                 <Parameters>
                   <TParameter>
@@ -19629,6 +19662,7 @@
               </TGroup>
               <TGroup id="62" StateIndex="2" Collapsed="true">
                 <HRID>16V</HRID>
+                <GUID>2E5514E3-4BAD-4476-A13C-3E3697C1989D</GUID>
                 <ParentGroup href="#60"/>
                 <Parameters>
                   <TParameter>
@@ -21044,6 +21078,7 @@
               </TGroup>
               <TGroup id="63" StateIndex="2" Collapsed="true">
                 <HRID>25V</HRID>
+                <GUID>0946FFC4-8A44-45E7-84BE-4ACECF3F80E7</GUID>
                 <ParentGroup href="#60"/>
                 <Parameters>
                   <TParameter>
@@ -22459,6 +22494,7 @@
               </TGroup>
               <TGroup id="64" StateIndex="2" Collapsed="true">
                 <HRID>50V</HRID>
+                <GUID>A4680A7F-0962-4058-A38E-1888F057971B</GUID>
                 <ParentGroup href="#60"/>
                 <Parameters>
                   <TParameter>
@@ -23854,6 +23890,7 @@
               </TGroup>
               <TGroup id="65" StateIndex="2" Collapsed="true">
                 <HRID>100V</HRID>
+                <GUID>8B96ECD3-62A8-4B11-AEED-E762E5DCC9AA</GUID>
                 <ParentGroup href="#60"/>
                 <Parameters>
                   <TParameter>
@@ -25261,6 +25298,7 @@
               </TGroup>
               <TGroup id="66" StateIndex="2" Collapsed="true">
                 <HRID>200V</HRID>
+                <GUID>FDC490A1-7567-4EA1-BA48-195DDA4F47EE</GUID>
                 <ParentGroup href="#60"/>
                 <Parameters>
                   <TParameter>
@@ -26324,8 +26362,9 @@
         </Groups>
         <ComponentDefinitions/>
       </TGroup>
-      <TGroup id="67" StateIndex="2" Collapsed="false">
+      <TGroup id="67" StateIndex="2" Collapsed="true">
         <HRID>X7R Dielectric</HRID>
+        <GUID>2F86AB5B-B9AB-45A8-B43D-F85E8A26976D</GUID>
         <ParentGroup href="#34"/>
         <Parameters>
           <TParameter>
@@ -26346,6 +26385,7 @@
         <Groups>
           <TGroup id="68" StateIndex="2" Collapsed="true">
             <HRID>X7R-0402 (1005 Metric)</HRID>
+            <GUID>B465324B-7FB0-4F9F-A882-87B25D751809</GUID>
             <ParentGroup href="#67"/>
             <Parameters>
               <TParameter>
@@ -26363,6 +26403,7 @@
             <Groups>
               <TGroup id="69" StateIndex="2" Collapsed="true">
                 <HRID>6.3V</HRID>
+                <GUID>CB4F0D31-10ED-40DD-B561-F01EA1633162</GUID>
                 <ParentGroup href="#68"/>
                 <Parameters>
                   <TParameter>
@@ -26914,6 +26955,7 @@
               </TGroup>
               <TGroup id="70" StateIndex="2" Collapsed="true">
                 <HRID>10V</HRID>
+                <GUID>A66C0A1B-C368-4E9D-89AB-195955DFF551</GUID>
                 <ParentGroup href="#68"/>
                 <Parameters>
                   <TParameter>
@@ -27465,6 +27507,7 @@
               </TGroup>
               <TGroup id="71" StateIndex="2" Collapsed="true">
                 <HRID>16V</HRID>
+                <GUID>FA26DBC7-4C02-40CA-82DC-7DDEF9146DE3</GUID>
                 <ParentGroup href="#68"/>
                 <Parameters>
                   <TParameter>
@@ -28016,6 +28059,7 @@
               </TGroup>
               <TGroup id="72" StateIndex="2" Collapsed="true">
                 <HRID>25V</HRID>
+                <GUID>E9246375-F52F-4055-9984-83A6DFF921CB</GUID>
                 <ParentGroup href="#68"/>
                 <Parameters>
                   <TParameter>
@@ -28507,6 +28551,7 @@
               </TGroup>
               <TGroup id="73" StateIndex="2" Collapsed="true">
                 <HRID>50V</HRID>
+                <GUID>8D3F5C6E-1488-4D5E-BCDA-101281D3B4A5</GUID>
                 <ParentGroup href="#68"/>
                 <Parameters>
                   <TParameter>
@@ -28956,6 +29001,7 @@
           </TGroup>
           <TGroup id="74" StateIndex="2" Collapsed="true">
             <HRID>X7R-0603 (1608 Metric)</HRID>
+            <GUID>429101C0-9330-425D-B499-DF1631B675B4</GUID>
             <ParentGroup href="#67"/>
             <Parameters>
               <TParameter>
@@ -28973,6 +29019,7 @@
             <Groups>
               <TGroup id="75" StateIndex="2" Collapsed="true">
                 <HRID>6.3V</HRID>
+                <GUID>1786F67D-75C2-426F-B3D9-2DCF6481C5E8</GUID>
                 <ParentGroup href="#74"/>
                 <Parameters>
                   <TParameter>
@@ -29648,6 +29695,7 @@
               </TGroup>
               <TGroup id="76" StateIndex="2" Collapsed="true">
                 <HRID>10V</HRID>
+                <GUID>778F090F-ED7C-40FE-AE71-E102B2826FAE</GUID>
                 <ParentGroup href="#74"/>
                 <Parameters>
                   <TParameter>
@@ -30323,6 +30371,7 @@
               </TGroup>
               <TGroup id="77" StateIndex="2" Collapsed="true">
                 <HRID>16V</HRID>
+                <GUID>E5094BED-A515-4B50-B746-6D1EA5FAF111</GUID>
                 <ParentGroup href="#74"/>
                 <Parameters>
                   <TParameter>
@@ -30998,6 +31047,7 @@
               </TGroup>
               <TGroup id="78" StateIndex="2" Collapsed="true">
                 <HRID>25V</HRID>
+                <GUID>FC68B97A-3936-440D-9DF4-68AA84A96DA5</GUID>
                 <ParentGroup href="#74"/>
                 <Parameters>
                   <TParameter>
@@ -31622,6 +31672,7 @@
               </TGroup>
               <TGroup id="79" StateIndex="2" Collapsed="true">
                 <HRID>50V</HRID>
+                <GUID>627C7775-9C29-4702-854D-179920202E72</GUID>
                 <ParentGroup href="#74"/>
                 <Parameters>
                   <TParameter>
@@ -32184,6 +32235,7 @@
               </TGroup>
               <TGroup id="80" StateIndex="2" Collapsed="true">
                 <HRID>100V</HRID>
+                <GUID>5FC27608-84ED-4DC2-8806-235CAFB9480A</GUID>
                 <ParentGroup href="#74"/>
                 <Parameters>
                   <TParameter>
@@ -32647,6 +32699,7 @@
               </TGroup>
               <TGroup id="81" StateIndex="2" Collapsed="true">
                 <HRID>200V</HRID>
+                <GUID>1761FC11-F474-46A8-942D-74BB0E97627F</GUID>
                 <ParentGroup href="#74"/>
                 <Parameters>
                   <TParameter>
@@ -33021,6 +33074,7 @@
           </TGroup>
           <TGroup id="82" StateIndex="2" Collapsed="true">
             <HRID>X7R-0805 (2012 Metric)</HRID>
+            <GUID>72F50DF4-DAF9-4032-BF53-8C46900EB1E8</GUID>
             <ParentGroup href="#67"/>
             <Parameters>
               <TParameter>
@@ -33038,6 +33092,7 @@
             <Groups>
               <TGroup id="83" StateIndex="2" Collapsed="true">
                 <HRID>6.3V</HRID>
+                <GUID>182F30E5-3D75-4F48-BE7D-A48B69C10B8C</GUID>
                 <ParentGroup href="#82"/>
                 <Parameters>
                   <TParameter>
@@ -34000,6 +34055,7 @@
               </TGroup>
               <TGroup id="84" StateIndex="2" Collapsed="true">
                 <HRID>10V</HRID>
+                <GUID>D423D5E2-579F-4B13-A029-78009EAF9A4F</GUID>
                 <ParentGroup href="#82"/>
                 <Parameters>
                   <TParameter>
@@ -34962,6 +35018,7 @@
               </TGroup>
               <TGroup id="85" StateIndex="2" Collapsed="true">
                 <HRID>16V</HRID>
+                <GUID>586DA1F1-782B-453E-B586-A6337FCDCCA0</GUID>
                 <ParentGroup href="#82"/>
                 <Parameters>
                   <TParameter>
@@ -35912,6 +35969,7 @@
               </TGroup>
               <TGroup id="86" StateIndex="2" Collapsed="true">
                 <HRID>25V</HRID>
+                <GUID>A78312DC-4030-49FE-A889-4E36BE828978</GUID>
                 <ParentGroup href="#82"/>
                 <Parameters>
                   <TParameter>
@@ -36722,6 +36780,7 @@
               </TGroup>
               <TGroup id="87" StateIndex="2" Collapsed="true">
                 <HRID>35V</HRID>
+                <GUID>469B8B58-C977-4A8E-95F8-C6B852622845</GUID>
                 <ParentGroup href="#82"/>
                 <Parameters>
                   <TParameter>
@@ -37544,6 +37603,7 @@
               </TGroup>
               <TGroup id="88" StateIndex="2" Collapsed="true">
                 <HRID>50V</HRID>
+                <GUID>4476830D-650F-4D0E-A7E5-4685E7F7835F</GUID>
                 <ParentGroup href="#82"/>
                 <Parameters>
                   <TParameter>
@@ -38366,6 +38426,7 @@
               </TGroup>
               <TGroup id="89" StateIndex="2" Collapsed="true">
                 <HRID>100V</HRID>
+                <GUID>9617B2A5-95EA-440D-82A6-7E4A3269CBFB</GUID>
                 <ParentGroup href="#82"/>
                 <Parameters>
                   <TParameter>
@@ -39030,6 +39091,7 @@
               </TGroup>
               <TGroup id="90" StateIndex="2" Collapsed="true">
                 <HRID>200V</HRID>
+                <GUID>CD4574AD-1A32-4540-BF91-5A9D2DAADAFF</GUID>
                 <ParentGroup href="#82"/>
                 <Parameters>
                   <TParameter>
@@ -39553,6 +39615,7 @@
               </TGroup>
               <TGroup id="91" StateIndex="2" Collapsed="true">
                 <HRID>250V</HRID>
+                <GUID>57B3F7F5-C495-420C-8555-FEF5E412CEB7</GUID>
                 <ParentGroup href="#82"/>
                 <Parameters>
                   <TParameter>
@@ -39859,8 +39922,9 @@
             </Groups>
             <ComponentDefinitions/>
           </TGroup>
-          <TGroup id="92" StateIndex="2" Collapsed="false">
+          <TGroup id="92" StateIndex="2" Collapsed="true">
             <HRID>X7R-1206 (3216 Metric)</HRID>
+            <GUID>5B53225E-3573-484D-8751-FCA7F02892A5</GUID>
             <ParentGroup href="#67"/>
             <Parameters>
               <TParameter>
@@ -39876,8 +39940,9 @@
             </ModelChoices>
             <ComponentSet href="#0"/>
             <Groups>
-              <TGroup id="93" StateIndex="2" Collapsed="false">
+              <TGroup id="93" StateIndex="2" Collapsed="true">
                 <HRID>6.3V</HRID>
+                <GUID>027B4FC7-D975-46C3-973D-DE134FED79A9</GUID>
                 <ParentGroup href="#92"/>
                 <Parameters>
                   <TParameter>
@@ -40947,8 +41012,9 @@
                   </TComponentDefinition>
                 </ComponentDefinitions>
               </TGroup>
-              <TGroup id="94" StateIndex="2" Collapsed="false">
+              <TGroup id="94" StateIndex="2" Collapsed="true">
                 <HRID>10V</HRID>
+                <GUID>95032A45-949E-406B-9932-4888FE9BE027</GUID>
                 <ParentGroup href="#92"/>
                 <Parameters>
                   <TParameter>
@@ -42018,8 +42084,9 @@
                   </TComponentDefinition>
                 </ComponentDefinitions>
               </TGroup>
-              <TGroup id="95" StateIndex="2" Collapsed="false">
+              <TGroup id="95" StateIndex="2" Collapsed="true">
                 <HRID>16V</HRID>
+                <GUID>01617F91-64DF-446E-BE55-569DA3D5F67C</GUID>
                 <ParentGroup href="#92"/>
                 <Parameters>
                   <TParameter>
@@ -43057,8 +43124,9 @@
                   </TComponentDefinition>
                 </ComponentDefinitions>
               </TGroup>
-              <TGroup id="96" StateIndex="2" Collapsed="false">
+              <TGroup id="96" StateIndex="2" Collapsed="true">
                 <HRID>25V</HRID>
+                <GUID>7D502182-CCD4-4EE2-966E-07E2ADB1120F</GUID>
                 <ParentGroup href="#92"/>
                 <Parameters>
                   <TParameter>
@@ -44020,6 +44088,7 @@
               </TGroup>
               <TGroup id="97" StateIndex="2" Collapsed="true">
                 <HRID>35V</HRID>
+                <GUID>5BAACE2C-EBBF-4C58-9864-56DF6598535E</GUID>
                 <ParentGroup href="#92"/>
                 <Parameters>
                   <TParameter>
@@ -44919,6 +44988,7 @@
               </TGroup>
               <TGroup id="98" StateIndex="2" Collapsed="true">
                 <HRID>50V</HRID>
+                <GUID>C938407B-09A7-433F-949B-C09BA13436D2</GUID>
                 <ParentGroup href="#92"/>
                 <Parameters>
                   <TParameter>
@@ -45816,8 +45886,9 @@
                   </TComponentDefinition>
                 </ComponentDefinitions>
               </TGroup>
-              <TGroup id="99" StateIndex="2" Collapsed="false">
+              <TGroup id="99" StateIndex="2" Collapsed="true">
                 <HRID>100V</HRID>
+                <GUID>985CD87E-8449-4AD6-90F7-6D459D1C216A</GUID>
                 <ParentGroup href="#92"/>
                 <Parameters>
                   <TParameter>
@@ -46493,8 +46564,9 @@
                   </TComponentDefinition>
                 </ComponentDefinitions>
               </TGroup>
-              <TGroup id="100" StateIndex="2" Collapsed="false">
+              <TGroup id="100" StateIndex="2" Collapsed="true">
                 <HRID>200V</HRID>
+                <GUID>CB97F6E6-DB22-43A1-B1FD-55D7F58F222F</GUID>
                 <ParentGroup href="#92"/>
                 <Parameters>
                   <TParameter>
@@ -47066,8 +47138,9 @@
                   </TComponentDefinition>
                 </ComponentDefinitions>
               </TGroup>
-              <TGroup id="101" StateIndex="2" Collapsed="false">
+              <TGroup id="101" StateIndex="2" Collapsed="true">
                 <HRID>250V</HRID>
+                <GUID>174C5461-2F12-49F4-B669-ED600B7824BC</GUID>
                 <ParentGroup href="#92"/>
                 <Parameters>
                   <TParameter>
@@ -47405,6 +47478,7 @@
           </TGroup>
           <TGroup id="102" StateIndex="2" Collapsed="true">
             <HRID>X7R-1210 (3225 Metric)</HRID>
+            <GUID>E8B0DA31-32A3-4771-B0BE-02EA663B94EB</GUID>
             <ParentGroup href="#67"/>
             <Parameters>
               <TParameter>
@@ -47422,6 +47496,7 @@
             <Groups>
               <TGroup id="103" StateIndex="2" Collapsed="true">
                 <HRID>6.3V</HRID>
+                <GUID>3A5E44FD-45A2-4A74-86B9-CA4A37EF5A20</GUID>
                 <ParentGroup href="#102"/>
                 <Parameters>
                   <TParameter>
@@ -48410,6 +48485,7 @@
               </TGroup>
               <TGroup id="104" StateIndex="2" Collapsed="true">
                 <HRID>10V</HRID>
+                <GUID>E524F7AC-C1B1-4451-B93E-68140FF16340</GUID>
                 <ParentGroup href="#102"/>
                 <Parameters>
                   <TParameter>
@@ -49375,6 +49451,7 @@
               </TGroup>
               <TGroup id="105" StateIndex="2" Collapsed="true">
                 <HRID>16V</HRID>
+                <GUID>DF05480C-AA43-418E-8C23-6FB8243AEE07</GUID>
                 <ParentGroup href="#102"/>
                 <Parameters>
                   <TParameter>
@@ -50325,6 +50402,7 @@
               </TGroup>
               <TGroup id="106" StateIndex="2" Collapsed="true">
                 <HRID>25V</HRID>
+                <GUID>D0ECFCF2-F19E-4086-807C-09CF0E535116</GUID>
                 <ParentGroup href="#102"/>
                 <Parameters>
                   <TParameter>
@@ -51275,6 +51353,7 @@
               </TGroup>
               <TGroup id="107" StateIndex="2" Collapsed="true">
                 <HRID>50V</HRID>
+                <GUID>AE7F9DD8-9FE5-4D0A-B33E-FF90B4067959</GUID>
                 <ParentGroup href="#102"/>
                 <Parameters>
                   <TParameter>
@@ -52126,6 +52205,7 @@
               </TGroup>
               <TGroup id="108" StateIndex="2" Collapsed="true">
                 <HRID>100V</HRID>
+                <GUID>8BA3DC57-B3A4-4D83-A787-378B24BB85E9</GUID>
                 <ParentGroup href="#102"/>
                 <Parameters>
                   <TParameter>
@@ -52860,6 +52940,7 @@
               </TGroup>
               <TGroup id="109" StateIndex="2" Collapsed="true">
                 <HRID>200V</HRID>
+                <GUID>9B53B084-4E63-405C-A07F-75AED4F6F4A3</GUID>
                 <ParentGroup href="#102"/>
                 <Parameters>
                   <TParameter>
@@ -53383,6 +53464,7 @@
               </TGroup>
               <TGroup id="110" StateIndex="2" Collapsed="true">
                 <HRID>250V</HRID>
+                <GUID>0E181C12-4E73-4944-A6D8-8532F3FA432C</GUID>
                 <ParentGroup href="#102"/>
                 <Parameters>
                   <TParameter>
@@ -53657,8 +53739,9 @@
         </Groups>
         <ComponentDefinitions/>
       </TGroup>
-      <TGroup id="111" StateIndex="2" Collapsed="false">
+      <TGroup id="111" StateIndex="2" Collapsed="true">
         <HRID>X5R Dielectric</HRID>
+        <GUID>9AD7FD08-8E2A-469E-80F5-673505DD9ED6</GUID>
         <ParentGroup href="#34"/>
         <Parameters>
           <TParameter>
@@ -53679,6 +53762,7 @@
         <Groups>
           <TGroup id="112" StateIndex="2" Collapsed="true">
             <HRID>X5R-0201 (0603 Metric)</HRID>
+            <GUID>974158DF-3CE9-4EC4-9861-8CCCF0CFA7EC</GUID>
             <ParentGroup href="#111"/>
             <Parameters>
               <TParameter>
@@ -53700,6 +53784,7 @@
             <Groups>
               <TGroup id="113" StateIndex="2" Collapsed="true">
                 <HRID>4V</HRID>
+                <GUID>33EE4E1C-5514-434B-A682-74C42488BE46</GUID>
                 <ParentGroup href="#112"/>
                 <Parameters>
                   <TParameter>
@@ -53741,6 +53826,7 @@
               </TGroup>
               <TGroup id="114" StateIndex="2" Collapsed="true">
                 <HRID>6.3V</HRID>
+                <GUID>1A60770D-C3E3-4639-82BE-07F0552E88ED</GUID>
                 <ParentGroup href="#112"/>
                 <Parameters>
                   <TParameter>
@@ -53782,6 +53868,7 @@
               </TGroup>
               <TGroup id="115" StateIndex="2" Collapsed="true">
                 <HRID>10V</HRID>
+                <GUID>515CE3CC-4D64-484E-A758-60CB86BE37BF</GUID>
                 <ParentGroup href="#112"/>
                 <Parameters>
                   <TParameter>
@@ -53812,6 +53899,7 @@
               </TGroup>
               <TGroup id="116" StateIndex="2" Collapsed="true">
                 <HRID>16V</HRID>
+                <GUID>D9B6DF9B-7F02-4CB9-8066-B88967E99DDE</GUID>
                 <ParentGroup href="#112"/>
                 <Parameters>
                   <TParameter>
@@ -53845,6 +53933,7 @@
           </TGroup>
           <TGroup id="117" StateIndex="2" Collapsed="true">
             <HRID>X5R-0402 (1005 Metric)</HRID>
+            <GUID>89F5949A-9B98-4E74-84B9-C1D876F54189</GUID>
             <ParentGroup href="#111"/>
             <Parameters>
               <TParameter>
@@ -53866,6 +53955,7 @@
             <Groups>
               <TGroup id="118" StateIndex="2" Collapsed="true">
                 <HRID>4V</HRID>
+                <GUID>1D829720-E6EB-4130-8D39-3FB63F365C7B</GUID>
                 <ParentGroup href="#117"/>
                 <Parameters>
                   <TParameter>
@@ -54128,6 +54218,7 @@
               </TGroup>
               <TGroup id="119" StateIndex="2" Collapsed="true">
                 <HRID>6.3V</HRID>
+                <GUID>3B24B7D2-82CF-4C0D-98E9-B769C515E26D</GUID>
                 <ParentGroup href="#117"/>
                 <Parameters>
                   <TParameter>
@@ -54343,6 +54434,7 @@
               </TGroup>
               <TGroup id="120" StateIndex="2" Collapsed="true">
                 <HRID>10V</HRID>
+                <GUID>1B340F8D-9E61-4508-8E52-7E47D841FE28</GUID>
                 <ParentGroup href="#117"/>
                 <Parameters>
                   <TParameter>
@@ -54498,6 +54590,7 @@
               </TGroup>
               <TGroup id="121" StateIndex="2" Collapsed="true">
                 <HRID>16V</HRID>
+                <GUID>4BA924EC-A71F-4EF1-AABF-53C98FD6005E</GUID>
                 <ParentGroup href="#117"/>
                 <Parameters>
                   <TParameter>
@@ -54656,6 +54749,7 @@
           </TGroup>
           <TGroup id="122" StateIndex="2" Collapsed="true">
             <HRID>X5R-0603 (1608 Metric)</HRID>
+            <GUID>8C1E71E2-E74F-4651-8F47-D11222DE6D1B</GUID>
             <ParentGroup href="#111"/>
             <Parameters>
               <TParameter>
@@ -54673,6 +54767,7 @@
             <Groups>
               <TGroup id="123" StateIndex="2" Collapsed="true">
                 <HRID>4V</HRID>
+                <GUID>437EDABA-8637-45DA-B97B-67626FC5A511</GUID>
                 <ParentGroup href="#122"/>
                 <Parameters>
                   <TParameter>
@@ -54864,6 +54959,7 @@
               </TGroup>
               <TGroup id="124" StateIndex="2" Collapsed="true">
                 <HRID>6.3V</HRID>
+                <GUID>B046D11E-05F5-44CA-B573-2F4C4ED466DF</GUID>
                 <ParentGroup href="#122"/>
                 <Parameters>
                   <TParameter>
@@ -55055,6 +55151,7 @@
               </TGroup>
               <TGroup id="125" StateIndex="2" Collapsed="true">
                 <HRID>10V</HRID>
+                <GUID>FCF3F07D-91E1-42C9-80E2-D6ED5609F617</GUID>
                 <ParentGroup href="#122"/>
                 <Parameters>
                   <TParameter>
@@ -55208,6 +55305,7 @@
               </TGroup>
               <TGroup id="126" StateIndex="2" Collapsed="true">
                 <HRID>16V</HRID>
+                <GUID>7F007A8A-813B-45C8-A0DC-8713639177C1</GUID>
                 <ParentGroup href="#122"/>
                 <Parameters>
                   <TParameter>
@@ -55346,6 +55444,7 @@
               </TGroup>
               <TGroup id="127" StateIndex="2" Collapsed="true">
                 <HRID>25V</HRID>
+                <GUID>40B3F1D2-4F60-4D35-A35D-620FF0CA1097</GUID>
                 <ParentGroup href="#122"/>
                 <Parameters>
                   <TParameter>
@@ -55383,6 +55482,7 @@
           </TGroup>
           <TGroup id="128" StateIndex="2" Collapsed="true">
             <HRID>X5R-0805 (2012 Metric)</HRID>
+            <GUID>1ACFD4C8-D674-40DB-9E55-62B8DC99A3CD</GUID>
             <ParentGroup href="#111"/>
             <Parameters>
               <TParameter>
@@ -55400,6 +55500,7 @@
             <Groups>
               <TGroup id="129" StateIndex="2" Collapsed="true">
                 <HRID>4V</HRID>
+                <GUID>0C713D63-0839-4CB8-BEF4-755E2754BE45</GUID>
                 <ParentGroup href="#128"/>
                 <Parameters>
                   <TParameter>
@@ -55832,6 +55933,7 @@
               </TGroup>
               <TGroup id="130" StateIndex="2" Collapsed="true">
                 <HRID>6.3V</HRID>
+                <GUID>2D7E721F-2F53-45DA-BBBE-D07B6C9A0AF7</GUID>
                 <ParentGroup href="#128"/>
                 <Parameters>
                   <TParameter>
@@ -56264,6 +56366,7 @@
               </TGroup>
               <TGroup id="131" StateIndex="2" Collapsed="true">
                 <HRID>10V</HRID>
+                <GUID>5B7ED7A0-ECF4-4649-95D3-F60CC17A9CB9</GUID>
                 <ParentGroup href="#128"/>
                 <Parameters>
                   <TParameter>
@@ -56640,6 +56743,7 @@
               </TGroup>
               <TGroup id="132" StateIndex="2" Collapsed="true">
                 <HRID>16V</HRID>
+                <GUID>E0C411C9-71BA-4BCB-BA5A-1E817079A2D5</GUID>
                 <ParentGroup href="#128"/>
                 <Parameters>
                   <TParameter>
@@ -56964,6 +57068,7 @@
               </TGroup>
               <TGroup id="133" StateIndex="2" Collapsed="true">
                 <HRID>25V</HRID>
+                <GUID>93EB7794-D904-43FF-A7D7-5004BB351757</GUID>
                 <ParentGroup href="#128"/>
                 <Parameters>
                   <TParameter>
@@ -57114,6 +57219,7 @@
               </TGroup>
               <TGroup id="134" StateIndex="2" Collapsed="true">
                 <HRID>50V</HRID>
+                <GUID>9C15384E-1AD9-4BBD-B16D-AADBA12D0318</GUID>
                 <ParentGroup href="#128"/>
                 <Parameters>
                   <TParameter>
@@ -57162,8 +57268,9 @@
             </Groups>
             <ComponentDefinitions/>
           </TGroup>
-          <TGroup id="135" StateIndex="2" Collapsed="false">
+          <TGroup id="135" StateIndex="2" Collapsed="true">
             <HRID>X5R-1206 (3216 Metric)</HRID>
+            <GUID>B8663704-DA00-4D66-898D-C420B66F2719</GUID>
             <ParentGroup href="#111"/>
             <Parameters>
               <TParameter>
@@ -57179,8 +57286,9 @@
             </ModelChoices>
             <ComponentSet href="#0"/>
             <Groups>
-              <TGroup id="136" StateIndex="2" Collapsed="false">
+              <TGroup id="136" StateIndex="2" Collapsed="true">
                 <HRID>6.3V</HRID>
+                <GUID>DAD257AE-22DF-4B4A-9E8B-2F0F9FBFCE69</GUID>
                 <ParentGroup href="#135"/>
                 <Parameters>
                   <TParameter>
@@ -57820,8 +57928,9 @@
                   </TComponentDefinition>
                 </ComponentDefinitions>
               </TGroup>
-              <TGroup id="137" StateIndex="2" Collapsed="false">
+              <TGroup id="137" StateIndex="2" Collapsed="true">
                 <HRID>10V</HRID>
+                <GUID>8BD00BAC-290E-46A8-BEC1-909735FC3A2D</GUID>
                 <ParentGroup href="#135"/>
                 <Parameters>
                   <TParameter>
@@ -58408,6 +58517,7 @@
               </TGroup>
               <TGroup id="138" StateIndex="2" Collapsed="true">
                 <HRID>16V</HRID>
+                <GUID>344FE11D-0B62-465A-BBE2-966286080BE4</GUID>
                 <ParentGroup href="#135"/>
                 <Parameters>
                   <TParameter>
@@ -58940,6 +59050,7 @@
               </TGroup>
               <TGroup id="139" StateIndex="2" Collapsed="true">
                 <HRID>25V</HRID>
+                <GUID>F8001B08-2E49-4607-B158-64FA18BDDF86</GUID>
                 <ParentGroup href="#135"/>
                 <Parameters>
                   <TParameter>
@@ -59388,6 +59499,7 @@
               </TGroup>
               <TGroup id="140" StateIndex="2" Collapsed="true">
                 <HRID>50V</HRID>
+                <GUID>7884BB44-C5A4-4385-80D6-2CCC044B2CB3</GUID>
                 <ParentGroup href="#135"/>
                 <Parameters>
                   <TParameter>
@@ -59430,6 +59542,7 @@
           </TGroup>
           <TGroup id="141" StateIndex="2" Collapsed="true">
             <HRID>X5R-1210 (3225 Metric)</HRID>
+            <GUID>B7B82540-7BF8-4EC3-8A85-83D48F126DD3</GUID>
             <ParentGroup href="#111"/>
             <Parameters>
               <TParameter>
@@ -59447,6 +59560,7 @@
             <Groups>
               <TGroup id="142" StateIndex="2" Collapsed="true">
                 <HRID>6.3V</HRID>
+                <GUID>BF351F22-659F-401B-9176-5D7C71AA9A61</GUID>
                 <ParentGroup href="#141"/>
                 <Parameters>
                   <TParameter>
@@ -59994,6 +60108,7 @@
               </TGroup>
               <TGroup id="143" StateIndex="2" Collapsed="true">
                 <HRID>10V</HRID>
+                <GUID>ECCA9DC6-0B77-459B-9483-C742FBBF1C83</GUID>
                 <ParentGroup href="#141"/>
                 <Parameters>
                   <TParameter>
@@ -60510,6 +60625,7 @@
               </TGroup>
               <TGroup id="144" StateIndex="2" Collapsed="true">
                 <HRID>16V</HRID>
+                <GUID>E597AF02-8578-4B39-B808-96075FD8C62A</GUID>
                 <ParentGroup href="#141"/>
                 <Parameters>
                   <TParameter>
@@ -61026,6 +61142,7 @@
               </TGroup>
               <TGroup id="145" StateIndex="2" Collapsed="true">
                 <HRID>25V</HRID>
+                <GUID>7ED290DD-B5DF-4CCF-9696-154D683FFC96</GUID>
                 <ParentGroup href="#141"/>
                 <Parameters>
                   <TParameter>
@@ -61450,6 +61567,7 @@
               </TGroup>
               <TGroup id="146" StateIndex="2" Collapsed="true">
                 <HRID>35V</HRID>
+                <GUID>20BFA151-C8D5-4122-855C-751FA9B2F274</GUID>
                 <ParentGroup href="#141"/>
                 <Parameters>
                   <TParameter>
@@ -61583,6 +61701,7 @@
               </TGroup>
               <TGroup id="147" StateIndex="2" Collapsed="false">
                 <HRID>50V</HRID>
+                <GUID>4DABD3AD-BED8-47A5-90CB-0D0EDA28A91C</GUID>
                 <ParentGroup href="#141"/>
                 <Parameters>
                   <TParameter>
