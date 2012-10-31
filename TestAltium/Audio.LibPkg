@@ -80,7 +80,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document4]
-DocumentPath=Capacitors.CmpLib
+DocumentPath=Resistors\Resistors.CmpLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -96,7 +96,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document5]
-DocumentPath=Resistors.CmpLib
+DocumentPath=Capacitors\Capacitors.CmpLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
