@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<TComponentSet id="0" CurrentRevColumnWidth="100" NameColumnWidth="300" NextRevColumnWidth="100">
+  <LifeCycleDefinitionGUID>28744FE0-96ED-4819-B647-16AB7EF6ECE8</LifeCycleDefinitionGUID>
+  <RevisionNamingSchemeGUID>0B702FEB-5717-422A-873A-AB5AE2DFB52A</RevisionNamingSchemeGUID>
+  <VaultGUID>027B8B40-85AA-4048-BBAE-7AF1ADFFFB14</VaultGUID>
+  <VaultName>Bluesat Vault</VaultName>
+  <RequiredParameters>
+    <TRequiredParameter id="1" ColumnWidth="100">
+      <HRID>Comment</HRID>
+    </TRequiredParameter>
+    <TRequiredParameter id="2" ColumnWidth="100">
+      <HRID>Description</HRID>
+    </TRequiredParameter>
+  </RequiredParameters>
+  <RequiredModels>
+    <TRequiredModel id="3" ColumnWidth="100">
+      <HRID>PCBLIB</HRID>
+      <ModelKind>PCBLIB</ModelKind>
+    </TRequiredModel>
+    <TRequiredModel id="4" ColumnWidth="100">
+      <HRID>SCHLIB</HRID>
+      <ModelKind>SCHLIB</ModelKind>
+    </TRequiredModel>
+  </RequiredModels>
+  <ModelLinks>
+    <TModelLink id="5">
+      <HRID>LME49990-1</HRID>
+      <VaultGUID>027B8B40-85AA-4048-BBAE-7AF1ADFFFB14</VaultGUID>
+      <ItemGUID>4AF866B5-7BA5-494E-B6D9-F9CA717CA871</ItemGUID>
+      <ModelKind>SCHLIB</ModelKind>
+      <RevisionGUID>AB3CA942-9189-42A4-84FE-E0533758ABB5</RevisionGUID>
+      <RevisionId>1</RevisionId>
+    </TModelLink>
+    <TModelLink id="6">
+      <HRID>PCC-00000-1</HRID>
+      <VaultGUID>027B8B40-85AA-4048-BBAE-7AF1ADFFFB14</VaultGUID>
+      <ItemGUID>1EB1DD28-DA71-4198-9F00-337231BD8F31</ItemGUID>
+      <ModelKind>PCBLIB</ModelKind>
+      <RevisionGUID>E5FB047C-6C1D-4C96-8EC9-54A4BCFBF867</RevisionGUID>
+      <RevisionId>1</RevisionId>
+    </TModelLink>
+  </ModelLinks>
+  <TopGroup id="7" StateIndex="2" Collapsed="false">
+    <HRID>LME49990</HRID>
+    <GUID>B999FF47-592B-48E6-B33D-C78D9389CB20</GUID>
+    <Parameters/>
+    <ModelChoices/>
+    <ComponentSet href="#0"/>
+    <ItemNamingScheme>CMP-{00000}</ItemNamingScheme>
+    <Groups/>
+    <ComponentDefinitions>
+      <TComponentDefinition StateIndex="2">
+        <HRID>LME49990</HRID>
+        <GUID>C6132E2B-B222-4F4D-BA4E-FAABCACDA80A</GUID>
+        <ParentGroup href="#7"/>
+        <Parameters>
+          <TParameter>
+            <RequiredParameter href="#1"/>
+            <Value>LME49990</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#2"/>
+            <Value>Ultra-low Distortion, Ultra-low Noise Operational Amplifier</Value>
+          </TParameter>
+        </Parameters>
+        <ModelChoices>
+          <TModelChoice>
+            <RequiredModel href="#3"/>
+            <ModelLink href="#6"/>
+          </TModelChoice>
+          <TModelChoice>
+            <RequiredModel href="#4"/>
+            <ModelLink href="#5"/>
+          </TModelChoice>
+        </ModelChoices>
+        <ItemHRID>CMP-00003</ItemHRID>
+        <RevisionGUID>FE9CA336-0228-4BA8-98B3-5C419E59AF03</RevisionGUID>
+        <RevisionId>A.1</RevisionId>
+      </TComponentDefinition>
+    </ComponentDefinitions>
+  </TopGroup>
+</TComponentSet>
