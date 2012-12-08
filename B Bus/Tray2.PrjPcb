@@ -4544,7 +4544,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document283]
-DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\Schlib1.SchLib
+DocumentPath=B2 Telemetry\Telemetry.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -4560,7 +4560,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document284]
-DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\PcbLib1.PcbLib
+DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\Schlib1.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -4576,7 +4576,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document285]
-DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\Connectors.PcbLib
+DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\PcbLib1.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -4592,7 +4592,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document286]
-DocumentPath=B1 Power\B1.2 Management\B1.2.1 Regulation\V2 Power Subsystem\PowerBoard\SchLib.SchLib
+DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\Connectors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -4608,7 +4608,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document287]
-DocumentPath=B1 Power\B1.2 Management\B1.2.1 Regulation\V2 Power Subsystem\PowerBoard\PcbLib.PcbLib
+DocumentPath=B1 Power\B1.2 Management\B1.2.1 Regulation\V2 Power Subsystem\PowerBoard\SchLib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -4624,6 +4624,22 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 
 [Document288]
+DocumentPath=B1 Power\B1.2 Management\B1.2.1 Regulation\V2 Power Subsystem\PowerBoard\PcbLib.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
+[Document289]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\POWR0008_BCR_System.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=311
@@ -4639,7 +4655,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document289]
+[Document290]
 DocumentPath=Tray2.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4655,7 +4671,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document290]
+[Document291]
 DocumentPath=B4 Command Control and Data\CRSC0002.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=101
@@ -4671,7 +4687,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document291]
+[Document292]
 DocumentPath=B4 Command Control and Data\CSC 002B.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4687,7 +4703,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document292]
+[Document293]
 DocumentPath=B3 Groundstation Link (Comms)\Comms Board Rework\Comms Board Small Footprints.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4703,7 +4719,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document293]
+[Document294]
 DocumentPath=B3 Groundstation Link (Comms)\Comms Board Rework\Comms Board Small Footprints.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4719,7 +4735,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document294]
+[Document295]
 DocumentPath=B4 Command Control and Data\CSC.schlib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4735,7 +4751,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document295]
+[Document296]
 DocumentPath=B3 Groundstation Link (Comms)\COMS0001_Beacon.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=201
@@ -4751,7 +4767,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document296]
+[Document297]
 DocumentPath=B3 Groundstation Link (Comms)\B3.1 Demodulation\COMS0002_AFSK.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=211
@@ -4767,7 +4783,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document297]
+[Document298]
 DocumentPath=B3 Groundstation Link (Comms)\B3.1 Demodulation\COMS0003_DTMF.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=221
@@ -4783,7 +4799,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document298]
+[Document299]
 DocumentPath=B3 Groundstation Link (Comms)\B3.3 Communications Switching\COMS0004 SwC_Main.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=231
@@ -4799,7 +4815,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document299]
+[Document300]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\POWR0001_BCR_LT1513.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=301
@@ -4815,7 +4831,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document300]
+[Document301]
 DocumentPath=B3 Groundstation Link (Comms)\COMS0013_Top_Schematic.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=241
@@ -4831,7 +4847,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document301]
+[Document302]
 DocumentPath=B3 Groundstation Link (Comms)\COMS0012_Comms_Board_Miniaturization.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4847,7 +4863,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document302]
+[Document303]
 DocumentPath=B4 Command Control and Data\CRSC0002.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4863,7 +4879,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document303]
+[Document304]
 DocumentPath=B4 Command Control and Data\CSC.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4879,7 +4895,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document304]
+[Document305]
 DocumentPath=Tray2.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4895,7 +4911,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document305]
+[Document306]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\POWR0008_BCR_System.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4911,7 +4927,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document306]
+[Document307]
 DocumentPath=B3 Groundstation Link (Comms)\B3.1 Demodulation\COMS0003_DTMF.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4927,7 +4943,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document307]
+[Document308]
 DocumentPath=B3 Groundstation Link (Comms)\COMS0013_Top_Schematic.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4943,7 +4959,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document308]
+[Document309]
 DocumentPath=B1 Power\B1.2 Management\B1.2.1 Regulation\V2 Power Subsystem\PowerBoard\Regulation.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4959,7 +4975,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document309]
+[Document310]
 DocumentPath=CSC002B.cam
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4975,7 +4991,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document310]
+[Document311]
 DocumentPath=CSC Connections Temp.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4991,8 +5007,40 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document311]
+[Document312]
 DocumentPath=CSC Connections Temp.Harness
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
+[Document313]
+DocumentPath=B2 Telemetry\Schlib2.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
+[Document314]
+DocumentPath=B2 Telemetry\Telemetry.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
