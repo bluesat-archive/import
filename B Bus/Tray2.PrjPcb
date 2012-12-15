@@ -32,38 +32,6 @@ DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 
 [Document1]
-DocumentPath=B1 Power\B1.2 Management\B1.2.1 Regulation\V2 Power Subsystem\PowerBoard\Regulation.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=401
-AnnotationIndexControlEnabled=1
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=3
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-
-[Document2]
-DocumentPath=B1 Power\B1.2 Management\B1.2.1 Regulation\V2 Power Subsystem\PowerBoard\RedundantReg.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=450
-AnnotationIndexControlEnabled=1
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=0
-DoLibraryUpdate=0
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-
-[Document3]
 DocumentPath=B3 Groundstation Link (Comms)\B3.1 Demodulation\Zarlink Comm DTMF Receiver\Mitel Comm DTMF Receiver.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -79,7 +47,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document4]
+[Document2]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\NSC Voltage Reference.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -95,7 +63,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document5]
+[Document3]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\Atmel Microcontroller AVR XMEGA.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -111,7 +79,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document6]
+[Document4]
 DocumentPath=B3 Groundstation Link (Comms)\B3.1 Demodulation\Zarlink Comm DTMF Receiver\Mitel Comm DTMF Receiver.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -127,7 +95,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document7]
+[Document5]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Zig-Zag-In-Line Package, Even Lead Number.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -143,7 +111,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document8]
+[Document6]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Zig-Zag-In-Line Package Odd Lead Number.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -159,7 +127,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document9]
+[Document7]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Vertical, Single-Row, Flange Mount with Tab.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -175,7 +143,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document10]
+[Document8]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Vertical, Dual-Row, Flange Mount with Tab.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -191,7 +159,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document11]
+[Document9]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\TSSOP_55P_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -207,7 +175,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document12]
+[Document10]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\TSSOP_55P_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -223,7 +191,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document13]
+[Document11]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\TSSOP_55P_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -239,7 +207,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document14]
+[Document12]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\TSSOP_50P_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -255,7 +223,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document15]
+[Document13]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\TSSOP_50P_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -271,7 +239,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document16]
+[Document14]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\TSSOP_50P_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -287,7 +255,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document17]
+[Document15]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\TSSOP_40P_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -303,7 +271,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document18]
+[Document16]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\TSSOP_40P_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -319,7 +287,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document19]
+[Document17]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\TSSOP_40P_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -335,7 +303,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document20]
+[Document18]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\TSSOP_30P_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -351,7 +319,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document21]
+[Document19]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\TSSOP_30P_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -367,7 +335,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document22]
+[Document20]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\TSSOP_30P_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -383,7 +351,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document23]
+[Document21]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\TSOP_65P_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -399,7 +367,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document24]
+[Document22]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\TSOP_65P_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -415,7 +383,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document25]
+[Document23]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\TSOP_65P_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -431,7 +399,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document26]
+[Document24]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT343_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -447,7 +415,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document27]
+[Document25]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT343_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -463,7 +431,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document28]
+[Document26]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT343_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -479,7 +447,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document29]
+[Document27]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT223_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -495,7 +463,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document30]
+[Document28]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT223_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -511,7 +479,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document31]
+[Document29]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT223_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -527,7 +495,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document32]
+[Document30]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT143_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -543,7 +511,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document33]
+[Document31]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT143_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -559,7 +527,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document34]
+[Document32]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT143_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -575,7 +543,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document35]
+[Document33]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT89_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -591,7 +559,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document36]
+[Document34]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT89_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -607,7 +575,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document37]
+[Document35]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT89_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -623,7 +591,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document38]
+[Document36]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT23_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -639,7 +607,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document39]
+[Document37]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT23_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -655,7 +623,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document40]
+[Document38]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT23_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -671,7 +639,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document41]
+[Document39]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT23_5-6Lead_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -687,7 +655,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document42]
+[Document40]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT23_5-6Lead_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -703,7 +671,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document43]
+[Document41]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT23_5-6Lead_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -719,7 +687,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document44]
+[Document42]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT 89.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -735,7 +703,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document45]
+[Document43]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOT - 3 Flat Leads.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -751,7 +719,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document46]
+[Document44]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_635P_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -767,7 +735,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document47]
+[Document45]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_635P_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -783,7 +751,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document48]
+[Document46]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_635P_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -799,7 +767,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document49]
+[Document47]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_254P_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -815,7 +783,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document50]
+[Document48]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_254P_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -831,7 +799,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document51]
+[Document49]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_254P_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -847,7 +815,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document52]
+[Document50]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_127P_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -863,7 +831,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document53]
+[Document51]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_127P_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -879,7 +847,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document54]
+[Document52]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_127P_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -895,7 +863,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document55]
+[Document53]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_102P_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -911,7 +879,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document56]
+[Document54]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_102P_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -927,7 +895,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document57]
+[Document55]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_102P_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -943,7 +911,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document58]
+[Document56]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_80P_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -959,7 +927,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document59]
+[Document57]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_80P_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -975,7 +943,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document60]
+[Document58]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_80P_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -991,7 +959,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document61]
+[Document59]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_65P_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1007,7 +975,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document62]
+[Document60]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_65P_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1023,7 +991,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document63]
+[Document61]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOP_65P_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1039,7 +1007,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document64]
+[Document62]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SON_127P_V.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1055,7 +1023,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document65]
+[Document63]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SON_95P_V.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1071,7 +1039,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document66]
+[Document64]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SON_80P_V.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1087,7 +1055,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document67]
+[Document65]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SON_65P_V.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1103,7 +1071,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document68]
+[Document66]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SON_65P_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1119,7 +1087,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document69]
+[Document67]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SON_65P_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1135,7 +1103,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document70]
+[Document68]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SON_65P_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1151,7 +1119,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document71]
+[Document69]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SON_50P_V.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1167,7 +1135,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document72]
+[Document70]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SON_50P_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1183,7 +1151,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document73]
+[Document71]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SON_50P_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1199,7 +1167,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document74]
+[Document72]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SON_50P_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1215,7 +1183,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document75]
+[Document73]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SON_40P_V.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1231,7 +1199,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document76]
+[Document74]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SON_40P_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1247,7 +1215,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document77]
+[Document75]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SON_40P_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1263,7 +1231,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document78]
+[Document76]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SON_40P_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1279,7 +1247,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document79]
+[Document77]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOIC_127P_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1295,7 +1263,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document80]
+[Document78]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOIC_127P_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1311,7 +1279,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document81]
+[Document79]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\SOIC_127P_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1327,7 +1295,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document82]
+[Document80]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Small Outline with J Leads.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1343,7 +1311,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document83]
+[Document81]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Small Outline with C-Bend Leads.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1359,7 +1327,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document84]
+[Document82]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Small Outline Diode - 3+ Flat Leads.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1375,7 +1343,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document85]
+[Document83]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Small Outline Diode - 2 Z-Bend Leads.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1391,7 +1359,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document86]
+[Document84]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Small Outline Diode - 2 Yoke Leads.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1407,7 +1375,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document87]
+[Document85]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Small Outline Diode - 2 Gullwing Leads.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1423,7 +1391,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document88]
+[Document86]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Small Outline Diode - 2 Flat Leads.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1439,7 +1407,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document89]
+[Document87]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Small Outline Diode - 2 C-Bend Leads.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1455,7 +1423,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document90]
+[Document88]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Single-In-Line Package - 5+ Leads.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1471,7 +1439,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document91]
+[Document89]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Single In-Line with no Mounting Hole.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1487,7 +1455,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document92]
+[Document90]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Single In-Line with Mounting Hole.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1503,7 +1471,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document93]
+[Document91]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Resistor - Axial.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1519,7 +1487,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document94]
+[Document92]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Quad In-Line Package (QUIP).PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1535,7 +1503,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document95]
+[Document93]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Sq_80P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1551,7 +1519,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document96]
+[Document94]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Sq_80P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1567,7 +1535,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document97]
+[Document95]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Sq_80P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1583,7 +1551,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document98]
+[Document96]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Sq_65P_Side_V.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1599,7 +1567,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document99]
+[Document97]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Sq_65P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1615,7 +1583,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document100]
+[Document98]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Sq_65P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1631,7 +1599,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document101]
+[Document99]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Sq_65P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1647,7 +1615,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document102]
+[Document100]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Sq_50P_Side_V.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1663,7 +1631,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document103]
+[Document101]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Sq_50P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1679,7 +1647,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document104]
+[Document102]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Sq_50P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1695,7 +1663,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document105]
+[Document103]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Sq_50P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1711,7 +1679,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document106]
+[Document104]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Sq_40P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1727,7 +1695,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document107]
+[Document105]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Sq_40P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1743,7 +1711,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document108]
+[Document106]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Sq_40P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1759,7 +1727,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document109]
+[Document107]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Rect_65P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1775,7 +1743,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document110]
+[Document108]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Rect_65P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1791,7 +1759,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document111]
+[Document109]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Rect_65P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1807,7 +1775,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document112]
+[Document110]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Rect_50P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1823,7 +1791,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document113]
+[Document111]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Rect_50P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1839,7 +1807,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document114]
+[Document112]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Thin_Rect_50P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1855,7 +1823,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document115]
+[Document113]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Sq_127P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1871,7 +1839,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document116]
+[Document114]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Sq_127P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1887,7 +1855,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document117]
+[Document115]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Sq_127P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1903,7 +1871,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document118]
+[Document116]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Sq_100P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1919,7 +1887,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document119]
+[Document117]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Sq_100P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1935,7 +1903,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document120]
+[Document118]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Sq_100P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1951,7 +1919,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document121]
+[Document119]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Sq_80P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1967,7 +1935,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document122]
+[Document120]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Sq_80P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1983,7 +1951,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document123]
+[Document121]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Sq_80P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1999,7 +1967,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document124]
+[Document122]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Sq_65P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2015,7 +1983,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document125]
+[Document123]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Sq_65P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2031,7 +1999,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document126]
+[Document124]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Sq_65P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2047,7 +2015,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document127]
+[Document125]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Shrink_Sq_50P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2063,7 +2031,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document128]
+[Document126]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Shrink_Sq_50P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2079,7 +2047,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document129]
+[Document127]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Shrink_Sq_50P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2095,7 +2063,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document130]
+[Document128]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Shrink_Sq_40P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2111,7 +2079,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document131]
+[Document129]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Shrink_Sq_40P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2127,7 +2095,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document132]
+[Document130]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Shrink_Sq_40P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2143,7 +2111,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document133]
+[Document131]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Shrink_Rect_50P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2159,7 +2127,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document134]
+[Document132]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Shrink_Rect_50P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2175,7 +2143,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document135]
+[Document133]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Shrink_Rect_50P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2191,7 +2159,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document136]
+[Document134]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Shrink_Rect_40P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2207,7 +2175,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document137]
+[Document135]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Shrink_Rect_40P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2223,7 +2191,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document138]
+[Document136]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Shrink_Rect_40P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2239,7 +2207,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document139]
+[Document137]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Shrink_Rect_30P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2255,7 +2223,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document140]
+[Document138]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Shrink_Rect_30P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2271,7 +2239,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document141]
+[Document139]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Shrink_Rect_30P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2287,7 +2255,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document142]
+[Document140]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Rect_100P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2303,7 +2271,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document143]
+[Document141]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Rect_100P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2319,7 +2287,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document144]
+[Document142]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Rect_100P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2335,7 +2303,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document145]
+[Document143]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Rect_80P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2351,7 +2319,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document146]
+[Document144]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Rect_80P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2367,7 +2335,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document147]
+[Document145]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Rect_80P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2383,7 +2351,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document148]
+[Document146]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Rect_65P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2399,7 +2367,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document149]
+[Document147]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Rect_65P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2415,7 +2383,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document150]
+[Document148]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFP_Rect_65P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2431,7 +2399,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document151]
+[Document149]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_100P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2447,7 +2415,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document152]
+[Document150]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_100P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2463,7 +2431,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document153]
+[Document151]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_100P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2479,7 +2447,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document154]
+[Document152]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_80P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2495,7 +2463,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document155]
+[Document153]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_80P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2511,7 +2479,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document156]
+[Document154]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_80P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2527,7 +2495,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document157]
+[Document155]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_65P_Side_V.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2543,7 +2511,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document158]
+[Document156]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_65P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2559,7 +2527,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document159]
+[Document157]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_65P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2575,7 +2543,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document160]
+[Document158]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_65P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2591,7 +2559,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document161]
+[Document159]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_50P_Side_V.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2607,7 +2575,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document162]
+[Document160]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_50P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2623,7 +2591,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document163]
+[Document161]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_50P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2639,7 +2607,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document164]
+[Document162]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_50P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2655,7 +2623,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document165]
+[Document163]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_40P_Side_V.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2671,7 +2639,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document166]
+[Document164]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_40P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2687,7 +2655,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document167]
+[Document165]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_40P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2703,7 +2671,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document168]
+[Document166]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Sq_40P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2719,7 +2687,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document169]
+[Document167]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\QFN_Rect_50P_Side_V.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2735,7 +2703,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document170]
+[Document168]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\PLCC_Sq_127P_Ctr_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2751,7 +2719,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document171]
+[Document169]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\PLCC_Sq_127P_Ctr_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2767,7 +2735,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document172]
+[Document170]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\PLCC_Sq_127P_Ctr_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2783,7 +2751,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document173]
+[Document171]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Pin Grid Array Package (PGA).PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2799,7 +2767,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document174]
+[Document172]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Miscellaneous.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2815,7 +2783,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document175]
+[Document173]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Miscellaneous Devices PCB.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2831,7 +2799,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document176]
+[Document174]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Miscellaneous Connector PCB.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2847,7 +2815,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document177]
+[Document175]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\MicroSMD_50P_V.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2863,7 +2831,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document178]
+[Document176]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\MicroSMD_40P_V.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2879,7 +2847,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document179]
+[Document177]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\MELF - Resistor.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2895,7 +2863,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document180]
+[Document178]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\MELF - Diode.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2911,7 +2879,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document181]
+[Document179]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Low Profile Module (LPM).PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2927,7 +2895,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document182]
+[Document180]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Leadless Chip Carrier - Square.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2943,7 +2911,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document183]
+[Document181]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Leadless Chip Carrier - Rectangle.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2959,7 +2927,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document184]
+[Document182]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Leaded Chip Carrier - Rectangle.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2975,7 +2943,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document185]
+[Document183]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\LCC_Sq_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -2991,7 +2959,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document186]
+[Document184]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\LCC_Sq_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3007,7 +2975,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document187]
+[Document185]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\LCC_Sq_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3023,7 +2991,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document188]
+[Document186]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Horizontal, Flange Mount with Tab.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3039,7 +3007,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document189]
+[Document187]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Flange Mount with Rectangular Base.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3055,7 +3023,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document190]
+[Document188]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Dual-In-Line Package.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3071,7 +3039,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document191]
+[Document189]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\DPAK_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3087,7 +3055,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document192]
+[Document190]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\DPAK_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3103,7 +3071,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document193]
+[Document191]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\DPAK_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3119,7 +3087,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document194]
+[Document192]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\DIP, Shrink - Stub Leads.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3135,7 +3103,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document195]
+[Document193]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\DIP, Modified - Trimmed Leads.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3151,7 +3119,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document196]
+[Document194]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\DIP - Peg Leads.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3167,7 +3135,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document197]
+[Document195]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\DIP - LED Display.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3183,7 +3151,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document198]
+[Document196]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Diamond Base CAN - 3+ Leads.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3199,7 +3167,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document199]
+[Document197]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Diamond Base CAN - 2 Leads.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3215,7 +3183,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document200]
+[Document198]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Cylinder with Flat Index.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3231,7 +3199,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document201]
+[Document199]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Crystal Oscillator.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3247,7 +3215,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document202]
+[Document200]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_127P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3263,7 +3231,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document203]
+[Document201]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_127P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3279,7 +3247,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document204]
+[Document202]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_127P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3295,7 +3263,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document205]
+[Document203]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_80P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3311,7 +3279,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document206]
+[Document204]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_80P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3327,7 +3295,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document207]
+[Document205]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_80P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3343,7 +3311,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document208]
+[Document206]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_65P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3359,7 +3327,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document209]
+[Document207]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_65P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3375,7 +3343,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document210]
+[Document208]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_65P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3391,7 +3359,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document211]
+[Document209]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_63P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3407,7 +3375,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document212]
+[Document210]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_63P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3423,7 +3391,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document213]
+[Document211]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_63P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3439,7 +3407,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document214]
+[Document212]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_63P_Ctr_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3455,7 +3423,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document215]
+[Document213]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_63P_Ctr_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3471,7 +3439,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document216]
+[Document214]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_63P_Ctr_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3487,7 +3455,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document217]
+[Document215]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_50P_Side_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3503,7 +3471,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document218]
+[Document216]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_50P_Side_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3519,7 +3487,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document219]
+[Document217]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CQFP_Sq_50P_Side_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3535,7 +3503,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document220]
+[Document218]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con USB.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3551,7 +3519,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document221]
+[Document219]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con RF Coaxial.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3567,7 +3535,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document222]
+[Document220]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con Rect Stag PCB.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3583,7 +3551,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document223]
+[Document221]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con Mod Jack PCB.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3599,7 +3567,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document224]
+[Document222]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con Mains Power.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3615,7 +3583,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document225]
+[Document223]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con Low Power.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3631,7 +3599,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document226]
+[Document224]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con IEEE1394.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3647,7 +3615,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document227]
+[Document225]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con IDC.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3663,7 +3631,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document228]
+[Document226]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con High-Speed PCB.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3679,7 +3647,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document229]
+[Document227]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con FPC-FFC.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3695,7 +3663,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document230]
+[Document228]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con Docking Station.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3711,7 +3679,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document231]
+[Document229]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con DIN Circular.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3727,7 +3695,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document232]
+[Document230]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con DIN 41612.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3743,7 +3711,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document233]
+[Document231]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con CompactPCI.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3759,7 +3727,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document234]
+[Document232]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con CardEdge.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3775,7 +3743,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document235]
+[Document233]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con Card.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3791,7 +3759,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document236]
+[Document234]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con Board-to-Board.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3807,7 +3775,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document237]
+[Document235]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con Audio.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3823,7 +3791,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document238]
+[Document236]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con Audio Video.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3839,7 +3807,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document239]
+[Document237]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Con 050 DSubminiature.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3855,7 +3823,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document240]
+[Document238]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Chip_Resistor_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3871,7 +3839,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document241]
+[Document239]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Chip_Resistor_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3887,7 +3855,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document242]
+[Document240]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Chip_Resistor_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3903,7 +3871,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document243]
+[Document241]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Chip_Inductor_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3919,7 +3887,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document244]
+[Document242]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Chip_Inductor_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3935,7 +3903,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document245]
+[Document243]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Chip_Inductor_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3951,7 +3919,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document246]
+[Document244]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Chip_Capacitor_N.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3967,7 +3935,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document247]
+[Document245]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Chip_Capacitor_M.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3983,7 +3951,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document248]
+[Document246]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Chip_Capacitor_L.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -3999,7 +3967,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document249]
+[Document247]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Chip Resistor Array - Panasonic.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4015,7 +3983,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document250]
+[Document248]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Chip Diode - 2 Contacts.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4031,7 +3999,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document251]
+[Document249]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CGA_Sq_127P.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4047,7 +4015,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document252]
+[Document250]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CGA_Sq_100P.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4063,7 +4031,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document253]
+[Document251]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Ceramic DFP.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4079,7 +4047,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document254]
+[Document252]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Capacitor Tantalum Radial Rectangle.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4095,7 +4063,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document255]
+[Document253]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Capacitor Tantalum Radial Oval.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4111,7 +4079,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document256]
+[Document254]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Capacitor Tantalum Radial Bead.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4127,7 +4095,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document257]
+[Document255]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Capacitor Tantalum Leadless.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4143,7 +4111,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document258]
+[Document256]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Capacitor Polar Radial Cylinder.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4159,7 +4127,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document259]
+[Document257]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Capacitor Polar Axial.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4175,7 +4143,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document260]
+[Document258]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Capacitor Non-Polar Tubular.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4191,7 +4159,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document261]
+[Document259]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Capacitor Non-Polar Disc.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4207,7 +4175,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document262]
+[Document260]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Capacitor Non-Polar Dipped Radial.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4223,7 +4191,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document263]
+[Document261]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Capacitor Non-Polar Axial.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4239,7 +4207,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document264]
+[Document262]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Capacitor Electrolytic Snap-In.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4255,7 +4223,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document265]
+[Document263]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Capacitor Electrolytic Mount Ring.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4271,7 +4239,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document266]
+[Document264]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CAN - Rectangle pin arrangement.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4287,7 +4255,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document267]
+[Document265]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\CAN - Circle pin arrangement.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4303,7 +4271,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document268]
+[Document266]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Bumpered QFP - Corner Index.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4319,7 +4287,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document269]
+[Document267]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Bumpered QFP - Centre Index.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4335,7 +4303,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document270]
+[Document268]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Bridge Rectifier.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4351,7 +4319,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document271]
+[Document269]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\BGA_Sq_150P.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4367,7 +4335,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document272]
+[Document270]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\BGA_Sq_127P.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4383,7 +4351,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document273]
+[Document271]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\BGA_Sq_100P.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4399,7 +4367,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document274]
+[Document272]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\BGA_Sq_80P.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4415,7 +4383,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document275]
+[Document273]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\BGA_Sq_75P.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4431,7 +4399,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document276]
+[Document274]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\BGA_Sq_65P.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4447,7 +4415,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document277]
+[Document275]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\BGA_Sq_50P.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4463,7 +4431,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document278]
+[Document276]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\BGA_Sq_40P.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4479,7 +4447,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document279]
+[Document277]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\BGA_Rect.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4495,7 +4463,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document280]
+[Document278]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\Altium PCB footprints\PCBfootprints_290709\Axial Lead Diode.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4511,7 +4479,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document281]
+[Document279]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\BCR.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4527,7 +4495,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document282]
+[Document280]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\BCR.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4543,7 +4511,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document283]
+[Document281]
 DocumentPath=B2 Telemetry\Telemetry.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4559,7 +4527,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document284]
+[Document282]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\Schlib1.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4575,7 +4543,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document285]
+[Document283]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\PcbLib1.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4591,7 +4559,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document286]
+[Document284]
 DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\Connectors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4607,7 +4575,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document287]
+[Document285]
 DocumentPath=B1 Power\B1.2 Management\B1.2.1 Regulation\V2 Power Subsystem\PowerBoard\SchLib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4623,7 +4591,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document288]
+[Document286]
 DocumentPath=B1 Power\B1.2 Management\B1.2.1 Regulation\V2 Power Subsystem\PowerBoard\PcbLib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4639,23 +4607,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document289]
-DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\POWR0008_BCR_System.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=311
-AnnotationIndexControlEnabled=1
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-
-[Document290]
+[Document287]
 DocumentPath=Tray2.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4671,7 +4623,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document291]
+[Document288]
 DocumentPath=B4 Command Control and Data\CRSC0002.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=101
@@ -4687,7 +4639,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document292]
+[Document289]
 DocumentPath=B4 Command Control and Data\CSC 002B.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4703,7 +4655,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document293]
+[Document290]
 DocumentPath=B3 Groundstation Link (Comms)\Comms Board Rework\Comms Board Small Footprints.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4719,7 +4671,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document294]
+[Document291]
 DocumentPath=B3 Groundstation Link (Comms)\Comms Board Rework\Comms Board Small Footprints.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4735,7 +4687,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document295]
+[Document292]
 DocumentPath=B4 Command Control and Data\CSC.schlib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4751,7 +4703,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document296]
+[Document293]
 DocumentPath=B3 Groundstation Link (Comms)\COMS0001_Beacon.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=201
@@ -4767,7 +4719,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document297]
+[Document294]
 DocumentPath=B3 Groundstation Link (Comms)\B3.1 Demodulation\COMS0002_AFSK.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=211
@@ -4783,7 +4735,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document298]
+[Document295]
 DocumentPath=B3 Groundstation Link (Comms)\B3.1 Demodulation\COMS0003_DTMF.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=221
@@ -4799,7 +4751,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document299]
+[Document296]
 DocumentPath=B3 Groundstation Link (Comms)\B3.3 Communications Switching\COMS0004 SwC_Main.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=231
@@ -4815,23 +4767,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document300]
-DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\POWR0001_BCR_LT1513.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=301
-AnnotationIndexControlEnabled=1
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=0
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-
-[Document301]
+[Document297]
 DocumentPath=B3 Groundstation Link (Comms)\COMS0013_Top_Schematic.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=241
@@ -4847,7 +4783,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document302]
+[Document298]
 DocumentPath=B3 Groundstation Link (Comms)\COMS0012_Comms_Board_Miniaturization.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4863,7 +4799,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document303]
+[Document299]
 DocumentPath=B4 Command Control and Data\CRSC0002.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4879,7 +4815,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document304]
+[Document300]
 DocumentPath=B4 Command Control and Data\CSC.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4895,7 +4831,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document305]
+[Document301]
 DocumentPath=Tray2.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4911,23 +4847,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document306]
-DocumentPath=B1 Power\B1.1 Generation\B1.1.2 Battery Charging\BCR July 2012 Project Files\POWR0008_BCR_System.Harness
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-
-[Document307]
+[Document302]
 DocumentPath=B3 Groundstation Link (Comms)\B3.1 Demodulation\COMS0003_DTMF.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4943,7 +4863,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document308]
+[Document303]
 DocumentPath=B3 Groundstation Link (Comms)\COMS0013_Top_Schematic.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4959,23 +4879,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document309]
-DocumentPath=B1 Power\B1.2 Management\B1.2.1 Regulation\V2 Power Subsystem\PowerBoard\Regulation.Harness
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-
-[Document310]
+[Document304]
 DocumentPath=CSC002B.cam
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -4991,7 +4895,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document311]
+[Document305]
 DocumentPath=CSC Connections Temp.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -5007,7 +4911,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document312]
+[Document306]
 DocumentPath=CSC Connections Temp.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -5023,7 +4927,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document313]
+[Document307]
 DocumentPath=B2 Telemetry\Schlib2.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -5039,7 +4943,7 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
-[Document314]
+[Document308]
 DocumentPath=B2 Telemetry\Telemetry.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
