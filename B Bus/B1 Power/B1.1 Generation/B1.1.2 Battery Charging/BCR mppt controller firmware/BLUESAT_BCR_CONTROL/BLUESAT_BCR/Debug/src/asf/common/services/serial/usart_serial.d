@@ -35,6 +35,7 @@ src/asf/common/services/serial/usart_serial.d \
  ../src/asf/common/services/clock/xmega/sysclk.h \
  ../src/asf/common/boards/board.h \
  ../src/asf/xmega/boards/bluesat_bcr/bcr.h \
+ ../src/asf/xmega/boards/bluesat_bcr/bcr_comms.h \
  ../src/asf/xmega/drivers/cpu/ccp.h \
  ../src/asf/common/services/clock/osc.h \
  ../src/asf/common/services/clock/xmega/osc.h \
@@ -114,6 +115,8 @@ c:\program\ files\ (x86)\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.4.0.
 ../src/asf/common/boards/board.h:
 
 ../src/asf/xmega/boards/bluesat_bcr/bcr.h:
+
+../src/asf/xmega/boards/bluesat_bcr/bcr_comms.h:
 
 ../src/asf/xmega/drivers/cpu/ccp.h:
 

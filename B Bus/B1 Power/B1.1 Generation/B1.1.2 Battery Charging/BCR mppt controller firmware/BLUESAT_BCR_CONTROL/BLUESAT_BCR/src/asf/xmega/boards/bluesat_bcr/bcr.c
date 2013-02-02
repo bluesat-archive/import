@@ -5,6 +5,7 @@
  *  Author: Mitch
  */ 
 #include <asf.h>
+#include <board.h>
 
 static void uart_init(void);
 
@@ -39,8 +40,8 @@ void bcr_init(void) {
 	//Setup TimerBlox enable pin, default to enabled.
 	ioport_configure_pin(SYNC_EN, IOPORT_DIR_OUTPUT | IOPORT_INIT_HIGH);
 	
-	//I2C stuff??
-	//....
+	//I2C stuff
+	i2c_init();
 	
 	//Enable FTDI UART
 	#if defined(UART_ENABLE)

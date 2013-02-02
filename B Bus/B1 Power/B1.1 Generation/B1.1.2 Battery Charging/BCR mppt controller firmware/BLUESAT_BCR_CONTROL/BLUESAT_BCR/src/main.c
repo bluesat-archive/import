@@ -13,8 +13,11 @@
 #include <stdio.h>
 #include "mppt.h"
 
-status_code_t usart_serial_write_string(usart_if usart, char *str);
 void print_adc(void);
+
+//Neat function to write a null terminating string
+status_code_t usart_serial_write_string(usart_if usart, char *str);
+
 
 int main (void)
 {
@@ -70,7 +73,7 @@ void print_adc (void)
 	usart_serial_write_string(USART_SERIAL, msg);
 	sprintf(msg, "ISENSE_ZM=%umA\r\n", bcr_adc.ISENSE_ZM>>1);
 	usart_serial_write_string(USART_SERIAL, msg);
-	sprintf(msg, "VGNDREF=%umV\r\n", bcr_adc.VGNDREF>>1);
+	sprintf(msg, "VGNDREF=%umV\r\n", bcr_adc.VREF>>1);
 	usart_serial_write_string(USART_SERIAL, msg);
 	sprintf(msg, "ADCB5=%umA\r\n", bcr_adc.ADCB5>>1);
 	usart_serial_write_string(USART_SERIAL, msg);

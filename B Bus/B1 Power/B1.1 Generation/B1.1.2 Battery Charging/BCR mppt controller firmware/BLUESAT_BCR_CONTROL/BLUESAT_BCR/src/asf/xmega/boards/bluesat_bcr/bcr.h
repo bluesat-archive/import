@@ -5,9 +5,13 @@
  *  Author: Mitch
  */ 
 
-
 #ifndef BCR_H_
 #define BCR_H_
+
+#define DEBUG
+
+//Comms functions
+#include "bcr_comms.h"
 
 //Main BCR init function (all you should need to call!)
 void bcr_init(void);
@@ -32,7 +36,7 @@ struct bcr_adc_pins {
 	uint16_t ISENSE_YM;		//ADCB1
 	uint16_t VSENSE_YM;		//ADCB2
 	uint16_t ISENSE_ZM;		//ADCB3
-	uint16_t VGNDREF;		//ADCB4
+	uint16_t VSENSE_ZM;		//ADCB4
 	uint16_t ADCB5;     	//ADCB5
 	uint16_t VSENSE_BAT;	//ADCB6
 	uint16_t ISENSE_LOAD;	//ADCB7

@@ -15,14 +15,14 @@ static void mppt_get_powers (panel_powers_t* panel_powers)
 	panel_powers->POWER_ZP = bcr_adc.ISENSE_ZP * (bcr_adc.VSENSE_ZP >> 2) / 1000;
 	panel_powers->POWER_XM = bcr_adc.ISENSE_XM * (bcr_adc.VSENSE_XM >> 2) / 1000;
 	panel_powers->POWER_YM = bcr_adc.ISENSE_YM * (bcr_adc.VSENSE_YM >> 2) / 1000;
-	//panel_powers->POWER_ZM = bcr_adc.ISENSE_ZM * (bcr_adc.VSENSE_ZM >> 2) / 1000;
+	panel_powers->POWER_ZM = bcr_adc.ISENSE_ZM * (bcr_adc.VSENSE_ZM >> 2) / 1000;
 }
 
 // Perturbs ISET in step direction
 // If ISET exceeds bounds, reset to nominal
-static void mppt_perturb (uint16_t* dac_iset, int8_t* iset_step_dir)
+static void mppt_perturb (uint16_t* dac_iset, int8_t iset_step_dir)
 {
-	*dac_iset += *iset_step_dir * ISET_STEPSIZE;
+	*dac_iset += iset_step_dir * ISET_STEPSIZE;
 	if ((*dac_iset > ISET_MAX) || (*dac_iset < ISET_MIN))
 		*dac_iset = ISET_NOMINAL;
 }
@@ -49,17 +49,17 @@ void mppt_cycle (void)
 	{
 		// Perturb ISETs in step direction
 		if (!SHDN_XP)
-			mppt_perturb(&(bcr_dac.ISET_XP), &iset_step_dir_XP);
+			mppt_perturb(&(bcr_dac.ISET_XP), iset_step_dir_XP);
 		if (!SHDN_YP)
-			mppt_perturb(&(bcr_dac.ISET_YP), &iset_step_dir_YP);;
+			mppt_perturb(&(bcr_dac.ISET_YP), iset_step_dir_YP);
 		if (!SHDN_ZP)
-			mppt_perturb(&(bcr_dac.ISET_ZP), &iset_step_dir_ZP);
+			mppt_perturb(&(bcr_dac.ISET_ZP), iset_step_dir_ZP);
 		if (!SHDN_XM)
-			mppt_perturb(&(bcr_dac.ISET_XM), &iset_step_dir_XM);
+			mppt_perturb(&(bcr_dac.ISET_XM), iset_step_dir_XM);
 		if (!SHDN_YM)
-			mppt_perturb(&(bcr_dac.ISET_YM), &iset_step_dir_YM);
+			mppt_perturb(&(bcr_dac.ISET_YM), iset_step_dir_YM);
 		if (!SHDN_ZM)
-			mppt_perturb(&(bcr_dac.ISET_ZM), &iset_step_dir_ZM);
+			mppt_perturb(&(bcr_dac.ISET_ZM), iset_step_dir_ZM);
 		
 		bcr_dac_update();
 		

@@ -38,6 +38,7 @@ src/mppt.d src/mppt.o: ../src/mppt.c ../src/asf.h \
  ../src/asf/common/services/clock/xmega/sysclk.h \
  ../src/asf/common/boards/board.h \
  ../src/asf/xmega/boards/bluesat_bcr/bcr.h \
+ ../src/asf/xmega/boards/bluesat_bcr/bcr_comms.h \
  ../src/asf/common/services/clock/osc.h \
  ../src/asf/common/services/clock/xmega/osc.h \
  ../src/asf/common/services/clock/pll.h \
@@ -57,6 +58,8 @@ src/mppt.d src/mppt.o: ../src/mppt.c ../src/asf.h \
  ../src/asf/common/services/spi/xmega_spi/spi_master.h \
  ../src/config/conf_spi_master.h \
  ../src/asf/common/services/sleepmgr/xmega/sleepmgr.h \
+ ../src/asf/xmega/drivers/twi/twis.h \
+ ../src/asf/xmega/drivers/twi/twi_common.h \
  ../src/asf/common/services/serial/serial.h \
  ../src/asf/common/services/serial/xmega_usart/usart_serial.h \
  ../src/asf/xmega/drivers/usart/usart.h ../src/config/conf_usart_serial.h \
@@ -148,6 +151,8 @@ c:\program\ files\ (x86)\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.4.0.
 
 ../src/asf/xmega/boards/bluesat_bcr/bcr.h:
 
+../src/asf/xmega/boards/bluesat_bcr/bcr_comms.h:
+
 ../src/asf/common/services/clock/osc.h:
 
 ../src/asf/common/services/clock/xmega/osc.h:
@@ -187,6 +192,10 @@ c:\program\ files\ (x86)\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.4.0.
 ../src/config/conf_spi_master.h:
 
 ../src/asf/common/services/sleepmgr/xmega/sleepmgr.h:
+
+../src/asf/xmega/drivers/twi/twis.h:
+
+../src/asf/xmega/drivers/twi/twi_common.h:
 
 ../src/asf/common/services/serial/serial.h:
 

@@ -65,9 +65,6 @@
 // From module: GPIO - General purpose Input/Output
 #include <gpio.h>
 
-// From module: Generic board support
-#include <board.h>
-
 // From module: IOPORT - General purpose I/O service
 #include <ioport.h>
 
@@ -100,6 +97,9 @@
 // From module: System Clock Control - XMEGA A1/A3/A3B/A4/D implementation
 #include <sysclk.h>
 
+// From module: TWI - Two-wire Slave Interface
+#include <twis.h>
+
 // From module: USART - Serial interface - XMEGA implementation
 #include <serial.h>
 
@@ -109,5 +109,8 @@
 // From module: XMEGA compiler driver
 #include <compiler.h>
 #include <status_codes.h>
+
+// From module: Generic board support
+#include <board.h>
 
 #endif // ASF_H

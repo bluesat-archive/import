@@ -2,6 +2,10 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+src\asf\xmega\boards\bluesat_bcr\bcr_comms.c
+
+src\asf\xmega\drivers\twi\twis.c
+
 src\asf\common\services\clock\xmega\sysclk.c
 
 src\asf\common\services\ioport\xmega\ioport_compat.c
