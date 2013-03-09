@@ -1,0 +1,187 @@
+Added Component: Designator=R44A(R0805M)
+Added Component: Designator=R45A(R0805M)
+Added Pin To Net: NetName=GND Pin=C1A-1
+Added Pin To Net: NetName=3V3 Pin=C1A-2
+Added Pin To Net: NetName=VREG1A Pin=C2A-1
+Added Pin To Net: NetName=NetC2A_2 Pin=C2A-2
+Added Pin To Net: NetName=NetC3A_1 Pin=C3A-1
+Added Pin To Net: NetName=GND Pin=C3A-2
+Added Pin To Net: NetName=GND Pin=C4A-1
+Added Pin To Net: NetName=NetC4A_2 Pin=C4A-2
+Added Pin To Net: NetName=REG1_FBA Pin=C5A-1
+Added Pin To Net: NetName=VREG1A Pin=C5A-2
+Added Pin To Net: NetName=GND Pin=C6A-1
+Added Pin To Net: NetName=NetC6A_2 Pin=C6A-2
+Added Pin To Net: NetName=GND Pin=C7A-1
+Added Pin To Net: NetName=NetC7A_2 Pin=C7A-2
+Added Pin To Net: NetName=GND Pin=C8A-1
+Added Pin To Net: NetName=NetC7A_2 Pin=C8A-2
+Added Pin To Net: NetName=NetC7A_2 Pin=C9A-1
+Added Pin To Net: NetName=GND Pin=C9A-2
+Added Pin To Net: NetName=NetC10A_1 Pin=C10A-1
+Added Pin To Net: NetName=GND Pin=C10A-2
+Added Pin To Net: NetName=GND Pin=C11A-1
+Added Pin To Net: NetName=VREG1A Pin=C11A-2
+Added Pin To Net: NetName=NetC12A_1 Pin=C12A-1
+Added Pin To Net: NetName=REG2A Pin=C12A-2
+Added Pin To Net: NetName=VBATT Pin=C13A-1
+Added Pin To Net: NetName=GND Pin=C13A-2
+Added Pin To Net: NetName=REG2_FBA Pin=C14A-1
+Added Pin To Net: NetName=VREG2A Pin=C14A-2
+Added Pin To Net: NetName=GND Pin=C15A-1
+Added Pin To Net: NetName=NetC15A_2 Pin=C15A-2
+Added Pin To Net: NetName=GND Pin=C16A-1
+Added Pin To Net: NetName=NetC15A_2 Pin=C16A-2
+Added Pin To Net: NetName=NetC15A_2 Pin=C17A-1
+Added Pin To Net: NetName=GND Pin=C17A-2
+Added Pin To Net: NetName=NetC18A_1 Pin=C18A-1
+Added Pin To Net: NetName=GND Pin=C18A-2
+Added Pin To Net: NetName=GND Pin=C19A-1
+Added Pin To Net: NetName=VREG2A Pin=C19A-2
+Added Pin To Net: NetName=NetC7A_2 Pin=FB1A-1
+Added Pin To Net: NetName=VBATT Pin=FB1A-2
+Added Pin To Net: NetName=NetC15A_2 Pin=FB2A-1
+Added Pin To Net: NetName=VBATT Pin=FB2A-2
+Added Pin To Net: NetName=NetQ1A_D1 Pin=Q1A-D1
+Added Pin To Net: NetName=NetQ1A_D1 Pin=Q1A-D2
+Added Pin To Net: NetName=NetQ1A_G1 Pin=Q1A-G1
+Added Pin To Net: NetName=NetQ1A_G2 Pin=Q1A-G2
+Added Pin To Net: NetName=NetQ1A_S1 Pin=Q1A-S1
+Added Pin To Net: NetName=NetQ1A_S1 Pin=Q1A-S1
+Added Pin To Net: NetName=3V3 Pin=Q1A-S2
+Added Pin To Net: NetName=3V3 Pin=Q1A-S2
+Added Pin To Net: NetName=NetQ2A_D1 Pin=Q2A-D1
+Added Pin To Net: NetName=NetQ2A_D1 Pin=Q2A-D2
+Added Pin To Net: NetName=NetQ2A_G1 Pin=Q2A-G1
+Added Pin To Net: NetName=NetQ2A_G2 Pin=Q2A-G2
+Added Pin To Net: NetName=NetQ2A_S1 Pin=Q2A-S1
+Added Pin To Net: NetName=NetQ2A_S1 Pin=Q2A-S1
+Added Pin To Net: NetName=3V3 Pin=Q2A-S2
+Added Pin To Net: NetName=3V3 Pin=Q2A-S2
+Added Pin To Net: NetName=VREG1A Pin=R1A-1
+Added Pin To Net: NetName=NetQ1A_S1 Pin=R1A-2
+Added Pin To Net: NetName=VREG1A Pin=R2A-1
+Added Pin To Net: NetName=NetR2A_2 Pin=R2A-2
+Added Pin To Net: NetName=GND Pin=R3A-1
+Added Pin To Net: NetName=NetR2A_2 Pin=R3A-2
+Added Pin To Net: NetName=NetR4A_1 Pin=R4A-1
+Added Pin To Net: NetName=NetC7A_2 Pin=R4A-2
+Added Pin To Net: NetName=REG1_FBA Pin=R5A-1
+Added Pin To Net: NetName=VREG1A Pin=R5A-2
+Added Pin To Net: NetName=NetC7A_2 Pin=R6A-1
+Added Pin To Net: NetName=REG1_ENA Pin=R6A-2
+Added Pin To Net: NetName=GND Pin=R7A-1
+Added Pin To Net: NetName=REG1_FBA Pin=R7A-2
+Added Pin To Net: NetName=GND Pin=R8A-1
+Added Pin To Net: NetName=REG1_FBA Pin=R8A-2
+Added Pin To Net: NetName=REG1_ENA Pin=R9A-1
+Added Pin To Net: NetName=GND Pin=R9A-2
+Added Pin To Net: NetName=GND Pin=R10A-1
+Added Pin To Net: NetName=NetR10A_2 Pin=R10A-2
+Added Pin To Net: NetName=REG2A Pin=R11A-1
+Added Pin To Net: NetName=NetR10A_2 Pin=R11A-2
+Added Pin To Net: NetName=REG2A Pin=R12A-1
+Added Pin To Net: NetName=NetQ2A_S1 Pin=R12A-2
+Added Pin To Net: NetName=NetR13A_1 Pin=R13A-1
+Added Pin To Net: NetName=NetC15A_2 Pin=R13A-2
+Added Pin To Net: NetName=REG2_FBA Pin=R14A-1
+Added Pin To Net: NetName=VREG2A Pin=R14A-2
+Added Pin To Net: NetName=NetC15A_2 Pin=R15A-1
+Added Pin To Net: NetName=REG2_ENA Pin=R15A-2
+Added Pin To Net: NetName=GND Pin=R16A-1
+Added Pin To Net: NetName=REG2_FBA Pin=R16A-2
+Added Pin To Net: NetName=GND Pin=R17A-1
+Added Pin To Net: NetName=REG2_FBA Pin=R17A-2
+Added Pin To Net: NetName=REG2_ENA Pin=R18A-1
+Added Pin To Net: NetName=GND Pin=R18A-2
+Added Pin To Net: NetName=NetR44A_1 Pin=R44A-1
+Added Pin To Net: NetName=GND Pin=R44A-2
+Added Pin To Net: NetName=NetR45A_1 Pin=R45A-1
+Added Pin To Net: NetName=GND Pin=R45A-2
+Added Pin To Net: NetName=NetC7A_2 Pin=U1A-1
+Added Pin To Net: NetName=NetR4A_1 Pin=U1A-2
+Added Pin To Net: NetName=REG1_ENA Pin=U1A-3
+Added Pin To Net: NetName=GND Pin=U1A-4
+Added Pin To Net: NetName=GND Pin=U1A-4
+Added Pin To Net: NetName=NetC10A_1 Pin=U1A-5
+Added Pin To Net: NetName=REG1_FBA Pin=U1A-6
+Added Pin To Net: NetName=VREG1A Pin=U1A-7
+Added Pin To Net: NetName=NetC2A_2 Pin=U2A-1
+Added Pin To Net: NetName=NetQ1A_G1 Pin=U2A-2
+Added Pin To Net: NetName=NetQ1A_S1 Pin=U2A-3
+Added Pin To Net: NetName=VREG1A Pin=U2A-4
+Added Pin To Net: NetName=NetR2A_2 Pin=U2A-5
+Added Pin To Net: NetName=NetC3A_1 Pin=U2A-6
+Added Pin To Net: NetName=GND Pin=U2A-7
+Added Pin To Net: NetName=NetR10A_2 Pin=U2A-8
+Added Pin To Net: NetName=REG2A Pin=U2A-9
+Added Pin To Net: NetName=NetQ2A_S1 Pin=U2A-10
+Added Pin To Net: NetName=NetQ2A_G1 Pin=U2A-11
+Added Pin To Net: NetName=NetC12A_1 Pin=U2A-12
+Added Pin To Net: NetName=NetQ2A_G2 Pin=U2A-13
+Added Pin To Net: NetName=3V3 Pin=U2A-14
+Added Pin To Net: NetName=3V3_PWRGD2 Pin=U2A-15
+Added Pin To Net: NetName=3V3_FAULT2 Pin=U2A-16
+Added Pin To Net: NetName=NetR45A_1 Pin=U2A-17
+Added Pin To Net: NetName=NetC6A_2 Pin=U2A-18
+Added Pin To Net: NetName=NetC4A_2 Pin=U2A-19
+Added Pin To Net: NetName=NetR44A_1 Pin=U2A-20
+Added Pin To Net: NetName=3V3_FAULT1 Pin=U2A-21
+Added Pin To Net: NetName=3V3_PWRGD1 Pin=U2A-22
+Added Pin To Net: NetName=3V3 Pin=U2A-23
+Added Pin To Net: NetName=NetQ1A_G2 Pin=U2A-24
+Added Pin To Net: NetName=NetC15A_2 Pin=U3A-1
+Added Pin To Net: NetName=NetR13A_1 Pin=U3A-2
+Added Pin To Net: NetName=REG2_ENA Pin=U3A-3
+Added Pin To Net: NetName=GND Pin=U3A-4
+Added Pin To Net: NetName=GND Pin=U3A-4
+Added Pin To Net: NetName=NetC18A_1 Pin=U3A-5
+Added Pin To Net: NetName=REG2_FBA Pin=U3A-6
+Added Pin To Net: NetName=VREG2A Pin=U3A-7
+Added Member To Class: ClassName=3V3 Member=Component C1A (C1) COUT2
+Added Member To Class: ClassName=3V3 Member=Component C2A (C2) 
+Added Member To Class: ClassName=3V3 Member=Component C3A (C3) 
+Added Member To Class: ClassName=3V3 Member=Component C4A (C4) 
+Added Member To Class: ClassName=3V3 Member=Component C5A (C5) CFF
+Added Member To Class: ClassName=3V3 Member=Component C6A (C6) 
+Added Member To Class: ClassName=3V3 Member=Component C7A (C7) CIN
+Added Member To Class: ClassName=3V3 Member=Component C8A (C8) CIN
+Added Member To Class: ClassName=3V3 Member=Component C9A (C9) CIN
+Added Member To Class: ClassName=3V3 Member=Component C10A (C10) CSS
+Added Member To Class: ClassName=3V3 Member=Component C11A (C11) COUT
+Added Member To Class: ClassName=3V3 Member=Component C12A (C12) 
+Added Member To Class: ClassName=3V3 Member=Component C13A (C13) 
+Added Member To Class: ClassName=3V3 Member=Component C14A (C14) CFF
+Added Member To Class: ClassName=3V3 Member=Component C15A (C15) CIN
+Added Member To Class: ClassName=3V3 Member=Component C16A (C16) CIN
+Added Member To Class: ClassName=3V3 Member=Component C17A (C17) CIN
+Added Member To Class: ClassName=3V3 Member=Component C18A (C18) CSS
+Added Member To Class: ClassName=3V3 Member=Component C19A (C19) COUT
+Added Member To Class: ClassName=3V3 Member=Component FB1A (FB1) 
+Added Member To Class: ClassName=3V3 Member=Component FB2A (FB2) 
+Added Member To Class: ClassName=3V3 Member=Component Q1A (Q1A) IRF8852
+Added Member To Class: ClassName=3V3 Member=Component Q2A (Q2A) IRF8852
+Added Member To Class: ClassName=3V3 Member=Component R1A (R1) ISENSE
+Added Member To Class: ClassName=3V3 Member=Component R2A (R2) ON1
+Added Member To Class: ClassName=3V3 Member=Component R3A (R3) ON2
+Added Member To Class: ClassName=3V3 Member=Component R4A (R4) RON
+Added Member To Class: ClassName=3V3 Member=Component R5A (R5) RFBT
+Added Member To Class: ClassName=3V3 Member=Component R6A (R6) RENT
+Added Member To Class: ClassName=3V3 Member=Component R7A (R7) RFBB
+Added Member To Class: ClassName=3V3 Member=Component R8A (R8) RFBB
+Added Member To Class: ClassName=3V3 Member=Component R9A (R9) RENB
+Added Member To Class: ClassName=3V3 Member=Component R10A (R10) ON2
+Added Member To Class: ClassName=3V3 Member=Component R11A (R11) ON1
+Added Member To Class: ClassName=3V3 Member=Component R12A (R12) ISENSE
+Added Member To Class: ClassName=3V3 Member=Component R13A (R13) RON
+Added Member To Class: ClassName=3V3 Member=Component R14A (R14) RFBT
+Added Member To Class: ClassName=3V3 Member=Component R15A (R15) RENT
+Added Member To Class: ClassName=3V3 Member=Component R16A (R16) RFBB
+Added Member To Class: ClassName=3V3 Member=Component R17A (R17) RFBB
+Added Member To Class: ClassName=3V3 Member=Component R18A (R18) RENB
+Added Member To Class: ClassName=3V3 Member=Component R44A (R44) 
+Added Member To Class: ClassName=3V3 Member=Component R45A (R45) 
+Added Member To Class: ClassName=3V3 Member=Component U1A (U1) LMZ14201H
+Added Member To Class: ClassName=3V3 Member=Component U2A (U2) LTC4225
+Added Member To Class: ClassName=3V3 Member=Component U3A (U3) LMZ14201H
+Change Room Scope: Old Scope=InComponentClass('13V6') New Scope=InComponentClass('3V3')

@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=9V1_TX1_EN Pin=U8-5
+Removed Pin From Net: NetName=9V1_TX2_EN Pin=U8-6
+Removed Pin From Net: NetName=9V1_RX1_EN Pin=U8-7
+Removed Pin From Net: NetName=9V1_RX2_EN Pin=U8-8
+Removed Pin From Net: NetName=9V1_FAULT1 Pin=U9-25
+Removed Pin From Net: NetName=9V1_FAULT2 Pin=U9-26
+Removed Pin From Net: NetName=9V1_PWRGD1 Pin=U9-27
+Removed Pin From Net: NetName=9V1_PWRGD2 Pin=U9-28
+Added Pin To Net: NetName=9V1_FAULT1 Pin=U8-5
+Added Pin To Net: NetName=9V1_FAULT2 Pin=U8-6
+Added Pin To Net: NetName=9V1_PWRGD1 Pin=U8-7
+Added Pin To Net: NetName=9V1_PWRGD2 Pin=U8-8
+Added Pin To Net: NetName=9V1_TX1_EN Pin=U9-25
+Added Pin To Net: NetName=9V1_TX2_EN Pin=U9-26
+Added Pin To Net: NetName=9V1_RX1_EN Pin=U9-27
+Added Pin To Net: NetName=9V1_RX2_EN Pin=U9-28
