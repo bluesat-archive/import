@@ -65,7 +65,7 @@ GenerateClassCluster=0
 
 [Document3]
 DocumentPath=RedundantReg.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
@@ -113,7 +113,7 @@ GenerateClassCluster=0
 
 [Document6]
 DocumentPath=PowerBoard.SchDoc
-AnnotationEnabled=0
+AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
