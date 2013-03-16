@@ -1,0 +1,30 @@
+Removed Parameter DatasheetDocument:1-Sep-1999 from Part J1
+Removed Parameter DatasheetDocument:1-Sep-1999 from Part J2
+Removed Parameter Gender:Receptacle from Part J1
+Removed Parameter Gender:Receptacle from Part J2
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part J1
+Removed Parameter LatestRevisionDate:17-Jul-2002 from Part J2
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part J1
+Removed Parameter LatestRevisionNote:Re-released for DXP Platform. from Part J2
+Removed Parameter Orientation:Right Angle from Part J1
+Removed Parameter Orientation:Right Angle from Part J2
+Removed Parameter PackageDocument:O from Part J1
+Removed Parameter PackageDocument:O from Part J2
+Removed Parameter PackageReference:788750 from Part J1
+Removed Parameter PackageReference:788750 from Part J2
+Removed Parameter Positions:9 from Part J1
+Removed Parameter Positions:9 from Part J2
+Removed Parameter Published:15-Jun-2001 from Part J1
+Removed Parameter Published:15-Jun-2001 from Part J2
+Removed Parameter Publisher:Altium Limited from Part J1
+Removed Parameter Publisher:Altium Limited from Part J2
+Added Parameter Manufacturer= to Part J1
+Added Parameter Manufacturer= to Part J2
+Added Parameter Manufacturer P/N= to Part J1
+Added Parameter Manufacturer P/N= to Part J2
+Added Parameter Supplier=TBD to Part J1
+Added Parameter Supplier=TBD to Part J2
+Added Parameter Supplier P/N=TBD to Part J1
+Added Parameter Supplier P/N=TBD to Part J2
+Replace Symbol from J1 D Connector 9 in C:\Users\avi\Desktop\SVN\B Bus\Tray Interconnects\Tray 3 V2.0 Final Working\Tray 3 V2.0\Tray3.SchDoc with D Connector 9 from Tray 1 Expansion Board Prototype.IntLib
+Replace Symbol from J2 D Connector 9 in C:\Users\avi\Desktop\SVN\B Bus\Tray Interconnects\Tray 3 V2.0 Final Working\Tray 3 V2.0\Tray3.SchDoc with D Connector 9 from Tray 1 Expansion Board Prototype.IntLib
