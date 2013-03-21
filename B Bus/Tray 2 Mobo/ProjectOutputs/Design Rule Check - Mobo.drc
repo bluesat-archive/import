@@ -1,0 +1,95 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Bluesat\Desktop\SVN\B Bus\Tray 2 Mobo\Mobo.PcbDoc
+Date     : 19/03/2013
+Time     : 6:43:44 PM
+
+Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.152mm) (Max=2.54mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=254mm) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.051mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0.076mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Room PM2 (Bounding Region = (191.418mm, 147.636mm, 204.018mm, 158.836mm) (InComponentClass('PM2'))
+Rule Violations :0
+
+Processing Rule : Room PM3 (Bounding Region = (229.959mm, 159.068mm, 242.559mm, 170.268mm) (InComponentClass('PM3'))
+Rule Violations :0
+
+Processing Rule : Room PM4 (Bounding Region = (230.018mm, 147.686mm, 242.618mm, 158.886mm) (InComponentClass('PM4'))
+Rule Violations :0
+
+Processing Rule : Room PM5 (Bounding Region = (229.959mm, 170.368mm, 242.559mm, 181.568mm) (InComponentClass('PM5'))
+Rule Violations :0
+
+Processing Rule : Room PM6 (Bounding Region = (178.659mm, 147.653mm, 191.259mm, 158.853mm) (InComponentClass('PM6'))
+Rule Violations :0
+
+Processing Rule : Room PM7 (Bounding Region = (178.659mm, 159.083mm, 191.259mm, 170.283mm) (InComponentClass('PM7'))
+Rule Violations :0
+
+Processing Rule : Room PM8 (Bounding Region = (178.618mm, 170.336mm, 191.218mm, 181.536mm) (InComponentClass('PM8'))
+Rule Violations :0
+
+Processing Rule : Room PM9 (Bounding Region = (191.418mm, 170.336mm, 204.018mm, 181.536mm) (InComponentClass('PM9'))
+Rule Violations :0
+
+Processing Rule : Room PM10 (Bounding Region = (217.018mm, 159.036mm, 229.618mm, 170.236mm) (InComponentClass('PM10'))
+Rule Violations :0
+
+Processing Rule : Room PM11 (Bounding Region = (217.059mm, 147.668mm, 229.659mm, 158.868mm) (InComponentClass('PM11'))
+Rule Violations :0
+
+Processing Rule : Room PM12 (Bounding Region = (204.159mm, 147.568mm, 216.759mm, 158.768mm) (InComponentClass('PM12'))
+Rule Violations :0
+
+Processing Rule : Room PM13 (Bounding Region = (217.059mm, 170.368mm, 229.659mm, 181.568mm) (InComponentClass('PM13'))
+Rule Violations :0
+
+Processing Rule : Room PM14 (Bounding Region = (204.259mm, 170.368mm, 216.859mm, 181.568mm) (InComponentClass('PM14'))
+Rule Violations :0
+
+Processing Rule : Room PM15 (Bounding Region = (204.159mm, 158.968mm, 216.759mm, 170.168mm) (InComponentClass('PM15'))
+Rule Violations :0
+
+Processing Rule : Room PM16 (Bounding Region = (191.459mm, 158.968mm, 204.059mm, 170.168mm) (InComponentClass('PM16'))
+Rule Violations :0
+
+Processing Rule : Room PM1 (Bounding Region = (244.725mm, 156.337mm, 257.484mm, 167.537mm) (InComponentClass('PM1'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=1.016mm) (Preferred=0.508mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 0
+Time Elapsed        : 00:00:01
