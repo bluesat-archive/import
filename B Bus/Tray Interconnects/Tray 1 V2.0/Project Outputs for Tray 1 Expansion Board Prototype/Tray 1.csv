@@ -1,0 +1,11 @@
+Designator,Comment,Description,Quantity,Supplier,Supplier P/N
+
+"C1","0805 Cap","0805 MLCC - X7R, 10%","1","Kit","Kit"
+"R1, R2, R3, R4","0805 Resistor","0805 Thick Film Resistor 1%","4","Kit","Kit"
+"J1","D Connector 15","Receptacle Assembly, 15 Position, Right Angle","1","TBD","TBD"
+"J2","D Connector 25","Receptacle Assembly, 25 Position, Right Angle","1","TBD","TBD"
+"P1","Header 2","Header, 2-Pin","1","Kit","Kit"
+"Q1","DMP2004K","MOSFET P-CH 20V 600MA SOT23-3","1","Digikey","DMP2004KDICT-ND"
+"TX1, TX2","D Connector 9","Receptacle Assembly, 9 Position, Right Angle","2","TBD","TBD"
+"U1","DS2482-100","I2C to 1-Wire Master","1","Digikey","DS2482S-100+T&RCT-ND"
+"U2","TO-92","1-Wire Digital Thermometer","1","Digikey","DS18S20Z+T&RCT-ND"
