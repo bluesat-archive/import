@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: Tray3.GBR   6/08/2012  1:28:25 PM
+Gerber File Extension Report For: Tray3.GBR   5/04/2013  4:28:56 PM
 ------------------------------------------------------------------------------------------
 
 
@@ -12,5 +12,4 @@ Layer Extension     Layer Description
 .GTS                Top Solder                              
 .GBS                Bottom Solder                           
 .GBO                Bottom Overlay                          
-.GM1                Mechanical 1                            
 ------------------------------------------------------------------------------------------
