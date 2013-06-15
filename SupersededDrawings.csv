@@ -27,3 +27,6 @@ POWR0005,BLUEsat Power Switch,Generic LDO-based power switch,E. Islam,B1.2.1 Reg
 ,,,,
 POWR0008,Variable TX supply V1,,,B1.2.1 Regulation
 POWR0009,Variable TX+RX supply V2,,,B1.2.1 Regulation
+COMS0009,Comms Test Board PCB Layout,"Test board for communications subsystem, PCB Layout",T. Fisk,B3 Groundstation Link (Comms)
+COMS0010,Comms Test Board Schematic,"Test board for communications subsystem, circuit schematic",T. Fisk,B3 Groundstation Link (Comms)
+COMS0011,Flatsat - Comunicaitons footprints,,"A. Shaw, E. Nafis, C. Brown",B\Flatsat

@@ -7,10 +7,11 @@ COMS0005,Switching Circuit Radio Multiplexer,Switching Circuit radio switcher,D.
 COMS0006,Switching Circuit TX Device Multiplexer,Switching Circuit transmit device switcher,D. Jedrychowski,B3.3 Communications Switching
 COMS0007,Switchin Circuit Modem RX Multiplexer,Switching Circuit receive device switcher,D. Jedrychowski,B3.3 Communications Switching
 COMS0008,Switching Circuit High Level,High Level overview of switching circuit,D. Jedrychowski,B3.3 Communications Switching
-COMS0009,Comms Test Board PCB Layout,"Test board for communications subsystem, PCB Layout",T. Fisk,B3 Groundstation Link (Comms)
-COMS0010,Comms Test Board Schematic,"Test board for communications subsystem, circuit schematic",T. Fisk,B3 Groundstation Link (Comms)
-COMS0011,Flatsat - Comunicaitons footprints,,"A. Shaw, E. Nafis, C. Brown",B\Flatsat
+,,,,
+,,,,
+,,,,
 COMS0012,Comms Test Board Miniaturization,"A smaller, revised version of the Comms Board",D. Jedrychowski,B3 Groundstation Link (Comms)
+COMS0013,Top Level Schematic,Overview of the communications subsystem,A. Shaw,B3 Groundsation Link (Comms)
 CRSC0001,Crtical System Computer-Top level,The top level overview of the entire critical system computer,A Shaw,B4 Command Control and Data
 CRSC0002,Critical system computer - Microcontroller,"LPC2468 microcontroller, comms and memory",A Shaw,B4 Command Control and Data
 CRSC0007,Tray 2 Motherboard,Tray 2 power monitor board and tray interconnect,M. Wenke,B Tray 2 Mobo
