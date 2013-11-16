@@ -1,5 +1,0 @@
-Added Component: Designator=RX1(DSUB Upright)
-Added Component: Designator=RX2(DSUB Upright)
-Added Member To Class: ClassName=Tray5 Member=Component RX1 D Connector 9
-Added Member To Class: ClassName=Tray5 Member=Component RX2 D Connector 9
-Added Room: Name=Tray5
