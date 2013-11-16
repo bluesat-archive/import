@@ -1,6 +1,0 @@
-Added Component: Designator=C11E(R1210M)
-Added Pin To Net: NetName=GND Pin=C11E-1
-Added Pin To Net: NetName=VREG1E Pin=C11E-2
-Added Member To Class: ClassName=VVAR Member=Component C11E (C11) COUT
-Added Member To Class: ClassName=9V1 Member=Component R1C (R1) ISENSE
-Added Member To Class: ClassName=13V6 Member=Component R15D (R15) RENT
