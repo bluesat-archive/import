@@ -2,7 +2,6 @@
 Version=1.0
 HierarchyMode=0
 ChannelRoomNamingStyle=0
-LogFolderPath=
 ReleasesFolder=
 ReleaseVaultGUID=
 ReleaseVaultName=
@@ -29,6 +28,12 @@ PowerPortNamesTakePriority=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
+OutputPath=ProjectOutputs
+LogFolderPath=
+
+[Preferences]
+PrefsVaultGUID=
+PrefsRevisionGUID=
 
 [Document1]
 DocumentPath=Tray2Mobo.PcbLib
@@ -158,8 +163,84 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 
+[Document9]
+DocumentPath=Output.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+
 [GeneratedDocument1]
 DocumentPath=ProjectOutputs\Design Rule Check - Mobo.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=ProjectOutputs\NC Drill\Mobo.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=ProjectOutputs\Gerber\Mobo.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=ProjectOutputs\Gerber\Mobo.G1
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=ProjectOutputs\Gerber\Mobo.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=ProjectOutputs\Gerber\Mobo.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=ProjectOutputs\Gerber\Mobo.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=ProjectOutputs\Gerber\Mobo.GKO
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=ProjectOutputs\Gerber\Mobo.GP1
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=ProjectOutputs\Gerber\Mobo.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=ProjectOutputs\Gerber\Mobo.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=ProjectOutputs\Gerber\Mobo.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=ProjectOutputs\NC Drill\Mobo.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=ProjectOutputs\Gerber\Mobo.REP
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=ProjectOutputs\Gerber\Mobo.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=ProjectOutputs\NC Drill\Mobo.TXT
 DItemRevisionGUID=
 
 [Configuration1]
@@ -180,131 +261,36 @@ Name=Netlist Outputs
 Description=
 TargetPrinter=Brother HL-5470DW series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
-OutputType1=CadnetixNetlist
-OutputName1=Cadnetix Netlist
+OutputType1=PCADNetlist
+OutputName1=PCAD Netlist
 OutputDocumentPath1=
 OutputVariantName1=
 OutputDefault1=0
-OutputType2=CalayNetlist
-OutputName2=Calay Netlist
+OutputType2=SIMetrixNetlist
+OutputName2=SIMetrix
 OutputDocumentPath2=
 OutputVariantName2=
 OutputDefault2=0
-OutputType3=EDIF
-OutputName3=EDIF for PCB
+OutputType3=SIMPLISNetlist
+OutputName3=SIMPLIS
 OutputDocumentPath3=
 OutputVariantName3=
 OutputDefault3=0
-OutputType4=EESofNetlist
-OutputName4=EESof Netlist
+OutputType4=Verilog
+OutputName4=Verilog File
 OutputDocumentPath4=
 OutputVariantName4=
 OutputDefault4=0
-OutputType5=IntergraphNetlist
-OutputName5=Intergraph Netlist
+OutputType5=VHDL
+OutputName5=VHDL File
 OutputDocumentPath5=
 OutputVariantName5=
 OutputDefault5=0
-OutputType6=MentorBoardStationNetlist
-OutputName6=Mentor BoardStation Netlist
+OutputType6=XSpiceNetlist
+OutputName6=XSpice Netlist
 OutputDocumentPath6=
 OutputVariantName6=
 OutputDefault6=0
-OutputType7=MultiWire
-OutputName7=MultiWire
-OutputDocumentPath7=
-OutputVariantName7=
-OutputDefault7=0
-OutputType8=OrCadPCB2Netlist
-OutputName8=Orcad/PCB2 Netlist
-OutputDocumentPath8=
-OutputVariantName8=
-OutputDefault8=0
-OutputType9=PADSNetlist
-OutputName9=PADS ASCII Netlist
-OutputDocumentPath9=
-OutputVariantName9=
-OutputDefault9=0
-OutputType10=Pcad
-OutputName10=Pcad for PCB
-OutputDocumentPath10=
-OutputVariantName10=
-OutputDefault10=0
-OutputType11=PCADNetlist
-OutputName11=PCAD Netlist
-OutputDocumentPath11=
-OutputVariantName11=
-OutputDefault11=0
-OutputType12=PCADnltNetlist
-OutputName12=PCADnlt Netlist
-OutputDocumentPath12=
-OutputVariantName12=
-OutputDefault12=0
-OutputType13=Protel2Netlist
-OutputName13=Protel2 Netlist
-OutputDocumentPath13=
-OutputVariantName13=
-OutputDefault13=0
-OutputType14=ProtelNetlist
-OutputName14=Protel
-OutputDocumentPath14=
-OutputVariantName14=
-OutputDefault14=0
-OutputType15=RacalNetlist
-OutputName15=Racal Netlist
-OutputDocumentPath15=
-OutputVariantName15=
-OutputDefault15=0
-OutputType16=RINFNetlist
-OutputName16=RINF Netlist
-OutputDocumentPath16=
-OutputVariantName16=
-OutputDefault16=0
-OutputType17=SciCardsNetlist
-OutputName17=SciCards Netlist
-OutputDocumentPath17=
-OutputVariantName17=
-OutputDefault17=0
-OutputType18=SIMetrixNetlist
-OutputName18=SIMetrix
-OutputDocumentPath18=
-OutputVariantName18=
-OutputDefault18=0
-OutputType19=SIMPLISNetlist
-OutputName19=SIMPLIS
-OutputDocumentPath19=
-OutputVariantName19=
-OutputDefault19=0
-OutputType20=TangoNetlist
-OutputName20=Tango Netlist
-OutputDocumentPath20=
-OutputVariantName20=
-OutputDefault20=0
-OutputType21=TelesisNetlist
-OutputName21=Telesis Netlist
-OutputDocumentPath21=
-OutputVariantName21=
-OutputDefault21=0
-OutputType22=Verilog
-OutputName22=Verilog File
-OutputDocumentPath22=
-OutputVariantName22=
-OutputDefault22=0
-OutputType23=VHDL
-OutputName23=VHDL File
-OutputDocumentPath23=
-OutputVariantName23=
-OutputDefault23=0
-OutputType24=WireListNetlist
-OutputName24=WireList Netlist
-OutputDocumentPath24=
-OutputVariantName24=
-OutputDefault24=0
-OutputType25=XSpiceNetlist
-OutputName25=XSpice Netlist
-OutputDocumentPath25=
-OutputVariantName25=
-OutputDefault25=0
 
 [OutputGroup2]
 Name=Simulator Outputs
@@ -316,12 +302,12 @@ OutputName1=Mixed Sim
 OutputDocumentPath1=
 OutputVariantName1=
 OutputDefault1=0
-OutputType2=SIMetrix_Sim
+OutputType2=SIMetrixSimulation
 OutputName2=SIMetrix
 OutputDocumentPath2=
 OutputVariantName2=
 OutputDefault2=0
-OutputType3=SIMPLIS_Sim
+OutputType3=SIMPLISSimulation
 OutputName3=SIMPLIS
 OutputDocumentPath3=
 OutputVariantName3=
@@ -330,7 +316,7 @@ OutputDefault3=0
 [OutputGroup3]
 Name=Documentation Outputs
 Description=
-TargetPrinter=FX DocuPrint CP205 w
+TargetPrinter=Brother HL-5470DW series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputType1=Assembler Source Print
 OutputName1=Assembler Source Prints
@@ -515,6 +501,8 @@ OutputName4=Gerber Files
 OutputDocumentPath4=
 OutputVariantName4=[No Variations]
 OutputDefault4=0
+Configuration4_Name1=OutputConfigurationParameter1
+Configuration4_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=500000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NumberOfDecimals=5|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TLayerToBoolean|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=False|Sorted=False
 OutputType5=Mask
 OutputName5=Solder/Paste Mask Prints
 OutputDocumentPath5=
@@ -542,6 +530,12 @@ OutputName9=Test Point Report
 OutputDocumentPath9=
 OutputVariantName9=
 OutputDefault9=0
+OutputType10=Board Stack Report
+OutputName10=Report Board Stack
+OutputDocumentPath10=
+OutputVariantName10=
+OutputDefault10=0
+PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-4|MediaType=1|DitherType=10|PaperKind=A4|PrintScaleMode=1
 
 [OutputGroup6]
 Name=Report Outputs
@@ -788,22 +782,37 @@ OutputName4=Footprint Comparison Report
 OutputDocumentPath4=
 OutputVariantName4=
 OutputDefault4=0
+OutputType5=Configuration compliance
+OutputName5=Environment configuration compliance check
+OutputDocumentPath5=
+OutputVariantName5=
+OutputDefault5=0
 
 [OutputGroup9]
 Name=Export Outputs
 Description=
 TargetPrinter=Brother HL-5470DW series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
-OutputType1=ExportIDF
-OutputName1=Export IDF
+OutputType1=ExportSTEP
+OutputName1=Export STEP
 OutputDocumentPath1=
-OutputVariantName1=
+OutputVariantName1=[No Variations]
 OutputDefault1=0
-OutputType2=ExportSTEP
-OutputName2=Export STEP
+OutputType2=AutoCAD dwg/dxf PCB
+OutputName2=AutoCAD dwg/dxf File PCB
 OutputDocumentPath2=
 OutputVariantName2=
 OutputDefault2=0
+OutputType3=AutoCAD dwg/dxf Schematic
+OutputName3=AutoCAD dwg/dxf File Schematic
+OutputDocumentPath3=
+OutputVariantName3=
+OutputDefault3=0
+OutputType4=ExportIDF
+OutputName4=Export IDF
+OutputDocumentPath4=
+OutputVariantName4=
+OutputDefault4=0
 
 [Modification Levels]
 Type1=1
@@ -1031,6 +1040,7 @@ Type97=2
 Type98=0
 Type99=1
 Type100=2
+Type101=1
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW

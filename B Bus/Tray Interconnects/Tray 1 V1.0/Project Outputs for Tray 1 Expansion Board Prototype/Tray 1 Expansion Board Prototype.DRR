@@ -1,0 +1,18 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: Tray 1 Expansion Board Prototype.PcbDoc   26/05/2012  6:09:01 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Tray 1 Expansion Board Prototype.TXT
+EIA File   : Tray 1 Expansion Board Prototype.DRL
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        1.09mm (42.913mil)       Round          40               220.09 mm (8.67 Inch)
+T2        3.18mm (125.197mil)      Round          2                33.32 mm (1.31 Inch)
+T3        3.26mm (128.346mil)      Round          2                47.05 mm (1.85 Inch)
+T4        3.5mm (137.795mil)       Round          3                169.80 mm (6.69 Inch)
+---------------------------------------------------------------------------
+Totals                                            47               470.26 mm (18.51 Inch)
+
+Total Processing Time (hh:mm:ss) : 00:00:00
