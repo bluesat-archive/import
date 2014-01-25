@@ -1,6 +1,0 @@
-Added Component: Designator=X1(Crystal Oscillator 5x7mm)
-Added Pin To Net: NetName=NetC22_2 Pin=X1-1
-Added Pin To Net: NetName=GND Pin=X1-2
-Added Pin To Net: NetName=NetC23_2 Pin=X1-3
-Added Pin To Net: NetName=GND Pin=X1-4
-Added Member To Class: ClassName=U_POWR0008_BCR_System Member=Component X1 Ceramic Oscillator

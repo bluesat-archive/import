@@ -1,6 +1,0 @@
-Change Component Parameter Description in U2 Old= New=1-Wire Digital Thermometer
-Added Parameter Manufacturer= to Part U2
-Added Parameter Manufacturer P/N= to Part U2
-Added Parameter Supplier=Digikey to Part U2
-Added Parameter Supplier P/N=DS18S20Z+T&RCT-ND to Part U2
-Replace Symbol from U2 DS18S20 in C:\Users\avi\Desktop\SVN\B Bus\Tray Interconnects\Tray 3 V2.0 Final Working\Tray 3 V2.0\TEMPSENS.SchDoc with DS18S20 from Tray 1 Expansion Board Prototype.IntLib
