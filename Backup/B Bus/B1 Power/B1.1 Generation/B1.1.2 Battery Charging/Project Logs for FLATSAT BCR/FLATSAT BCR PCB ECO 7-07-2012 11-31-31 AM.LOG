@@ -1,0 +1,5 @@
+Change Net Name : Old Net Name=R\E\S\E\T\ New Net Name=PDI_CLK
+Added Pin To Net: NetName=PDI_DATA Pin=U6-56
+Added Net: Name=PDI_DATA
+Added Member To Class: ClassName=U_POWR0008_BCR_System Member=Component R19 Res1
+Added Member To Class: ClassName=U_POWR0008_BCR_System Member=Component R20 Res1

@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=TSENSE_Z- Pin=U13-8
+Removed Pin From Net: NetName=THERMO_Z- Pin=U13-9
+Removed Pin From Net: NetName=THERMO_BAT Pin=U13-13
+Removed Pin From Net: NetName=TSENSE_BAT Pin=U13-14
+Added Pin To Net: NetName=NetC6_X+_1 Pin=D2_X+-2
+Added Pin To Net: NetName=NetC6_X+_1 Pin=D2_X--2
+Added Pin To Net: NetName=NetC6_X+_1 Pin=D2_Y+-2
+Added Pin To Net: NetName=NetC6_X+_1 Pin=D2_Y--2
+Added Pin To Net: NetName=NetC6_X+_1 Pin=D2_Z+-2
+Added Pin To Net: NetName=NetC6_X+_1 Pin=D2_Z--2
+Added Pin To Net: NetName=TSENSE_Z+ Pin=U13-8
+Added Pin To Net: NetName=TSENSE_Z- Pin=U13-8
+Added Pin To Net: NetName=THERMO_Z+ Pin=U13-9
+Added Pin To Net: NetName=THERMO_Z- Pin=U13-9
+Added Pin To Net: NetName=NetR42_2 Pin=U13-13
+Added Pin To Net: NetName=THERMO_BAT Pin=U13-13
+Added Pin To Net: NetName=TSENSE_BAT Pin=U13-14

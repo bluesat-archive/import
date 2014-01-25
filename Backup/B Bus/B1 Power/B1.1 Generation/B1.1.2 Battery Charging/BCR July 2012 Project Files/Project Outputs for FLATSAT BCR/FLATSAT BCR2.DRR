@@ -1,0 +1,20 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: FLATSAT BCR2.PcbDoc   9/07/2012  10:20:31 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : FLATSAT BCR2.TXT
+EIA File   : FLATSAT BCR2.DRL
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        0.2mm (7.874mil)         Round          196              939.38 mm (36.98 Inch)
+T2        0.3mm (11.811mil)        Round          126              803.68 mm (31.64 Inch)
+T3        0.5mm (19.685mil)        Round          66               650.07 mm (25.59 Inch)
+T4        0.9mm (35.433mil)        Round          40               308.95 mm (12.16 Inch)
+T5        1.5mm (59.055mil)        Round          18               389.71 mm (15.34 Inch)
+T6        3.5mm (137.795mil)       Round          6                584.27 mm (23.00 Inch)
+---------------------------------------------------------------------------
+Totals                                            452              3676.06 mm (144.73 Inch)
+
+Total Processing Time (hh:mm:ss) : 00:00:01

@@ -1,0 +1,18 @@
+Added Component: Designator=C8_X+(CAPC4532M)
+Added Component: Designator=C8_X-(CAPC4532M)
+Added Component: Designator=C8_Y+(CAPC4532M)
+Added Component: Designator=C8_Y-(CAPC4532M)
+Added Component: Designator=C8_Z+(CAPC4532M)
+Added Component: Designator=C8_Z-(CAPC4532M)
+Added Pin To Net: NetName=NetC6_X+_1 Pin=C8_X+-1
+Added Pin To Net: NetName=GND Pin=C8_X+-2
+Added Pin To Net: NetName=NetC6_X+_1 Pin=C8_X--1
+Added Pin To Net: NetName=GND Pin=C8_X--2
+Added Pin To Net: NetName=NetC6_X+_1 Pin=C8_Y+-1
+Added Pin To Net: NetName=GND Pin=C8_Y+-2
+Added Pin To Net: NetName=NetC6_X+_1 Pin=C8_Y--1
+Added Pin To Net: NetName=GND Pin=C8_Y--2
+Added Pin To Net: NetName=NetC6_X+_1 Pin=C8_Z+-1
+Added Pin To Net: NetName=GND Pin=C8_Z+-2
+Added Pin To Net: NetName=NetC6_X+_1 Pin=C8_Z--1
+Added Pin To Net: NetName=GND Pin=C8_Z--2

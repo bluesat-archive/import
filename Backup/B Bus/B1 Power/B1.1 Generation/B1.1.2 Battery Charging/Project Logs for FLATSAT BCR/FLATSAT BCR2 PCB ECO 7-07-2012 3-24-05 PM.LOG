@@ -1,0 +1,30 @@
+Added Component: Designator=C13_X+(CAPC4532M)
+Added Component: Designator=C13_X-(CAPC4532M)
+Added Component: Designator=C13_Y+(CAPC4532M)
+Added Component: Designator=C13_Y-(CAPC4532M)
+Added Component: Designator=C13_Z+(CAPC4532M)
+Added Component: Designator=C13_Z-(CAPC4532M)
+Added Pin To Net: NetName=NetC6_X+_1 Pin=C13_X+-1
+Added Pin To Net: NetName=GND Pin=C13_X+-2
+Added Pin To Net: NetName=NetC6_X+_1 Pin=C13_X--1
+Added Pin To Net: NetName=GND Pin=C13_X--2
+Added Pin To Net: NetName=NetC6_X+_1 Pin=C13_Y+-1
+Added Pin To Net: NetName=GND Pin=C13_Y+-2
+Added Pin To Net: NetName=NetC6_X+_1 Pin=C13_Y--1
+Added Pin To Net: NetName=GND Pin=C13_Y--2
+Added Pin To Net: NetName=NetC6_X+_1 Pin=C13_Z+-1
+Added Pin To Net: NetName=GND Pin=C13_Z+-2
+Added Pin To Net: NetName=NetC6_X+_1 Pin=C13_Z--1
+Added Pin To Net: NetName=GND Pin=C13_Z--2
+Added Member To Class: ClassName=X+ Member=Component C8_X+ (C8) Cap
+Added Member To Class: ClassName=X- Member=Component C8_X- (C8) Cap
+Added Member To Class: ClassName=Y+ Member=Component C8_Y+ (C8) Cap
+Added Member To Class: ClassName=Y- Member=Component C8_Y- (C8) Cap
+Added Member To Class: ClassName=Z+ Member=Component C8_Z+ (C8) Cap
+Added Member To Class: ClassName=Z- Member=Component C8_Z- (C8) Cap
+Added Member To Class: ClassName=X+ Member=Component C13_X+ (C13) Cap
+Added Member To Class: ClassName=X- Member=Component C13_X- (C13) Cap
+Added Member To Class: ClassName=Y+ Member=Component C13_Y+ (C13) Cap
+Added Member To Class: ClassName=Y- Member=Component C13_Y- (C13) Cap
+Added Member To Class: ClassName=Z+ Member=Component C13_Z+ (C13) Cap
+Added Member To Class: ClassName=Z- Member=Component C13_Z- (C13) Cap

@@ -1,0 +1,28 @@
+Added Component: Designator=PORTF(HDR1X8)
+Added Pin To Net: NetName=3V3 Pin=FLATSAT-2
+Added Pin To Net: NetName=3V3 Pin=FLATSAT-4
+Added Pin To Net: NetName=NetPORTF_1 Pin=PORTF-1
+Added Pin To Net: NetName=NetPORTF_1 Pin=U6-26
+Added Pin To Net: NetName=NetPORTF_1 Pin=U6-33
+Added Net: Name=NetPORTF_1
+Added Pin To Net: NetName=NetPORTF_2 Pin=PORTF-2
+Added Pin To Net: NetName=NetPORTF_2 Pin=U6-27
+Added Net: Name=NetPORTF_2
+Added Pin To Net: NetName=NetPORTF_3 Pin=PORTF-3
+Added Pin To Net: NetName=NetPORTF_3 Pin=U6-28
+Added Net: Name=NetPORTF_3
+Added Pin To Net: NetName=NetPORTF_4 Pin=PORTF-4
+Added Pin To Net: NetName=NetPORTF_4 Pin=U6-29
+Added Net: Name=NetPORTF_4
+Added Pin To Net: NetName=NetPORTF_5 Pin=PORTF-5
+Added Pin To Net: NetName=NetPORTF_5 Pin=U6-30
+Added Net: Name=NetPORTF_5
+Added Pin To Net: NetName=NetPORTF_6 Pin=PORTF-6
+Added Pin To Net: NetName=NetPORTF_6 Pin=U6-31
+Added Net: Name=NetPORTF_6
+Added Pin To Net: NetName=NetPORTF_7 Pin=PORTF-7
+Added Pin To Net: NetName=NetPORTF_7 Pin=U6-32
+Added Net: Name=NetPORTF_7
+Added Pin To Net: NetName=NetPORTF_8 Pin=PORTF-8
+Added Net: Name=NetPORTF_8
+Added Member To Class: ClassName=POWR0010_BCR_TESTBOARD Member=Component PORTF Header 8

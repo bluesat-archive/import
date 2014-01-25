@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=13V6_FAULT1 Pin=U8-21
+Removed Pin From Net: NetName=13V6_FAULT2 Pin=U8-22
+Removed Pin From Net: NetName=13V6_PWRGD1 Pin=U8-23
+Removed Pin From Net: NetName=13V6_PWRGD2 Pin=U8-24
+Removed Pin From Net: NetName=13V6_EN1 Pin=U8-25
+Removed Pin From Net: NetName=13V6_EN2 Pin=U8-26
+Removed Pin From Net: NetName=5V0_PAYLOAD_EN Pin=U8-27
+Removed Pin From Net: NetName=PAYLOAD_3V0_EN Pin=U8-28
+Removed Pin From Net: NetName=DEBUG2 Pin=U9-21
+Removed Pin From Net: NetName=DEBUG1 Pin=U9-22
+Removed Pin From Net: NetName=9V1_RX1_EN Pin=U9-27
+Removed Pin From Net: NetName=9V1_RX2_EN Pin=U9-28
+Added Pin To Net: NetName=DEBUG2 Pin=U8-21
+Added Pin To Net: NetName=DEBUG1 Pin=U8-22
+Added Pin To Net: NetName=13V6_FAULT1 Pin=U8-23
+Added Pin To Net: NetName=13V6_FAULT2 Pin=U8-24
+Added Pin To Net: NetName=13V6_PWRGD1 Pin=U8-25
+Added Pin To Net: NetName=13V6_PWRGD2 Pin=U8-26
+Added Pin To Net: NetName=13V6_EN1 Pin=U8-27
+Added Pin To Net: NetName=13V6_EN2 Pin=U8-28
+Added Pin To Net: NetName=9V1_RX1_EN Pin=U9-21
+Added Pin To Net: NetName=9V1_RX2_EN Pin=U9-22
+Added Pin To Net: NetName=5V0_PAYLOAD_EN Pin=U9-27
+Added Pin To Net: NetName=PAYLOAD_3V0_EN Pin=U9-28
+Change Net Name : Old Net Name=PAYLOAD_3V0_EN New Net Name=3V0_PAYLOAD_EN

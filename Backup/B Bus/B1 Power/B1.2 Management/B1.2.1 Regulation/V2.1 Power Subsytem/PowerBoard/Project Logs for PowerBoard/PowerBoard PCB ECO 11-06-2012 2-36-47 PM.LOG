@@ -1,0 +1,71 @@
+Added Component: Designator=C22(R0805M)
+Added Component: Designator=J7(J1205M)
+Added Component: Designator=J8(J1205M)
+Added Component: Designator=J9(J1205M)
+Added Component: Designator=R43(R0402M)
+Added Component: Designator=U12(SSOP28)
+Added Pin To Net: NetName=3V3_PWR Pin=C22-1
+Added Pin To Net: NetName=GND Pin=C22-2
+Added Pin To Net: NetName=3V3_PWR Pin=J7-1
+Added Pin To Net: NetName=GND Pin=J7-3
+Added Pin To Net: NetName=3V3_PWR Pin=J8-1
+Added Pin To Net: NetName=GND Pin=J8-3
+Added Pin To Net: NetName=3V3_PWR Pin=J9-1
+Added Pin To Net: NetName=GND Pin=J9-3
+Added Pin To Net: NetName=3V3_PWR Pin=R43-1
+Added Pin To Net: NetName=3V3_PWR Pin=U12-9
+Added Pin To Net: NetName=GND Pin=U12-10
+Added Pin To Net: NetName=SCL Pin=U12-12
+Added Pin To Net: NetName=SDA Pin=U12-13
+Added Pin To Net: NetName=REG1_ENB Pin=U12-21
+Added Pin To Net: NetName=REG2_ENB Pin=U12-22
+Added Pin To Net: NetName=REG1_ENE Pin=U12-23
+Added Pin To Net: NetName=REG2_ENE Pin=U12-24
+Added Pin To Net: NetName=VVAR_FAULT1 Pin=U12-25
+Added Pin To Net: NetName=VVAR_PWRGD1 Pin=U12-26
+Added Pin To Net: NetName=VVAR_FAULT2 Pin=U12-27
+Added Pin To Net: NetName=VVAR_PWRGD2 Pin=U12-28
+Change Net Name : Old Net Name=REG1_ENB New Net Name=5V0_EN1
+Change Net Name : Old Net Name=REG2_ENB New Net Name=5V0_EN2
+Added Pin To Net: NetName=NetJ7_2 Pin=J7-2
+Added Pin To Net: NetName=NetJ7_2 Pin=U12-15
+Added Net: Name=NetJ7_2
+Added Pin To Net: NetName=NetJ8_2 Pin=J8-2
+Added Pin To Net: NetName=NetJ8_2 Pin=U12-16
+Added Net: Name=NetJ8_2
+Added Pin To Net: NetName=NetJ9_2 Pin=J9-2
+Added Pin To Net: NetName=NetJ9_2 Pin=U12-17
+Added Net: Name=NetJ9_2
+Added Pin To Net: NetName=NetR35_1 Pin=R35-1
+Added Pin To Net: NetName=NetR35_1 Pin=U12-1
+Added Net: Name=NetR35_1
+Added Pin To Net: NetName=NetR36_1 Pin=R36-1
+Added Pin To Net: NetName=NetR36_1 Pin=U12-2
+Added Net: Name=NetR36_1
+Added Pin To Net: NetName=NetR37_1 Pin=R37-1
+Added Pin To Net: NetName=NetR37_1 Pin=U12-3
+Added Net: Name=NetR37_1
+Added Pin To Net: NetName=NetR38_1 Pin=R38-1
+Added Pin To Net: NetName=NetR38_1 Pin=U12-4
+Added Net: Name=NetR38_1
+Added Pin To Net: NetName=NetR39_1 Pin=R39-1
+Added Pin To Net: NetName=NetR39_1 Pin=U12-5
+Added Net: Name=NetR39_1
+Added Pin To Net: NetName=NetR40_1 Pin=R40-1
+Added Pin To Net: NetName=NetR40_1 Pin=U12-6
+Added Net: Name=NetR40_1
+Added Pin To Net: NetName=NetR41_1 Pin=R41-1
+Added Pin To Net: NetName=NetR41_1 Pin=U12-7
+Added Net: Name=NetR41_1
+Added Pin To Net: NetName=NetR42_1 Pin=R42-1
+Added Pin To Net: NetName=NetR42_1 Pin=U12-8
+Added Net: Name=NetR42_1
+Added Pin To Net: NetName=NetR43_2 Pin=R43-2
+Added Pin To Net: NetName=NetR43_2 Pin=U12-18
+Added Net: Name=NetR43_2
+Added Member To Class: ClassName=Regulation Member=Component C22 
+Added Member To Class: ClassName=Regulation Member=Component J7 3-WAY JUMPER
+Added Member To Class: ClassName=Regulation Member=Component J8 3-WAY JUMPER
+Added Member To Class: ClassName=Regulation Member=Component J9 3-WAY JUMPER
+Added Member To Class: ClassName=Regulation Member=Component R43 
+Added Member To Class: ClassName=Regulation Member=Component U12 MCP23017

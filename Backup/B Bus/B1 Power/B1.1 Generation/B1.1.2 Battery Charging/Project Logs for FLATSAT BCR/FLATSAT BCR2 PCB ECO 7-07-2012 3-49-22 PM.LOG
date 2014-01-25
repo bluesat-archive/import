@@ -1,0 +1,10 @@
+Added Component: Designator=U1_Y+(LT1513-2_TO127P1420-8N)
+Added Pin To Net: NetName=NetC5_Y+_1 Pin=U1_Y+-1
+Added Pin To Net: NetName=V_FB Pin=U1_Y+-2
+Added Pin To Net: NetName=NetC8_Y+_2 Pin=U1_Y+-3
+Added Pin To Net: NetName=GND Pin=U1_Y+-4
+Added Pin To Net: NetName=NetC3_Y+_2 Pin=U1_Y+-5
+Added Pin To Net: NetName=NetU1_Y+_6 Pin=U1_Y+-6
+Added Pin To Net: NetName=NetC1_Y+_1 Pin=U1_Y+-7
+Added Pin To Net: NetName=GND Pin=U1_Y+-8
+Added Member To Class: ClassName=Y+ Member=Component U1_Y+ (U1) LT1513-2

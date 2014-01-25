@@ -1,0 +1,41 @@
+Removed Pin From Net: NetName=NetPORTF_1 Pin=PORTD-1
+Removed Pin From Net: NetName=NetPORTF_2 Pin=PORTD-2
+Removed Pin From Net: NetName=NetPORTF_3 Pin=PORTD-3
+Removed Pin From Net: NetName=NetPORTF_4 Pin=PORTD-4
+Removed Pin From Net: NetName=NetPORTF_5 Pin=PORTD-5
+Removed Pin From Net: NetName=NetPORTF_6 Pin=PORTD-6
+Removed Pin From Net: NetName=NetPORTF_7 Pin=PORTD-7
+Removed Pin From Net: NetName=NetPORTF_8 Pin=PORTD-8
+Removed Pin From Net: NetName=NetPORTF_1 Pin=U6-26
+Removed Pin From Net: NetName=NetPORTF_2 Pin=U6-27
+Removed Pin From Net: NetName=NetPORTF_3 Pin=U6-28
+Removed Pin From Net: NetName=NetPORTF_4 Pin=U6-29
+Removed Pin From Net: NetName=NetPORTF_5 Pin=U6-30
+Removed Pin From Net: NetName=NetPORTF_6 Pin=U6-31
+Removed Pin From Net: NetName=NetPORTF_7 Pin=U6-32
+Removed Pin From Net: NetName=NetPORTF_8 Pin=U6-33
+Removed Member From Class: ClassName=POWR0010_BCR_TESTBOARD Member=PORTD
+Added Component: Designator=PORTF(HDR1X10)
+Added Pin To Net: NetName=NetPORTF_1 Pin=PORTF-1
+Added Pin To Net: NetName=NetPORTF_2 Pin=PORTF-2
+Added Pin To Net: NetName=NetPORTF_3 Pin=PORTF-3
+Added Pin To Net: NetName=NetPORTF_4 Pin=PORTF-4
+Added Pin To Net: NetName=NetPORTF_5 Pin=PORTF-5
+Added Pin To Net: NetName=NetPORTF_6 Pin=PORTF-6
+Added Pin To Net: NetName=NetPORTF_7 Pin=PORTF-7
+Added Pin To Net: NetName=NetPORTF_8 Pin=PORTF-8
+Added Pin To Net: NetName=NetPORTF_1 Pin=U6-16
+Added Pin To Net: NetName=NetPORTF_2 Pin=U6-17
+Added Pin To Net: NetName=NetPORTF_3 Pin=U6-26
+Added Pin To Net: NetName=NetPORTF_4 Pin=U6-27
+Added Pin To Net: NetName=NetPORTF_5 Pin=U6-28
+Added Pin To Net: NetName=NetPORTF_6 Pin=U6-29
+Added Pin To Net: NetName=NetPORTF_7 Pin=U6-30
+Added Pin To Net: NetName=NetPORTF_8 Pin=U6-31
+Added Pin To Net: NetName=NetPORTF_9 Pin=PORTF-9
+Added Pin To Net: NetName=NetPORTF_9 Pin=U6-32
+Added Net: Name=NetPORTF_9
+Added Pin To Net: NetName=NetPORTF_10 Pin=PORTF-10
+Added Pin To Net: NetName=NetPORTF_10 Pin=U6-33
+Added Net: Name=NetPORTF_10
+Added Member To Class: ClassName=POWR0010_BCR_TESTBOARD Member=Component PORTF Header 10

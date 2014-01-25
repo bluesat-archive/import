@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<TComponentSet id="0" CurrentRevColumnWidth="100" NameColumnWidth="300" NextRevColumnWidth="100">
+  <LifeCycleDefinitionGUID>28744FE0-96ED-4819-B647-16AB7EF6ECE8</LifeCycleDefinitionGUID>
+  <RevisionNamingSchemeGUID>0B702FEB-5717-422A-873A-AB5AE2DFB52A</RevisionNamingSchemeGUID>
+  <VaultGUID>027B8B40-85AA-4048-BBAE-7AF1ADFFFB14</VaultGUID>
+  <VaultName>Bluesat Vault</VaultName>
+  <RequiredParameters>
+    <TRequiredParameter id="1" ColumnWidth="100">
+      <HRID>Comment</HRID>
+    </TRequiredParameter>
+    <TRequiredParameter id="2" ColumnWidth="100">
+      <HRID>Description</HRID>
+    </TRequiredParameter>
+  </RequiredParameters>
+  <RequiredModels>
+    <TRequiredModel id="3" ColumnWidth="100">
+      <HRID>PCBLIB</HRID>
+      <ModelKind>PCBLIB</ModelKind>
+    </TRequiredModel>
+    <TRequiredModel id="4" ColumnWidth="100">
+      <HRID>SCHLIB</HRID>
+      <ModelKind>SCHLIB</ModelKind>
+    </TRequiredModel>
+  </RequiredModels>
+  <ModelLinks>
+    <TModelLink id="5">
+      <HRID>ESS9018-1</HRID>
+      <VaultGUID>027B8B40-85AA-4048-BBAE-7AF1ADFFFB14</VaultGUID>
+      <ItemGUID>968B7A34-5B98-4A1C-8479-E455C5F58D13</ItemGUID>
+      <ModelKind>SCHLIB</ModelKind>
+      <RevisionGUID>576ED762-A5C1-4AB5-864E-E73003899DB1</RevisionGUID>
+      <RevisionId>1</RevisionId>
+    </TModelLink>
+    <TModelLink id="6">
+      <HRID>PCC-00001-1</HRID>
+      <VaultGUID>027B8B40-85AA-4048-BBAE-7AF1ADFFFB14</VaultGUID>
+      <ItemGUID>1F90345D-FA14-4568-90F5-0F3B59992326</ItemGUID>
+      <ModelKind>PCBLIB</ModelKind>
+      <RevisionGUID>6A242885-A642-476A-99C6-47305C7F4C5E</RevisionGUID>
+      <RevisionId>1</RevisionId>
+    </TModelLink>
+  </ModelLinks>
+  <TopGroup id="7" StateIndex="2" Collapsed="false">
+    <HRID>DAC</HRID>
+    <GUID>C9A5784F-28DF-4BF6-86B0-34BBA0A751B0</GUID>
+    <Parameters/>
+    <ModelChoices/>
+    <ComponentSet href="#0"/>
+    <ItemNamingScheme>CMP-{00000}</ItemNamingScheme>
+    <Groups/>
+    <ComponentDefinitions>
+      <TComponentDefinition StateIndex="2">
+        <HRID>ESS9018</HRID>
+        <GUID>52755F40-AA9E-4240-9B63-E0287915A1DD</GUID>
+        <ParentGroup href="#7"/>
+        <Parameters>
+          <TParameter>
+            <RequiredParameter href="#1"/>
+            <Value>ESS9018</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#2"/>
+            <Value>Reference 32-bit Audio DAC</Value>
+          </TParameter>
+        </Parameters>
+        <ModelChoices>
+          <TModelChoice>
+            <RequiredModel href="#3"/>
+            <ModelLink href="#6"/>
+          </TModelChoice>
+          <TModelChoice>
+            <RequiredModel href="#4"/>
+            <ModelLink href="#5"/>
+          </TModelChoice>
+        </ModelChoices>
+        <ItemHRID>CMP-00002</ItemHRID>
+        <RevisionGUID>D674A986-FA78-40EA-BA1F-BA3C3F726F13</RevisionGUID>
+        <RevisionId>A.1</RevisionId>
+      </TComponentDefinition>
+    </ComponentDefinitions>
+  </TopGroup>
+</TComponentSet>

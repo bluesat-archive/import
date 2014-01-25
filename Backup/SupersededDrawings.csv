@@ -1,0 +1,32 @@
+CRSC0003,Critical System Computer - Memory,Memory banks for the critical system computer,Sam Shan Jiang,B4.2 Data Storage
+CRSC0004,Critical System Computer - Serial,Serial USB interface chip,Sam Shan Jiang,B4.3 Data Bus
+CRSC0005,Critical System Computer - Power,Voltage regulator and power source select switch,Sam Shan Jiang,B4 Command Control and Data
+CRSC0006,Flatsat  - CSC Footprint,CSC Footprint for Flatsat,"A. Shaw, E. Nafis, C. Brown",B\Flatsat
+PAYL0001,GMSK Modem,GMSK Modem based on CML CMX589 IC,"M. Wenke, T. Fisk",3.1.3 Earth Data Link
+PAYL0002,Payload Computer - JTAG Interface,,M.Brindley,3.2.1 uC and Memory
+PAYL0003,Payload Computer - Memor Interface and Ics,,M. Brindley,3.2.1 uC and Memory
+PAYL0004,Payload Computer - Micontroller I/O interface,I/O interfaces for the payload Computer,M. Brindley,3.1 Bus Interface
+PAYL0005,Payload Computer - Microcontroller Power,Power Supply for Microcontroller,M. Brindley,3.2.1 uC and Memory
+PAYL0006,Payload Computer - Overview,Payload Computer Overview,M. Brindley,3 Extensible Payload Support
+PAYL0007,GMSK with Proto,GMSK Modem with with prototyping addons,D. Jedrychowski,3.1 Bus Interface
+PAYL0008,GMSK Prototyping Board,Prototyping Board with two GMSK modems,D. Jedrychowski,3.1 Bus Interface
+PAYL0009,GMSK Prototyping Board,PCB layout for prototyping board,D. Jedrychowski,3.1 Bus Interface
+PAYL0010,Flatsat  Beaglebone Footprint,,"A. Shaw, E. Nafis, C. Brown",B\Flatsat
+POWR0010,Flatsat - BCR and Solar Footprint,,"A. Shaw, E. Nafis, C. Brown",B\Flatsat
+POWR0011,Flatsat - Regulator Footprints,,"A. Shaw, E. Nafis, C. Brown",B\Flatsat
+POWR0007,BCR Overview,,,B1.1.2 Battery Charging
+TELM0001,Telemetry - Top Level,Telemetry Top Level Schematic,A. Shaw,B2 Telemetry
+TELM0002,MAX127 Telemetry Circuit,MAX127 Telemetry Circuit,A. Shaw,B2.2 Data Conversion and Handling
+TELM0003,Temperature Sensor Circuit,Converts Temperature to 10mV/K,A. Shaw,B2.1.1 Temperature Sensors
+TELM0004,Telemetry Current Sense,Converts Current to Voltage 500mV/A,A.Shaw,B2.1.2 Current Sensors
+POWR0001,BLUEsat Peak Power Tracker,Battery Charge Regulator,William Du,B1.1.2 Battery Charging
+POWR0002,Tray 2 High Level Power Layout,Architectural illustration for power Distribution devices,C. Brown,B1.2.1 Regulation
+POWR0003,Tray 3 High level Power Layout,Architectural illustration for power Distribution devices,C. Brown,B1.2.1 Regulation
+POWR0004,BLUEsat Power Switch Structure,Structure for Multiple LDO devices from a common bus,E. Islam,B1.2.1 Regulation
+POWR0005,BLUEsat Power Switch,Generic LDO-based power switch,E. Islam,B1.2.1 Regulation
+,,,,
+POWR0008,Variable TX supply V1,,,B1.2.1 Regulation
+POWR0009,Variable TX+RX supply V2,,,B1.2.1 Regulation
+COMS0009,Comms Test Board PCB Layout,"Test board for communications subsystem, PCB Layout",T. Fisk,B3 Groundstation Link (Comms)
+COMS0010,Comms Test Board Schematic,"Test board for communications subsystem, circuit schematic",T. Fisk,B3 Groundstation Link (Comms)
+COMS0011,Flatsat - Comunicaitons footprints,,"A. Shaw, E. Nafis, C. Brown",B\Flatsat

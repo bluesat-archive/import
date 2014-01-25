@@ -1,0 +1,20 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Free Documents]
+   Generated File[LV_Switcher_PCB.GTL]
+   Generated File[LV_Switcher_PCB.GBL]
+   Generated File[LV_Switcher_PCB.GTO]
+   Generated File[LV_Switcher_PCB.GTP]
+   Generated File[LV_Switcher_PCB.GBS]
+   Generated File[LV_Switcher_PCB.GBP]
+   Generated File[LV_Switcher_PCB.GM1]
+   Generated File[LV_Switcher_PCB.GM2]
+   Generated File[LV_Switcher_PCB.RUL]
+   Generated File[LV_Switcher_PCB.EXTREP]
+   Generated File[LV_Switcher_PCB.REP]
+
+
+Files Generated   : 11
+Documents Printed : 0
+
+Finished Output Generation At 4:41:35 PM On 1/13/2012

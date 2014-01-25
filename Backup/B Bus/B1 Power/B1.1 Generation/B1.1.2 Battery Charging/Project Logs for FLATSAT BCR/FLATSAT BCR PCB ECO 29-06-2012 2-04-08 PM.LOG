@@ -1,0 +1,19 @@
+Change Component Footprint: Designator=U1_X+ Old Footprint=TO127P1420-8N New Footprint=LT1513-2_TO127P1420-8N
+Change Component Footprint: Designator=U1_X- Old Footprint=TO127P1420-8N New Footprint=LT1513-2_TO127P1420-8N
+Change Component Footprint: Designator=U1_Y+ Old Footprint=TO127P1420-8N New Footprint=LT1513-2_TO127P1420-8N
+Change Component Footprint: Designator=U1_Y- Old Footprint=TO127P1420-8N New Footprint=LT1513-2_TO127P1420-8N
+Change Component Footprint: Designator=U1_Z+ Old Footprint=TO127P1420-8N New Footprint=LT1513-2_TO127P1420-8N
+Change Component Footprint: Designator=U1_Z- Old Footprint=TO127P1420-8N New Footprint=LT1513-2_TO127P1420-8N
+Added Pin To Net: NetName=5V0 Pin=U13-4
+Added Pin To Net: NetName=TSENSE_Z+ Pin=U13-8
+Added Pin To Net: NetName=TSENSE_Z- Pin=U13-8
+Added Pin To Net: NetName=THERMO_Z+ Pin=U13-9
+Added Pin To Net: NetName=THERMO_Z- Pin=U13-9
+Added Pin To Net: NetName=5V0 Pin=U13-10
+Added Pin To Net: NetName=GND Pin=U13-11
+Added Pin To Net: NetName=5V0 Pin=U13-12
+Added Pin To Net: NetName=NetR42_2 Pin=U13-13
+Added Pin To Net: NetName=THERMO_BAT Pin=U13-13
+Added Pin To Net: NetName=TSENSE_BAT Pin=U13-14
+Added Room: Name=POWR0010_BCR_TESTBOARD
+Added Room: Name=U_POWR0008_BCR_System

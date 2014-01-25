@@ -1,0 +1,4 @@
+Change Component Parameter Library Name in J1 Old=Miscellaneous Connectors.IntLib New=Tray 1 Expansion Board Prototype.IntLib
+Change Component Parameter Library Name in J2 Old=Miscellaneous Connectors.IntLib New=Tray 1 Expansion Board Prototype.IntLib
+Change Component Parameter Library Name in J3 Old=Schlib1.SchLib New=Tray 1 Expansion Board Prototype.IntLib
+Change Component Parameter Library Name in J4 Old=Schlib1.SchLib New=Tray 1 Expansion Board Prototype.IntLib

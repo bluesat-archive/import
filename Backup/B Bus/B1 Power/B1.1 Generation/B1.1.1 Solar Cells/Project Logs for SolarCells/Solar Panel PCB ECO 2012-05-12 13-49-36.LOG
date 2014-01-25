@@ -1,0 +1,4 @@
+Added Component: Designator=U2(SOLARCELLSTRIP)
+Added Pin To Net: NetName=NetD2_4 Pin=U2-1
+Added Pin To Net: NetName=UPPERCELL Pin=U2-2
+Added Member To Class: ClassName=Solar Panel Member=Component U2 Solar cell strip

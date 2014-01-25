@@ -1,0 +1,23 @@
+Added Component: Designator=D1(DIODE, SCHOTTKY, DPAK)
+Added Component: Designator=D2(DIODE, SCHOTTKY, DPAK)
+Added Component: Designator=D3(DIODE, SCHOTTKY, DPAK)
+Added Component: Designator=D4(DIODE, SCHOTTKY, DPAK)
+Added Component: Designator=D5(DIODE, SCHOTTKY, DPAK)
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=D2-1
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetD2_4 Pin=D2-4
+Added Pin To Net: NetName=NetD2_4 Pin=D3-1
+Added Net: Name=NetD2_4
+Added Pin To Net: NetName=NetD4_4 Pin=D4-4
+Added Pin To Net: NetName=NetD4_4 Pin=D5-1
+Added Net: Name=NetD4_4
+Added Pin To Net: NetName=UPPERCELL Pin=D3-4
+Added Pin To Net: NetName=UPPERCELL Pin=D4-1
+Added Net: Name=UPPERCELL
+Added Pin To Net: NetName=V+ Pin=D1-4
+Added Net: Name=V+
+Added Pin To Net: NetName=V- Pin=D5-4
+Added Net: Name=V-
+Added Class: Name=Solar Panel
+Added Room: Name=Solar Panel

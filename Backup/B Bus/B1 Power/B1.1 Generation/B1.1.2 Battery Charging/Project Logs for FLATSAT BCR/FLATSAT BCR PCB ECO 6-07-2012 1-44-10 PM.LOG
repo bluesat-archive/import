@@ -1,0 +1,54 @@
+Removed Pin From Net: NetName=SHDNX+ Pin=U6-26
+Removed Pin From Net: NetName=SHDNY+ Pin=U6-27
+Removed Pin From Net: NetName=SHDNZ+ Pin=U6-28
+Removed Pin From Net: NetName=SHDNX- Pin=U6-29
+Removed Pin From Net: NetName=SHDNY- Pin=U6-30
+Removed Pin From Net: NetName=SHDNZ- Pin=U6-31
+Removed Pin From Net: NetName=SYNC_EN Pin=U6-32
+Removed Pin From Net: NetName=NetU6_46 Pin=U6-46
+Removed Pin From Net: NetName=NetU6_47 Pin=U6-47
+Removed Pin From Net: NetName=NetU6_48 Pin=U6-48
+Removed Pin From Net: NetName=NetU6_49 Pin=U6-49
+Removed Pin From Net: NetName=NetU6_50 Pin=U6-50
+Removed Pin From Net: NetName=NetU6_51 Pin=U6-51
+Removed Pin From Net: NetName=NetU6_54 Pin=U6-54
+Removed Pin From Net: NetName=NetU6_46 Pin=U6-55
+Removed Pin From Net: NetName=5V0 Pin=U13-4
+Removed Pin From Net: NetName=TSENSE_Z- Pin=U13-8
+Removed Pin From Net: NetName=THERMO_Z- Pin=U13-9
+Removed Pin From Net: NetName=GND Pin=U13-11
+Removed Pin From Net: NetName=THERMO_BAT Pin=U13-13
+Removed Pin From Net: NetName=TSENSE_BAT Pin=U13-14
+Added Pin To Net: NetName=NetU6_46 Pin=U6-26
+Added Pin To Net: NetName=NetU6_47 Pin=U6-27
+Added Pin To Net: NetName=NetU6_48 Pin=U6-28
+Added Pin To Net: NetName=NetU6_49 Pin=U6-29
+Added Pin To Net: NetName=NetU6_50 Pin=U6-30
+Added Pin To Net: NetName=NetU6_51 Pin=U6-31
+Added Pin To Net: NetName=NetU6_54 Pin=U6-32
+Added Pin To Net: NetName=NetU6_46 Pin=U6-33
+Added Pin To Net: NetName=SHDNX+ Pin=U6-46
+Added Pin To Net: NetName=SHDNY+ Pin=U6-47
+Added Pin To Net: NetName=SHDNZ+ Pin=U6-48
+Added Pin To Net: NetName=SHDNX- Pin=U6-49
+Added Pin To Net: NetName=SHDNY- Pin=U6-50
+Added Pin To Net: NetName=SHDNZ- Pin=U6-51
+Added Pin To Net: NetName=SYNC_EN Pin=U6-54
+Added Pin To Net: NetName=5V0 Pin=U13-4
+Added Pin To Net: NetName=TSENSE_Z+ Pin=U13-8
+Added Pin To Net: NetName=TSENSE_Z- Pin=U13-8
+Added Pin To Net: NetName=THERMO_Z+ Pin=U13-9
+Added Pin To Net: NetName=THERMO_Z- Pin=U13-9
+Added Pin To Net: NetName=5V0 Pin=U13-10
+Added Pin To Net: NetName=GND Pin=U13-11
+Added Pin To Net: NetName=5V0 Pin=U13-12
+Added Pin To Net: NetName=NetR42_2 Pin=U13-13
+Added Pin To Net: NetName=THERMO_BAT Pin=U13-13
+Added Pin To Net: NetName=TSENSE_BAT Pin=U13-14
+Change Net Name : Old Net Name=NetU6_46 New Net Name=NetU6_26
+Change Net Name : Old Net Name=NetU6_47 New Net Name=NetU6_27
+Change Net Name : Old Net Name=NetU6_48 New Net Name=NetU6_28
+Change Net Name : Old Net Name=NetU6_49 New Net Name=NetU6_29
+Change Net Name : Old Net Name=NetU6_50 New Net Name=NetU6_30
+Change Net Name : Old Net Name=NetU6_51 New Net Name=NetU6_31
+Change Net Name : Old Net Name=NetU6_54 New Net Name=NetU6_32
