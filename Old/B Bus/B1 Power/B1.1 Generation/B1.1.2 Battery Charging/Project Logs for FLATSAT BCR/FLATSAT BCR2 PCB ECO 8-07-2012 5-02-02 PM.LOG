@@ -1,8 +1,0 @@
-Added Component: Designator=R23(RESC2012M)
-Added Component: Designator=R24(RESC2012M)
-Added Pin To Net: NetName=3V3 Pin=R23-1
-Added Pin To Net: NetName=NetPORTF_1 Pin=R23-2
-Added Pin To Net: NetName=3V3 Pin=R24-1
-Added Pin To Net: NetName=NetPORTF_2 Pin=R24-2
-Added Member To Class: ClassName=U_POWR0008_BCR_System Member=Component R23 Res1
-Added Member To Class: ClassName=U_POWR0008_BCR_System Member=Component R24 Res1

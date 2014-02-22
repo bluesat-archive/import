@@ -1,9 +1,0 @@
-Removed Pin From Net: NetName=5V0 Pin=TELM-1
-Removed Pin From Net: NetName=GND Pin=TELM-4
-Removed Member From Class: ClassName=POWR0010_BCR_TESTBOARD Member=TELM
-Change Component Footprint: Designator=PANEL_X+ Old Footprint=SCREW3 New Footprint=SCREW2
-Change Component Footprint: Designator=PANEL_X- Old Footprint=SCREW3 New Footprint=SCREW2
-Change Component Footprint: Designator=PANEL_Y+ Old Footprint=SCREW3 New Footprint=SCREW2
-Change Component Footprint: Designator=PANEL_Y- Old Footprint=SCREW3 New Footprint=SCREW2
-Change Component Footprint: Designator=PANEL_Z+ Old Footprint=SCREW3 New Footprint=SCREW2
-Change Component Footprint: Designator=PANEL_Z- Old Footprint=SCREW3 New Footprint=SCREW2
