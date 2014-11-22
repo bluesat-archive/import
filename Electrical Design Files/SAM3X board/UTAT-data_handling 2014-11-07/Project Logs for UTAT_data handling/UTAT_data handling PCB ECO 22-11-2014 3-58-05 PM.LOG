@@ -1,0 +1,323 @@
+Added Component: Designator=*(SOIC127P600X175-8N)
+Added Component: Designator=C25(C0805)
+Added Component: Designator=C26(C0805)
+Added Component: Designator=C27(C0805)
+Added Component: Designator=C28(C0805)
+Added Component: Designator=C29(C0805)
+Added Component: Designator=C34(C0805)
+Added Component: Designator=C35(C0805)
+Added Component: Designator=C37(C0805)
+Added Component: Designator=C38(C0805)
+Added Component: Designator=C41(C0805)
+Added Component: Designator=C43(C0805)
+Added Component: Designator=C45(C0805)
+Added Component: Designator=C49(C0805)
+Added Component: Designator=MCU(LQFP144_M)
+Added Component: Designator=P?(HDR1X3)
+Added Component: Designator=R25(R0805M)
+Added Component: Designator=R26(R0805M)
+Added Component: Designator=R29(R0805M)
+Added Pin To Net: NetName=NetC41_1 Pin=C41-1
+Added Pin To Net: NetName=NetC41_1 Pin=MCU-34
+Added Net: Name=NetC41_1
+Added Pin To Net: NetName=P1 Pin=MCU-36
+Added Net: Name=P1
+Added Pin To Net: NetName=P2 Pin=MCU-35
+Added Net: Name=P2
+Added Pin To Net: NetName=P7 Pin=*-4
+Added Pin To Net: NetName=P7 Pin=C25-2
+Added Pin To Net: NetName=P7 Pin=C26-2
+Added Pin To Net: NetName=P7 Pin=C27-2
+Added Pin To Net: NetName=P7 Pin=C28-2
+Added Pin To Net: NetName=P7 Pin=C29-2
+Added Pin To Net: NetName=P7 Pin=C34-2
+Added Pin To Net: NetName=P7 Pin=C35-2
+Added Pin To Net: NetName=P7 Pin=C37-2
+Added Pin To Net: NetName=P7 Pin=C38-2
+Added Pin To Net: NetName=P7 Pin=C41-2
+Added Pin To Net: NetName=P7 Pin=C45-2
+Added Pin To Net: NetName=P7 Pin=MCU-12
+Added Pin To Net: NetName=P7 Pin=MCU-33
+Added Pin To Net: NetName=P7 Pin=MCU-44
+Added Pin To Net: NetName=P7 Pin=MCU-54
+Added Pin To Net: NetName=P7 Pin=MCU-58
+Added Pin To Net: NetName=P7 Pin=MCU-106
+Added Pin To Net: NetName=P7 Pin=MCU-126
+Added Pin To Net: NetName=P7 Pin=R29-1
+Added Net: Name=P7
+Added Pin To Net: NetName=P8 Pin=C45-1
+Added Pin To Net: NetName=P8 Pin=MCU-52
+Added Net: Name=P8
+Added Pin To Net: NetName=P10 Pin=C25-1
+Added Pin To Net: NetName=P10 Pin=C26-1
+Added Pin To Net: NetName=P10 Pin=C27-1
+Added Pin To Net: NetName=P10 Pin=C28-1
+Added Pin To Net: NetName=P10 Pin=C29-1
+Added Pin To Net: NetName=P10 Pin=MCU-10
+Added Pin To Net: NetName=P10 Pin=MCU-32
+Added Pin To Net: NetName=P10 Pin=MCU-45
+Added Pin To Net: NetName=P10 Pin=MCU-61
+Added Pin To Net: NetName=P10 Pin=MCU-104
+Added Pin To Net: NetName=P10 Pin=MCU-124
+Added Net: Name=P10
+Added Pin To Net: NetName=P15 Pin=MCU-69
+Added Net: Name=P15
+Added Pin To Net: NetName=PA0 Pin=MCU-23
+Added Net: Name=PA0
+Added Pin To Net: NetName=PA1 Pin=MCU-24
+Added Net: Name=PA1
+Added Pin To Net: NetName=PA2 Pin=MCU-85
+Added Net: Name=PA2
+Added Pin To Net: NetName=PA3 Pin=MCU-84
+Added Net: Name=PA3
+Added Pin To Net: NetName=PA4 Pin=MCU-83
+Added Net: Name=PA4
+Added Pin To Net: NetName=PA5 Pin=MCU-25
+Added Net: Name=PA5
+Added Pin To Net: NetName=PA6 Pin=MCU-82
+Added Net: Name=PA6
+Added Pin To Net: NetName=PA7 Pin=MCU-26
+Added Net: Name=PA7
+Added Pin To Net: NetName=PA8 Pin=MCU-27
+Added Net: Name=PA8
+Added Pin To Net: NetName=PA9 Pin=MCU-2
+Added Net: Name=PA9
+Added Pin To Net: NetName=PA10 Pin=MCU-3
+Added Net: Name=PA10
+Added Pin To Net: NetName=PA11 Pin=MCU-4
+Added Net: Name=PA11
+Added Pin To Net: NetName=PA12 Pin=MCU-5
+Added Net: Name=PA12
+Added Pin To Net: NetName=PA13 Pin=MCU-6
+Added Net: Name=PA13
+Added Pin To Net: NetName=PA14 Pin=MCU-7
+Added Net: Name=PA14
+Added Pin To Net: NetName=PA15 Pin=MCU-8
+Added Net: Name=PA15
+Added Pin To Net: NetName=PA16 Pin=MCU-78
+Added Net: Name=PA16
+Added Pin To Net: NetName=PA17 Pin=MCU-9
+Added Net: Name=PA17
+Added Pin To Net: NetName=PA18 Pin=MCU-70
+Added Net: Name=PA18
+Added Pin To Net: NetName=PA19 Pin=MCU-71
+Added Net: Name=PA19
+Added Pin To Net: NetName=PA20 Pin=MCU-72
+Added Net: Name=PA20
+Added Pin To Net: NetName=PA21 Pin=MCU-107
+Added Net: Name=PA21
+Added Pin To Net: NetName=PA22 Pin=MCU-81
+Added Net: Name=PA22
+Added Pin To Net: NetName=PA23 Pin=MCU-80
+Added Net: Name=PA23
+Added Pin To Net: NetName=PA24 Pin=MCU-79
+Added Net: Name=PA24
+Added Pin To Net: NetName=PA25 Pin=MCU-108
+Added Net: Name=PA25
+Added Pin To Net: NetName=PA26 Pin=MCU-109
+Added Net: Name=PA26
+Added Pin To Net: NetName=PA27 Pin=MCU-110
+Added Net: Name=PA27
+Added Pin To Net: NetName=PA28 Pin=MCU-111
+Added Net: Name=PA28
+Added Pin To Net: NetName=PA29 Pin=MCU-112
+Added Net: Name=PA29
+Added Pin To Net: NetName=PB0 Pin=MCU-113
+Added Net: Name=PB0
+Added Pin To Net: NetName=PB1 Pin=MCU-114
+Added Net: Name=PB1
+Added Pin To Net: NetName=PB2 Pin=MCU-115
+Added Net: Name=PB2
+Added Pin To Net: NetName=PB3 Pin=MCU-118
+Added Net: Name=PB3
+Added Pin To Net: NetName=PB4 Pin=MCU-119
+Added Net: Name=PB4
+Added Pin To Net: NetName=PB5 Pin=MCU-120
+Added Net: Name=PB5
+Added Pin To Net: NetName=PB6 Pin=MCU-121
+Added Net: Name=PB6
+Added Pin To Net: NetName=PB7 Pin=MCU-122
+Added Net: Name=PB7
+Added Pin To Net: NetName=PB8 Pin=MCU-123
+Added Net: Name=PB8
+Added Pin To Net: NetName=PB9 Pin=MCU-127
+Added Net: Name=PB9
+Added Pin To Net: NetName=PB10 Pin=MCU-128
+Added Net: Name=PB10
+Added Pin To Net: NetName=PB11 Pin=MCU-129
+Added Net: Name=PB11
+Added Pin To Net: NetName=PB12 Pin=MCU-86
+Added Net: Name=PB12
+Added Pin To Net: NetName=PB13 Pin=MCU-87
+Added Net: Name=PB13
+Added Pin To Net: NetName=PB14 Pin=MCU-140
+Added Net: Name=PB14
+Added Pin To Net: NetName=PB15 Pin=MCU-76
+Added Net: Name=PB15
+Added Pin To Net: NetName=PB16 Pin=MCU-77
+Added Net: Name=PB16
+Added Pin To Net: NetName=PB17 Pin=MCU-88
+Added Net: Name=PB17
+Added Pin To Net: NetName=PB18 Pin=MCU-89
+Added Net: Name=PB18
+Added Pin To Net: NetName=PB19 Pin=MCU-90
+Added Net: Name=PB19
+Added Pin To Net: NetName=PB20 Pin=MCU-91
+Added Net: Name=PB20
+Added Pin To Net: NetName=PB21 Pin=MCU-92
+Added Net: Name=PB21
+Added Pin To Net: NetName=PB22 Pin=MCU-141
+Added Net: Name=PB22
+Added Pin To Net: NetName=PB23 Pin=MCU-142
+Added Net: Name=PB23
+Added Pin To Net: NetName=PB24 Pin=MCU-143
+Added Net: Name=PB24
+Added Pin To Net: NetName=PB25 Pin=MCU-144
+Added Net: Name=PB25
+Added Pin To Net: NetName=PB26 Pin=MCU-1
+Added Net: Name=PB26
+Added Pin To Net: NetName=PB27 Pin=MCU-68
+Added Net: Name=PB27
+Added Pin To Net: NetName=PB28 Pin=MCU-28
+Added Net: Name=PB28
+Added Pin To Net: NetName=PB29 Pin=MCU-29
+Added Net: Name=PB29
+Added Pin To Net: NetName=PB30 Pin=MCU-30
+Added Net: Name=PB30
+Added Pin To Net: NetName=PB31 Pin=MCU-31
+Added Net: Name=PB31
+Added Pin To Net: NetName=PC0 Pin=MCU-130
+Added Net: Name=PC0
+Added Pin To Net: NetName=PC1 Pin=MCU-55
+Added Net: Name=PC1
+Added Pin To Net: NetName=PC2 Pin=MCU-59
+Added Net: Name=PC2
+Added Pin To Net: NetName=PC3 Pin=MCU-60
+Added Net: Name=PC3
+Added Pin To Net: NetName=PC4 Pin=MCU-116
+Added Net: Name=PC4
+Added Pin To Net: NetName=PC5 Pin=MCU-63
+Added Net: Name=PC5
+Added Pin To Net: NetName=PC6 Pin=MCU-64
+Added Net: Name=PC6
+Added Pin To Net: NetName=PC7 Pin=MCU-65
+Added Net: Name=PC7
+Added Pin To Net: NetName=PC8 Pin=MCU-66
+Added Net: Name=PC8
+Added Pin To Net: NetName=PC9 Pin=MCU-67
+Added Net: Name=PC9
+Added Pin To Net: NetName=PC10 Pin=MCU-117
+Added Net: Name=PC10
+Added Pin To Net: NetName=PC11 Pin=MCU-93
+Added Net: Name=PC11
+Added Pin To Net: NetName=PC12 Pin=MCU-94
+Added Net: Name=PC12
+Added Pin To Net: NetName=PC13 Pin=MCU-95
+Added Net: Name=PC13
+Added Pin To Net: NetName=PC14 Pin=MCU-96
+Added Net: Name=PC14
+Added Pin To Net: NetName=PC15 Pin=MCU-97
+Added Net: Name=PC15
+Added Pin To Net: NetName=PC16 Pin=MCU-98
+Added Net: Name=PC16
+Added Pin To Net: NetName=PC17 Pin=MCU-99
+Added Net: Name=PC17
+Added Pin To Net: NetName=PC18 Pin=MCU-100
+Added Net: Name=PC18
+Added Pin To Net: NetName=PC19 Pin=MCU-101
+Added Net: Name=PC19
+Added Pin To Net: NetName=PC20 Pin=MCU-131
+Added Net: Name=PC20
+Added Pin To Net: NetName=PC21 Pin=MCU-132
+Added Net: Name=PC21
+Added Pin To Net: NetName=PC22 Pin=MCU-133
+Added Net: Name=PC22
+Added Pin To Net: NetName=PC23 Pin=MCU-134
+Added Net: Name=PC23
+Added Pin To Net: NetName=PC24 Pin=MCU-135
+Added Net: Name=PC24
+Added Pin To Net: NetName=PC25 Pin=MCU-136
+Added Net: Name=PC25
+Added Pin To Net: NetName=PC26 Pin=MCU-137
+Added Net: Name=PC26
+Added Pin To Net: NetName=PC27 Pin=MCU-138
+Added Net: Name=PC27
+Added Pin To Net: NetName=PC28 Pin=MCU-139
+Added Net: Name=PC28
+Added Pin To Net: NetName=PC29 Pin=MCU-102
+Added Net: Name=PC29
+Added Pin To Net: NetName=PC30 Pin=MCU-103
+Added Net: Name=PC30
+Added Pin To Net: NetName=PD0 Pin=MCU-13
+Added Net: Name=PD0
+Added Pin To Net: NetName=PD1 Pin=MCU-14
+Added Net: Name=PD1
+Added Pin To Net: NetName=PD2 Pin=MCU-15
+Added Net: Name=PD2
+Added Pin To Net: NetName=PD3 Pin=MCU-16
+Added Net: Name=PD3
+Added Pin To Net: NetName=PD4 Pin=MCU-17
+Added Net: Name=PD4
+Added Pin To Net: NetName=PD5 Pin=MCU-18
+Added Net: Name=PD5
+Added Pin To Net: NetName=PD6 Pin=MCU-19
+Added Net: Name=PD6
+Added Pin To Net: NetName=PD7 Pin=MCU-20
+Added Net: Name=PD7
+Added Pin To Net: NetName=PD8 Pin=MCU-21
+Added Net: Name=PD8
+Added Pin To Net: NetName=PD9 Pin=C34-1
+Added Pin To Net: NetName=PD9 Pin=C35-1
+Added Pin To Net: NetName=PD9 Pin=C37-1
+Added Pin To Net: NetName=PD9 Pin=C38-1
+Added Pin To Net: NetName=PD9 Pin=MCU-11
+Added Pin To Net: NetName=PD9 Pin=MCU-22
+Added Pin To Net: NetName=PD9 Pin=MCU-62
+Added Pin To Net: NetName=PD9 Pin=MCU-125
+Added Net: Name=PD9
+Added Pin To Net: NetName=PR5 Pin=MCU-47
+Added Net: Name=PR5
+Added Pin To Net: NetName=PR6 Pin=MCU-51
+Added Net: Name=PR6
+Added Pin To Net: NetName=PT1 Pin=MCU-37
+Added Net: Name=PT1
+Added Pin To Net: NetName=PT2 Pin=MCU-38
+Added Net: Name=PT2
+Added Pin To Net: NetName=PT3 Pin=C43-1
+Added Pin To Net: NetName=PT3 Pin=MCU-41
+Added Net: Name=PT3
+Added Pin To Net: NetName=PT4 Pin=MCU-46
+Added Net: Name=PT4
+Added Pin To Net: NetName=PT5 Pin=MCU-50
+Added Net: Name=PT5
+Added Pin To Net: NetName=PT6 Pin=MCU-53
+Added Net: Name=PT6
+Added Pin To Net: NetName=PT14 Pin=C49-1
+Added Pin To Net: NetName=PT14 Pin=MCU-73
+Added Net: Name=PT14
+Added Pin To Net: NetName=PU1 Pin=MCU-42
+Added Pin To Net: NetName=PU1 Pin=R25-2
+Added Net: Name=PU1
+Added Pin To Net: NetName=PU2 Pin=MCU-43
+Added Pin To Net: NetName=PU2 Pin=R26-2
+Added Net: Name=PU2
+Added Pin To Net: NetName=PU3 Pin=MCU-40
+Added Net: Name=PU3
+Added Pin To Net: NetName=PU4 Pin=MCU-39
+Added Net: Name=PU4
+Added Pin To Net: NetName=PU5 Pin=MCU-48
+Added Net: Name=PU5
+Added Pin To Net: NetName=PU6 Pin=MCU-49
+Added Net: Name=PU6
+Added Pin To Net: NetName=PU7 Pin=MCU-56
+Added Net: Name=PU7
+Added Pin To Net: NetName=PU8 Pin=MCU-57
+Added Net: Name=PU8
+Added Pin To Net: NetName=PU14 Pin=C49-2
+Added Pin To Net: NetName=PU14 Pin=MCU-74
+Added Pin To Net: NetName=PU14 Pin=R29-2
+Added Net: Name=PU14
+Added Pin To Net: NetName=PU15 Pin=MCU-75
+Added Net: Name=PU15
+Added Class: Name=MCU et al
+Added Room: Name=MCU et al
