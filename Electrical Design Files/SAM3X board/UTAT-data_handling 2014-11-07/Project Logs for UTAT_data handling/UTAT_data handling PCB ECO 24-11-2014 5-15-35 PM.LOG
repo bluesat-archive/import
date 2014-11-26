@@ -1,0 +1,65 @@
+Removed Pin From Net: NetName=P7 Pin=*-4
+Removed Pin From Net: NetName=PU1 Pin=R25-2
+Removed Pin From Net: NetName=PU2 Pin=R26-2
+Change Component DesignItemId : Designator=R25 Old DesignItemId=Res3 New DesignItemId=0805 Thick Film Resistor 1%
+Change Component DesignItemId : Designator=R26 Old DesignItemId=Res3 New DesignItemId=0805 Thick Film Resistor 1%
+Change Component DesignItemId : Designator=R29 Old DesignItemId=Res3 New DesignItemId=0805 Thick Film Resistor 1%
+Change Component DesignItemId : Designator=* Old DesignItemId=S25FL204K New DesignItemId=AT28LV010
+Change Component Footprint: Designator=R25 Old Footprint=R0805M New Footprint=0805 Resistor
+Change Component Footprint: Designator=R26 Old Footprint=R0805M New Footprint=0805 Resistor
+Change Component Footprint: Designator=R29 Old Footprint=R0805M New Footprint=0805 Resistor
+Change Component Comment : Designator=R25 Old Comment=Res3 New Comment=0805 Resistor
+Change Component Comment : Designator=R26 Old Comment=Res3 New Comment=0805 Resistor
+Change Component Comment : Designator=R29 Old Comment=Res3 New Comment=0805 Resistor
+Change Component Comment : Designator=* Old Comment=S25FL204K New Comment=AT28LV010
+Change Component Designator: OldDesignator=P? NewDesignator=JP7
+Change Component Description : Designator=* Old Description= New Description=Digikey part number: AT28LV010-20JU-ND
+Change Component Description : Designator=JP7 Old Description=Header, 3-Pin New Description=Header, 3-Pin, fix symbol later
+Added Component: Designator=*(SOIC127P600X175-8N)
+Added Component: Designator=C16(C0805)
+Added Component: Designator=C47(C0805)
+Added Component: Designator=C48(C0805)
+Added Component: Designator=R27(0805 Resistor)
+Added Component: Designator=R28(0805 Resistor)
+Added Component: Designator=R139(0805 Resistor)
+Added Component: Designator=R140(0805 Resistor)
+Added Pin To Net: NetName=P7 Pin=*-4
+Added Pin To Net: NetName=P7 Pin=C16-2
+Added Pin To Net: NetName=P7 Pin=C43-2
+Added Pin To Net: NetName=PU15 Pin=C47-1
+Added Pin To Net: NetName=P7 Pin=C47-2
+Added Pin To Net: NetName=PU3 Pin=C48-1
+Added Pin To Net: NetName=P7 Pin=C48-2
+Added Pin To Net: NetName=PU15 Pin=JP7-2
+Added Pin To Net: NetName=PT2 Pin=R25-1
+Added Pin To Net: NetName=PU2 Pin=R25-2
+Added Pin To Net: NetName=PT1 Pin=R26-1
+Added Pin To Net: NetName=PU1 Pin=R26-2
+Added Pin To Net: NetName=P7 Pin=R28-1
+Added Pin To Net: NetName=PU3 Pin=R28-2
+Added Pin To Net: NetName=P8 Pin=R139-1
+Added Pin To Net: NetName=PT4 Pin=R139-2
+Added Pin To Net: NetName=P8 Pin=R140-1
+Added Pin To Net: NetName=PR6 Pin=R140-2
+Change Net Name : Old Net Name=P10 New Net Name=PD10
+Change Net Name : Old Net Name=PT4 New Net Name=JTAGSEL
+Change Net Name : Old Net Name=PU3 New Net Name=NetC48_1
+Added Pin To Net: NetName=+3V3 Pin=JP7-1
+Added Net: Name=+3V3
+Added Pin To Net: NetName=+5V Pin=R27-2
+Added Net: Name=+5V
+Added Pin To Net: NetName=NetC16_1 Pin=C16-1
+Added Pin To Net: NetName=NetC16_1 Pin=JP7-3
+Added Pin To Net: NetName=NetC16_1 Pin=R27-1
+Added Net: Name=NetC16_1
+Added Class: Name=PA[0..29]
+Added Class: Name=PB[0..31]
+Added Class: Name=PC[0..30]
+Added Class: Name=PD[0..10]
+Added Member To Class: ClassName=MCU et al Member=Component C16 Cap Pol3
+Added Member To Class: ClassName=MCU et al Member=Component C47 Cap Pol3
+Added Member To Class: ClassName=MCU et al Member=Component C48 Cap Pol3
+Added Member To Class: ClassName=MCU et al Member=Component R27 0805 Resistor
+Added Member To Class: ClassName=MCU et al Member=Component R28 0805 Resistor
+Added Member To Class: ClassName=MCU et al Member=Component R139 0805 Resistor
+Added Member To Class: ClassName=MCU et al Member=Component R140 0805 Resistor

@@ -1,0 +1,7 @@
+Change Component DesignItemId : Designator=* Old DesignItemId=AT28LV010 New DesignItemId=S25FL204K
+Change Component DesignItemId : Designator=* Old DesignItemId=S25FL204K New DesignItemId=AT28LV010
+Change Component Comment : Designator=* Old Comment=AT28LV010 New Comment=S25FL204K
+Change Component Comment : Designator=* Old Comment=S25FL204K New Comment=AT28LV010
+Change Component Description : Designator=* Old Description=Digikey part number: AT28LV010-20JU-ND New Description=Digkey part number: S25FL204K0TMFI043-ND
+Change Component Description : Designator=* Old Description=Digkey part number: S25FL204K0TMFI043-ND New Description=Digikey part number: AT28LV010-20JU-ND
+Added Member To Class: ClassName=MCU et al Member=Component * S25FL204K

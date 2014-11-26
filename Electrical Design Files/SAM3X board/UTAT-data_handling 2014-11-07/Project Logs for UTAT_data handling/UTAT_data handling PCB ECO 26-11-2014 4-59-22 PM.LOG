@@ -1,0 +1,59 @@
+Removed Pin From Net: NetName=P7 Pin=*-4
+Change Component Footprint: Designator=C16 Old Footprint=C0805 New Footprint=0805 Cap
+Change Component Footprint: Designator=C25 Old Footprint=C0805 New Footprint=0805 Cap
+Change Component Footprint: Designator=C26 Old Footprint=C0805 New Footprint=0805 Cap
+Change Component Footprint: Designator=C27 Old Footprint=C0805 New Footprint=0805 Cap
+Change Component Footprint: Designator=C28 Old Footprint=C0805 New Footprint=0805 Cap
+Change Component Footprint: Designator=C29 Old Footprint=C0805 New Footprint=0805 Cap
+Change Component Footprint: Designator=C34 Old Footprint=C0805 New Footprint=0805 Cap
+Change Component Footprint: Designator=C35 Old Footprint=C0805 New Footprint=0805 Cap
+Change Component Footprint: Designator=C37 Old Footprint=C0805 New Footprint=0805 Cap
+Change Component Footprint: Designator=C38 Old Footprint=C0805 New Footprint=0805 Cap
+Change Component Footprint: Designator=C41 Old Footprint=C0805 New Footprint=0805 Cap
+Change Component Footprint: Designator=C43 Old Footprint=C0805 New Footprint=0805 Cap
+Change Component Footprint: Designator=C45 Old Footprint=C0805 New Footprint=0805 Cap
+Change Component Footprint: Designator=C47 Old Footprint=C0805 New Footprint=0805 Cap
+Change Component Footprint: Designator=C48 Old Footprint=C0805 New Footprint=0805 Cap
+Change Component Footprint: Designator=C49 Old Footprint=C0805 New Footprint=0805 Cap
+Added Component: Designator=*(SOIC127P600X175-8N)
+Added Component: Designator=D2(3.2X1.6X1.1)
+Added Component: Designator=D3(3.2X1.6X1.1)
+Added Component: Designator=D4(3.2X1.6X1.1)
+Added Component: Designator=D5(3.2X1.6X1.1)
+Added Component: Designator=R10(0805 Resistor)
+Added Component: Designator=R11(0805 Resistor)
+Added Component: Designator=R12(0805 Resistor)
+Added Component: Designator=R13(0805 Resistor)
+Added Component: Designator=R14(0805 Resistor)
+Added Pin To Net: NetName=P7 Pin=*-4
+Added Pin To Net: NetName=+3V3 Pin=D2-1
+Added Pin To Net: NetName=+3V3 Pin=D3-1
+Added Pin To Net: NetName=+3V3 Pin=D4-1
+Added Pin To Net: NetName=+3V3 Pin=D5-1
+Added Pin To Net: NetName=PA12 Pin=R10-1
+Added Pin To Net: NetName=PB12 Pin=R11-1
+Added Pin To Net: NetName=PB13 Pin=R12-1
+Added Pin To Net: NetName=PA13 Pin=R14-1
+Added Pin To Net: NetName=+3V3 Pin=R14-2
+Added Pin To Net: NetName=NetD2_2 Pin=D2-2
+Added Pin To Net: NetName=NetD2_2 Pin=R10-2
+Added Net: Name=NetD2_2
+Added Pin To Net: NetName=NetD3_2 Pin=D3-2
+Added Pin To Net: NetName=NetD3_2 Pin=R11-2
+Added Net: Name=NetD3_2
+Added Pin To Net: NetName=NetD4_2 Pin=D4-2
+Added Pin To Net: NetName=NetD4_2 Pin=R12-2
+Added Net: Name=NetD4_2
+Added Pin To Net: NetName=NetD5_2 Pin=D5-2
+Added Pin To Net: NetName=NetD5_2 Pin=R13-2
+Added Net: Name=NetD5_2
+Added Member To Class: ClassName=MCU et al Member=Component D2 Blue
+Added Member To Class: ClassName=MCU et al Member=Component D3 Amber
+Added Member To Class: ClassName=MCU et al Member=Component D4 Green
+Added Member To Class: ClassName=MCU et al Member=Component D5 Red
+Added Member To Class: ClassName=MCU et al Member=Component JP7 Header 3
+Added Member To Class: ClassName=MCU et al Member=Component R10 0805 Resistor
+Added Member To Class: ClassName=MCU et al Member=Component R11 0805 Resistor
+Added Member To Class: ClassName=MCU et al Member=Component R12 0805 Resistor
+Added Member To Class: ClassName=MCU et al Member=Component R13 0805 Resistor
+Added Member To Class: ClassName=MCU et al Member=Component R14 0805 Resistor
