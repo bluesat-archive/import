@@ -102,7 +102,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=YWYOCJES
+DocumentUniqueId=FOKPDKUX
 
 [Document5]
 DocumentPath=..\..\Tray 2\Mobo\Tray2Mobo.SchLib
@@ -289,7 +289,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=PPPKFPMO
 
 [Document16]
 DocumentPath=..\..\Tray 5\Tray 5 v4 Interconnects\Telem.IntLib
@@ -341,6 +341,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Document19]
+DocumentPath=Other Components.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=RYMBEBDG
 
 [GeneratedDocument1]
 DocumentPath=Integrated_circuits.csv
