@@ -289,7 +289,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=PPPKFPMO
+DocumentUniqueId=QKLHNIOH
 
 [Document16]
 DocumentPath=..\..\Tray 5\Tray 5 v4 Interconnects\Telem.IntLib
@@ -358,6 +358,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RYMBEBDG
+
+[Document20]
+DocumentPath=Top Level.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=KRMCPLBT
 
 [Configuration1]
 Name=Default Configuration
