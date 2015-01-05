@@ -1,0 +1,40 @@
+Removed Pin From Net: NetName=NetC177_1 Pin=J?-1
+Removed Pin From Net: NetName=GND Pin=J?-MP
+Removed Pin From Net: NetName=GND Pin=J?-MP
+Removed Pin From Net: NetName=GND Pin=J?-MP
+Removed Pin From Net: NetName=GND Pin=J?-MP
+Removed Member From Class: ClassName=Comms Member=J?
+Added Component: Designator=J1(ROS-32K10A-40ML5_V)
+Added Component: Designator=L1(0805 Resistor)
+Added Component: Designator=L171(0805 Resistor)
+Added Component: Designator=L172(0805 Resistor)
+Added Component: Designator=L173(0805 Resistor)
+Added Component: Designator=L174(0805 Resistor)
+Added Component: Designator=U2(TI-DDC5_N)
+Added Pin To Net: NetName=NetC177_1 Pin=J1-1
+Added Pin To Net: NetName=GND Pin=J1-MP
+Added Pin To Net: NetName=GND Pin=J1-MP
+Added Pin To Net: NetName=GND Pin=J1-MP
+Added Pin To Net: NetName=GND Pin=J1-MP
+Added Pin To Net: NetName=3V3A Pin=L1-1
+Added Pin To Net: NetName=VDD_REG Pin=L1-2
+Added Pin To Net: NetName=NetC173_2 Pin=L171-1
+Added Pin To Net: NetName=NetC174_2 Pin=L171-2
+Added Pin To Net: NetName=NetC174_1 Pin=L172-1
+Added Pin To Net: NetName=NetC176_2 Pin=L172-2
+Added Pin To Net: NetName=NetC176_2 Pin=L173-1
+Added Pin To Net: NetName=NetC175_1 Pin=L173-2
+Added Pin To Net: NetName=NetC175_1 Pin=L174-1
+Added Pin To Net: NetName=NetC177_1 Pin=L174-2
+Added Pin To Net: NetName=3V3A Pin=U2-1
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=3V3A Pin=U2-3
+Added Pin To Net: NetName=NetC41_2 Pin=U2-4
+Added Pin To Net: NetName=VDD_REG Pin=U2-5
+Added Member To Class: ClassName=Comms Member=Component J1 32K10A-40ML5
+Added Member To Class: ClassName=Comms Member=Component L1 
+Added Member To Class: ClassName=Comms Member=Component L171 Inductor
+Added Member To Class: ClassName=Comms Member=Component L172 Inductor
+Added Member To Class: ClassName=Comms Member=Component L173 Inductor
+Added Member To Class: ClassName=Comms Member=Component L174 Inductor
+Added Member To Class: ClassName=Comms Member=Component U2 TPS79930DDCT

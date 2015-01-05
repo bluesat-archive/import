@@ -1,0 +1,39 @@
+Added Component: Designator=U1(TI-RHB)
+Added Component: Designator=X1(FA128)
+Added Pin To Net: NetName=VDD_REG Pin=U1-1
+Added Pin To Net: NetName=RESET_N Pin=U1-2
+Added Pin To Net: NetName=GPIO3 Pin=U1-3
+Added Pin To Net: NetName=GPIO2 Pin=U1-4
+Added Pin To Net: NetName=VDD_REG Pin=U1-5
+Added Pin To Net: NetName=NetC61_1 Pin=U1-6
+Added Pin To Net: NetName=MOSI Pin=U1-7
+Added Pin To Net: NetName=SCLK Pin=U1-8
+Added Pin To Net: NetName=MISO Pin=U1-9
+Added Pin To Net: NetName=GPIO0 Pin=U1-10
+Added Pin To Net: NetName=CSN Pin=U1-11
+Added Pin To Net: NetName=VDD_REG Pin=U1-12
+Added Pin To Net: NetName=VDD_REG Pin=U1-13
+Added Pin To Net: NetName=NetR141_1 Pin=U1-14
+Added Pin To Net: NetName=VDD_REG Pin=U1-15
+Added Pin To Net: NetName=NetC174_2 Pin=U1-17
+Added Pin To Net: NetName=NetC181_2 Pin=U1-18
+Added Pin To Net: NetName=NetC191_1 Pin=U1-19
+Added Pin To Net: NetName=NetC201_1 Pin=U1-20
+Added Pin To Net: NetName=NetC211_1 Pin=U1-21
+Added Pin To Net: NetName=VDD_REG Pin=U1-22
+Added Pin To Net: NetName=NetC231_2 Pin=U1-23
+Added Pin To Net: NetName=NetC231_1 Pin=U1-24
+Added Pin To Net: NetName=VDD_REG Pin=U1-25
+Added Pin To Net: NetName=NetC261_1 Pin=U1-26
+Added Pin To Net: NetName=VDD_REG Pin=U1-27
+Added Pin To Net: NetName=VDD_REG Pin=U1-28
+Added Pin To Net: NetName=NetC291_1 Pin=U1-29
+Added Pin To Net: NetName=NetC301_1 Pin=U1-30
+Added Pin To Net: NetName=NetC311_1 Pin=U1-31
+Added Pin To Net: NetName=NetR12_2 Pin=U1-32
+Added Pin To Net: NetName=NetC311_1 Pin=X1-1
+Added Pin To Net: NetName=GND Pin=X1-2
+Added Pin To Net: NetName=NetC301_1 Pin=X1-3
+Added Pin To Net: NetName=GND Pin=X1-4
+Added Member To Class: ClassName=Comms Member=Component U1 CC1120
+Added Member To Class: ClassName=Comms Member=Component X1 4-Pin Oscillator
