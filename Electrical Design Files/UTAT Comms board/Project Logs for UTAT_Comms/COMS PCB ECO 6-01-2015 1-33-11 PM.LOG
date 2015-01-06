@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=GND Pin=J1-MP
+Removed Pin From Net: NetName=GND Pin=J1-MP
+Removed Pin From Net: NetName=GND Pin=J1-MP
+Removed Pin From Net: NetName=GND Pin=J1-MP
+Change Component DesignItemId : Designator=J1 Old DesignItemId=32K10A-40ML5 New DesignItemId=32K101-400L5
+Change Component Footprint: Designator=J1 Old Footprint=ROS-32K10A-40ML5_V New Footprint=ROS-32K101-400L5_V
+Change Component Comment : Designator=J1 Old Comment=32K10A-40ML5 New Comment=32K101-400L5
+Added Pin To Net: NetName=GND Pin=J1-MH
+Added Pin To Net: NetName=GND Pin=J1-MH
+Added Pin To Net: NetName=GND Pin=J1-MH
+Added Pin To Net: NetName=GND Pin=J1-MH
+Added Member To Class: ClassName=Comms Member=Component P1 Header 8X2A
