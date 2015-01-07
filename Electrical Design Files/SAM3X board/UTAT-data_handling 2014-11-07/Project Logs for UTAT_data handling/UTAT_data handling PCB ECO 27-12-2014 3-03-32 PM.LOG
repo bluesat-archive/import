@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=NRST Pin=BP1-3
+Added Pin To Net: NetName=NRST Pin=BP1-4
+Added Pin To Net: NetName=NRST Pin=MCU-69
+Added Room: Name=U_MCU et al
+Added Room: Name=U_Other Components

@@ -1,0 +1,53 @@
+Removed Pin From Net: NetName=NetJ11_1 Pin=J11-1
+Removed Pin From Net: NetName=NetJ11_3 Pin=J11-3
+Removed Pin From Net: NetName=GND Pin=J11-5
+Removed Pin From Net: NetName=EARTH Pin=J11-6
+Removed Pin From Net: NetName=EARTH Pin=J11-7
+Removed Pin From Net: NetName=NetJ13_4 Pin=J13-4
+Removed Pin From Net: NetName=EARTH Pin=J13-6
+Removed Pin From Net: NetName=EARTH Pin=J13-7
+Removed Pin From Net: NetName=NetJ13_2 Pin=MN16-17
+Removed Member From Class: ClassName=U_Other Components Member=J11
+Change Component DesignItemId : Designator=J13 Old DesignItemId=Header 7 New DesignItemId=D Connector 9
+Change Component Footprint: Designator=J13 Old Footprint=HDR1X7 New Footprint=DSUB1.385-2H9
+Change Component Comment : Designator=J30 B Old Comment=Header 3 New Comment=Header 3 (Bypass)
+Change Component Comment : Designator=J13 Old Comment=Header 7 New Comment=D Connector 9
+Change Component Designator: OldDesignator=J30 B NewDesignator=J30
+Added Component: Designator=FTDI(HDR1X6)
+Added Component: Designator=R203(0805 Resistor)
+Added Component: Designator=R204(0805 Resistor)
+Added Component: Designator=R205(0805 Resistor)
+Added Component: Designator=R206(0805 Resistor)
+Added Pin To Net: NetName=GND Pin=FTDI-1
+Added Pin To Net: NetName=+3V3 Pin=FTDI-2
+Added Pin To Net: NetName=NetJ11_3 Pin=FTDI-4
+Added Pin To Net: NetName=NetJ11_1 Pin=FTDI-5
+Added Pin To Net: NetName=NetJ13_4 Pin=J13-8
+Added Pin To Net: NetName=EARTH Pin=J13-10
+Added Pin To Net: NetName=EARTH Pin=J13-11
+Added Pin To Net: NetName=NetJ13_2 Pin=MN16-15
+Added Pin To Net: NetName=+3V3 Pin=R203-2
+Added Pin To Net: NetName=GND Pin=R204-1
+Added Pin To Net: NetName=+3V3 Pin=R205-2
+Added Pin To Net: NetName=GND Pin=R206-1
+Change Net Name : Old Net Name=NetJ11_1 New Net Name=NetFTDI_5
+Change Net Name : Old Net Name=NetJ11_3 New Net Name=NetFTDI_4
+Change Net Name : Old Net Name=NetJ13_4 New Net Name=NetJ13_8
+Added Pin To Net: NetName=NetFTDI_3 Pin=FTDI-3
+Added Pin To Net: NetName=NetFTDI_3 Pin=R203-1
+Added Pin To Net: NetName=NetFTDI_3 Pin=R204-2
+Added Net: Name=NetFTDI_3
+Added Pin To Net: NetName=NetFTDI_6 Pin=FTDI-6
+Added Pin To Net: NetName=NetFTDI_6 Pin=R205-1
+Added Pin To Net: NetName=NetFTDI_6 Pin=R206-2
+Added Net: Name=NetFTDI_6
+Added Pin To Net: NetName=NetJ13_7 Pin=J13-7
+Added Pin To Net: NetName=NetJ13_7 Pin=MN16-17
+Added Net: Name=NetJ13_7
+Added Member To Class: ClassName=U_Other Components Member=Component FTDI Header 6
+Added Member To Class: ClassName=U_Other Components Member=Component R203 0805 Resistor
+Added Member To Class: ClassName=U_Other Components Member=Component R204 0805 Resistor
+Added Member To Class: ClassName=U_Other Components Member=Component R205 0805 Resistor
+Added Member To Class: ClassName=U_Other Components Member=Component R206 0805 Resistor
+Added Room: Name=U_MCU et al
+Added Room: Name=U_Other Components

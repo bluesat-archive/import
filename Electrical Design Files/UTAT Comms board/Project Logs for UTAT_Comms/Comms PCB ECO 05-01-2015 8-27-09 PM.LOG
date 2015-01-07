@@ -1,0 +1,20 @@
+Added Component: Designator=L1(0805 Resistor)
+Added Component: Designator=L171(0805 Resistor)
+Added Component: Designator=L172(0805 Resistor)
+Added Component: Designator=L173(0805 Resistor)
+Added Component: Designator=L174(0805 Resistor)
+Added Pin To Net: NetName=3V3A Pin=L1-1
+Added Pin To Net: NetName=VDD_REG Pin=L1-2
+Added Pin To Net: NetName=NetC173_2 Pin=L171-1
+Added Pin To Net: NetName=NetC174_2 Pin=L171-2
+Added Pin To Net: NetName=NetC174_1 Pin=L172-1
+Added Pin To Net: NetName=NetC176_2 Pin=L172-2
+Added Pin To Net: NetName=NetC176_2 Pin=L173-1
+Added Pin To Net: NetName=NetC175_1 Pin=L173-2
+Added Pin To Net: NetName=NetC175_1 Pin=L174-1
+Added Pin To Net: NetName=NetC177_1 Pin=L174-2
+Added Member To Class: ClassName=Comms Member=Component L1 
+Added Member To Class: ClassName=Comms Member=Component L171 Inductor
+Added Member To Class: ClassName=Comms Member=Component L172 Inductor
+Added Member To Class: ClassName=Comms Member=Component L173 Inductor
+Added Member To Class: ClassName=Comms Member=Component L174 Inductor

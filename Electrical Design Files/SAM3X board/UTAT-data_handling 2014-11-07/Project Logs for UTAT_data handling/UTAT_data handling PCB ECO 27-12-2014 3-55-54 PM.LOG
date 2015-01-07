@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=NetJ1_1 Pin=MN1-1
+Added Component: Designator=J30(HDR1X3)
+Added Pin To Net: NetName=NetJ1_1 Pin=J30-2
+Added Pin To Net: NetName=+5V Pin=J30-3
+Added Pin To Net: NetName=NetJ30_1 Pin=J30-1
+Added Pin To Net: NetName=NetJ30_1 Pin=MN1-1
+Added Net: Name=NetJ30_1
+Added Member To Class: ClassName=U_Other Components Member=Component J30 Header 3
+Added Room: Name=U_MCU et al
+Added Room: Name=U_Other Components

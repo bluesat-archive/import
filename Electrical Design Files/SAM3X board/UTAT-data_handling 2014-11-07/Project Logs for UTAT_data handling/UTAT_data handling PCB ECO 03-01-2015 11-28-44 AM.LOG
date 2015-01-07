@@ -1,0 +1,10 @@
+Added Pin To Net: NetName=PD9 Pin=MCU-105
+Change Net Name : Old Net Name=3V3 New Net Name=VTREF
+Change Net Name : Old Net Name=NetJ2_3 New Net Name=NTRST
+Change Net Name : Old Net Name=NetJ2_15 New Net Name=NSRST
+Added Pin To Net: NetName=DBGACK Pin=J2-19
+Added Net: Name=DBGACK
+Added Pin To Net: NetName=DBGRQ Pin=J2-17
+Added Net: Name=DBGRQ
+Added Room: Name=U_MCU et al
+Added Room: Name=U_Other Components

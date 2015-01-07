@@ -1,0 +1,15 @@
+Change Component Comment : Designator=Q3 Old Comment=IRLML2502PbF New Comment=IRLML2502
+Added Component: Designator=R200(0805 Resistor)
+Added Component: Designator=R201(0805 Resistor)
+Added Component: Designator=R202(0805 Resistor)
+Added Pin To Net: NetName=PA8 Pin=R200-1
+Added Pin To Net: NetName=+3V3 Pin=R200-2
+Added Pin To Net: NetName=CTS0 Pin=R201-1
+Added Pin To Net: NetName=+3V3 Pin=R201-2
+Added Pin To Net: NetName=RXD0 Pin=R202-1
+Added Pin To Net: NetName=+3V3 Pin=R202-2
+Added Member To Class: ClassName=U_Other Components Member=Component R200 0805 Resistor
+Added Member To Class: ClassName=U_Other Components Member=Component R201 0805 Resistor
+Added Member To Class: ClassName=U_Other Components Member=Component R202 0805 Resistor
+Added Room: Name=U_MCU et al
+Added Room: Name=U_Other Components

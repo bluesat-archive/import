@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=Q3 Old Footprint=SOT95P237X112-3N New Footprint=3 Pin SOT-23
+Added Room: Name=U_MCU et al
+Added Room: Name=U_Other Components
