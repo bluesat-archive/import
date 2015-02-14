@@ -1,0 +1,3 @@
+Run the perl script via "perl csv_rep_fix.pl ALTIUM_THINGY.CSV > FIXED_ALTIUM_THINGY.CSV"
+will add new rows for each component by value rather than all clumped together
+it doesn't adjust the quantity for for each component value, so beware.
